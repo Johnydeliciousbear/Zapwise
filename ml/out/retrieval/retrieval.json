@@ -1,0 +1,13 @@
+{
+ "gallery": 300,
+ "queries": 600,
+ "top1": 0.9933333333333333,
+ "top5": 0.9983333333333333,
+ "correct_sim_median": 0.8418258271258516,
+ "correct_sim_p05": 0.7264870348933312,
+ "unknown_best_sim_median": 0.6397563885705851,
+ "unknown_best_sim_p95": 0.7415720650760484,
+ "threshold_accept": 0.7415720650760484,
+ "share_of_correct_matches_above_threshold": 0.9312080536912751,
+ "note": "Gallery and unknown photos are TrashNet images (MIT). Replace with product photos once the student has them."
+}

@@ -1,0 +1,55 @@
+name: zapwise
+description: ZapWise estimates chemical migration from food packaging during microwave reheating.
+publish_to: 'none'
+version: 0.5.0+9
+
+environment:
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tflite_flutter: ^0.12.1
+  image: ^4.12.0
+  camera: ^0.12.1
+  google_mlkit_text_recognition: ^0.17.1
+  google_mlkit_barcode_scanning: ^0.16.1
+  sqflite: ^2.4.4
+  path_provider: ^2.1.6
+  path: ^1.9.0
+  shared_preferences: ^2.5.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/models/
+    - assets/selftest/
+    - assets/ui/brand/
+    - assets/ui/icons/
+    - assets/ui/objects/
+    - assets/ui/scene/
+    - assets/ui/zappy/
+  fonts:
+    - family: PixelifySans
+      fonts:
+        - asset: assets/fonts/PixelifySans-SemiBold.ttf
+          weight: 600
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Nunito-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Nunito-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Nunito-Black.ttf
+          weight: 900

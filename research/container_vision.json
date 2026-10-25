@@ -1,0 +1,119 @@
+{
+  "_meta": {
+    "created": "2026-10-14",
+    "purpose": "ZapWise container-material recognition: datasets reachable from the build environment and facts for a non-ML (resin-code / marking) route",
+    "environment_reachability": "Only github.com / raw.githubusercontent.com / media.githubusercontent.com (git clone) were reachable. CONNECT 403 from proxy for: farm66.staticflickr.com, live.staticflickr.com, flickr.com, zenodo.org, huggingface.co, kaggle.com, drive.google.com, dropbox.com, data.mendeley.com, archive.org, archive.ics.uci.edu, storage.googleapis.com (Open Images), open-images-dataset.s3.amazonaws.com, universe.roboflow.com, app.roboflow.com, wadaba.pcz.pl, opensurfaces.cs.cornell.edu, people.csail.mit.edu. GitHub search API (gh search) is blocked: session is bound to configured repos, so discovery was done with WebSearch.",
+    "disk_used": "about 91 MB in a local download folder (dl2) (TACO annotations only)"
+  },
+  "datasets": [
+    {
+      "name": "TACO (Trash Annotations in Context)",
+      "url": "https://github.com/pedropro/TACO",
+      "licence": "Repository MIT (LICENSE file; also listed as MIT in github.com/AgaMiko/waste-datasets-review). annotations.json has an empty 'licenses' field, so per-image licences are not stated in the annotation file; images are hosted on Flickr.",
+      "classes": "60 categories / 28 supercategories (COCO segmentation). Relevant: Disposable food container, Foam food container, Foam cup, Disposable plastic cup, Other plastic cup, Plastic lid, Spread tub, Tupperware, Other plastic container, Paper cup, Meal carton, Pizza box, Glass jar, Glass cup, Food Can, Aluminium foil, Styrofoam piece, Clear plastic bottle. Mapping to ZapWise: Foam food container/Foam cup/Styrofoam piece -> PS/EPS foam; Paper cup/Meal carton/Pizza box -> paperboard; Glass jar/Glass cup -> glass; Food Can/Aluminium foil -> metal; Disposable food container/plastic cup/lid -> plastic of unspecified resin (no PP vs PET vs CPET label); Clear plastic bottle -> PET reference. No CPET, no ceramic class.",
+      "counts": {
+        "official_annotations.json (1500 images)": {"Disposable food container": "38 ann / 37 img", "Foam food container": "15 / 13", "Foam cup": "13 / 11", "Disposable plastic cup": "104 / 91", "Other plastic cup": "2 / 2", "Plastic lid": "77 / 69", "Spread tub": "9 / 9", "Tupperware": "4 / 4", "Other plastic container": "6 / 6", "Paper cup": "67 / 62", "Meal carton": "30 / 27", "Pizza box": "3 / 3", "Glass jar": "6 / 4", "Glass cup": "6 / 4", "Food Can": "34 / 20", "Aluminium foil": "62 / 43", "Styrofoam piece": "112 / 78", "Clear plastic bottle": "285 / 225"},
+        "unofficial annotations_unofficial.json (3831 images, unreviewed)": {"Disposable food container": "78 / 67", "Foam food container": "67 / 55", "Foam cup": "36 / 34", "Disposable plastic cup": "156 / 135", "Other plastic cup": "51 / 47", "Plastic lid": "104 / 84", "Spread tub": "22 / 18", "Tupperware": "8 / 7", "Other plastic container": "124 / 100", "Paper cup": "104 / 97", "Meal carton": "35 / 32", "Pizza box": "8 / 8", "Glass jar": "12 / 12", "Glass cup": "6 / 6", "Food Can": "38 / 26", "Aluminium foil": "91 / 71", "Styrofoam piece": "144 / 92"}
+      },
+      "downloadable": false,
+      "download_result": "git clone --depth 1 succeeded (90 MB: annotations.json, annotations_unofficial.json, all_image_urls.csv, download.py). Images NOT downloadable: all image URLs point to farm66/farm8/farm5.staticflickr.com (curl: CONNECT tunnel failed, response 403); the Zenodo mirror (doi 10.5281/zenodo.3587843) is also 403. Annotations only.",
+      "local_path": "dl2/TACO (data/annotations.json, data/annotations_unofficial.json, data/all_image_urls.csv, plus zapwise_relevant_subset.csv = 2576 rows: annotation_file, file_name, image_id, taco_category, zapwise_mapping, bbox_xywh, flickr_url, flickr_640_url, for fetching the relevant images from a machine with Flickr access)"
+    },
+    {
+      "name": "WaDaBa (Plastic Waste DataBase of Images)",
+      "url": "http://wadaba.pcz.pl/",
+      "licence": "Free of charge for research, but requires a signed agreement form signed by a department or research-centre director (students not accepted), emailed to januszb(at)icis.pcz.pl; archives are password protected. Cite Bobulski & Piatkowski, IP&C 2018, AISC vol. 681, pp. 57-64.",
+      "classes": "Resin type encoded in filenames: PET, PE-HD, PP, PS, Other (PVC and PE-LD listed but empty). Also colour, lighting, deformation, dirt, cap/ring. Mostly bottles and packaging on a plain platform. Maps to ZapWise PET(#1), PP(#5), PS(#6); no CPET label.",
+      "counts": {"objects": "100 objects x 40 photos = about 4000 images (1920x1277 JPG, about 4 GB)", "per_class_images (Chazhoor et al. 2022, Table 1)": {"PETE": 2200, "PE-HD": 600, "PP": 640, "PS": 520, "Other": 40}, "per_class_objects (site table)": {"PET": 57, "PE-HD": 15, "PP": 14, "PS": 13, "Other": 1}},
+      "downloadable": false,
+      "download_result": "Not attempted beyond reachability: wadaba.pcz.pl returns proxy CONNECT 403 from this shell; data also gated behind signed agreement and password. Not mirrored on GitHub with a licence that I found.",
+      "local_path": null
+    },
+    {
+      "name": "Drinking Waste Classification",
+      "url": "https://www.kaggle.com/arkadiyhacks/drinking-waste-classification",
+      "licence": "CC0: Public Domain (per AgaMiko/waste-datasets-review)",
+      "classes": "AluCans, Glass (bottles), HDPEM (HDPE milk bottles), PET (bottles). Phone-camera photos. Maps to metal, glass, PET reference; bottles only, no trays.",
+      "counts": {"total": "about 9640 images (per-class counts not retrieved)"},
+      "downloadable": false,
+      "download_result": "kaggle.com CONNECT 403; no GitHub mirror found via WebSearch.",
+      "local_path": null
+    },
+    {
+      "name": "Plastic Recycling Code 2 (Roboflow Universe, SWU Deep Learning Project)",
+      "url": "https://universe.roboflow.com/swu-deep-learning-project/plastic-recycling-code-2",
+      "licence": "CC BY 4.0 (per dataset page)",
+      "classes": "Object detection, 8 classes: 1-PET, 2-HDPE, 3-PVC, 4-LDPE, 5-PP, 6-PS, 7-Other, unknown. Useful for a resin-code symbol detector (non-ML route helper).",
+      "counts": {"total": 670, "per_class": "not listed on page"},
+      "downloadable": false,
+      "download_result": "universe.roboflow.com and app.roboflow.com CONNECT 403 from shell; export also needs a Roboflow API key.",
+      "local_path": null
+    },
+    {
+      "name": "Plastic Types (Roboflow Universe, main-ev0bd)",
+      "url": "https://universe.roboflow.com/main-ev0bd/plastic-types-ia4v5",
+      "licence": "CC BY 4.0 (per dataset page)",
+      "classes": "Object detection: PET, HDPE, PP, OTHER",
+      "counts": {"total": 78},
+      "downloadable": false,
+      "download_result": "Roboflow hosts CONNECT 403; too small to matter anyway.",
+      "local_path": null
+    },
+    {
+      "name": "TrashNet (via RecycleNet repo copy)",
+      "url": "https://github.com/garythung/trashnet ; https://github.com/sangminwoo/RecycleNet",
+      "licence": "TrashNet MIT; RecycleNet repo has a LICENSE file (type not inspected)",
+      "classes": "glass, paper, cardboard, metal, plastic, trash (single plastic class). RecycleNet adds no new data: data/dataset-resized is the TrashNet set.",
+      "counts": {"paper": 594, "glass": 501, "plastic": 482, "metal": 410, "cardboard": 403, "trash": 137},
+      "downloadable": true,
+      "download_result": "Partial clone (tree only) of RecycleNet succeeded; 2534 images committed in repo. Not downloaded because it duplicates the existing ZapWise baseline.",
+      "local_path": null
+    },
+    {
+      "name": "TIDY",
+      "url": "https://github.com/gale31/TIDY",
+      "licence": "MIT (LICENSE file in repo, per AgaMiko review)",
+      "classes": "Litter in the wild by material and scene: plastic, plastic-bottle, plastic-bag, glass, paper, cigarette-butt, unknown (beach/street/forest). No food-container or resin labels.",
+      "counts": {"total": 304, "plastic/beach": 63, "plastic/street": 6, "plastic-bottle/beach": 11, "glass/forest": 13, "paper/beach": 49, "paper/street": 10},
+      "downloadable": true,
+      "download_result": "Partial clone (tree only) succeeded; images are committed in the repo. Not downloaded: low relevance.",
+      "local_path": null
+    }
+  ],
+  "resin_code_facts": [
+    {"fact": "ASTM D7611 (first issued 2010) specifies the resin identification code as a number inside a solid equilateral triangle, replacing the chasing-arrows symbol; the RIC identifies resin content only and is not a recyclability claim. Codes: 1 PETE, 2 HDPE, 3 V, 4 LDPE, 5 PP, 6 PS, 7 Other (incl. multi-resin items).", "source": "https://newsroom.astm.org/node/3040/printable/print"},
+    {"fact": "D7611 provides the code as 'a molded, imprinted or raised symbol or wording', used on the bottom of the bottle or container; code 1 abbreviation may be PETE or PET.", "source": "https://sn.astm.org/node/1227/printable/print"},
+    {"fact": "The older three-arrow (chasing arrows) RIC is still in widespread use alongside the triangle; code 5 PP typical uses include microwave-safe food containers and takeout drink cups; code 6 PS includes takeout food containers and foam packaging.", "source": "https://en.wikipedia.org/wiki/Recycling_codes"},
+    {"fact": "CPET trays carry resin code #1 (PET); the same article notes competing PP trays carried code 7 (likely multi-layer barrier PP), so a PP meal tray is not guaranteed to show 5.", "source": "https://www.pffc-online.com/news/eclips/7488-recyclable-cpet-trays-1001 (Alcan Packaging, 2009)"},
+    {"fact": "Faerch CPET Evolve dual-ovenable tray: material listed as CPET, shown with a PETE recycling logo, -40 C to 230 C, oven and microwave. Whether the literal text 'CPET' is moulded on trays was NOT confirmed by any source found.", "source": "https://www.cater4you.co.uk/acatalog/525-CPET-560-ml-dual-ovenable-tray.html"},
+    {"fact": "Frozen-meal trays: no source found that states frozen meal trays reliably carry a visible code; treat the code as often present on the base but not guaranteed, and often low-contrast (moulded, same colour as tray).", "source": "no confirming source found (search 2026-10-14)"},
+    {"fact": "California SB 343: from 4 Oct 2026, products/packaging that fail CalRecycle's recyclability criteria may not show the chasing-arrows symbol, including a resin code placed inside that symbol. Expect more California packaging with the code in a plain triangle or other forms; the triangle format itself was not addressed by this source.", "source": "https://perkinscoie.com/insights/update/compliance-deadline-set-californias-truth-recycling-law-sb-343"},
+    {"fact": "Google ML Kit on embossed RICs: no published test or report was found. Closest evidence: Pellegrini et al. (2023) built a dedicated smartphone recycling-code recogniser (MobileNetV2, 14 symbols) and note generic OCR accuracy 'significantly degrades when the text is not well isolated from the background' and that Tesseract needed intensity inversion. Expect ML Kit to work on printed labels ('CPET', 'dual ovenable', 'microwave safe') better than on moulded same-colour digits; verify on device.", "source": "https://cris.unibo.it/bitstream/11585/912610/3/A_Weakly_Supervised_Approach_for_Recycling_Code_Recognition.pdf (Expert Systems with Applications 215:119282)"}
+  ],
+  "visual_cues": [
+    {"fact": "CPET always starts as APET and is crystallised irreversibly; APET is clear, CPET is opaque/cloudy. CPET is often made black or coloured partly to hide the cloudiness. CPET is for oven / dual-oven use; APET is for cold/ambient (clamshells, deli). Both are PET resin code 1.", "source": "https://www.inlineplastics.com/blog/pets-apet-cpet-dpet-rpet-and-rdpet-oh-my-whats-the-difference-lets-get-resin-able/"},
+    {"fact": "Anchor Packaging materials guide: PP is 'usually black or clear; clear is somewhat hazy', preferred for microwave and hot case, resists about 220-240 (F); CPET is 'often black', dual-ovenable, oven to 400 F or freezer to -40 F; APET/RPET and OPS/HIPS are clear or black and not for microwave or oven.", "source": "https://anchorpackaging.com/?p=2710"},
+    {"fact": "Black is not diagnostic: black PP microwave-safe take-out bases are common (e.g., Anchor Packaging M710B, black PP, microwave/heat-lamp safe, no conventional-oven claim).", "source": "https://www.imperialbrady.com/catalog/product-detail/take-out-container-base-7x10-in-pp-black-microwave-safe-250-case-anchor%20packaging-M710B?id=14367"},
+    {"fact": "Anchor PP heat containers: microwave safe and heat tolerant up to 230 F (microwave, heat lamps, warming units); no oven rating.", "source": "https://www.anchorpackaging.com/wp-content/uploads/2014/04/Ad_HeatContainers_Spread2.pdf"},
+    {"fact": "Opaque white is not diagnostic either: mineral-filled PP (MFPP) bases (Pactiv Evergreen MealMaster) are white, microwaveable, rated 37-250 F.", "source": "https://novolex.com/sample-item/pactiv-evergreen-mealmaster-12-oz-61-x-49-mfpp-container-white-232-ct"},
+    {"fact": "Natural (unpigmented) CPET exists: Sonoco and Nestle's Stouffer's 'Natural Tray' (30% rPET, NIR detectable, no black pigment); Faerch natural CPET colour varies by batch. Sonoco makes frozen/ready-meal trays in PP, CPET, APET, HIPS, HDPE.", "source": "https://sonoco.com/products/consumer-packaging/rigid-plastic-packaging/trays-bowls"},
+    {"fact": "Black CPET ready-meal trays are undetectable to NIR optical sorters at sorting facilities; a 2014 M&S/Sainsbury's/WRAP/Faerch/Nextek trial used an NIR-detectable black colourant. Implication: industrial spectroscopy cannot read black trays either, so an RGB camera has no chemical signal for black CPET vs black PP.", "source": "https://waste-management-world.com/a/world-first-project-to-enable-nir-sorting-of-black-cpet-at-existing-recycling-facilities-in-uk"},
+    {"fact": "Genpak: #5 PP generally microwave safe; APET(E) #1 not microwave safe (deli/supermarket containers, bottles); polystyrene/foam not microwave safe; CPET not covered.", "source": "https://www.genpak.com/environment/are-containers-microwave-safe/"},
+    {"fact": "Usable on-label cues: CPET is marketed as 'dual ovenable', '-40 to 400 F' or '-40 to 230 C' (oven + microwave); PP is marked 'microwave safe' with limits around 230-250 F and no conventional-oven claim. Format cue: CPET meal trays are usually sealed with a lidding film (Faerch sells weld/peel films), PP take-out bases usually have snap-on lids.", "source": "https://www.pffc-online.com/news/eclips/7488-recyclable-cpet-trays-1001 ; https://www.cater4you.co.uk/acatalog/525-CPET-560-ml-dual-ovenable-tray.html ; https://anchorpackaging.com/?p=2710"}
+  ],
+  "rgb_classification_literature": [
+    {"citation": "Chazhoor A.A.P., Ho E.S.L., Gao B., Woo W.L. (2022). Deep transfer learning benchmark for plastic waste classification. Intelligence & Robotics 2(1):1-19. doi:10.20517/ir.2021.15", "accuracy": "Mean 5-fold accuracy: ResNeXt 87.44%, MobileNetV2 87.35%, DenseNet 85.58%, ResNet-50 85.54%, SqueezeNet 82.59%, AlexNet 80.08%. PP was the worst class for every model (66.4-74.8%).", "classes": "WaDaBa: PETE, PE-HD, PP, PS, Other (224x224, plain background, 2 lighting types)", "source": "https://oaepublish.com/articles/ir.2021.15"},
+    {"citation": "Kunwar S., Owabumoye B.R., Alade A.S. (2024). Plastic Waste Classification Using Deep Learning: Insights from the WaDaBa Dataset. arXiv:2412.20232", "accuracy": "YOLO-11m 98.03% (mAP50 0.990); MobileNetV2 97.12%", "classes": "WaDaBa resin classes", "source": "https://arxiv.org/abs/2412.20232"},
+    {"citation": "Agarwal S., Gudi R., Saxena P. (2020). Application of Computer Vision Techniques for Segregation of Plastic Waste based on Resin Identification Code. arXiv:2011.07747", "accuracy": "99.74% on known categories (Siamese/triplet one-shot); 95% on new plastic waste", "classes": "Resin-code classes; dataset not stated on abstract page", "source": "https://arxiv.org/abs/2011.07747"},
+    {"citation": "Pellegrini L., Maltoni D., Graffieti G., Lomonaco V., Mazzini L., Mondardini M., Zappoli M. (2023). A Weakly Supervised Approach for Recycling Code Recognition. Expert Systems with Applications 215:119282", "accuracy": "Smartphone video, real users: 88.14% per video, 67.54% per frame (MobileNetV2); symbol present/absent 99.5%", "classes": "14 recycling-code symbols", "source": "https://cris.unibo.it/bitstream/11585/912610/3/A_Weakly_Supervised_Approach_for_Recycling_Code_Recognition.pdf"}
+  ],
+  "notes": [
+    "No reachable dataset labels CPET, and none separates PP from PET on food trays from phone photos. The CPET vs PP classes must be self-collected (both colours, several brands, top and bottom views, with and without food).",
+    "WaDaBa results (87-99%) come from 100 physical objects photographed 40 times each on a plain platform. If train/test are split by image instead of by object, the same object appears in both, which would inflate accuracy (my inference; the papers' split method was not checked). Even then, PP is the hardest class (Chazhoor 2022). Expect much lower accuracy on in-the-wild phone photos of black trays.",
+    "Colour is not a reliable cue: black is used for CPET, PP, APET and OPS; opaque white is used for CPET and mineral-filled PP; natural CPET is also sold. A safer design is: ML for coarse material (foam / paperboard / glass / ceramic / metal / clear plastic / opaque plastic), then a text step (ML Kit) for 'dual ovenable', 'oven safe', '400 F', 'microwave safe', 'CPET', and the code digit, then ask the user to confirm the code on the base when it is unreadable.",
+    "TACO is the most useful reachable source for foam, paper cup, meal carton, glass, metal and generic plastic containers, but only its annotations are reachable here. Images must be fetched from a machine with Flickr access using dl2/TACO/zapwise_relevant_subset.csv (crop with bbox). Check each Flickr photo's licence when downloading because annotations.json does not carry per-image licences.",
+    "Excluded for licence: TrashBox (github.com/nikhilvenkatkumsetty/TrashBox and TrashBox-testandvalid) has no LICENSE file and no licence statement in the README (web-scraped images, citation requested). It is fully git-reachable and has relevant subclasses (train: plastic containers 464, plastic cups 405, plastic bottles 456, paper cups 511, tetra pak 635, metal containers 404, beverage cans 800, glass 2022, cardboard 1931; test/val about 7153 images more). Not downloaded. Usable only with written permission from the authors.",
+    "Not verified / not reachable: SevenPlastics (Kaggle piaoya/plastic-recycling-codes, licence not checked), RealWaste (UCI; licence shown as '?' in the review), Recycling Symbols Dataset (unibo; link 'to be disclosed'), Hugging Face sets viola77data/recycling-dataset and BowerApp/bower-waste-annotations (HF blocked, licences not checked), Recyclero/PlaNet (a TrashNet copy), Flickr Material Database (MIT host blocked; a GitHub copy exists in aditya-hosamani/Materials-classification but FMD terms not verified).",
+    "Ceramic has no labelled source found among waste datasets; consider generic object datasets (plates/mugs) or self-collection."
+  ]
+}

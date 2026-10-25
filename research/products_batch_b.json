@@ -1,0 +1,1731 @@
+{
+ "products": [
+  {
+   "id": "zw-201",
+   "brand": "Hot Pockets",
+   "product_name": "Pepperoni Pizza Sandwiches, 2 count (sleeve-era package)",
+   "net_weight": {
+    "oz": 9,
+    "g": null,
+    "note": "2 sandwiches per box"
+   },
+   "upc": null,
+   "category": "sleeve",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "unwrap sandwich, load into crisping sleeve, place on paper plate",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH (1 sandwich, 1100 W)",
+      "time_s": 110,
+      "time_s_max": null
+     },
+     {
+      "action": "let sit to complete cooking",
+      "time_s": 120,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": 1100,
+      "time_s": 110,
+      "time_s_max": null,
+      "note": "1 sandwich"
+     },
+     {
+      "wattage_w": 1100,
+      "time_s": 210,
+      "time_s_max": null,
+      "note": "2 sandwiches"
+     },
+     {
+      "wattage_w": null,
+      "time_s": 170,
+      "time_s_max": null,
+      "note": "lower wattage/compact microwave, 1 sandwich; for 2 sandwiches cook one at a time"
+     }
+    ],
+    "low_wattage_note": "Lower wattage/compact microwave: 2 min 50 s for 1 sandwich; cook 2 sandwiches one at a time.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not use crisping sleeve in air fryer",
+     "Oven: place on baking sheet without the crisping sleeve",
+     "Cook to internal temperature of 165°F",
+     "Keep frozen"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "sleeve_label_text": "Unwrap sandwich, load into crisping sleeve, and place on paper plate (microwave). Do not use crisping sleeve in air fryer. Oven: unwrap and place on baking sheet without the crisping sleeve.",
+   "oven_instructions": "Oven 350°F, unwrapped on baking sheet without sleeve, 26 min. Air fryer 360°F, 15 min in directions (16 min in description).",
+   "container": {
+    "description": "Individually wrapped sandwiches in a carton with a microwave crisping sleeve. Packaging Dive describes the Hot Pockets sleeves as microwave susceptor crisping sleeves. Brand FAQ says the sleeve is single use. Sleeve material not stated on the label text found.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": 2,
+    "calories": null,
+    "total_fat_g": 15
+   },
+   "source_urls": [
+    "https://www.ubereats.com/store/safeway-flash-225-brierhill-dr/u7Xdbrc1WzWBNHf2mgyltg/8bb157fb-7d37-5119-991d-88aa698ea51d/30db39c9-9a04-5985-b67a-179a84674fb8/f84bae16-f08d-5214-bee1-91be23d83aa9",
+    "https://www.goodnes.com/hot-pockets/faq",
+    "https://www.packagingdive.com/news/packaging-innovations-hot-pockets-overtone-henkel/728876/"
+   ],
+   "data_flags": [
+    "Legacy package: Nestlé removed the crisping sleeve from Hot Pockets packaging (announced Sept 30, 2024) and replaced 2-packs with 4-packs during 2025, so this label likely matches only old stock. See zw-203 for the current sleeveless pepperoni box.",
+    "Source is a third-party delivery listing (Uber Eats, Safeway Flash) that says its information may not be current",
+    "Calories and serving size not shown on the listing; goodnes.com lists 330 kcal per 127 g sandwich for the current pepperoni product, not merged here",
+    "Air fryer time inconsistent on listing (15 vs 16 min)",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-202",
+   "brand": "Hot Pockets",
+   "product_name": "Hickory Ham & Cheddar Crispy Buttery Crust Sandwiches, 2 count (sleeve-era package)",
+   "net_weight": {
+    "oz": 9,
+    "g": null,
+    "note": "2 sandwiches per box"
+   },
+   "upc": null,
+   "category": "sleeve",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "unwrap sandwich, load into crisping sleeve, place on microwave-safe plate",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH (1 sandwich)",
+      "time_s": 110,
+      "time_s_max": null
+     },
+     {
+      "action": "let sit to complete cooking",
+      "time_s": 120,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": null,
+      "time_s": 110,
+      "time_s_max": null,
+      "note": "standard (full wattage) microwave, 1 sandwich"
+     },
+     {
+      "wattage_w": null,
+      "time_s": 170,
+      "time_s_max": null,
+      "note": "lower wattage/compact microwave, 1 sandwich"
+     }
+    ],
+    "low_wattage_note": "Lower wattage/compact microwave: 2 min 50 s for 1 sandwich. For best results cook one at a time.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not use crisping sleeve in oven",
+     "Cook to internal temperature of 165°F",
+     "Keep frozen"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "sleeve_label_text": "Unwrap sandwich, load it into crisping sleeve, and place on microwave safe plate. Oven: bake on baking sheet without the crisping sleeve.",
+   "oven_instructions": "Oven 350°F, unwrapped on baking sheet without sleeve, 26 min. Air fryer 360°F, 16 min.",
+   "container": {
+    "description": "Individually wrapped sandwiches in a carton with a microwave crisping sleeve (susceptor sleeve per Packaging Dive). Sleeve is single use per brand FAQ. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": 2,
+    "calories": null,
+    "total_fat_g": 10
+   },
+   "source_urls": [
+    "https://www.ubereats.com/store/walgreens-12407-grant-rd/c9_So-KORGOLsyZb6DFGKA/7f00a5db-35cb-5775-986f-cfd4d85a6310/7d7bff25-1880-4ae9-a9c1-83e7bfefca55/c4a39b83-b805-5ae9-9b39-d2361c6caa1a",
+    "https://www.ubereats.com/store/cvs/rn4GRmLHWvCLWi_7CDHUYg/3d9e84e1-e36e-5c90-a0b7-71703dac0e0c/7d7bff25-1880-4ae9-a9c1-83e7bfefca55/61b1219f-c230-5c60-8f88-0978bc3bb467",
+    "https://www.goodnes.com/hot-pockets/faq",
+    "https://www.packagingdive.com/news/packaging-innovations-hot-pockets-overtone-henkel/728876/"
+   ],
+   "data_flags": [
+    "Legacy package: sleeve removed from Hot Pockets packaging in the 2024 redesign; 2-packs replaced by 4-packs in 2025. Current Hannaford listing for the 4-ct croissant-crust ham & cheddar uses a microwave-safe plate with no sleeve.",
+    "Reference wattage not printed on the two listings (CVS listing says 'full-wattage ovens'; the current Hot Pockets range uses 1100 W)",
+    "Calories and serving size not shown; total fat 10 g from CVS listing",
+    "Third-party delivery listings (Uber Eats Walgreens/CVS) may not be current",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-203",
+   "brand": "Hot Pockets",
+   "product_name": "Pepperoni Pizza Sandwiches (Italian Style Seasoned Crust), 4 Pack, current sleeveless package",
+   "net_weight": {
+    "oz": 18,
+    "g": 510
+   },
+   "upc": "00043695206203",
+   "upc_note": "14-digit GTIN on ACME (acmestores.com) listing titled 'Hot Pockets Crispy Crust Pepperoni Pizza Sandwiches, 4 ea'. That ACME URL was found under a different product code (00043695071115), so the match to the goodnes.com 4 Pack is by name and count only. Confirm against the box barcode.",
+   "category": "plate",
+   "subtype": "handheld frozen sandwich microwaved unwrapped on a plate; crisping sleeve removed in 2024 redesign",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "unwrap sandwich, place on microwave-safe plate",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH (1 sandwich, 1100 W)",
+      "time_s": 110,
+      "time_s_max": null
+     },
+     {
+      "action": "let sit to complete cooking",
+      "time_s": 120,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": 1100,
+      "time_s": 110,
+      "time_s_max": null,
+      "note": "1 sandwich"
+     },
+     {
+      "wattage_w": 1100,
+      "time_s": 210,
+      "time_s_max": null,
+      "note": "2 sandwiches"
+     },
+     {
+      "wattage_w": null,
+      "time_s": 170,
+      "time_s_max": null,
+      "note": "lower wattage/compact microwave, 1 sandwich; for 2 sandwiches cook one at a time"
+     }
+    ],
+    "low_wattage_note": "Lower wattage/compact microwave: 2 min 50 s for 1 sandwich; cook 2 one at a time.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Cook to internal temperature of 165°F",
+     "Product will be hot; let cool",
+     "Keep frozen"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "sleeve_label_text": "No sleeve. ACME package text: 'Peace out sleeves!' and tastes great 'without the nuisance of a sleeve'; 'Dispose responsibly.'",
+   "oven_instructions": "Air fryer 360°F, 14 min (1 sandwich, or 2 placed separately). No conventional oven directions on the goodnes.com page.",
+   "container": {
+    "description": "Carton of individually wrapped sandwiches, no crisping sleeve. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 sandwich (127 g)",
+    "servings_per_container": 4,
+    "calories": 330,
+    "total_fat_g": 15
+   },
+   "source_urls": [
+    "https://www.goodnes.com/hot-pockets/products/frozen-sandwich-pepperoni-pizza/",
+    "https://www.goodnes.com/hot-pockets/products/pepperoni-pizza-italian-seasoned-crust",
+    "https://www.acmestores.com/product/00043695071115/hot-pockets-sandwiches-premium-garlic-buttery",
+    "https://www.packagingdive.com/news/packaging-innovations-hot-pockets-overtone-henkel/728876/"
+   ],
+   "data_flags": [
+    "Category 'plate' is a proposed new value (see notes); listed under Hot Pockets for contrast with sleeve-era zw-201",
+    "goodnes.com 8-pack and 1-pack pages give the same times"
+   ]
+  },
+  {
+   "id": "zw-204",
+   "brand": "Lean Cuisine",
+   "product_name": "Chicken Fettuccini",
+   "net_weight": {
+    "oz": 9.25,
+    "g": 262
+   },
+   "upc": null,
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "cut film to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH",
+      "time_s": 180,
+      "time_s_max": null
+     },
+     {
+      "action": "stir and re-cover",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH",
+      "time_s": 120,
+      "time_s_max": null
+     },
+     {
+      "action": "stand (165°F internal)",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Not on product page. Lean Cuisine FAQ: times are based on 1100 W; lower-wattage ovens may need more time, watch for bubbling over and check 165°F.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not prepare in conventional or toaster ovens",
+     "Do not reheat tray"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Film-covered plastic tray in paperboard carton. Lean Cuisine FAQ: plastic trays recyclable only where local programs accept them, paperboard carton recyclable, trays not designed for reuse.",
+    "material": "plastic",
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 package (262 g)",
+    "servings_per_container": 1,
+    "calories": 290,
+    "total_fat_g": 5
+   },
+   "source_urls": [
+    "https://www.goodnes.com/lean-cuisine/products/chicken-fettuccine",
+    "https://www.goodnes.com/lean-cuisine/faq"
+   ],
+   "data_flags": [
+    "Reference wattage taken from the Lean Cuisine FAQ ('All of our entrees ... based on ... an 1100-watt microwave oven'); the product page shows no wattage",
+    "Page says both 'Do not reheat tray' and 'Do not reheat bowl'",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-205",
+   "brand": "Lean Cuisine",
+   "product_name": "Sesame Chicken (listed as Signature; Hannaford URL says Protein Kick)",
+   "net_weight": {
+    "oz": 9,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "129833"
+   },
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "cut film to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH",
+      "time_s": 150,
+      "time_s_max": null
+     },
+     {
+      "action": "remove film",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "stand (165°F internal)",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None on page. Lean Cuisine FAQ: lower-wattage ovens may need more time.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Microwave oven only",
+     "Do not prepare in conventional or toaster ovens",
+     "Do not reheat tray",
+     "Keep frozen"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Film-covered tray; film is removed for the second heating step. Material not stated on page.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 package",
+    "servings_per_container": 1,
+    "calories": 380,
+    "total_fat_g": 10
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/lean-cuisine-protein-kick-sesame-chicken-frozen-meal-9-oz-box/129833",
+    "https://www.goodnes.com/lean-cuisine/faq"
+   ],
+   "data_flags": [
+    "Page prints 'Microwave Oven Only: 110 watts', read as a typo for 1100 W because the Lean Cuisine FAQ states all entrée times are based on 1100 W",
+    "Product line name differs between page title (Signature) and URL (Protein Kick); photograph the box",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-206",
+   "brand": "Stouffer's",
+   "product_name": "Lasagna with Meat & Sauce (single serve, For One)",
+   "net_weight": {
+    "oz": null,
+    "g": 297,
+    "note": "H-E-B listing title for the classic meat lasagna single serve says 10.5 oz"
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "kroger": "0001380010321"
+   },
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "leave film on, do not vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH",
+      "time_s": 180,
+      "time_s_max": null
+     },
+     {
+      "action": "peel back one corner of film to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook at 50% power",
+      "time_s": 240,
+      "time_s_max": null
+     },
+     {
+      "action": "stand (165°F internal)",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Page says ovens vary and time may need adjusting.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not vent film before first cook",
+     "Do not prepare in toaster oven",
+     "Do not reheat tray",
+     "Keep frozen"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "375°F, film on and not vented, tray on baking sheet center rack, 40 min, stand 1 min.",
+   "container": {
+    "description": "Film-covered tray that is also used in the conventional oven. Stouffer's FAQ: single-serve trays moved from plastic to paper (pressed paper trays in select single-serve meals not yet recyclable); plastic trays contain 25% recycled plastic. Which tray this item uses is not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 package (297 g)",
+    "servings_per_container": 1,
+    "calories": 360,
+    "total_fat_g": 12
+   },
+   "source_urls": [
+    "https://www.goodnes.com/stouffers/products/lasagna-with-meat-sauce-for-one/",
+    "https://www.goodnes.com/stouffers/faq"
+   ],
+   "data_flags": [
+    "Two-power-level directions (HIGH then 50%) are a useful case for the app's power-level logic",
+    "Kroger-family item code comes from search-result URLs for 'Classic Lasagna with Meat and Sauce' (not fetched); UPC not shown",
+    "goodnes.com page's canonical tag points to the Family Size product"
+   ]
+  },
+  {
+   "id": "zw-207",
+   "brand": "Stouffer's",
+   "product_name": "French Bread Deluxe Pizza, 2 count",
+   "net_weight": {
+    "oz": 12.75,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "720"
+   },
+   "category": "oven_only",
+   "subtype": "micro-bake: microwave on a plate, then finish in oven or air fryer; no microwave-only method on the page",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "remove pizza from box and wrap, pour loose toppings onto pizza",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "place on microwave-safe plate, cook on HIGH (1 pizza)",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "move to baking sheet, bake in preheated 425°F oven (1 pizza)",
+      "time_s": 360,
+      "time_s_max": null
+     },
+     {
+      "action": "stand (165°F internal)",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": 1100,
+      "time_s": 90,
+      "time_s_max": null,
+      "note": "1 pizza microwave step, then 6 min oven"
+     },
+     {
+      "wattage_w": 1100,
+      "time_s": 120,
+      "time_s_max": null,
+      "note": "2 pizzas microwave step, then 9 min oven"
+     },
+     {
+      "wattage_w": 1100,
+      "time_s": 90,
+      "time_s_max": null,
+      "note": "Micro-Air Fry: 1 pizza, then air fryer 300°F 6 min"
+     }
+    ],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Keep frozen"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Oven only: 400°F, baking sheet center rack, 24 min, stand 1 min.",
+   "container": {
+    "description": "Paperboard box ('Push in. Pull out.') with pizzas in a wrap; no crisping tray or sleeve mentioned. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 pizza",
+    "servings_per_container": 2,
+    "calories": 440,
+    "total_fat_g": 21
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/stouffers-french-bread-deluxe-pizza-2-ct-frozen-12-75-oz-box/720"
+   ],
+   "data_flags": [
+    "Microwave step alone does not finish cooking; the app should say an oven or air fryer is required",
+    "Toaster oven not addressed",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-208",
+   "brand": "Velveeta",
+   "product_name": "Original Shells & Cheese Microwaveable Cups",
+   "net_weight": {
+    "oz": 2.39,
+    "g": null,
+    "note": "per cup; sold in 4-cup and 8-cup (19.1 oz) boxes"
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "215301",
+    "heb": "1256845"
+   },
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid and cheese sauce pouch",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "add water to fill line in cup, stir",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave uncovered on HIGH, do not drain",
+      "time_s": 210,
+      "time_s_max": null
+     },
+     {
+      "action": "stir in cheese sauce pouch",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Add water to fill line to help prevent risk of fire",
+     "Do not leave microwave unattended",
+     "Do not drain",
+     "Do not reuse cup",
+     "Cup and contents will be very hot"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Single-serve microwavable cup with lid, fill line and cheese sauce pouch. Label: 'Starch blend in cup reduces risk of boil over and thickens sauce.' Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 package (cup)",
+    "servings_per_container": 8,
+    "calories": 220,
+    "total_fat_g": 8
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/velveeta-original-shells-cheese-pasta-microwaveable-cup-8-ct-19-1-oz-box/215301",
+    "https://www.heb.com/product-detail/velveeta-original-shells-and-cheese-cups/1256845"
+   ],
+   "data_flags": [
+    "No wattage or stand time on label transcription",
+    "Servings per container 8 for the 8-ct box (H-E-B 4-ct box lists 4)",
+    "H-E-B warning says 'POUCH AND CONTENTS WILL BE VERY HOT' while Hannaford says 'Cup and contents'",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-209",
+   "brand": "Kraft",
+   "product_name": "Triple Cheese Mac & Cheese Dinner Microwaveable Cups",
+   "net_weight": {
+    "oz": 2.05,
+    "g": null,
+    "note": "per cup; 4 cups, 8.2 oz box"
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "196513"
+   },
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid and cheese sauce mix",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "add water to fill line in cup, stir",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave uncovered on HIGH, do not drain",
+      "time_s": 210,
+      "time_s_max": null
+     },
+     {
+      "action": "stir in cheese sauce mix",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Add water to fill line to help prevent risk of fire",
+     "Do not leave microwave unattended",
+     "Do not drain",
+     "Do not reuse cup",
+     "Cup and contents will be very hot"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Single-serve microwavable cup with lid and fill line. Material not stated. Kraft tested a recyclable fiber-based microwavable cup in 2021 (see packaging_statements); whether the current cup is fiber-based is not confirmed.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 package (cup)",
+    "servings_per_container": 4,
+    "calories": 220,
+    "total_fat_g": 3.5
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/kraft-triple-cheese-mac-cheese-dinner-microwaveable-cup-4-ct-8-2-oz-pkg/196513"
+   ],
+   "data_flags": [
+    "No wattage or stand time on label transcription",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-210",
+   "brand": "Annie's",
+   "product_name": "Organic White Cheddar Macaroni & Cheese Cups",
+   "net_weight": {
+    "oz": 2.01,
+    "g": null,
+    "note": "per cup; 4 cups, 8.04 oz box"
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "229390"
+   },
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid and cheese packet (loose white powder in cup is for cooking)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "add cold water to fill line, stir",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 120,
+      "time_s_max": null
+     },
+     {
+      "action": "stir in cheese packet",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Cup and pasta will be very hot"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Single-serve microwavable cup with lid and fill line. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 package (cup)",
+    "servings_per_container": 4,
+    "calories": 220,
+    "total_fat_g": 5
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/annies-macaroni-cheese-white-cheddar-cups-organic-4-ct-8-04-oz-box/229390"
+   ],
+   "data_flags": [
+    "No wattage or stand time on label transcription",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-211",
+   "brand": "Annie's",
+   "product_name": "Deluxe Microwavable Classic Cheddar Shells & Cheese Cups",
+   "net_weight": {
+    "oz": 10.4,
+    "g": null,
+    "note": "whole 4-cup package; per-cup weight not listed"
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "263764"
+   },
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid and cheese sauce packet (loose white powder in cup is for cooking)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "add cold water to fill line, stir",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "stir",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH again",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "stir in cheese sauce packet",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Cup and pasta will be very hot"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Single-serve microwavable cup with lid, fill line and cheese sauce packet. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 package (cup)",
+    "servings_per_container": 4,
+    "calories": 240,
+    "total_fat_g": 6
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/annies-deluxe-microwavable-classic-cheddar-shells-cheese-cups-4-ct-10-4-oz-pkg/263764"
+   ],
+   "data_flags": [
+    "No wattage or stand time",
+    "Two-stage heating with a stir between (3 min total)",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-212",
+   "brand": "Hormel",
+   "product_name": "Compleats Homestyle Chicken Alfredo",
+   "net_weight": {
+    "oz": 10,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "155818",
+    "kroger": "0003760034986"
+   },
+   "category": "cup_bowl",
+   "subtype": "shelf-stable film-sealed tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "vent tray",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "optional stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "remove film carefully",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Not for use in conventional ovens",
+     "Contents and tray will be hot",
+     "No refrigeration needed until opened"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Shelf-stable microwavable tray sealed with film. Walmart listing titles for other Compleats varieties call it a 'Plastic Tray' / 'Plastic Microwaveable Tray'; resin not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 tray",
+    "servings_per_container": 1,
+    "calories": 350,
+    "total_fat_g": 18
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/hormel-compleats-homestyle-chicken-alfredo-microwavable-10-oz-pkg/155818"
+   ],
+   "data_flags": [
+    "No wattage or power level stated",
+    "Kroger-family item code from Fred Meyer/City Market search-result URLs (not fetched); UPC not shown",
+    "Servings per container blank on page; 1 assumed from 'serving size 1 tray'"
+   ]
+  },
+  {
+   "id": "zw-213",
+   "brand": "Dinty Moore",
+   "product_name": "Beef Stew Microwavable (single tray)",
+   "net_weight": {
+    "oz": 9,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "155823"
+   },
+   "category": "cup_bowl",
+   "subtype": "shelf-stable film-sealed tray (Hormel Foods brand)",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "vent tray",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "optional stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "remove film carefully",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Not for use in conventional ovens",
+     "Contents and tray will be hot"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Shelf-stable microwavable tray sealed with film. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 tray",
+    "servings_per_container": 1,
+    "calories": 200,
+    "total_fat_g": 12
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/dinty-moore-beef-stew-microwavable-9-oz-pkg/155823"
+   ],
+   "data_flags": [
+    "No wattage stated",
+    "Directions identical to Hormel Compleats wording",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-214",
+   "brand": "Campbell's",
+   "product_name": "Chunky Chili Mac, Microwavable Bowl",
+   "net_weight": {
+    "oz": 15.25,
+    "g": null
+   },
+   "upc": "51000286298",
+   "upc_note": "11-digit form on Campbell's Foodservice page (case code 28629, case of 8). Kroger-family item code 0005100028629 appears in search-result URLs. Confirm the 12-digit UPC from the bowl.",
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove plastic cap, peel off and discard cover, replace plastic cap",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "leave in microwave to stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "optional: heat longer for warmer soup",
+      "time_s": 30,
+      "time_s_max": null
+     },
+     {
+      "action": "grasp bowl by sides, stir",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: microwave ovens vary, time is approximate; uneven heating may cause popping, bowl movement or splattering.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Plastic cap may be hot"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Microwavable bowl with peel-off cover and plastic cap. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 container",
+    "servings_per_container": 1,
+    "calories": 370,
+    "total_fat_g": 12
+   },
+   "source_urls": [
+    "https://www.campbellsfoodservice.com/product/chili-mac-soup/"
+   ],
+   "data_flags": [
+    "No reference wattage stated"
+   ]
+  },
+  {
+   "id": "zw-215",
+   "brand": "Campbell's",
+   "product_name": "Chunky Meat Lovers Mac, Microwavable Bowl",
+   "net_weight": {
+    "oz": 15.25,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "foodlion": "406128"
+   },
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove plastic cap, peel off and discard cover, replace plastic cap",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "leave in microwave to stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "optional: heat longer if needed",
+      "time_s": 30,
+      "time_s_max": null
+     },
+     {
+      "action": "grasp bowl by sides, stir",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: microwave ovens vary, time is approximate; uneven heating may cause popping, bowl movement or splattering.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not add water",
+     "Do not reuse or reheat bowl",
+     "Do not purchase if open or punctured",
+     "Caution: metal edges are sharp",
+     "Plastic cap may be hot"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Microwavable bowl with peel-off cover and plastic cap. Label warns 'Metal edges are sharp', which suggests a metal component in the cover or rim that is removed before heating; material otherwise not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 container",
+    "servings_per_container": 1,
+    "calories": 400,
+    "total_fat_g": 17
+   },
+   "source_urls": [
+    "https://www.foodlion.com/groceries/product/campbells-chunky-bowl-meat-lovers-mac-microwavable-15-25-oz-cup/406128"
+   ],
+   "data_flags": [
+    "No reference wattage stated",
+    "The 'metal edges' warning is worth confirming on the package, since the app should tell users the cover must be fully removed before microwaving",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-216",
+   "brand": "Amy's",
+   "product_name": "Amy's Bowls Organic Gluten Free Broccoli & Cheddar Bake",
+   "net_weight": {
+    "oz": 9.5,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "187013"
+   },
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "make a 1-inch slit in overwrap",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH",
+      "time_s": 240,
+      "time_s_max": 300
+     },
+     {
+      "action": "let sit",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label says ovens may vary.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Toaster oven: remove overwrap and bowl and use an oven-safe dish"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "375°F, remove overwrap, bowl on baking sheet, 35-40 min, sit 1 min. Toaster oven: transfer to oven-safe dish.",
+   "container": {
+    "description": "Bowl in plastic overwrap; the bowl goes in a conventional oven at 375°F but must be replaced by an oven-safe dish in a toaster oven. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 bowl",
+    "servings_per_container": 1,
+    "calories": 460,
+    "total_fat_g": 21
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/amys-bowls-organic-gluten-free-broccoli-cheddar-bake-frozen-meal-9-5-oz-box/187013"
+   ],
+   "data_flags": [
+    "No reference wattage",
+    "amys.com product pages not readable (previous batch)",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-217",
+   "brand": "Amy's",
+   "product_name": "Organic Gluten Free Cheese Enchilada Whole Meal",
+   "net_weight": {
+    "oz": 9,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "44430"
+   },
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "make a 1-inch slit in overwrap",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on MEDIUM",
+      "time_s": 270,
+      "time_s_max": null
+     },
+     {
+      "action": "remove overwrap, stir beans",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH",
+      "time_s": 60,
+      "time_s_max": 90
+     },
+     {
+      "action": "let sit",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label says ovens may vary.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Toaster oven: remove overwrap and tray and use an oven-safe dish"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "375°F, remove overwrap, cover tray with foil, on baking sheet, 45-50 min, sit 1 min.",
+   "container": {
+    "description": "Multi-compartment tray in plastic overwrap; tray is used in the conventional oven (foil-covered) but not the toaster oven. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 tray",
+    "servings_per_container": 1,
+    "calories": 360,
+    "total_fat_g": 16
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/amys-organic-gluten-free-cheese-enchilada-whole-frozen-meal-9-oz-box/44430"
+   ],
+   "data_flags": [
+    "No reference wattage",
+    "Uses MEDIUM then HIGH power levels",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-218",
+   "brand": "Jimmy Dean",
+   "product_name": "Meat Lovers Breakfast Bowl",
+   "net_weight": {
+    "oz": 7,
+    "g": null
+   },
+   "upc": "00077900706158",
+   "upc_note": "14-digit GTIN on the Jimmy Dean Salsify brand page. The same page also prints 'UPC-107790070615', which does not match the GTIN and may be a case or internal code. Confirm against the bowl barcode.",
+   "retailer_item_id": {
+    "hannaford": "199280",
+    "heb": "1548102"
+   },
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "remove from carton, puncture film",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 120,
+      "time_s_max": null
+     },
+     {
+      "action": "peel back film, stir, replace film",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH until thoroughly cooked",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "stand (165°F internal, checked in several spots)",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: microwaves below 1100 watts may need extra time to reach proper temperature.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not cook in toaster oven",
+     "Keep frozen until ready to use",
+     "Product will be hot"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Film-covered bowl in carton. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 bowl",
+    "servings_per_container": 1,
+    "calories": 490,
+    "total_fat_g": 37
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/jimmy-dean-meat-lovers-breakfast-bowl-frozen-meal-7-oz-box/199280",
+    "https://sites.salsify.com/aa1704a5-eac3-4658-8b85-aa434cec8f75/d7e6ef5f-f7bf-46e8-9328-73a03b469161/product/00077900706158/Jimmy-Dean-Breakfast-Bowl-Meat-Lovers-Frozen-7-oz-Bowl/"
+   ],
+   "data_flags": []
+  },
+  {
+   "id": "zw-219",
+   "brand": "Jimmy Dean",
+   "product_name": "Delights Turkey Sausage, Egg White & Cheese English Muffin Sandwiches, 4 count",
+   "net_weight": {
+    "oz": 20.4,
+    "g": null,
+    "note": "4 sandwiches"
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "153148"
+   },
+   "category": "plate",
+   "subtype": "frozen breakfast sandwich, unwrapped and wrapped in a paper towel",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "remove wrapper, wrap sandwich in paper towel",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "defrost at 30% power",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "turn sandwich over",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH until hot",
+      "time_s": 65,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 120,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: heat times may need adjusting for other ovens; if needed add time in 5-second increments.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not refrigerate longer than 3 days",
+     "Keep frozen until ready to use",
+     "Product will be hot"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "alternate_microwave_method": "From refrigerated (thawed overnight): remove wrapper, wrap in paper towel, HIGH 65 s, stand 2 min.",
+   "oven_instructions": "Not on the retailer page; label refers to jimmydean.com for conventional oven directions.",
+   "container": {
+    "description": "Paperboard box of individually wrapped sandwiches; wrapper removed before heating. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 sandwich",
+    "servings_per_container": 4,
+    "calories": 270,
+    "total_fat_g": 8
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/jimmy-dean-delights-turkey-sausage-english-muffin-sandwiches-4-ct-20-4-oz-box/153148"
+   ],
+   "data_flags": [
+    "Times for 2 sandwiches not given",
+    "Uses a 30% defrost step before HIGH",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-220",
+   "brand": "El Monterey",
+   "product_name": "Beef & Bean Burritos Family Pack, 8 count",
+   "net_weight": {
+    "oz": 32,
+    "g": null,
+    "note": "8 burritos"
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "167792"
+   },
+   "category": "plate",
+   "subtype": "frozen burrito microwaved on a plate",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "place 1 frozen burrito on microwave-safe plate",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH (1100 W)",
+      "time_s": 75,
+      "time_s_max": null
+     },
+     {
+      "action": "stand (165°F internal)",
+      "time_s": 30,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label says ovens vary.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Product may be hot",
+     "Keep frozen"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Oven 375°F, 1 inch apart on baking sheet, uncovered, 25 min, stand 1 min. Air fryer 380°F, 2 burritos, 6 min, flip, 6 min, stand 1 min.",
+   "container": {
+    "description": "Bag/box of individually wrapped burritos. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 burrito",
+    "servings_per_container": 8,
+    "calories": 290,
+    "total_fat_g": 14
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/el-monterey-beef-bean-burritos-family-pack-8-ct-frozen-32-oz-pkg/167792"
+   ],
+   "data_flags": [
+    "Wrapper handling (remove or keep) not stated in the transcription; photograph the pack",
+    "Time for 2 burritos not given",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-221",
+   "brand": "Tyson",
+   "product_name": "Any'tizers Buffalo Style Boneless Chicken Bites",
+   "net_weight": {
+    "oz": 24,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "heb": "1209812",
+    "hannaford": "199425"
+   },
+   "category": "plate",
+   "subtype": "fully cooked frozen breaded chicken pieces heated on a plate",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "arrange frozen pieces on microwave-safe plate",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH (3 pieces)",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": 120
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label: appliances vary, heating times approximate.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not overheat",
+     "Keep frozen"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "quantity_variants": [
+    {
+     "quantity": "3 pieces",
+     "time_s": 90,
+     "time_s_max": null,
+     "note": "HIGH"
+    },
+    {
+     "quantity": "6 pieces",
+     "time_s": 120,
+     "time_s_max": null,
+     "note": "HIGH"
+    },
+    {
+     "quantity": "9 pieces",
+     "time_s": 150,
+     "time_s_max": null,
+     "note": "HIGH"
+    }
+   ],
+   "oven_instructions": "Preferred: oven 400°F, foil-lined sprayed baking sheet, top rack, 15-20 min, turn halfway. Air fryer 360°F single layer 11-12 min.",
+   "container": {
+    "description": "24 oz bag of frozen pieces; user supplies the plate. Bag material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "84 (unit not shown on tyson.com; H-E-B lists 3 oz)",
+    "servings_per_container": 8,
+    "calories": 190,
+    "total_fat_g": 8
+   },
+   "source_urls": [
+    "https://www.ubereats.com/store/gopuff-liquor-%26-more/3L6FApafX7WInNpwwS42Bg/6f073d42-ca45-57a5-857c-a9d7fda78944/6f073d42-ca45-57a5-857c-a9d7fda78944/55cfed84-12c5-517d-a10f-2cd571be1e23",
+    "https://www.tyson.com/products/anytizers-boneless-chicken-bites-buffalo",
+    "https://www.heb.com/product-detail/tyson-any-tizers-frozen-buffalo-style-boneless-chicken-bites/1209812"
+   ],
+   "data_flags": [
+    "Microwave times come from a third-party delivery listing (Uber Eats/Gopuff); tyson.com shows a microwave section with no times",
+    "No reference wattage",
+    "Nutrition conflict: tyson.com 190 kcal / 8 g fat per serving vs H-E-B 170 kcal / 7 g per 3 oz; tyson.com values recorded",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-222",
+   "brand": "Smart Ones",
+   "product_name": "Three Cheese Ziti Marinara",
+   "net_weight": {
+    "oz": 9,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "hannaford": "84637"
+   },
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "remove tray from carton, pull back corner of film to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 195,
+      "time_s_max": null
+     },
+     {
+      "action": "pull back film, stir, replace film",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "stand in microwave (165°F internal)",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "stir",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label: adjust for variations in microwave ovens.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Microwave oven only",
+     "Do not prepare in conventional or toaster oven",
+     "Do not refreeze",
+     "Do not reuse tray",
+     "Product and packaging will be hot"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Film-covered tray in carton, microwave only. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 package",
+    "servings_per_container": 1,
+    "calories": 300,
+    "total_fat_g": 9
+   },
+   "source_urls": [
+    "https://www.hannaford.com/groceries/product/smart-ones-three-cheese-ziti-marinara-12g-protein-frozen-meal-9-oz-box/84637"
+   ],
+   "data_flags": [
+    "Description says 8 g fat, Nutrition Facts panel says 9 g; panel value recorded",
+    "A Canadian Food Basics URL carries 057000036447 for a similar product; not used because it is a different market",
+    "UPC not shown"
+   ]
+  }
+ ],
+ "notes": [
+  "22 new products (zw-201 to zw-222) from Nestlé USA (Hot Pockets 3, Lean Cuisine 2, Stouffer's 2), Kraft Heinz (Velveeta, Kraft, Smart Ones), General Mills (Annie's 2), Hormel Foods (Compleats, Dinty Moore), Campbell's 2, Amy's 2, Tyson Foods (Jimmy Dean 2, Tyson Any'tizers) and Ruiz Foods (El Monterey). None repeat the existing 33.",
+  "Hot Pockets crisping sleeve: Nestlé removed the sleeve from Hot Pockets packaging (announced Sept 30, 2024) and moved from 2-packs to 4-packs in 2025. The two 'sleeve' records (zw-201 pepperoni, zw-202 ham & cheddar) come from older 2-pack listings on Uber Eats store pages whose label text still says 'load into crisping sleeve' and 'do not use crisping sleeve in oven/air fryer'. Current boxes (zw-203, and the Hannaford 4-ct croissant-crust listing) say to use a microwave-safe plate, and the ACME carton text reads 'Peace out sleeves!'. The app should treat a Hot Pockets box as sleeveless unless a sleeve is in the box.",
+  "Proposed schema additions, used only where needed: category 'plate' for products heated unwrapped on a user-supplied plate or paper towel (zw-203 sleeveless Hot Pockets, zw-219 Jimmy Dean Delights, zw-220 El Monterey burritos, zw-221 Tyson Any'tizers), since none of the existing categories fits; optional fields 'sleeve_label_text', 'quantity_variants' (time by piece count), 'alternate_microwave_method', 'subtype' and 'retailer_item_id'. Remap 'plate' if the app's enum must stay fixed.",
+  "Stouffer's French Bread Deluxe (zw-207) is filed as oven_only with subtype 'micro-bake': the label's methods start with a microwave step on a plate but finish in a 425°F oven or 300°F air fryer, with no microwave-only option. Useful as a case where the app must say an oven is required.",
+  "Skipped on purpose: Chef Boyardee and Evol are Conagra brands (Chef Boyardee is already on the labelinsight SmartLabel host used for zw-022), so they were left for a Conagra batch. Sweet Earth appears inactive: VegNews (Oct 10, 2026) reports the website redirects to Nestlé and the brand looks discontinued (https://vegnews.com/what-happened-to-sweet-earth-vegan-at-nestle). Saffron Road was not added because the shared web-search quota ran out before a source page was found.",
+  "Sources that worked this time: www.hannaford.com product pages (full label transcriptions; the bare hannaford.com host showed a maintenance page and preview.hannaford.com is now robots-disallowed), goodnes.com product and FAQ pages for Nestlé brands, Uber Eats store item pages (directions text, sometimes from older packages), Campbell's Foodservice, foodlion.com (www), tyson.com (no microwave times), the Jimmy Dean Salsify brand page (GTIN only) and acmestores.com (GTIN plus some carton text, no directions). Stop & Shop was in maintenance; curl to heb.com and hannaford.com is blocked by the proxy.",
+  "Completeness: 10 complete, 12 partial. Partial records mostly lack a reference wattage (cups, Campbell's bowls, Amy's, Hormel shelf-stable trays). Lean Cuisine reference wattage (1100 W) comes from the brand FAQ because the product pages omit it or show the typo '110 watts'.",
+  "UPCs found for 3 products only (zw-203 Hot Pockets 4 Pack GTIN from ACME, zw-214 Campbell's Chili Mac 11-digit form, zw-218 Jimmy Dean bowl GTIN from Salsify). Retailer IDs are kept in retailer_item_id. All need checking against the package barcode.",
+  "No resin identification code, and no product-level BPA statement, was found for any tray, cup or bowl in this batch. Container material is stated only at brand level (Lean Cuisine and Stouffer's FAQs) or in news coverage (Kraft fiber cup trial, Nissin paper cup). No Maruchan, Amy's or Hormel corporate packaging statement was found before the search quota ran out.",
+  "Power-level cases worth testing in the app: Stouffer's lasagna (HIGH then 50%), Amy's enchilada (MEDIUM then HIGH), Jimmy Dean Delights (30% defrost then HIGH). Explicit low-wattage times appear only on Hot Pockets ('lower wattage/compact microwave' row with no watt number).",
+  "Label oddities: Campbell's Chunky Meat Lovers Mac bowl warns 'Metal edges are sharp' and 'Do not reuse or reheat bowl'; Velveeta and Kraft cups warn to add water to the fill line to help prevent fire and not to leave the microwave unattended; Velveeta notes a starch blend in the cup reduces boil-over."
+ ],
+ "packaging_statements": [
+  {
+   "brand": "Lean Cuisine (Nestlé USA)",
+   "statement": "FAQ, 'Is the tray recyclable?': 'Plastic Trays: Check with your local recycling program to confirm if these trays are accepted.' 'Paperboard: The paperboard outer carton is recyclable.' 'Can I reuse the tray?': 'We do not recommend that the trays be reused. They were not designed as reusable containers.' Preparation: entrée cooking times 'are based on the usage of an 1100-watt microwave oven.'",
+   "url": "https://www.goodnes.com/lean-cuisine/faq"
+  },
+  {
+   "brand": "Lean Cuisine (Nestlé USA)",
+   "statement": "Development mirror of the same FAQ (02dev host) says: 'Our trays now contain 25% recycled plastic, making them easier to recycle.' and 'LEAN CUISINE does not use BPA when creating our trays.' These lines are not on the production page, so treat them as unconfirmed.",
+   "url": "https://02dev.goodnes.com/lean-cuisine/faq"
+  },
+  {
+   "brand": "Stouffer's (Nestlé USA)",
+   "statement": "FAQ: plastic trays 'are designed and tested to be safe for cooking food' and 'meet all applicable FDA standards for food contact materials' (BPA not addressed directly). 'Our trays now contain 25% recycled plastic and no longer use black pigment, making them easier to recycle.' Aluminum trays: 'recyclable where suitable recycling programs exist.' 'Our single-serve trays have changed from a plastic tray to a paper tray to cut down on plastic usage by 90%.' 'the pressed paper trays used in our multi-serve meals and select single-serve meals are not yet recyclable.' 'The tray should not be reused.' Film: make two or three small slits; an unvented film 'in a microwave, can balloon and burst.'",
+   "url": "https://www.goodnes.com/stouffers/faq"
+  },
+  {
+   "brand": "Hot Pockets (Nestlé USA)",
+   "statement": "FAQ (still references the sleeve): 'We do not recommend that the HOT POCKETS® sleeve be reused. It is intended for single use only.' Oven: 'Please do not use the crisping sleeve in the oven.' Recycling: check packaging labels and local recycling company. FAQ also says 2-packs were replaced by 4-packs, with most stores having the new packs by July 2025.",
+   "url": "https://www.goodnes.com/hot-pockets/faq"
+  },
+  {
+   "brand": "Hot Pockets (Nestlé USA)",
+   "statement": "Packaging Dive (Oct 4, 2024): Hot Pockets removed the microwave susceptor crisping sleeves from its packaging (announced Sept 30, 2024), avoiding more than 6.6 million pounds of packaging material a year including 5 million pounds of paper, and said the change also shortens cook time. Brand quote: 'without the crisping \"sleeve\" and without sacrificing the crispiness factor'.",
+   "url": "https://www.packagingdive.com/news/packaging-innovations-hot-pockets-overtone-henkel/728876/"
+  },
+  {
+   "brand": "Hot Pockets (Nestlé USA)",
+   "statement": "Current carton text on ACME listing: 'Peace out sleeves!', tastes great 'without the nuisance of a sleeve', 'Dispose responsibly.'",
+   "url": "https://www.acmestores.com/product/00043695071115/hot-pockets-sandwiches-premium-garlic-buttery"
+  },
+  {
+   "brand": "Kraft (Kraft Heinz)",
+   "statement": "PlasticsToday (Feb 5, 2021): Kraft Mac & Cheese was testing a 'recyclable, fiber-based, microwavable cup' intended to be 'both recyclable and compostable in industrial composting facilities'; 'The cup currently being trialed is microwave safe.' Liner polymer not disclosed ('cup and design are still being trialed'). The article does not say what the existing cups are made of. The Kraft Heinz investor-relations release on this now returns 404.",
+   "url": "https://www.plasticstoday.com/packaging/kraft-tests-recyclable-fiber-based-microwavable-cup-for-mac-cheese"
+  },
+  {
+   "brand": "Campbell's",
+   "statement": "2026 Goals and Performance (FY2025): 'Transition 100% of packaging to recyclable or industrially compostable designs and materials by CY2030', reported at 95% progress. No mention of microwavable bowls, polypropylene or BPA.",
+   "url": "https://www.thecampbellscompany.com/goalsfactsheet"
+  },
+  {
+   "brand": "Campbell's",
+   "statement": "Green Century shareholder press release (July 14, 2026): Campbell's sells food in plastic packaging labeled 'microwavable' and agreed to disclose its plastic footprint; no resin types given. It questions whether 'recyclable designs' are recyclable in practice under FTC Green Guides.",
+   "url": "https://www.greencentury.com/mmm-mmm-plastic-campbells-to-disclose-plastic-footprint-after-engagement-with-green-century/"
+  },
+  {
+   "brand": "Hormel Compleats",
+   "statement": "Walmart listing titles describe Compleats as 'Shelf Stable 9 oz Plastic Tray' and '9 oz Plastic Microwaveable Tray'. Seen only as search-result titles (Walmart pages are not readable); no resin or BPA statement found from Hormel.",
+   "url": "https://www.walmart.com/ip/10290972"
+  },
+  {
+   "brand": "Nissin Cup Noodles",
+   "statement": "FOX 11 Los Angeles (Nov 2, 2023): Nissin announced a new paper cup for early 2024 to 'replace the current polystyrene cup', which 'makes the ramen noodles microwavable in the package.' Liner and recyclability not stated.",
+   "url": "https://www.foxla.com/news/cup-noodles-unveils-game-changing-packaging-update-for-2024"
+  }
+ ]
+}

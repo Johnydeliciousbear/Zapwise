@@ -1,0 +1,77 @@
+{
+ "name": "Huang and Jolliet 2019 material-specific regression",
+ "equation": "log10 Kpf = b0 + b_kow*logKow + b_etoh*EtOH + b_kow_etoh*logKow*EtOH + b_invt*(1/T - 1/298.15) + material offset",
+ "units": "Kpf = concentration in polymer / concentration in food (volume basis); EtOH in % v/v; T in K",
+ "coefficients": {
+  "b0": -1.36,
+  "b_kow": 1.06,
+  "b_etoh": -0.014,
+  "b_kow_etoh": -0.0066,
+  "b_invt": 866.0
+ },
+ "material_offsets": {
+  "Average HDPE/LDPE": 0.15,
+  "Carbohydrates": -0.55,
+  "Ethylene-propylene copolymer": -0.11,
+  "Ethylene-vinyl acetate copolymer (EVA)": 0.58,
+  "High-density polyethylene (HDPE)": 0.035,
+  "Ionomer (Surlyn 1652, 1702)": -0.027,
+  "Linear low-density polyethylene (LLDPE)": -1.21,
+  "Low-density polyethylene (LDPE)": 0.0,
+  "Nylon 6": -0.92,
+  "Poly 2-hydroxyethylmethacrylate": 0.39,
+  "Polycaprolactone related polymers": 0.85,
+  "Polydimethylsiloxane (PDMS)": 0.01,
+  "Polyethylene terephthalate (PET)": -0.892,
+  "Polyoxymethylene (POM)": -0.14,
+  "Polypropylene (PP) homopolymer": -0.5,
+  "Polystyrene (PS)": 0.84,
+  "Polyvinyl chloride (PVC)": 0.49,
+  "Silicone rubber": 0.39,
+  "Starch, Cellulose": -1.83
+ },
+ "generic": {
+  "b0": -1.96,
+  "b_kow": 1.16,
+  "b_etoh": -0.0059,
+  "b_kow_etoh": -0.0079,
+  "b_invt": 805.0
+ },
+ "residual_sd_log10": 0.7877444024415665,
+ "residual_sd_note": "RMSE of the refitted regression when each chemical is held out (GroupKFold by CAS); whole-study hold-out gives 1.11",
+ "domain": [
+  {
+   "etoh_low": 0,
+   "etoh_high": 20,
+   "logkow_max": 8.91,
+   "logkow_min": 0.38,
+   "n": 881
+  },
+  {
+   "etoh_low": 20,
+   "etoh_high": 60,
+   "logkow_max": 10.16,
+   "logkow_min": 0.35,
+   "n": 421
+  },
+  {
+   "etoh_low": 60,
+   "etoh_high": 90,
+   "logkow_max": 11.15,
+   "logkow_min": 1.36,
+   "n": 263
+  },
+  {
+   "etoh_low": 90,
+   "etoh_high": 100,
+   "logkow_max": 18.10494085,
+   "logkow_min": 0.32,
+   "n": 316
+  }
+ ],
+ "temp_c_range": [
+  2.0,
+  40.0
+ ],
+ "sources": "Huang and Jolliet 2019 (dataset and coefficients); Vaferi et al. 2025 Table S1 (same databank)"
+}

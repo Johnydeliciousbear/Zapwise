@@ -1,0 +1,851 @@
+{
+ "meta": {
+  "compiled": "2026-10-14",
+  "purpose": "ZapWise multilayer flexible packaging inputs (steam bags, retort/microwave pouches, cling film)",
+  "status_legend": "VERIFIED = read on cited page this session; DERIVED = computed from verified inputs; SECONDARY = quoted via another document; UNVERIFIED = not confirmed",
+  "units": "c in mg/kg polymer; 1 mil = 25.4 um"
+ },
+ "structures": [
+  {
+   "container": "Microwave steam-in bag for frozen vegetables (patent design for 12-16 oz vegetable packs; Pliant LLC)",
+   "layers": [
+    {
+     "polymer": "PET (biaxially oriented, Cel-PET / Kolon Astroll / PHanex CT), outer protective",
+     "thickness_um": 12.2,
+     "food_contact": false
+    },
+    {
+     "polymer": "Polyurethane laminating adhesive (Primabond polyester-PU, Mor-Free, Tycel)",
+     "thickness_um": {
+      "min": 0.5,
+      "max": 2.5
+     },
+     "food_contact": false
+    },
+    {
+     "polymer": "Outer skin: LDPE/LLDPE/HDPE/EVA blend (<120 C use) or PP/PE copolymer (Tm>=120 C)",
+     "thickness_um": {
+      "min": 12.7,
+      "max": 31.8
+     },
+     "food_contact": false
+    },
+    {
+     "polymer": "Core: homopolymer PP (Tm 158-165 C) or HDPE",
+     "thickness_um": {
+      "min": 19.0,
+      "max": 63.5
+     },
+     "food_contact": false
+    },
+    {
+     "polymer": "Inner heat-seal layer: propylene/ethylene random copolymer (1-8 wt% ethylene, Tm 105-150 C)",
+     "thickness_um": {
+      "min": 12.7,
+      "max": 31.8
+     },
+     "food_contact": true
+    }
+   ],
+   "total_thickness_um": {
+    "min": 57.1,
+    "max": 141.8
+   },
+   "vent": "slits 2-12 mm (pref. 5-10 mm), end-seal vents 2-20 mm, or vent valve (hole + nonwoven/plastic patch)",
+   "performance": "Example 1: 16 oz mixed vegetables, two 4 mm slits, frozen -18 C then microwaved 4 min; food reached ~95-102 C without melting/leaking. Comparative PET/adhesive/PP-homopolymer laminate failed at seal.",
+   "source": "Su JM, Wolak PZ (Pliant LLC), US 7,812,293 B2 'Freezable/microwavable packaging films and venting packages', https://patents.google.com/patent/US7812293B2/en (PDF: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/7812293)",
+   "status": "VERIFIED (ranges are the patent's preferred ranges for 12 oz frozen-vegetable packs; mil->um converted x25.4 = DERIVED). Exact layer tables (Tables 1, 3) not read. Whether Birds Eye Steamfresh / Green Giant use this exact film is UNVERIFIED."
+  },
+  {
+   "container": "Microwave steam-cook stand-up pouch (Amcor SelfVent; Tesco Easy Steam vegetables)",
+   "layers": [
+    {
+     "polymer": "PET",
+     "thickness_um": null,
+     "food_contact": false
+    },
+    {
+     "polymer": "OPA (oriented polyamide), in 3-ply version",
+     "thickness_um": null,
+     "food_contact": false
+    },
+    {
+     "polymer": "Cast PP (peelable sealant)",
+     "thickness_um": null,
+     "food_contact": true
+    }
+   ],
+   "vent": "self-venting seal; stress concentrated by pack/seal geometry opens seal under steam pressure",
+   "source": "Packaging World, 'Pouch steams into market' (Amcor SelfVent pouch, Tesco Easy Steam), https://www.packworld.com/flexibles/article/13340929/pouch-steams-into-market",
+   "status": "VERIFIED for materials (2- and 3-ply PET/OPA/CPP); layer order and CPP as food-contact layer are INFERRED; thicknesses not given."
+  },
+  {
+   "container": "Generic microwave steaming bag (supplier catalogue)",
+   "layers": [
+    {
+     "polymer": "PET",
+     "thickness_um": null,
+     "food_contact": false
+    },
+    {
+     "polymer": "CPP",
+     "thickness_um": null,
+     "food_contact": true
+    }
+   ],
+   "total_thickness_um": {
+    "min": 52,
+    "max": 75
+   },
+   "vent": "slit + patented steam vent, zip reclosable",
+   "source": "Xiamen Threestone Packing, Microwave Steaming Bag SLMSB001, https://www.hktdc.com/event/hkprintpackfair/en/product/1X0LOWRL",
+   "status": "VERIFIED total thickness 52-75 um; food-contact layer INFERRED (CPP)."
+  },
+  {
+   "container": "Retort pouch, foil (non-microwavable) - imported reference",
+   "layers": [
+    {
+     "polymer": "PET (polyester)",
+     "thickness_um": 12,
+     "food_contact": false
+    },
+    {
+     "polymer": "Aluminium foil",
+     "thickness_um": 15,
+     "food_contact": false
+    },
+    {
+     "polymer": "Cast PP",
+     "thickness_um": 75,
+     "food_contact": true
+    }
+   ],
+   "source": "Ali AA, Sudhir B, Gopal TKS, Vijayan PK (2002) Properties of indigenous and imported retort pouches for the thermal processing of freshwater fish, CIFT, https://drs.cift.res.in/items/0c9c2718-82d8-40e5-a25f-7244b096cc94/full",
+   "status": "VERIFIED (abstract)."
+  },
+  {
+   "container": "Retort pouch, foil (non-microwavable) - Indian-made",
+   "layers": [
+    {
+     "polymer": "PET (polyester)",
+     "thickness_um": {
+      "min": 12.5,
+      "max": 17.5
+     },
+     "food_contact": false
+    },
+    {
+     "polymer": "Aluminium foil",
+     "thickness_um": {
+      "min": 12.5,
+      "max": 25
+     },
+     "food_contact": false
+    },
+    {
+     "polymer": "Cast PP",
+     "thickness_um": {
+      "min": 75,
+      "max": 87.5
+     },
+     "food_contact": true
+    }
+   ],
+   "source": "Ali AA, Sudhir B, Gopal TKS, Vijayan PK (2002) Properties of indigenous and imported retort pouches for the thermal processing of freshwater fish, CIFT, https://drs.cift.res.in/items/0c9c2718-82d8-40e5-a25f-7244b096cc94/full",
+   "status": "VERIFIED (abstract)."
+  },
+  {
+   "container": "Retort pouch, foil, examples (single-pack: PET//Ny//Al//CPP; carton: PET//Al//CPP)",
+   "layers": [
+    {
+     "polymer": "PET",
+     "thickness_um": null,
+     "food_contact": false
+    },
+    {
+     "polymer": "Nylon (single-pack version only)",
+     "thickness_um": null,
+     "food_contact": false
+    },
+    {
+     "polymer": "Aluminium foil",
+     "thickness_um": null,
+     "food_contact": false
+    },
+    {
+     "polymer": "CPP",
+     "thickness_um": null,
+     "food_contact": true
+    }
+   ],
+   "source": "ZACROS (Fujimori Kogyo) retort pouch page, https://www.zacros.co.jp/en/?p=2365",
+   "status": "VERIFIED structure; CPP inner layer INFERRED; no thicknesses."
+  },
+  {
+   "container": "Transparent (foil-free, microwavable-type) retort pouch",
+   "layers": [
+    {
+     "polymer": "PET",
+     "thickness_um": 12,
+     "food_contact": false
+    },
+    {
+     "polymer": "Nylon (NY)",
+     "thickness_um": 15,
+     "food_contact": false
+    },
+    {
+     "polymer": "Retortable PP film (sealant), ester-type adhesive laminated",
+     "thickness_um": 60,
+     "food_contact": true
+    }
+   ],
+   "retort": "135 C x 30 min",
+   "source": "Idemitsu Unitech exhibition sheet (retortable PP film), https://www.idemitsu.com/en/iut/exhibition/2022_2_6.pdf",
+   "status": "VERIFIED (written PET#12/NY#15/PP#60; '#' read as um = packaging convention, INFERRED). Not stated as microwavable, but foil-free."
+  },
+  {
+   "container": "Microwavable retorted rice pouch (Uncle Ben's / Ben's Original Ready Rice era; Fall River Wild Rice laminate)",
+   "layers": [
+    {
+     "polymer": "4-ply laminate with glass-coated (SiOx) PET replacing foil; other plies not named",
+     "thickness_um": null,
+     "food_contact": null
+    }
+   ],
+   "source": "Food Engineering, 'Uncle Ben touts second first', https://foodengineeringmag.com/articles/83416-food-packaging-br-uncle-ben-touts-second-first",
+   "status": "VERIFIED that Ready Rice is 'retorted rice in a microwave-friendly pouch' and that the related Fall River pouch is a 4-ply SiOx-PET laminate (CLP Industries). Ready Rice's own structure and thicknesses UNVERIFIED."
+  },
+  {
+   "container": "Microwavable transparent retort pouch using AlOx-coated PET (Toray Barrialox SBR2)",
+   "layers": [
+    {
+     "polymer": "AlOx-coated PET (reverse printed)",
+     "thickness_um": null,
+     "food_contact": false
+    },
+    {
+     "polymer": "CPP sealant (e.g., TreaTear DR72 directional-tear CPP)",
+     "thickness_um": null,
+     "food_contact": true
+    }
+   ],
+   "source": "Toray Plastics (America), Barrialox SBR2 AlOx-PET for retort, https://www.toraytpa.com/insights/toray-plastics-america-presents-new-barrialox-sbr2-high-barrier-transparent-aluminum-oxide-coated-pet-film-for-retort-applications/",
+   "status": "VERIFIED (states the package 'can be microwaved'); no thicknesses."
+  },
+  {
+   "container": "PVC cling film (household/retail wrap)",
+   "layers": [
+    {
+     "polymer": "plasticised PVC (DEHA 28.3% w/w)",
+     "thickness_um": 14.1,
+     "food_contact": true
+    }
+   ],
+   "source": "Goulas AE, Anifantaki KI, Kolioulis DG, Kontominas MG (2000) J Dairy Sci (PII S0022030200750405), https://olympias2.lib.uoi.gr/items/cabfa782-c73d-4000-a693-0d835b20c8b6/full",
+   "status": "DERIVED: Goulas 2000 losses (18.9 mg/dm2 = 37.8%; 12.2 = 24.3%; 7.3 = 14.6%) all give initial DEHA = 50.0 mg/dm2; film areal mass = 50.0/0.283 = 176.7 mg/dm2; thickness = 1.767 mg/cm2 / 1.25 g/cm3 = 14.1 um. Density 1.25 g/cm3 for plasticised PVC is an ASSUMPTION (UNVERIFIED)."
+  }
+ ],
+ "contents": [
+  {
+   "container": "PP films for food packaging (proxy for CPP sealant of pouches/steam bags)",
+   "layer": "PP film (6 commercial films)",
+   "substance": "Irgafos 168 (tris(2,4-di-tert-butylphenyl) phosphite)",
+   "c_mg_per_kg": {
+    "min": 166.47,
+    "median": null,
+    "max": 845.27,
+    "n": 6
+   },
+   "use": "diffusion model c_P0 (PP, rho 0.90 g/cm3, sealant 12.7-87.5 um depending on pack)",
+   "source": "Jinan University group, 'Simultaneous determination of antioxidants and ultraviolet stabilizers in polypropylene food packaging and food simulants by HPLC' (journal/year not shown on page; pp. 173-192), https://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-05eacdae-bfc4-4dd7-8309-e22306ec7fc5",
+   "status": "VERIFIED values (abstract: 166.47+/-5.11 to 845.27+/-29.31 ug/g); journal name/year not shown; films not identified as CPP retort sealants."
+  },
+  {
+   "container": "PP films (26 EU films)",
+   "layer": "PP film",
+   "substance": "Irgafos 168 OXO (oxidised Irgafos 168, phosphate)",
+   "c_mg_per_kg": {
+    "min": null,
+    "median": null,
+    "max": null,
+    "n": 26
+   },
+   "detection": "found in 25 of 26 films (migrate)",
+   "source": "Vera P et al. (2018) Talanta, 'Identification of non volatile migrant compounds and NIAS in polypropylene films used as food packaging characterized by UPLC-MS/QTOF' (PII S0039914018306271), summary https://foodpackagingforum.org/news/nias-in-polypropylene-films",
+   "status": "VERIFIED occurrence; no concentration."
+  },
+  {
+   "container": "PVC cling film",
+   "layer": "PVC film",
+   "substance": "DEHA (di(2-ethylhexyl) adipate, 'DOA')",
+   "c_mg_per_kg": {
+    "min": 283000,
+    "median": 283000,
+    "max": 283000,
+    "n": 1
+   },
+   "use": "diffusion model c_P0 (PVC ~14 um, DERIVED)",
+   "source": "Goulas AE, Anifantaki KI, Kolioulis DG, Kontominas MG (2000) J Dairy Sci (PII S0022030200750405), https://olympias2.lib.uoi.gr/items/cabfa782-c73d-4000-a693-0d835b20c8b6/full",
+   "status": "VERIFIED (28.3% w/w)."
+  },
+  {
+   "container": "PVC cling wrap (US retail, 1997)",
+   "layer": "PVC film",
+   "substance": "DEHA",
+   "c_mg_per_kg": {
+    "min": 5499,
+    "median": null,
+    "max": 21729,
+    "n": 6
+   },
+   "source": "Consumers Union letter/report to FDA, 5 June 1998, https://advocacy.consumerreports.org/press_release/report-to-the-fda-regarding-plastic-packaging",
+   "status": "VERIFIED as reported (ppm); 0.5-2.2% is far below the 28.3% in Goulas and ~20-30% often cited (UNVERIFIED), so the CU basis may differ. Use with caution."
+  },
+  {
+   "container": "PP microwavable soup cups with lidding film (rigid; cross-reference)",
+   "layer": "PP container",
+   "substance": "POSH/POH oligomers C10-C35",
+   "c_mg_per_kg": {
+    "min": 1096,
+    "median": null,
+    "max": 4679,
+    "n": null
+   },
+   "source": "Conchione C, Lucci P, Moret S (2020) Foods 9(10):1365, doi:10.3390/foods9101365, https://www.mdpi.com/2304-8158/9/10/1365",
+   "status": "VERIFIED. Rigid PP, included because the pack is film-lidded and microwaved."
+  }
+ ],
+ "migration": [
+  {
+   "container": "PA/CPP retort pouch, commercial brand 1",
+   "food_or_simulant": "4% acetic acid",
+   "conditions": {
+    "temp_C": 121,
+    "time_min": 15,
+    "microwave_W": null
+   },
+   "substance": "4,4'-MDA (primary aromatic amine)",
+   "value": 2.733,
+   "unit": "ug/kg",
+   "per": "kg simulant",
+   "source": "Guan L, Cai X, ... Hu C (2021) Food Science 42(20):292-298, doi:10.7506/spkx1002-6630-20200917-227, https://www.spkx.net.cn/EN/10.7506/spkx1002-6630-20200917-227",
+   "status": "VERIFIED (abstract). Exceeds EU 2 ug/kg individual-PAA limit.",
+   "use": "measurement-based"
+  },
+  {
+   "container": "PA/CPP retort pouch, commercial brand 2",
+   "food_or_simulant": "4% acetic acid",
+   "conditions": {
+    "temp_C": 121,
+    "time_min": 15,
+    "microwave_W": null
+   },
+   "substance": "4,4'-MDA",
+   "value": 3.113,
+   "unit": "ug/kg",
+   "per": "kg simulant",
+   "source": "Guan L, Cai X, ... Hu C (2021) Food Science 42(20):292-298, doi:10.7506/spkx1002-6630-20200917-227, https://www.spkx.net.cn/EN/10.7506/spkx1002-6630-20200917-227",
+   "status": "VERIFIED (abstract).",
+   "use": "measurement-based",
+   "note": "Same study: pasteurisation, steaming, boiling raised 2,4-TDA and 4,4'-MDA migration with temperature (P<0.05), steaming < boiling; UV no effect. Per-treatment numbers only in full PDF (UNVERIFIED). LOD <=0.02, LOQ <=0.05 ug/kg."
+  },
+  {
+   "container": "BOPET/LLDPE and BOPET/Al/LLDPE pouches, solvent-free PU adhesive (aromatic vs aliphatic isocyanate)",
+   "food_or_simulant": "3% acetic acid",
+   "conditions": {
+    "temp_C": 60,
+    "time_min": 14400,
+    "microwave_W": null
+   },
+   "substance": "aniline",
+   "value": {
+    "min": 5.52,
+    "max": 32.38
+   },
+   "unit": "ng/mL",
+   "per": "mL simulant",
+   "source": "Ramey RF (2020) MSc thesis, Clemson University, https://open.clemson.edu/all_theses/3286",
+   "status": "VERIFIED (abstract). Highest with foil + aromatic adhesive, lowest aliphatic/no foil. Abstract also says all totals <10 ng/g, which conflicts with 32.38 ng/mL; treat max as UNVERIFIED.",
+   "use": "measurement-based"
+  },
+  {
+   "container": "147 market laminated food bags",
+   "food_or_simulant": "food simulants (single-side)",
+   "conditions": {
+    "temp_C": 60,
+    "time_min": 14400,
+    "microwave_W": null
+   },
+   "substance": "PAA (mainly 4,4'-, 2,4'-, 2,2'-MDA)",
+   "value": "about 3% of bags non-compliant",
+   "unit": "fraction",
+   "per": "bags",
+   "source": "Ma J-J, Wang Z-W, Xu J, Hu C-Y, Qiu T-C, Huang Z-Y (2022) Food Packaging and Shelf Life 33:100875, https://agris.fao.org/search/ar/records/65df2f6563b8185d9cab79ad",
+   "status": "VERIFIED (abstract). Autoclave 121 C 15 min increased 4,4'- and 2,4'-MDA migration; gamma irradiation decreased it. No concentrations on page.",
+   "use": "qualitative"
+  },
+  {
+   "container": "20 multilayer packages with PU adhesive",
+   "food_or_simulant": "not stated on page",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "cyclic polyester-urethane oligomers AA-DEG and AA-DEG-IPA-DEG",
+   "value": ">10",
+   "unit": "ng/g (ug/kg)",
+   "per": "kg food/simulant",
+   "source": "Ubeda S et al. (2020) Food Chemistry 311:125918, doi:10.1016/j.foodchem.2019.125918, https://zaguan.unizar.es/record/130770",
+   "status": "VERIFIED that migration exceeded 10 ng/g; actual values UNVERIFIED. Weak androgen-receptor antagonism in vitro.",
+   "use": "qualitative"
+  },
+  {
+   "container": "45 market laminates incl. 11 PU-adhesive laminates",
+   "food_or_simulant": "isooctane (20 C, 2 d) and Tenax (40 C, 10 d)",
+   "conditions": {
+    "temp_C": 40,
+    "time_min": 14400,
+    "microwave_W": null
+   },
+   "substance": "PU adipate-type unknowns (NIAS from polyester polyol)",
+   "value": {
+    "min": 0.02,
+    "max": 0.2
+   },
+   "unit": "mg/kg",
+   "per": "kg simulant",
+   "source": "Aznar M, Vera P, Canellas E, Nerin C, Mercea P, Stormer A (2011) J Mater Chem 21:4358, doi:10.1039/C0JM04136J, full text https://zaguan.unizar.es/record/149756/files/texto_completo.pdf ; landing https://pubs.rsc.org/en/Content/ArticleLanding/2011/JM/C0JM04136J",
+   "status": "VERIFIED (full text). PU phthalate-type unknowns 0.0004-0.03 mg/kg; pasteurisation 75 C 10 min had no significant effect. EDIs below Cramer thresholds.",
+   "use": "measurement-based"
+  },
+  {
+   "container": "PP sheet (antioxidant-loaded)",
+   "food_or_simulant": "95% ethanol and others (FDA conditions)",
+   "conditions": {
+    "temp_C": 121,
+    "time_min": null,
+    "microwave_W": 700
+   },
+   "substance": "BHT, Irganox 1010",
+   "value": null,
+   "unit": null,
+   "per": null,
+   "source": "Kang K, Chang Y, Choi JC, Park S-J, Han J (2018) J Food Sci 83(4):1005-1010, doi:10.1111/1750-3841.14104, https://scholar.korea.ac.kr/handle/2021.sw.korea/76213?mode=full ; Chang Y, Kang K, Park S-J, Choi JC, Kim M, Han J (2019) J Food Eng 244:142-149, doi:10.1016/j.jfoodeng.2018.09.028, https://scholar.korea.ac.kr/handle/2021.sw.korea/67163?mode=full",
+   "status": "VERIFIED qualitative only: autoclave 121 C raised migration most; freezing -30 C also raised it; 700 W microwave tested. Model predictions 1.5-2x experimental. No numbers on page.",
+   "use": "model-validation (qualitative)"
+  },
+  {
+   "container": "PVC wrap film in tight contact with pizza, microwave reheating",
+   "food_or_simulant": "pizza",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "DEHA",
+   "value": 158.8,
+   "unit": "mg/kg",
+   "per": "kg food (max)",
+   "source": "Lee Y-H, Gyoung Y-S, Lee K-T (2002) Korean J Food Sci Technol 34(6):969-976, https://koreascience.or.kr/article/JAKO200203042155771.page?&lang=en",
+   "status": "VERIFIED (abstract). Rice and potato: not detected. Power/time not given. Gap between film and food lowered migration.",
+   "use": "measurement-based"
+  },
+  {
+   "container": "PVC wrap on delivered dishes (Korea)",
+   "food_or_simulant": "takeaway dishes",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "DEHA",
+   "value": {
+    "min": 6.9,
+    "max": 29.8
+   },
+   "unit": "mg/kg",
+   "per": "kg food",
+   "source": "Lee Y-H, Gyoung Y-S, Lee K-T (2002) Korean J Food Sci Technol 34(6):969-976, https://koreascience.or.kr/article/JAKO200203042155771.page?&lang=en",
+   "status": "VERIFIED (abstract); storage/delivery, not microwave. Pork belly 10-20 C up to 3 d: max 22.9 mg/kg.",
+   "use": "measurement-based"
+  },
+  {
+   "container": "PVC film (food grade) in microwave",
+   "food_or_simulant": "olive oil",
+   "conditions": {
+    "temp_C": null,
+    "time_min": 10,
+    "microwave_W": "full power (W not stated)"
+   },
+   "substance": "DEHA (DOA)",
+   "value": 604.6,
+   "unit": "mg/L",
+   "per": "L oil (plateau)",
+   "source": "Badeka AB, Kontominas MG (1996) Z Lebensm Unters Forsch 202:313-317, doi:10.1007/BF01206103, https://link.springer.com/doi/10.1007/BF01206103",
+   "status": "VERIFIED (abstract)."
+  },
+  {
+   "container": "PVC film (food grade) in microwave",
+   "food_or_simulant": "distilled water",
+   "conditions": {
+    "temp_C": null,
+    "time_min": 8,
+    "microwave_W": "full power"
+   },
+   "substance": "DEHA (DOA)",
+   "value": 74.1,
+   "unit": "mg/L",
+   "per": "L water",
+   "source": "Badeka AB, Kontominas MG (1996) Z Lebensm Unters Forsch 202:313-317, doi:10.1007/BF01206103, https://link.springer.com/doi/10.1007/BF01206103",
+   "status": "VERIFIED (abstract)."
+  },
+  {
+   "container": "PVDC/PVC (Saran) film in microwave",
+   "food_or_simulant": "olive oil",
+   "conditions": {
+    "temp_C": null,
+    "time_min": 10,
+    "microwave_W": "full power"
+   },
+   "substance": "ATBC",
+   "value": 73.9,
+   "unit": "mg/L",
+   "per": "L oil (plateau)",
+   "source": "Badeka AB, Kontominas MG (1996) Z Lebensm Unters Forsch 202:313-317, doi:10.1007/BF01206103, https://link.springer.com/doi/10.1007/BF01206103",
+   "status": "VERIFIED (abstract)."
+  },
+  {
+   "container": "PVDC/PVC (Saran) film in microwave",
+   "food_or_simulant": "distilled water",
+   "conditions": {
+    "temp_C": null,
+    "time_min": 8,
+    "microwave_W": "full power"
+   },
+   "substance": "ATBC",
+   "value": 4.1,
+   "unit": "mg/L",
+   "per": "L water",
+   "source": "Badeka AB, Kontominas MG (1996) Z Lebensm Unters Forsch 202:313-317, doi:10.1007/BF01206103, https://link.springer.com/doi/10.1007/BF01206103",
+   "status": "VERIFIED (abstract)."
+  },
+  {
+   "container": "PVC film wrapped pizza, microwave without susceptor",
+   "food_or_simulant": "pizza",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "DEHA (DOA)",
+   "value": 51.42,
+   "unit": "mg/kg",
+   "per": "kg food",
+   "source": "Badeka AB, Pappa K, Kontominas MG (1999) Z Lebensm Unters Forsch A (Eur Food Res Technol), microwave vs conventional heating, pizza and sausages, https://olympias.lib.uoi.gr/jspui/handle/123456789/10518?mode=full",
+   "status": "VERIFIED (abstract). With susceptor 75.52; conventional oven 105.12 mg/kg."
+  },
+  {
+   "container": "PVC film wrapped frankfurter sausage, microwave without susceptor",
+   "food_or_simulant": "sausage",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "DEHA (DOA)",
+   "value": 37.98,
+   "unit": "mg/kg",
+   "per": "kg food",
+   "source": "Badeka AB, Pappa K, Kontominas MG (1999) Z Lebensm Unters Forsch A (Eur Food Res Technol), microwave vs conventional heating, pizza and sausages, https://olympias.lib.uoi.gr/jspui/handle/123456789/10518?mode=full",
+   "status": "VERIFIED (abstract). With susceptor 47.69; conventional oven 85.01 mg/kg."
+  },
+  {
+   "container": "PVDC/VC film wrapped pizza, microwave without susceptor",
+   "food_or_simulant": "pizza",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "ATBC",
+   "value": 6.25,
+   "unit": "mg/kg",
+   "per": "kg food",
+   "source": "Badeka AB, Pappa K, Kontominas MG (1999) Z Lebensm Unters Forsch A (Eur Food Res Technol), microwave vs conventional heating, pizza and sausages, https://olympias.lib.uoi.gr/jspui/handle/123456789/10518?mode=full",
+   "status": "VERIFIED (abstract). With susceptor 7.73; conventional oven 31.18 mg/kg."
+  },
+  {
+   "container": "PVDC/VC film wrapped sausage, microwave without susceptor",
+   "food_or_simulant": "sausage",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "ATBC",
+   "value": 5.17,
+   "unit": "mg/kg",
+   "per": "kg food",
+   "source": "Badeka AB, Pappa K, Kontominas MG (1999) Z Lebensm Unters Forsch A (Eur Food Res Technol), microwave vs conventional heating, pizza and sausages, https://olympias.lib.uoi.gr/jspui/handle/123456789/10518?mode=full",
+   "status": "VERIFIED (abstract). With susceptor 7.02; conventional oven 25.37 mg/kg."
+  },
+  {
+   "container": "PVC film on ground meat (55% fat), microwave",
+   "food_or_simulant": "ground meat",
+   "conditions": {
+    "temp_C": null,
+    "time_min": 4,
+    "microwave_W": "full power"
+   },
+   "substance": "DEHA (DOA)",
+   "value": 172.39,
+   "unit": "mg/kg",
+   "per": "kg food (= 14.62 mg/dm2)",
+   "source": "Badeka AB, Kontominas MG (1999) Z Lebensm Unters Forsch A, microwave heating into ground meat, https://olympias.lib.uoi.gr/jspui/handle/123456789/10516?mode=full",
+   "status": "VERIFIED (abstract). Equilibrium not reached at 4 min. Fat 3/12/30% also tested (values not on page)."
+  },
+  {
+   "container": "PVDC/PVC film on ground meat (55% fat), microwave",
+   "food_or_simulant": "ground meat",
+   "conditions": {
+    "temp_C": null,
+    "time_min": 4,
+    "microwave_W": "full power"
+   },
+   "substance": "ATBC",
+   "value": 17.24,
+   "unit": "mg/kg",
+   "per": "kg food (= 0.62 mg/dm2)",
+   "source": "Badeka AB, Kontominas MG (1999) Z Lebensm Unters Forsch A, microwave heating into ground meat, https://olympias.lib.uoi.gr/jspui/handle/123456789/10516?mode=full",
+   "status": "VERIFIED (abstract)."
+  },
+  {
+   "container": "PVDC-VC copolymer film, microwave cooking",
+   "food_or_simulant": "peanut-containing cookies",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "ATBC",
+   "value": 79.8,
+   "unit": "mg/kg",
+   "per": "kg food (max)",
+   "source": "US CPSC staff, Toxicity Review of ATBC (citing Sheftel 2000 via Versar 2010), https://www.cpsc.gov/s3fs-public/Toxicity%20Review%20of%20ATBC.pdf",
+   "status": "SECONDARY (CPSC citing Sheftel 2000 via Versar 2010). Soup with minimal contact: 0.4 mg/kg. Original study (probably Castle et al. 1988) UNVERIFIED."
+  },
+  {
+   "container": "PVC cling film on cheese, storage 5 C (not microwave; diffusion validation)",
+   "food_or_simulant": "Kefalotyri cheese",
+   "conditions": {
+    "temp_C": 5,
+    "time_min": 14400,
+    "microwave_W": null
+   },
+   "substance": "DEHA",
+   "value": 345.4,
+   "unit": "mg/kg",
+   "per": "kg food (= 18.9 mg/dm2, 37.8% of film DEHA)",
+   "source": "Goulas AE, Anifantaki KI, Kolioulis DG, Kontominas MG (2000) J Dairy Sci (PII S0022030200750405), https://olympias2.lib.uoi.gr/items/cabfa782-c73d-4000-a693-0d835b20c8b6/full",
+   "status": "VERIFIED. Edam 222.5 mg/kg (12.2 mg/dm2), Feta 133.9 mg/kg (7.3 mg/dm2)."
+  },
+  {
+   "container": "PVC cling-wrapped retail cheese (US 1997, n=7)",
+   "food_or_simulant": "cheese",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "DEHA",
+   "value": {
+    "min": 51,
+    "mean": 153,
+    "max": 270
+   },
+   "unit": "mg/kg",
+   "per": "kg food",
+   "source": "Consumers Union letter/report to FDA, 5 June 1998, https://advocacy.consumerreports.org/press_release/report-to-the-fda-regarding-plastic-packaging",
+   "status": "VERIFIED (surface max 484 mg/kg)."
+  },
+  {
+   "container": "PVC cling films (DK market)",
+   "food_or_simulant": "water",
+   "conditions": {
+    "temp_C": null,
+    "time_min": null,
+    "microwave_W": null
+   },
+   "substance": "DEHA",
+   "value": 0.1,
+   "unit": "mg/dm2 (upper bound)",
+   "per": "dm2",
+   "source": "Petersen JH, Lillemark L, Lund L (1997) Food Addit Contam 14(4):345-353, https://orbit.dtu.dk/en/publications/migration-from-pvc-cling-films-compared-with-their-field-of-appli/",
+   "status": "VERIFIED: water <=0.1 mg/dm2 for all films; 77% of films used for fatty foods exceeded 3 mg DEHA/dm2 (iso-octane test)."
+  },
+  {
+   "container": "PP soup cup with lidding film, microwave (label 750-1000 W, 3-4 min)",
+   "food_or_simulant": "ready-to-eat vegetable soups (n=11)",
+   "conditions": {
+    "temp_C": ">60 to >80 (final)",
+    "time_min": 4,
+    "microwave_W": 900
+   },
+   "substance": "POSH/POH oligomers C10-C35 (net)",
+   "value": {
+    "min": 0.1,
+    "max": 6.2
+   },
+   "unit": "mg/kg",
+   "per": "kg food",
+   "source": "Conchione C, Lucci P, Moret S (2020) Foods 9(10):1365, doi:10.3390/foods9101365, https://www.mdpi.com/2304-8158/9/10/1365",
+   "status": "VERIFIED. Same soup at 900 W: 0.4 mg/kg after 3 min, 1.4 mg/kg after 6 min. Rigid PP (cross-reference)."
+  }
+ ],
+ "tox": [
+  {
+   "substance": "DEHA (di(2-ethylhexyl) adipate)",
+   "agency": "EU Scientific Committee on Food (SCF), reconfirmed 2000",
+   "value": 0.3,
+   "unit": "mg/kg bw/day (TDI)",
+   "year": 2000,
+   "basis": "NOEL 30 mg/kg bw foetotoxicity (rat)",
+   "source": "SCF opinion on DEHA intake survey, SCF/CS/PM/3276 final, 19 Oct 2000, https://ec.europa.eu/food/fs/sc/scf/out77_en.pdf"
+  },
+  {
+   "substance": "ATBC (acetyl tributyl citrate)",
+   "agency": "EFSA AFC Panel (10th list of FCM substances, EFSA Journal 273)",
+   "value": 1,
+   "unit": "mg/kg bw/day (ADI)",
+   "year": 2005,
+   "basis": "not read",
+   "source": "LANUV NRW substance sheet Acetyltributylcitrat (citing EFSA Journal 2005, 273, AFC 10th list), https://lanuk.nrw.de/fileadmin/lanuv/analytik/non_target/18_Acetyltributylcitrat_englisch.pdf",
+   "status": "SECONDARY (EFSA original not opened)"
+  },
+  {
+   "substance": "ESBO (epoxidised soybean oil)",
+   "agency": "EU SCF (cited in Reg. 372/2007)",
+   "value": 1,
+   "unit": "mg/kg bw/day (TDI)",
+   "year": 1999,
+   "source": "Commission Regulation (EC) No 372/2007, recitals 1-9, https://www.legislation.gov.uk/eur/2007/372/introduction/data.html"
+  },
+  {
+   "substance": "Irgafos 168 and its degradants (incl. I-168 phosphate 'I-168ate')",
+   "agency": "US FDA CFSAN",
+   "value": 1,
+   "unit": "mg/kg bw/day (ADI; = 20 ppm in diet)",
+   "year": 2021,
+   "basis": "NOEL 2000 ppm, 2-yr rat chronic/carcinogenicity, SF 100. CEDI 1.8 ppb in diet (= 0.09 ug/kg bw/day for 60 kg, 3 kg food/day; page summary said mg, DERIVED correction).",
+   "source": "Markley L, Ogungbesan A, Gonzalez-Bonet A, Bandele O, Bailey A, Patton G, FDA Science Forum 2021, 'Updated safety assessment of tris(2,4-di-tert-butylphenyl) phosphite (Irgafos 168) used in food contact', https://www.fda.gov/science-research/fda-science-forum/updated-safety-assessment-tris24-di-tert-butylphenyl-phosphite-irgafos-168-used-food-contact"
+  },
+  {
+   "substance": "2,4-di-tert-butylphenol (2,4-DTBP)",
+   "agency": "none found",
+   "value": null,
+   "unit": null,
+   "year": null,
+   "basis": "No agency TDI found. FDA 2021 ADI for Irgafos 168 explicitly covers I-168 phosphate; whether 2,4-DTBP is covered UNVERIFIED. Fallback: Cramer-class TTC (see below).",
+   "source": "Markley L, Ogungbesan A, Gonzalez-Bonet A, Bandele O, Bailey A, Patton G, FDA Science Forum 2021, 'Updated safety assessment of tris(2,4-di-tert-butylphenyl) phosphite (Irgafos 168) used in food contact', https://www.fda.gov/science-research/fda-science-forum/updated-safety-assessment-tris24-di-tert-butylphenyl-phosphite-irgafos-168-used-food-contact"
+  },
+  {
+   "substance": "Cramer class III TTC (unlisted NIAS, e.g., cyclic adhesive oligomers)",
+   "agency": "Munro/Cramer thresholds as applied by Aznar et al.",
+   "value": 1.5,
+   "unit": "ug/kg bw/day (= 0.09 mg/person/day / 60 kg, DERIVED)",
+   "year": 2011,
+   "source": "Aznar M, Vera P, Canellas E, Nerin C, Mercea P, Stormer A (2011) J Mater Chem 21:4358, doi:10.1039/C0JM04136J, full text https://zaguan.unizar.es/record/149756/files/texto_completo.pdf ; landing https://pubs.rsc.org/en/Content/ArticleLanding/2011/JM/C0JM04136J"
+  },
+  {
+   "substance": "Cramer class II TTC",
+   "agency": "as applied by Aznar et al.",
+   "value": 9,
+   "unit": "ug/kg bw/day (= 0.54 mg/person/day / 60 kg, DERIVED)",
+   "year": 2011,
+   "source": "Aznar M, Vera P, Canellas E, Nerin C, Mercea P, Stormer A (2011) J Mater Chem 21:4358, doi:10.1039/C0JM04136J, full text https://zaguan.unizar.es/record/149756/files/texto_completo.pdf ; landing https://pubs.rsc.org/en/Content/ArticleLanding/2011/JM/C0JM04136J"
+  },
+  {
+   "substance": "Cramer class I TTC; TTC for genotoxic alerts",
+   "agency": "EFSA 2019 TTC guidance",
+   "value": {
+    "class_I": 30,
+    "genotoxic_alert": 0.0025
+   },
+   "unit": "ug/kg bw/day",
+   "year": 2019,
+   "source": "UNVERIFIED (not opened this session; web search budget ran out)"
+  },
+  {
+   "substance": "Primary aromatic amines (4,4'-MDA, 2,4-TDA, aniline)",
+   "agency": "EU (Reg. 2020/1245)",
+   "value": null,
+   "unit": "no TDI; genotoxic carcinogens handled by non-detect limit 0.002 mg/kg food per listed PAA",
+   "year": 2020,
+   "source": "TUV SUD e-ssentials 14/2020 on Regulation (EU) 2020/1245, https://www.tuvsud.com/en-gb/e-ssentials-newsletter/consumer-products-and-retail-essentials/e-ssentials-14-2020/eu-regulation-2020-1245-amends-regulation-no-10-2011-on-plastic-materials-and-articles-of-fcm"
+  },
+  {
+   "substance": "Erucamide",
+   "agency": "none found",
+   "value": null,
+   "unit": null,
+   "year": null,
+   "source": "UNVERIFIED: believed authorised in Reg. 10/2011 without SML; not confirmed this session."
+  }
+ ],
+ "regulatory": [
+  {
+   "rule": "EU Reg. 10/2011 Annex II as amended by Reg. (EU) 2020/1245: PAAs listed in REACH Annex XVII entry 43 appendix 8 must not be detected, detection limit 0.002 mg/kg food or simulant per individual PAA; sum of other PAAs <= 0.01 mg/kg food or simulant. Published 3 Sep 2020, in force 23 Sep 2020; old-rule materials placed on market before 23 Mar 2021 allowed until 23 Sep 2022.",
+   "source": "TUV SUD e-ssentials 14/2020 on Regulation (EU) 2020/1245, https://www.tuvsud.com/en-gb/e-ssentials-newsletter/consumer-products-and-retail-essentials/e-ssentials-14-2020/eu-regulation-2020-1245-amends-regulation-no-10-2011-on-plastic-materials-and-articles-of-fcm",
+   "status": "VERIFIED (secondary: TUV SUD; EUR-Lex blocked by robots.txt)"
+  },
+  {
+   "rule": "DEHA specific migration limit 18 mg/kg food (industry request for 60 mg/kg not endorsed, 2000)",
+   "source": "SCF opinion on DEHA intake survey, SCF/CS/PM/3276 final, 19 Oct 2000, https://ec.europa.eu/food/fs/sc/scf/out77_en.pdf",
+   "status": "VERIFIED"
+  },
+  {
+   "rule": "DEHA 3 mg/dm2 limit used for cling film compliance",
+   "source": "Petersen JH, Lillemark L, Lund L (1997) Food Addit Contam 14(4):345-353, https://orbit.dtu.dk/en/publications/migration-from-pvc-cling-films-compared-with-their-field-of-appli/ ; Lee Y-H, Gyoung Y-S, Lee K-T (2002) Korean J Food Sci Technol 34(6):969-976, https://koreascience.or.kr/article/JAKO200203042155771.page?&lang=en",
+   "status": "VERIFIED as cited by the studies"
+  },
+  {
+   "rule": "ESBO SML 60 mg/kg food (Directive 2002/72/EC), derived from TDI 1 mg/kg bw",
+   "source": "Commission Regulation (EC) No 372/2007, recitals 1-9, https://www.legislation.gov.uk/eur/2007/372/introduction/data.html",
+   "status": "VERIFIED"
+  },
+  {
+   "rule": "EU overall migration limit 10 mg/dm2 or 60 mg/kg food",
+   "source": "Goulas AE, Anifantaki KI, Kolioulis DG, Kontominas MG (2000) J Dairy Sci (PII S0022030200750405), https://olympias2.lib.uoi.gr/items/cabfa782-c73d-4000-a693-0d835b20c8b6/full",
+   "status": "VERIFIED as cited"
+  },
+  {
+   "rule": "Irganox 1076 SML 6 mg/kg; N,N-bis(2-hydroxyethyl)(C8-C18)alkylamine sum SML 1.2 mg/kg",
+   "source": "Vera P et al. (2018) Talanta, 'Identification of non volatile migrant compounds and NIAS in polypropylene films used as food packaging characterized by UPLC-MS/QTOF' (PII S0039914018306271), summary https://foodpackagingforum.org/news/nias-in-polypropylene-films",
+   "status": "VERIFIED (secondary)"
+  },
+  {
+   "rule": "10 ng/g (0.01 mg/kg) threshold used for unlisted substances (cited by Ubeda 2020 as the 10/2011 limit for cyclic adhesive oligomers; in 10/2011 it applies to non-authorised substances behind a functional barrier)",
+   "source": "Ubeda S et al. (2020) Food Chemistry 311:125918, doi:10.1016/j.foodchem.2019.125918, https://zaguan.unizar.es/record/130770",
+   "status": "VERIFIED that the paper used 10 ng/g; legal interpretation UNVERIFIED"
+  },
+  {
+   "rule": "USDA FSIS: do not let plastic wrap touch foods during microwaving (already in constants.json fsis)",
+   "source": "constants.json -> fsis",
+   "status": "VERIFIED earlier"
+  }
+ ],
+ "notes": [
+  "Model mapping. Diffusion-model ready: (a) PVC cling film DEHA c_P0 = 283,000 mg/kg, L ~14 um (DERIVED), with Goulas cheese and Badeka microwave data as validation; (b) PP/CPP sealant Irgafos 168 c_P0 166-845 mg/kg (n=6) with sealant thickness 12.7-31.8 um (steam bag patent), 60 um (transparent retort PP), 75-87.5 um (foil retort CPP), PP density 0.90 g/cm3 from constants.json. In the Pliant steam-bag design both the sealant and the PP core are polypropylene, so a single PP slab of 32-95 um is a reasonable worst case.",
+  "Measurement-based: PAA (4,4'-MDA 2.7-3.1 ug/kg after 121 C 15 min), PU adipate NIAS 0.02-0.2 mg/kg, DEHA/ATBC microwave values (mg/kg food), POSH from microwaved soup cups.",
+  "Steam bags reach ~95-102 C food temperature after 4 min (patent Example 1); use T = 100 C and t = 4-6 min in the model, sealant in contact with wet, mostly non-fatty vegetables (aqueous simulant; fat only from butter sauces).",
+  "Retort pouches are already heated at 121-135 C for 15-30 min during manufacture, so part of the migration happens before purchase; microwave reheating (1-2 min) adds a smaller increment. No study found that measured migration from a microwaved shelf-stable rice pouch.",
+  "No peer-reviewed migration measurement specific to Birds Eye Steamfresh/Green Giant steam bags was found. Treat steam-bag numbers as model estimates from the PP sealant inputs.",
+  "DOA in Badeka papers = dioctyl adipate = DEHA (di(2-ethylhexyl) adipate).",
+  "Badeka 1996 olive-oil values are mg/L simulant, not mg/kg food; they are much higher than real-food values (51-172 mg/kg). Use food values for the app.",
+  "UNVERIFIED / not read: Startin et al. 1987 Food Addit Contam 4(4):385-398 (DEHA from PVC films during home use and microwave cooking) and Castle et al. 1987/1988 parts 2-3; the Taylor & Francis page failed to load and the Europe PMC API returned HTTP 429, so their numbers are not in this file.",
+  "Access problems this session: Europe PMC REST API (rate limited, HTTP 429), tandfonline.com (fetch error), EUR-Lex (robots disallowed), publica.fraunhofer.de (access denied). The shared WebSearch budget ran out near the end, so Hussain et al. 2023 (microplastics from microwaved PE food pouches) and EFSA TTC guidance were not checked.",
+  "Consumer Reports 1998 DEHA content (0.5-2.2%) disagrees with Goulas 2000 (28.3%). Prefer Goulas for c_P0."
+ ]
+}

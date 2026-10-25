@@ -1,0 +1,602 @@
+{
+"out/_preview_objects.png": [
+2000,
+660
+],
+"out/_preview_zappy.png": [
+2128,
+352
+],
+"out/_preview_brand.png": [
+944,
+336
+],
+"out/_preview_icons.png": [
+1944,
+200
+],
+"out/objects/meal_box@6x.png": [
+180,
+138
+],
+"out/objects/stove.png": [
+34,
+38
+],
+"out/objects/air_fryer.png": [
+22,
+25
+],
+"out/objects/plant.png": [
+13,
+20
+],
+"out/objects/sparkle@8x.png": [
+72,
+72
+],
+"out/objects/shelf@8x.png": [
+576,
+64
+],
+"out/objects/window@8x.png": [
+416,
+320
+],
+"out/objects/cpet_tray.png": [
+24,
+9
+],
+"out/objects/fridge@6x.png": [
+228,
+432
+],
+"out/objects/pot@8x.png": [
+208,
+136
+],
+"out/objects/meal_box@8x.png": [
+240,
+184
+],
+"out/objects/cpet_tray@8x.png": [
+192,
+72
+],
+"out/objects/window.png": [
+52,
+40
+],
+"out/objects/glass_box.png": [
+20,
+13
+],
+"out/objects/stove@8x.png": [
+272,
+304
+],
+"out/objects/wall_clock.png": [
+15,
+15
+],
+"out/objects/sparkle@6x.png": [
+54,
+54
+],
+"out/objects/lamp.png": [
+16,
+17
+],
+"out/objects/foam_box@6x.png": [
+132,
+78
+],
+"out/objects/plates.png": [
+26,
+10
+],
+"out/objects/shelf@6x.png": [
+432,
+48
+],
+"out/objects/plates@6x.png": [
+156,
+60
+],
+"out/objects/stove@6x.png": [
+204,
+228
+],
+"out/objects/fridge.png": [
+38,
+72
+],
+"out/objects/window@6x.png": [
+312,
+240
+],
+"out/objects/plant@8x.png": [
+104,
+160
+],
+"out/objects/pp_cup@6x.png": [
+72,
+90
+],
+"out/objects/plates@8x.png": [
+208,
+80
+],
+"out/objects/air_fryer@6x.png": [
+132,
+150
+],
+"out/objects/meal_box.png": [
+30,
+23
+],
+"out/objects/lamp@6x.png": [
+96,
+102
+],
+"out/objects/lamp@8x.png": [
+128,
+136
+],
+"out/objects/glass_box@6x.png": [
+120,
+78
+],
+"out/objects/air_fryer@8x.png": [
+176,
+200
+],
+"out/objects/sparkle.png": [
+9,
+9
+],
+"out/objects/plant@6x.png": [
+78,
+120
+],
+"out/objects/cpet_tray@6x.png": [
+144,
+54
+],
+"out/objects/pot@6x.png": [
+156,
+102
+],
+"out/objects/pot.png": [
+26,
+17
+],
+"out/objects/fridge@8x.png": [
+304,
+576
+],
+"out/objects/wall_clock@8x.png": [
+120,
+120
+],
+"out/objects/shelf.png": [
+72,
+8
+],
+"out/objects/foam_box@8x.png": [
+176,
+104
+],
+"out/objects/glass_box@8x.png": [
+160,
+104
+],
+"out/objects/wall_clock@6x.png": [
+90,
+90
+],
+"out/objects/pp_cup.png": [
+12,
+15
+],
+"out/objects/foam_box.png": [
+22,
+13
+],
+"out/objects/pp_cup@8x.png": [
+96,
+120
+],
+"out/scene/kitchen@2x.png": [
+392,
+432
+],
+"out/scene/kitchen_clean@4x.png": [
+784,
+864
+],
+"out/scene/kitchen@6x.png": [
+1176,
+1296
+],
+"out/scene/kitchen.png": [
+196,
+216
+],
+"out/scene/kitchen_clean@6x.png": [
+1176,
+1296
+],
+"out/scene/kitchen@4x.png": [
+784,
+864
+],
+"out/brand/zapwise_wordmark.png": [
+71,
+21
+],
+"out/brand/app_icon_32.png": [
+32,
+32
+],
+"out/brand/zapwise_wordmark@8x.png": [
+568,
+168
+],
+"out/brand/app_icon_1024.png": [
+1024,
+1024
+],
+"out/mascot/zappy_celebrate@8x.png": [
+360,
+272
+],
+"out/mascot/zappy_sleepy@8x.png": [
+312,
+272
+],
+"out/mascot/zappy_celebrate.png": [
+45,
+34
+],
+"out/mascot/zappy_sleepy.png": [
+39,
+34
+],
+"out/mascot/zappy_worried.png": [
+39,
+34
+],
+"out/mascot/zappy_neutral@8x.png": [
+272,
+272
+],
+"out/mascot/zappy_happy@8x.png": [
+272,
+272
+],
+"out/mascot/zappy_thinking@8x.png": [
+320,
+272
+],
+"out/mascot/zappy_neutral.png": [
+34,
+34
+],
+"out/mascot/zappy_thinking.png": [
+40,
+34
+],
+"out/mascot/zappy_worried@8x.png": [
+312,
+272
+],
+"out/mascot/zappy_happy.png": [
+34,
+34
+],
+"out/deck/scale_bad.png": [
+120,
+78
+],
+"out/deck/scale_good.png": [
+120,
+78
+],
+"out/deck/zappy_grid.png": [
+816,
+816
+],
+"out/icons/kitchen@2x.png": [
+32,
+32
+],
+"out/icons/log@4x.png": [
+64,
+64
+],
+"out/icons/quest@2x.png": [
+32,
+32
+],
+"out/icons/info@4x.png": [
+64,
+64
+],
+"out/icons/me@4x.png": [
+64,
+64
+],
+"out/icons/heart.png": [
+16,
+16
+],
+"out/icons/info@2x.png": [
+32,
+32
+],
+"out/icons/flame@4x.png": [
+64,
+64
+],
+"out/icons/log@2x.png": [
+32,
+32
+],
+"out/icons/alert@8x.png": [
+128,
+128
+],
+"out/icons/container@2x.png": [
+32,
+32
+],
+"out/icons/camera.png": [
+16,
+16
+],
+"out/icons/check.png": [
+16,
+16
+],
+"out/icons/log@8x.png": [
+128,
+128
+],
+"out/icons/star@4x.png": [
+64,
+64
+],
+"out/icons/container.png": [
+16,
+16
+],
+"out/icons/me@8x.png": [
+128,
+128
+],
+"out/icons/kitchen@8x.png": [
+128,
+128
+],
+"out/icons/timer@2x.png": [
+32,
+32
+],
+"out/icons/star.png": [
+16,
+16
+],
+"out/icons/heart@4x.png": [
+64,
+64
+],
+"out/icons/timer@4x.png": [
+64,
+64
+],
+"out/icons/flame@8x.png": [
+128,
+128
+],
+"out/icons/timer.png": [
+16,
+16
+],
+"out/icons/learn@4x.png": [
+64,
+64
+],
+"out/icons/swap@4x.png": [
+64,
+64
+],
+"out/icons/kitchen.png": [
+16,
+16
+],
+"out/icons/quest@4x.png": [
+64,
+64
+],
+"out/icons/heart@8x.png": [
+128,
+128
+],
+"out/icons/alert@2x.png": [
+32,
+32
+],
+"out/icons/learn@8x.png": [
+128,
+128
+],
+"out/icons/alert.png": [
+16,
+16
+],
+"out/icons/heart@2x.png": [
+32,
+32
+],
+"out/icons/camera@2x.png": [
+32,
+32
+],
+"out/icons/info@8x.png": [
+128,
+128
+],
+"out/icons/plate@8x.png": [
+128,
+128
+],
+"out/icons/quest.png": [
+16,
+16
+],
+"out/icons/camera@8x.png": [
+128,
+128
+],
+"out/icons/log.png": [
+16,
+16
+],
+"out/icons/star@8x.png": [
+128,
+128
+],
+"out/icons/plate@2x.png": [
+32,
+32
+],
+"out/icons/swap@2x.png": [
+32,
+32
+],
+"out/icons/learn.png": [
+16,
+16
+],
+"out/icons/check@8x.png": [
+128,
+128
+],
+"out/icons/container@4x.png": [
+64,
+64
+],
+"out/icons/quest@8x.png": [
+128,
+128
+],
+"out/icons/me@2x.png": [
+32,
+32
+],
+"out/icons/timer@8x.png": [
+128,
+128
+],
+"out/icons/swap.png": [
+16,
+16
+],
+"out/icons/plate.png": [
+16,
+16
+],
+"out/icons/me.png": [
+16,
+16
+],
+"out/icons/alert@4x.png": [
+64,
+64
+],
+"out/icons/check@2x.png": [
+32,
+32
+],
+"out/icons/container@8x.png": [
+128,
+128
+],
+"out/icons/check@4x.png": [
+64,
+64
+],
+"out/icons/flame.png": [
+16,
+16
+],
+"out/icons/star@2x.png": [
+32,
+32
+],
+"out/icons/camera@4x.png": [
+64,
+64
+],
+"out/icons/flame@2x.png": [
+32,
+32
+],
+"out/icons/plate@4x.png": [
+64,
+64
+],
+"out/icons/kitchen@4x.png": [
+64,
+64
+],
+"out/icons/swap@8x.png": [
+128,
+128
+],
+"out/icons/learn@2x.png": [
+32,
+32
+],
+"out/icons/info.png": [
+16,
+16
+],
+"out/screens/result.png": [
+786,
+1704
+],
+"out/screens/comp_type.png": [
+1240,
+528
+],
+"out/screens/comp_ctas.png": [
+1520,
+232
+],
+"out/screens/comp_controls.png": [
+1872,
+224
+],
+"out/screens/comp_surfaces.png": [
+1420,
+372
+],
+"out/screens/recipe.png": [
+786,
+1704
+],
+"out/screens/comp_tabs.png": [
+842,
+264
+],
+"out/screens/comp_chips.png": [
+1330,
+248
+],
+"out/screens/home.png": [
+786,
+1704
+]
+}

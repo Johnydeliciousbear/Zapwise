@@ -1,0 +1,1204 @@
+{
+  "_meta": {
+    "created": "2026-10-14",
+    "scope": "ZapWise paper-based containers: PE-lined cups/bowls, PET-coated/molded fiber trays and bowls, microwave popcorn bags/susceptors",
+    "status_legend": "VERIFIED = number read on the cited page this session; VERIFIED_UNIT_RECONCILED = units corrected by arithmetic within the same source; PARTIAL/SECONDARY = from summary or ambiguous; DERIVED/COMPUTED = calculated here; UNVERIFIED = not confirmed this session"
+  },
+  "layers": [
+    {
+      "container": "paper cup (hot drink / noodle / soup cupstock)",
+      "layer": "PE coating, food-contact (reverse) side",
+      "thickness_um": 16.3,
+      "coating_g_m2": 15,
+      "source": "https://www.metsagroup.com/contentassets/dc3b692dd03f4d5f876caf78d2b3fa41/metsaboard-pro-fsb-cup-1pe-0_15-en-iso.pdf",
+      "status": "VERIFIED (coating weight); thickness COMPUTED = 15 g/m2 / 0.92 g/cm3 (LDPE density assumed, not stated on sheet)",
+      "note": "Metsa Board Pro FSB Cup 1PE: 15 g/m2 PE on reverse side for all grammages; polymer type not stated as LDPE."
+    },
+    {
+      "container": "paper cup",
+      "layer": "paperboard + PE (total)",
+      "thickness_um": {
+        "min": 269,
+        "max": 469
+      },
+      "coating_g_m2": null,
+      "source": "https://www.metsagroup.com/contentassets/dc3b692dd03f4d5f876caf78d2b3fa41/metsaboard-pro-fsb-cup-1pe-0_15-en-iso.pdf",
+      "status": "VERIFIED",
+      "note": "Total grammage 220-355 g/m2 with total thickness 269-469 um (8 grades). Useful for mass-fraction conversions: PE is ~4-7% of cup wall mass."
+    },
+    {
+      "container": "paper cup",
+      "layer": "PE coating (Stora Enso Cupforma Natura, conventional)",
+      "thickness_um": 16.3,
+      "coating_g_m2": 15,
+      "source": "https://www.storaenso.com/en/newsroom/press-releases/2021/11/new-innovation-from-stora-enso-minimizes-plastic-in-paper-cups-to-help-food-service-brands-meet-sustainability-targets",
+      "status": "VERIFIED (15 g/m2); thickness COMPUTED (rho 0.92)",
+      "note": "UltraThinPE Tec (Nov 2021) cuts PE coating weight by up to 40%, i.e. down to ~9 g/m2 (~10 um) (computed, not stated)."
+    },
+    {
+      "container": "paper cup",
+      "layer": "PE liner (literature value cited by Mohery et al. 2025)",
+      "thickness_um": 50,
+      "coating_g_m2": null,
+      "source": "https://www.mdpi.com/2305-6304/13/8/626",
+      "status": "UNVERIFIED (secondary 'typical' value cited from literature, not measured; conflicts with 15 g/m2 = ~16 um supplier specs; use only as an upper bound)"
+    },
+    {
+      "container": "paper cup (Ranjan et al. 2021 test cups)",
+      "layer": "inner plastic film",
+      "thickness_um": null,
+      "coating_g_m2": null,
+      "source": "https://gigazine.net/gsc_news/en/20201220-coffee-tea-paper-cups-microplastic/",
+      "status": "PARTIAL (secondary news report)",
+      "note": "4 of 5 cup types had a high-density polyethylene (HDPE) inner film per GIGAZINE summary; thickness not reported in sources reached."
+    },
+    {
+      "container": "Nissin Cup Noodles US paper cup (2024)",
+      "layer": "fiber cup, lining unspecified",
+      "thickness_um": null,
+      "coating_g_m2": null,
+      "source": "https://www.healthcarepackaging.com/home/article/22877972/nissin-foods-cup-noodles-moves-to-paper-cup",
+      "status": "VERIFIED (descriptive only)",
+      "note": "Double-wall fiber cup by Graphic Packaging International, 40% recycled fiber, all 16-oz flavors from early 2024; microwave 2 min 15 s; replaces PS cup used since 1973; lining polymer not disclosed."
+    },
+    {
+      "container": "PET-coated ovenable paperboard tray (dual-ovenable)",
+      "layer": "PET extrusion coating",
+      "thickness_um": 29,
+      "coating_g_m2": 40,
+      "source": "https://www.holmen.com/en/board-and-paper/products/paperboard/barriers-coatings/pet/",
+      "status": "VERIFIED",
+      "note": "Holmen PET barrier: +40 g/m2 (+-5%), +29 um (calculated by maker), use up to 220 C; implies PET density ~1.38 g/cm3."
+    }
+  ],
+  "contents": [
+    {
+      "container": "paper cup",
+      "layer": "whole cup (paperboard + PE)",
+      "substance": "DBP",
+      "c_mg_per_kg": {
+        "min": 0.07,
+        "median": null,
+        "max": 3.14,
+        "n": null
+      },
+      "source": "https://link.springer.com/doi/10.1007/s11356-016-6604-6",
+      "status": "VERIFIED (abstract)",
+      "model_use": "whole-cup basis; cannot be assigned to PE layer without knowing location (ink/recycled fibre vs PE)",
+      "citation": "Park YN, Choi MS, Rehman SU et al. Environ Sci Pollut Res 2016;23:10270-10275, doi:10.1007/s11356-016-6604-6"
+    },
+    {
+      "container": "paper cup",
+      "layer": "whole cup",
+      "substance": "DEHP",
+      "c_mg_per_kg": {
+        "min": 0.45,
+        "median": null,
+        "max": 58.56,
+        "n": null
+      },
+      "source": "https://link.springer.com/doi/10.1007/s11356-016-6604-6",
+      "status": "VERIFIED (abstract)",
+      "citation": "Park et al. 2016"
+    },
+    {
+      "container": "paper cup",
+      "layer": "whole cup",
+      "substance": "DEHA",
+      "c_mg_per_kg": {
+        "min": 0.16,
+        "median": null,
+        "max": 42.69,
+        "n": null
+      },
+      "source": "https://link.springer.com/doi/10.1007/s11356-016-6604-6",
+      "status": "VERIFIED (abstract)",
+      "citation": "Park et al. 2016"
+    },
+    {
+      "container": "paper cup",
+      "layer": "whole cup",
+      "substance": "DNOP",
+      "c_mg_per_kg": {
+        "min": 0.3,
+        "median": null,
+        "max": 2.4,
+        "n": null
+      },
+      "source": "https://link.springer.com/doi/10.1007/s11356-016-6604-6",
+      "status": "VERIFIED (abstract)",
+      "citation": "Park et al. 2016; BBP, DINP, DIDP not detected in most samples"
+    },
+    {
+      "container": "PE-based beverage cups (Turkey; 40 samples incl. PS cups)",
+      "layer": "cup material",
+      "substance": "DEHP",
+      "c_mg_per_kg": {
+        "min": null,
+        "median": null,
+        "max": 0.95,
+        "n": 40
+      },
+      "source": "https://acikerisim.balikesir.edu.tr/items/23431909-a825-4d5e-b2dc-4f00dcd66b89/full",
+      "status": "PARTIAL (repository abstract; whether mg/kg is material content or migration per kg is not explicit; PE/PS split not given)",
+      "citation": "Kiralan S, Toptanci I, Sezer C. J Environ Sci Health B 2026;61(4):176-184, doi:10.1080/03601234.2026.2633932"
+    },
+    {
+      "container": "PE-based beverage cups",
+      "layer": "cup material",
+      "substance": "BPA",
+      "c_mg_per_kg": {
+        "min": 0.01,
+        "median": null,
+        "max": 0.02,
+        "n": 40
+      },
+      "source": "https://acikerisim.balikesir.edu.tr/items/23431909-a825-4d5e-b2dc-4f00dcd66b89/full",
+      "status": "PARTIAL (as above)",
+      "citation": "Kiralan et al. 2026"
+    },
+    {
+      "container": "PE-based beverage cups",
+      "layer": "cup material",
+      "substance": "photoinitiators (benzophenone, 1-hydroxycyclohexyl phenyl ketone, 4-methylbenzophenone, 4-hydroxybenzophenone, ethyl 4-dimethylaminobenzoate)",
+      "c_mg_per_kg": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "n": 40
+      },
+      "source": "https://acikerisim.balikesir.edu.tr/items/23431909-a825-4d5e-b2dc-4f00dcd66b89/full",
+      "status": "DETECTED, no values in abstract",
+      "citation": "Kiralan et al. 2026; attributed to printing inks/coatings"
+    },
+    {
+      "container": "PE-based beverage cups",
+      "layer": "cup material",
+      "substance": "PFOA",
+      "c_mg_per_kg": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "n": 40
+      },
+      "source": "https://acikerisim.balikesir.edu.tr/items/23431909-a825-4d5e-b2dc-4f00dcd66b89/full",
+      "status": "DETECTED in 2 samples, no values in abstract"
+    },
+    {
+      "container": "food-contact paper and board (Korea; baking cups, lunch boxes, plates, bags, straws; PE/PP/PET/silicone coated and uncoated)",
+      "layer": "whole material",
+      "substance": "total MOH (MOSH+POSH+MOAH)",
+      "c_mg_per_kg": {
+        "min": 16,
+        "median": null,
+        "max": 5626,
+        "n": 110
+      },
+      "source": "https://pure.ewha.ac.kr/en/publications/potential-for-short-term-migration-of-mineral-oil-hydrocarbons-fr/",
+      "status": "VERIFIED (abstract)",
+      "citation": "Pack EC et al. Food Addit Contam A 2020;37(5):858-868, doi:10.1080/19440049.2020.1730985"
+    },
+    {
+      "container": "recycled paperboard box (muesli/egg pasta)",
+      "layer": "whole board",
+      "substance": "MOSH",
+      "c_mg_per_kg": {
+        "min": null,
+        "median": 45.5,
+        "max": null,
+        "n": 1
+      },
+      "source": "https://foodpackagingforum.org/Research/Migration-of-mineral-oils-and-DIPN-from-paperboard-into-dry-foods",
+      "status": "DERIVED (back-calculated: 35 mg/kg in food = 77% of board content); not stated directly",
+      "citation": "Lorenzini R et al. Food Addit Contam A 2013"
+    },
+    {
+      "container": "microwave popcorn bag",
+      "layer": "bag paper",
+      "substance": "PFOA",
+      "c_mg_per_kg": {
+        "min": 0.006,
+        "median": null,
+        "max": 0.29,
+        "n": null
+      },
+      "source": "https://static.ewg.org/reports/2022/pfas-fda-timeline/2005-FDA-study.pdf",
+      "status": "VERIFIED_UNIT_RECONCILED (6-290 ug/kg; fetched text showed 'mg/kg' but area/mass arithmetic in same paper confirms ug/kg)",
+      "citation": "Begley TH et al. Food Addit Contam 2005;22:1023 (FDA); pre-2006 US bags"
+    },
+    {
+      "container": "microwave popcorn bag",
+      "layer": "bag paper",
+      "substance": "fluorotelomer paper additive (as applied)",
+      "c_mg_per_kg": {
+        "min": null,
+        "median": 4000,
+        "max": null,
+        "n": null
+      },
+      "source": "https://static.ewg.org/reports/2022/pfas-fda-timeline/2005-FDA-study.pdf",
+      "status": "VERIFIED (approx. 0.4% application level); area value garbled in fetch",
+      "citation": "Begley et al. 2005"
+    },
+    {
+      "container": "microwave popcorn paper (Taiwan, 2022)",
+      "layer": "bag paper (area basis)",
+      "substance": "PFAAs (sum)",
+      "c_mg_per_kg": null,
+      "c_area": {
+        "min": 8.3,
+        "max": 1960,
+        "unit": "ng/dm2"
+      },
+      "source": "https://www.jfda-online.com/journal/vol30/iss1/2/",
+      "status": "VERIFIED (abstract)",
+      "citation": "Siao P, Tseng SH, Chen CY. J Food Drug Anal 2022;30(1):2, doi:10.38212/2224-6614.3397"
+    },
+    {
+      "container": "microwave popcorn paper (Taiwan, 2022)",
+      "layer": "bag paper (area basis)",
+      "substance": "FTOHs (sum)",
+      "c_mg_per_kg": null,
+      "c_area": {
+        "min": 9.7,
+        "max": 7188,
+        "unit": "ng/dm2"
+      },
+      "source": "https://www.jfda-online.com/journal/vol30/iss1/2/",
+      "status": "VERIFIED (abstract)"
+    },
+    {
+      "container": "microwave popcorn bags (US/Indonesia, IPEN 2023, 29 samples, 4 brands)",
+      "layer": "bag",
+      "substance": "PFAS (PFBA, PFHxA, FTOHs)",
+      "c_mg_per_kg": {
+        "min": null,
+        "median": null,
+        "max": null,
+        "n": 29
+      },
+      "source": "https://foodpackagingforum.org/news/pfas-found-in-popcorn-bags-in-us-indonesia",
+      "status": "DETECTED in 29/29, concentrations not disclosed (NGO report, not peer reviewed)",
+      "extra_source": "https://salon.com/2023/03/31/your-microwave-popcorn-bags-are-full-of-harmful-forever-chemicals"
+    },
+    {
+      "container": "molded fiber 'compostable' bowls (Canada, 2019-2020 samples)",
+      "layer": "whole bowl (area basis)",
+      "substance": "total fluorine (PIGE)",
+      "c_mg_per_kg": null,
+      "c_area": {
+        "min": 1010000,
+        "max": 1300000,
+        "unit": "ug F/m2"
+      },
+      "source": "https://pure.ecnu.edu.cn/en/publications/per-and-polyfluoroalkyl-substances-in-canadian-fast-food-packagin/",
+      "status": "VERIFIED (abstract)",
+      "citation": "Schwartz-Narbonne H et al. Environ Sci Technol Lett 2023;10(4):343-349, doi:10.1021/acs.estlett.2c00926; 6:2 FTMAc and 6:2 FTOH dominant; LC-MS/MS explained only 0.02-0.06% of total F (Goossen poster)"
+    },
+    {
+      "container": "compostable serviceware with oil beading (Strakova et al. 2021, IPEN/Arnika)",
+      "layer": "whole item",
+      "substance": "total oxidizable fluorine (TOF)",
+      "c_mg_per_kg": {
+        "min": 560,
+        "median": null,
+        "max": 1200,
+        "n": null
+      },
+      "source": "https://bluedynamo.msu.edu/pfas-research/Annual-Symposium/Goossen%20poster.pdf",
+      "status": "SECONDARY (cited in MSU poster; primary NGO report not read)"
+    },
+    {
+      "container": "compostable serviceware (Strakova et al. 2021)",
+      "layer": "whole item",
+      "substance": "6:2 FTOH",
+      "c_mg_per_kg": {
+        "min": 0.092,
+        "median": 0.58,
+        "max": 4.766,
+        "n": null
+      },
+      "source": "https://bluedynamo.msu.edu/pfas-research/Annual-Symposium/Goossen%20poster.pdf",
+      "status": "SECONDARY"
+    },
+    {
+      "container": "US fast food paper packaging (2014-2015, 407 items)",
+      "layer": "whole item",
+      "substance": "total fluorine detectable (PIGE, LOD 16 nmol F/cm2)",
+      "c_mg_per_kg": null,
+      "detection_rate": {
+        "food_contact_paper": 0.46,
+        "paperboard_fry_pizza_boxes": 0.2,
+        "milk_juice_containers": 0.16,
+        "paper_cups_hot_cold": 0.0,
+        "overall": 0.33
+      },
+      "source": "https://foodpackagingforum.org/news/fluorinated-chemicals-in-fast-food-packaging",
+      "status": "VERIFIED (secondary summary of Schaider LA et al. Environ Sci Technol Lett 2017, doi:10.1021/acs.estlett.6b00435)"
+    },
+    {
+      "container": "US food packaging (Consumer Reports 2022, 118 products, 24 retailers)",
+      "layer": "whole item",
+      "substance": "total organic fluorine",
+      "c_mg_per_kg": {
+        "min": null,
+        "median": null,
+        "max": 260,
+        "n": 118
+      },
+      "source": "https://www.news4jax.com/health/2022/03/25/dangerous-pfas-chemicals-are-in-your-food-packaging/",
+      "status": "VERIFIED (news syndication of CR report)",
+      "note": "37 products >20 ppm, 22 >100 ppm; Cava pita-chip bag 260 ppm; Whole Foods soup container 21 ppm; molded fiber bowls and paper bags highest (values not given). 30 targeted PFAS explained <1% of organic F."
+    },
+    {
+      "container": "Chinese food-contact paper (39 products)",
+      "layer": "whole item",
+      "substance": "sum of 25 detected PFAS (target)",
+      "c_mg_per_kg": {
+        "min": null,
+        "median": null,
+        "max": 1.63,
+        "n": 39
+      },
+      "source": "https://doaj.org/article/f088fd43936640d4b6b6ebdb6c9ef7fe",
+      "status": "VERIFIED (abstract)",
+      "citation": "Chen YF et al. Environ Int 2024;185:108540"
+    },
+    {
+      "container": "microwave susceptor (pizza, UK Jan 1992)",
+      "layer": "susceptor laminate (adhesive)",
+      "substance": "BADGE",
+      "c_mg_per_kg": {
+        "min": 700,
+        "median": null,
+        "max": 800,
+        "n": 2
+      },
+      "c_area": {
+        "min": 1.8,
+        "max": 2.0,
+        "unit": "mg/dm2"
+      },
+      "source": "https://research-portal.uea.ac.uk/en/publications/detection-of-residues-of-the-epoxy-adhesive-component-bisphenol-a/",
+      "status": "VERIFIED (abstract)",
+      "citation": "Sharman M et al. Food Addit Contam 1995;12(6):779-787"
+    },
+    {
+      "container": "microwave susceptor (one brand, UK June 1992)",
+      "layer": "susceptor laminate",
+      "substance": "BADGE",
+      "c_mg_per_kg": {
+        "min": 1900,
+        "median": null,
+        "max": 3200,
+        "n": 9
+      },
+      "source": "https://research-portal.uea.ac.uk/en/publications/detection-of-residues-of-the-epoxy-adhesive-component-bisphenol-a/",
+      "status": "VERIFIED (abstract); Nov 1992: only 1/44 >0.1 mg/kg after supplier change"
+    },
+    {
+      "container": "FTOH-treated paper (2012, EU)",
+      "layer": "paper (area basis, cp0)",
+      "substance": "8:2 FTOH / 10:2 FTOH / PFOA",
+      "c_mg_per_kg": null,
+      "c_area": {
+        "cardboard_8_2FTOH": 1897.4,
+        "cardboard_10_2FTOH": 2121.5,
+        "cardboard_PFOA": 761,
+        "muffin_cup_8_2FTOH": 635.9,
+        "muffin_cup_10_2FTOH": 373.1,
+        "unit": "ng/dm2"
+      },
+      "source": "https://www.ivv.fraunhofer.de/content/dam/ivv/en/documents/Forschungsfelder/Produktsicherheit-und-analytik/Migration_of_per_and_polyfluorinated_compounds.pdf",
+      "status": "VERIFIED (conference poster)",
+      "citation": "Mueller K et al. Fraunhofer IVV poster, 2012"
+    }
+  ],
+  "migration": [
+    {
+      "container": "paper cup (5 types, India)",
+      "food_or_simulant": "ultrapure water 100 mL",
+      "conditions": {
+        "temp_C": "85-90",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "microplastic particles 10-1000 um",
+      "value": 25000,
+      "unit": "particles",
+      "per": "item (100 mL)",
+      "source": "https://kgpchronicle.iitkgp.ac.in/?p=6258",
+      "status": "VERIFIED (institutional news release)",
+      "citation": "Ranjan VP, Joseph A, Goel S. J Hazard Mater 2021;404:124118, doi:10.1016/j.jhazmat.2020.124118",
+      "model_use": "measurement; no tox reference value for microplastics"
+    },
+    {
+      "container": "paper cup (5 types, India)",
+      "food_or_simulant": "ultrapure water 100 mL",
+      "conditions": {
+        "temp_C": "85-90",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "submicron plastic particles (<1 um, SEM)",
+      "value": 10200000000.0,
+      "unit": "particles",
+      "per": "item (100 mL)",
+      "source": "https://gigazine.net/gsc_news/en/20201220-coffee-tea-paper-cups-microplastic/",
+      "status": "UNVERIFIED (secondary news; abstract not reachable: PubMed captcha, Europe PMC rate-limited)",
+      "note": "Ions F-, Cl-, SO4 2-, NO3- reported as leached; heavy metals (Pb, Cr, Cd, As) reported in the PE film; no concentrations available from reachable sources."
+    },
+    {
+      "container": "paper cup, PE liner (20 cups, Saudi Arabia)",
+      "food_or_simulant": "ultrapure water 200 mL, boiled",
+      "conditions": {
+        "temp_C": "95-100 (initial)",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "Pb",
+      "value": {
+        "median": 1.38,
+        "min": 0.583,
+        "max": 22.9
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://www.mdpi.com/2305-6304/13/8/626",
+      "status": "VERIFIED",
+      "citation": "Mohery M et al. Toxics 2025;13(8):626, doi:10.3390/toxics13080626",
+      "per_item_median_ug": 0.28,
+      "note": "per-item = 1.38 ug/L x 0.2 L (computed). Plastic (PP) cups: Pb median 37.2 ug/L."
+    },
+    {
+      "container": "paper cup, PE liner (n=20)",
+      "food_or_simulant": "ultrapure water 200 mL",
+      "conditions": {
+        "temp_C": "95-100",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "Zn",
+      "value": {
+        "median": 14.4,
+        "min": 9.21,
+        "max": 45.0
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://www.mdpi.com/2305-6304/13/8/626",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "paper cup, PE liner (n=20)",
+      "food_or_simulant": "ultrapure water 200 mL",
+      "conditions": {
+        "temp_C": "95-100",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "Cr",
+      "value": {
+        "median": 0.61,
+        "min": 0.021,
+        "max": 0.704
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://www.mdpi.com/2305-6304/13/8/626",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "paper cup, PE liner (n=20)",
+      "food_or_simulant": "ultrapure water 200 mL",
+      "conditions": {
+        "temp_C": "95-100",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "Mn",
+      "value": {
+        "median": 1.592,
+        "min": 1.28,
+        "max": 2.08
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://www.mdpi.com/2305-6304/13/8/626",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "paper cup, PE liner (n=20)",
+      "food_or_simulant": "ultrapure water 200 mL",
+      "conditions": {
+        "temp_C": "95-100",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "Ba",
+      "value": {
+        "median": 0.891,
+        "min": 0.788,
+        "max": 1.69
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://www.mdpi.com/2305-6304/13/8/626",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "paper cup, PE liner (n=20)",
+      "food_or_simulant": "ultrapure water 200 mL",
+      "conditions": {
+        "temp_C": "95-100",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "Cd",
+      "value": {
+        "median": 0.016,
+        "min": 0.004,
+        "max": 0.107
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://www.mdpi.com/2305-6304/13/8/626",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "paper cup, PE liner (n=20)",
+      "food_or_simulant": "ultrapure water 200 mL",
+      "conditions": {
+        "temp_C": "95-100",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "As",
+      "value": {
+        "median": 0.045,
+        "min": 0.026,
+        "max": 0.055
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://www.mdpi.com/2305-6304/13/8/626",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "paper cup, PE liner (n=20)",
+      "food_or_simulant": "ultrapure water 200 mL",
+      "conditions": {
+        "temp_C": "95-100",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "Sb",
+      "value": {
+        "median": 0.009,
+        "min": 0.004,
+        "max": 0.01
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://www.mdpi.com/2305-6304/13/8/626",
+      "status": "VERIFIED",
+      "note": "Also Cu 0.325, Co 0.009, Mo 0.055, V 0.017 ug/L medians. Pb HQ adult 0.638, child 0.330 (<1)."
+    },
+    {
+      "container": "printed cardboard hot-drink cup (Turkey)",
+      "food_or_simulant": "distilled water, filled to 5 mm below rim",
+      "conditions": {
+        "temp_C": "90-95",
+        "time_min": 15,
+        "microwave_W": null
+      },
+      "substance": "BPA",
+      "value": {
+        "max": 15.04
+      },
+      "unit": "ug/kg",
+      "per": "kg",
+      "source": "https://acikerisim.balikesir.edu.tr/items/37673d2d-60ba-4cd4-8895-58c99a2c327f/full",
+      "status": "VERIFIED (thesis abstract; MSc thesis, not peer reviewed)",
+      "note": "BPA >LOQ in all cups; BPB, BPE, BPF, BPS <LOQ. Sezer C, Balikesir Univ. 2024."
+    },
+    {
+      "container": "paper cup (Korea)",
+      "food_or_simulant": "50% ethanol",
+      "conditions": {
+        "temp_C": null,
+        "time_min": null,
+        "microwave_W": null
+      },
+      "substance": "DEHA",
+      "value": {
+        "max": 65.62
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://link.springer.com/doi/10.1007/s11356-016-6604-6",
+      "status": "VERIFIED (abstract); conditions not stated",
+      "note": "Other phthalates (DBP, DEHP, DNOP) migrated at very low/negligible levels."
+    },
+    {
+      "container": "paper cup (Korea)",
+      "food_or_simulant": "n-heptane",
+      "conditions": {
+        "temp_C": null,
+        "time_min": null,
+        "microwave_W": null
+      },
+      "substance": "DEHA",
+      "value": {
+        "max": 95.56
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://link.springer.com/doi/10.1007/s11356-016-6604-6",
+      "status": "VERIFIED (abstract); conditions not stated"
+    },
+    {
+      "container": "PE/PP-coated food-contact paper and board (22 samples)",
+      "food_or_simulant": "fatty food simulant",
+      "conditions": {
+        "temp_C": 25,
+        "time_min": 10,
+        "microwave_W": null
+      },
+      "substance": "MOSH/POSH",
+      "value": {
+        "min": 0.93,
+        "max": 62.3
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://pure.ewha.ac.kr/en/publications/potential-for-short-term-migration-of-mineral-oil-hydrocarbons-fr/",
+      "status": "VERIFIED (abstract)",
+      "note": "Only PE/PP-coated samples showed short-term MOSH/POSH migration."
+    },
+    {
+      "container": "PE/PP-coated food-contact paper and board (4 samples)",
+      "food_or_simulant": "fatty food simulant",
+      "conditions": {
+        "temp_C": 25,
+        "time_min": 10,
+        "microwave_W": null
+      },
+      "substance": "MOAH",
+      "value": {
+        "min": 0.8,
+        "max": 2.6
+      },
+      "unit": "ug/L",
+      "per": "L",
+      "source": "https://pure.ewha.ac.kr/en/publications/potential-for-short-term-migration-of-mineral-oil-hydrocarbons-fr/",
+      "status": "VERIFIED (abstract)"
+    },
+    {
+      "container": "PFAS-treated microwavable paper plates A-C (Scandinavia, 2017-2019)",
+      "food_or_simulant": "oatmeal porridge (8% fat)",
+      "conditions": {
+        "temp_C": null,
+        "time_min": 1,
+        "microwave_W": 800
+      },
+      "substance": "sum PFAS (12 detected)",
+      "value": {
+        "min": 4.7,
+        "max": 6.48
+      },
+      "unit": "ng/g",
+      "per": "kg food (x1000)",
+      "source": "https://efsa.europa.eu/sites/default/files/2023-01/20%20%E2%80%93%20DK%2C%20Project%20on%20PFAS%20in%20paper%20and%20board%2C%20G.%20A.%20Pedersen.pdf",
+      "status": "VERIFIED (two DTU/EFSA slide decks agree)",
+      "citation": "Lerch M, Nguyen KH, Granby K. Food Chem 2022;393:133375, doi:10.1016/j.foodchem.2022.133375",
+      "model_use": "measurement-based estimate, microwave conditions; best paper-container microwave dataset found"
+    },
+    {
+      "container": "PFAS-treated microwavable paper plates A-C",
+      "food_or_simulant": "oatmeal porridge",
+      "conditions": {
+        "temp_C": null,
+        "time_min": 1,
+        "microwave_W": 800
+      },
+      "substance": "PFOA+PFNA",
+      "value": {
+        "min": 0.0,
+        "max": 0.03
+      },
+      "unit": "ng/g",
+      "per": "kg food (x1000)",
+      "source": "https://efsa.europa.eu/sites/default/files/2023-01/20%20%E2%80%93%20DK%2C%20Project%20on%20PFAS%20in%20paper%20and%20board%2C%20G.%20A.%20Pedersen.pdf",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "PFAS-treated microwavable paper plates A-C",
+      "food_or_simulant": "oatmeal porridge",
+      "conditions": {
+        "temp_C": null,
+        "time_min": 1,
+        "microwave_W": 800
+      },
+      "substance": "PFOA-equivalents (RPF)",
+      "value": {
+        "min": 0.15,
+        "max": 0.2
+      },
+      "unit": "ng/g",
+      "per": "kg food (x1000)",
+      "source": "https://efsa.europa.eu/sites/default/files/2023-01/20%20%E2%80%93%20DK%2C%20Project%20on%20PFAS%20in%20paper%20and%20board%2C%20G.%20A.%20Pedersen.pdf",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "PFAS-treated microwavable paper plates A-C",
+      "food_or_simulant": "tomato soup (3% fat)",
+      "conditions": {
+        "temp_C": null,
+        "time_min": 1,
+        "microwave_W": 800
+      },
+      "substance": "sum PFAS",
+      "value": {
+        "min": 3.5,
+        "max": 14.1
+      },
+      "unit": "ng/g",
+      "per": "kg food (x1000)",
+      "source": "https://efsa.europa.eu/sites/default/files/2023-01/20%20%E2%80%93%20DK%2C%20Project%20on%20PFAS%20in%20paper%20and%20board%2C%20G.%20A.%20Pedersen.pdf",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "PFAS-treated microwavable paper plates A-C",
+      "food_or_simulant": "tomato soup",
+      "conditions": {
+        "temp_C": null,
+        "time_min": 1,
+        "microwave_W": 800
+      },
+      "substance": "PFOA+PFNA",
+      "value": {
+        "min": 0.0,
+        "max": 0.05
+      },
+      "unit": "ng/g",
+      "per": "kg food (x1000)",
+      "source": "https://efsa.europa.eu/sites/default/files/2023-01/20%20%E2%80%93%20DK%2C%20Project%20on%20PFAS%20in%20paper%20and%20board%2C%20G.%20A.%20Pedersen.pdf",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "PFAS-treated microwavable paper plates A-C",
+      "food_or_simulant": "tomato soup",
+      "conditions": {
+        "temp_C": null,
+        "time_min": 1,
+        "microwave_W": 800
+      },
+      "substance": "PFOA-equivalents (RPF)",
+      "value": {
+        "min": 0.22,
+        "max": 0.63
+      },
+      "unit": "ng/g",
+      "per": "kg food (x1000)",
+      "source": "https://efsa.europa.eu/sites/default/files/2023-01/20%20%E2%80%93%20DK%2C%20Project%20on%20PFAS%20in%20paper%20and%20board%2C%20G.%20A.%20Pedersen.pdf",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "PFAS-treated muffin cups A-C",
+      "food_or_simulant": "muffin (15% fat), oven baking",
+      "conditions": {
+        "temp_C": 200,
+        "time_min": 13,
+        "microwave_W": null
+      },
+      "substance": "sum PFAS",
+      "value": {
+        "min": 2.83,
+        "max": 6.0
+      },
+      "unit": "ng/g",
+      "per": "kg food (x1000)",
+      "source": "https://www.food.dtu.dk/-/media/institutter/foedevareinstituttet/nyheder/diverse/webinar-om-pfas/kit_granby_pfas-in-food-and-migration-from-contact-materials-into-real-food.pdf",
+      "status": "VERIFIED",
+      "note": "PFOA+PFNA 0.06-0.17 ng/g; PFOA-eq 0.66-2.17 ng/g; transfer to muffins ~5-20%; 50% EtOH overestimates food migration."
+    },
+    {
+      "container": "PFAS-treated muffin cups A-C",
+      "food_or_simulant": "muffin, oven baking",
+      "conditions": {
+        "temp_C": 200,
+        "time_min": 13,
+        "microwave_W": null
+      },
+      "substance": "PFOA-equivalents (RPF)",
+      "value": {
+        "min": 0.66,
+        "max": 2.17
+      },
+      "unit": "ng/g",
+      "per": "kg food (x1000)",
+      "source": "https://www.food.dtu.dk/-/media/institutter/foedevareinstituttet/nyheder/diverse/webinar-om-pfas/kit_granby_pfas-in-food-and-migration-from-contact-materials-into-real-food.pdf",
+      "status": "VERIFIED"
+    },
+    {
+      "container": "microwave popcorn bag (US, ~2005)",
+      "food_or_simulant": "Miglyol 40 g on 11.7 dm2 bag",
+      "conditions": {
+        "temp_C": ">200 at susceptor",
+        "time_min": 2,
+        "microwave_W": 702
+      },
+      "substance": "fluorotelomer paper additive",
+      "value": {
+        "value": 2.1,
+        "sd": 0.9
+      },
+      "unit": "mg/kg",
+      "per": "kg simulant",
+      "source": "https://static.ewg.org/reports/2022/pfas-fda-timeline/2005-FDA-study.pdf",
+      "status": "VERIFIED_UNIT_RECONCILED (~7 ug/dm2 computed from 40 g / 11.7 dm2; fetch text garbled units)",
+      "note": "Popcorn oil already held 1.4 mg/kg before heating (pre-migration during storage). Historic pre-phase-out bag."
+    },
+    {
+      "container": "microwave popcorn bag (US, ~2005)",
+      "food_or_simulant": "Miglyol 40 g",
+      "conditions": {
+        "temp_C": ">200 at susceptor",
+        "time_min": 2,
+        "microwave_W": 702
+      },
+      "substance": "PFOA",
+      "value": {
+        "max": 1.0
+      },
+      "unit": "ug/kg (below)",
+      "per": "kg simulant",
+      "source": "https://static.ewg.org/reports/2022/pfas-fda-timeline/2005-FDA-study.pdf",
+      "status": "VERIFIED_UNIT_RECONCILED (<1 ug/kg = <~3 ng/dm2)"
+    },
+    {
+      "container": "FTOH-treated cardboard (EU 2012)",
+      "food_or_simulant": "burger",
+      "conditions": {
+        "temp_C": 80,
+        "time_min": 30,
+        "microwave_W": null
+      },
+      "substance": "10:2 FTOH",
+      "value": 58.57,
+      "unit": "ng/dm2",
+      "per": "dm2",
+      "source": "https://www.ivv.fraunhofer.de/content/dam/ivv/en/documents/Forschungsfelder/Produktsicherheit-und-analytik/Migration_of_per_and_polyfluorinated_compounds.pdf",
+      "status": "VERIFIED (poster)",
+      "note": "8:2 FTOH <27.18 ng/dm2; PFOA n.d."
+    },
+    {
+      "container": "FTOH-treated muffin cup (EU 2012)",
+      "food_or_simulant": "muffin, baking",
+      "conditions": {
+        "temp_C": 200,
+        "time_min": 20,
+        "microwave_W": null
+      },
+      "substance": "8:2 FTOH",
+      "value": 3594.4,
+      "unit": "ng/dm2",
+      "per": "dm2",
+      "source": "https://www.ivv.fraunhofer.de/content/dam/ivv/en/documents/Forschungsfelder/Produktsicherheit-und-analytik/Migration_of_per_and_polyfluorinated_compounds.pdf",
+      "status": "VERIFIED (poster; value exceeds stated cp0 635.9 ng/dm2, inconsistency in source)",
+      "note": "10:2 FTOH 1436.8 ng/dm2; PFOA n.d."
+    },
+    {
+      "container": "baking paper (11 samples, Rome)",
+      "food_or_simulant": "3% acetic acid, ultrasound-assisted",
+      "conditions": {
+        "temp_C": null,
+        "time_min": null,
+        "microwave_W": null
+      },
+      "substance": "sum PFAS",
+      "value": {
+        "min": 1.43,
+        "max": 13.87
+      },
+      "unit": "ng/dm2",
+      "per": "dm2",
+      "source": "https://foodpackagingforum.org/news/studies-assess-pfas-opes-and-plasticizers-in-paper-board",
+      "status": "VERIFIED (secondary summary of Sonego E et al. Food Chem 2022, doi:10.1016/j.foodchem.2022.135260)",
+      "note": "PFBA most frequent, 0.10-1.68 ng/dm2."
+    },
+    {
+      "container": "microwave susceptor (pizza, UK 1992)",
+      "food_or_simulant": "pizza, cooked per on-pack microwave instructions",
+      "conditions": {
+        "temp_C": null,
+        "time_min": null,
+        "microwave_W": null
+      },
+      "substance": "BADGE",
+      "value": {
+        "min": 0.1,
+        "max": 0.7
+      },
+      "unit": "mg/kg",
+      "per": "kg food",
+      "source": "https://research-portal.uea.ac.uk/en/publications/detection-of-residues-of-the-epoxy-adhesive-component-bisphenol-a/",
+      "status": "VERIFIED (abstract; '01-0.7' read as 0.1-0.7)",
+      "note": "Historic; adhesive since changed by supplier."
+    },
+    {
+      "container": "fast-food wrapping paper / traymats (24 types, China)",
+      "food_or_simulant": "Tenax",
+      "conditions": {
+        "temp_C": 70,
+        "time_min": 120,
+        "microwave_W": null
+      },
+      "substance": "MOSH (waxed paper)",
+      "value": {
+        "min": 110.49,
+        "max": 615.4
+      },
+      "unit": "mg/kg",
+      "per": "kg Tenax",
+      "source": "https://www.spkx.net.cn/EN/Y2021/V42/I14/286",
+      "status": "VERIFIED (abstract)",
+      "note": "Traymats from recycled fibre exceeded 0.6 mg/kg MOSH / 0.5 mg/kg MOAH reference limits 10-400x / 10-70x; virgin-fibre traymats complied."
+    },
+    {
+      "container": "recycled paperboard box (muesli)",
+      "food_or_simulant": "muesli (16% fat), storage",
+      "conditions": {
+        "temp_C": 20,
+        "time_min": 525600,
+        "microwave_W": null
+      },
+      "substance": "MOSH",
+      "value": 35,
+      "unit": "mg/kg",
+      "per": "kg food",
+      "source": "https://foodpackagingforum.org/Research/Migration-of-mineral-oils-and-DIPN-from-paperboard-into-dry-foods",
+      "status": "VERIFIED (secondary summary)",
+      "note": "12 months storage, boxed; 1 week at 20 C already 4 mg/kg. Storage scenario, not heating."
+    },
+    {
+      "container": "recycled paperboard (3 samples, Greece)",
+      "food_or_simulant": "Tenax",
+      "conditions": {
+        "temp_C": 70,
+        "time_min": 120,
+        "microwave_W": null
+      },
+      "substance": "DBP, DEHP, DEP",
+      "value": null,
+      "unit": "exceeded proposed SML; DEP > 300 ug/kg",
+      "per": "kg Tenax",
+      "source": "https://foodpackagingforum.org/news/studies-assess-pfas-opes-and-plasticizers-in-paper-board",
+      "status": "PARTIAL (no numbers in summary)",
+      "citation": "Parigoridi IE et al. Sustain Chem Pharm 2022, doi:10.1016/j.scp.2022.100941"
+    }
+  ],
+  "tox": [
+    {
+      "substance": "sum PFOA+PFNA+PFHxS+PFOS (PFAS4)",
+      "agency": "EFSA CONTAM",
+      "value": 4.4,
+      "unit": "ng/kg bw per week",
+      "year": 2020,
+      "source": "https://doaj.org/article/884cab73a5874609932bfcb70da0b713",
+      "status": "VERIFIED",
+      "note": "= 0.63 ng/kg bw/day; critical effect immune (BMDL10 17.5 ng/mL serum in 1-yr-olds); EFSA Journal 2020;18(9):6223"
+    },
+    {
+      "substance": "PFAS relative potency factors vs PFOA (for PFOA-eq)",
+      "agency": "RIVM (Bil et al.), as applied by DTU",
+      "value": {
+        "PFOA": 1,
+        "PFNA": 10,
+        "PFDeA": 10,
+        "PFUnA": 4,
+        "PFDoDA": 3,
+        "8:2 FTOH": 0.04,
+        "10:2 FTOH": 0.04,
+        "PFPeA": 0.05,
+        "6:2 diPAP": 0.02,
+        "6:2 FTOH": 0.02,
+        "PFHxA": 0.01,
+        "PFHpA": 0.01
+      },
+      "unit": "dimensionless",
+      "year": 2021,
+      "source": "https://efsa.europa.eu/sites/default/files/2023-01/20%20%E2%80%93%20DK%2C%20Project%20on%20PFAS%20in%20paper%20and%20board%2C%20G.%20A.%20Pedersen.pdf",
+      "status": "VERIFIED as used in Lerch slides; primary RIVM paper not read"
+    },
+    {
+      "substance": "benzophenone",
+      "agency": "EFSA CEF",
+      "value": 0.03,
+      "unit": "mg/kg bw per day",
+      "year": 2009,
+      "source": "https://focalpointbg.com/images/stories/efsa/contents/pdfdocs/cef_ej1104_benzophenone_op_en.pdf",
+      "status": "VERIFIED",
+      "note": "BMDL10 3.1 mg/kg bw/day (rat kidney, NTP 2006) / UF 100; replaces SCF 1992 group TDI 0.01 (with 4-hydroxybenzophenone). EFSA Journal 2009;1104."
+    },
+    {
+      "substance": "4-methylbenzophenone",
+      "agency": "EFSA CEF",
+      "value": null,
+      "unit": "no TDI; MoE vs benzophenone TDI with read-across factor 2",
+      "year": 2009,
+      "source": "https://focalpointbg.com/images/stories/efsa/contents/pdfdocs/cef_ej1104_benzophenone_op_en.pdf",
+      "status": "VERIFIED"
+    },
+    {
+      "substance": "ITX (2-isopropylthioxanthone)",
+      "agency": "EFSA AFC",
+      "value": null,
+      "unit": "no TDI; 'no health concern at reported levels' (not genotoxic)",
+      "year": 2005,
+      "source": "https://www.efsa.europa.eu/en/press/news/051209",
+      "status": "VERIFIED"
+    },
+    {
+      "substance": "MOSH",
+      "agency": "EFSA CONTAM",
+      "value": 236,
+      "unit": "mg/kg bw per day (NOAEL, reference point for MOE)",
+      "year": 2023,
+      "source": "https://doaj.org/article/da9fe94501bd4b9da4fb3ffa0d865a39",
+      "status": "VERIFIED",
+      "note": "No concern for current exposure (P95 young 0.157-0.212 mg/kg bw/day). doi:10.2903/j.efsa.2023.8215"
+    },
+    {
+      "substance": "MOAH with >=3 aromatic rings",
+      "agency": "EFSA CONTAM",
+      "value": 0.49,
+      "unit": "mg/kg bw per day (surrogate reference point from 8 PAHs, MOE approach)",
+      "year": 2023,
+      "source": "https://doaj.org/article/da9fe94501bd4b9da4fb3ffa0d865a39",
+      "status": "VERIFIED (value); MOE adequacy threshold of 10,000 UNVERIFIED (standard EFSA practice for genotoxic carcinogens, not seen in abstract)"
+    },
+    {
+      "substance": "MOAH 1-2 rings",
+      "agency": "EFSA CONTAM",
+      "value": null,
+      "unit": "no reference point (insufficient data)",
+      "year": 2023,
+      "source": "https://doaj.org/article/da9fe94501bd4b9da4fb3ffa0d865a39",
+      "status": "VERIFIED"
+    },
+    {
+      "substance": "BADGE (+ hydrolysis products)",
+      "agency": "EFSA",
+      "value": 0.15,
+      "unit": "mg/kg bw per day (TDI)",
+      "year": 2004,
+      "source": null,
+      "status": "UNVERIFIED (from memory; not fetched this session)"
+    },
+    {
+      "substance": "Pb",
+      "agency": "EFSA CONTAM",
+      "value": 0.5,
+      "unit": "ug/kg bw per day (BMDL01, developmental neurotoxicity; MOE approach, no TDI)",
+      "year": 2010,
+      "source": null,
+      "status": "UNVERIFIED (from memory; not fetched)"
+    }
+  ],
+  "regulatory": [
+    {
+      "jurisdiction": "US FDA",
+      "item": "PFAS grease-proofing substances no longer sold for US food contact",
+      "date": "2024-02-28",
+      "detail": "Voluntary phase-out from 2020 commitments complete; covered fast-food wrappers, microwave popcorn bags, take-out paperboard containers, pet food bags; commitment letters allowed up to 18 months of stock run-out after last sale. No count of FCNs given.",
+      "source": "https://www.fda.gov/food/hfp-constituent-updates/fda-announces-pfas-used-grease-proofing-agents-food-packaging-no-longer-being-sold-us",
+      "status": "VERIFIED"
+    },
+    {
+      "jurisdiction": "California AB 1200 (HSC 109000-109014)",
+      "item": "PFAS ban in plant-fiber food packaging",
+      "date": "2023-01-01",
+      "threshold": "intentionally added PFAS with functional/technical effect OR total organic fluorine >= 100 ppm",
+      "source": "https://www.sgs.com/en/news/2021/10/safeguards-14021-california-usa-regulates-pfas-in-certain-food-packaging",
+      "status": "VERIFIED",
+      "extra_source": "https://oag.ca.gov/system/files/attachments/press-docs/AB1200 Enforcement Advisory %281%29.pdf",
+      "note": "AG enforcement advisory 2023-10-17; covers retailers/restaurants; cookware online disclosure 2023, labels 2024."
+    },
+    {
+      "jurisdiction": "US states (14 enacted as of 2025-12-02)",
+      "item": "PFAS in food packaging laws",
+      "detail": "CA 2023 (plant-fiber, 100 ppm TOF); NY 2022-12-31; WA 2023/2024; VT 2023-07-01 (all packaging); CO, CT, MD, MN 2024-01-01; HI 2024-12-31; OR, RI 2025-01-01; NH, NM 2027-01-01; ME 2026-05-25 (plant-based) and 2032 (all)",
+      "source": "https://www.mondaq.com/unitedstates/environmental-law/1723966/pfas-in-food-packaging-state-by-state-regulations",
+      "status": "VERIFIED (law-firm summary)"
+    },
+    {
+      "jurisdiction": "Denmark",
+      "item": "indicator value for organic fluorine in paper/board FCM",
+      "threshold": "20 mg/kg (20 ppm) total organic fluorine; area form 0.35 ug organic F/dm2 quoted by FPF",
+      "source": "https://www.news4jax.com/health/2022/03/25/dangerous-pfas-chemicals-are-in-your-food-packaging/",
+      "status": "VERIFIED (20 ppm via CR and MSU poster); area form from https://foodpackagingforum.org/news/fluorinated-chemicals-in-fast-food-packaging"
+    },
+    {
+      "jurisdiction": "BPI / Compost Manufacturing Alliance",
+      "item": "compostable certification fluorine cap",
+      "threshold": "<100 ppm total organic fluorine (2020)",
+      "source": "https://bluedynamo.msu.edu/pfas-research/Annual-Symposium/Goossen%20poster.pdf",
+      "status": "VERIFIED (secondary)"
+    },
+    {
+      "jurisdiction": "EU",
+      "item": "benzophenone SML",
+      "threshold": "0.6 mg/kg food (Directive 2002/72/EC; carried into Reg. (EU) 10/2011 for plastics)",
+      "source": "https://focalpointbg.com/images/stories/efsa/contents/pdfdocs/cef_ej1104_benzophenone_op_en.pdf",
+      "status": "VERIFIED for 2002/72/EC; carry-over into 10/2011 UNVERIFIED this session"
+    },
+    {
+      "jurisdiction": "EU",
+      "item": "MOAH in food",
+      "threshold": "SCoPAFF 2022 enforcement references: 0.5 mg/kg (fat <=4%), 1.0 mg/kg (4-50% fat), 2.0 mg/kg (>50% fat); binding MLs in Reg. (EU) 2023/915 amendment approved by SCoPAFF 2026-05-13, adoption expected autumn 2026, application 2027 (composite foods 2030)",
+      "source": "https://www.eurofins.com/en-de/food-testing/news/moah-findings-in-foodstuffs/",
+      "status": "VERIFIED (lab news page)"
+    },
+    {
+      "jurisdiction": "Germany (draft Mineral Oil Ordinance)",
+      "item": "MOSH 0.6 mg/kg / MOAH 0.5 mg/kg migration reference limits",
+      "threshold": "used as 'specific limits' by Zhang et al. 2021",
+      "source": "https://www.spkx.net.cn/EN/Y2021/V42/I14/286",
+      "status": "UNVERIFIED origin (draft, never adopted as cited; Swiss limits not checked)"
+    },
+    {
+      "jurisdiction": "EU PPWR (Reg. (EU) 2025/40)",
+      "item": "PFAS in food-contact packaging from 2026-08-12",
+      "threshold": "25 ppb any targeted PFAS; 250 ppb sum of targeted PFAS; 50 ppm total PFAS incl. polymeric",
+      "source": null,
+      "status": "UNVERIFIED (from memory; not fetched)"
+    },
+    {
+      "jurisdiction": "EU proposed SML",
+      "item": "DEP",
+      "threshold": "300 ug/kg (proposed, cited for recycled paperboard)",
+      "source": "https://foodpackagingforum.org/news/studies-assess-pfas-opes-and-plasticizers-in-paper-board",
+      "status": "VERIFIED (secondary)"
+    },
+    {
+      "jurisdiction": "industry",
+      "item": "Conagra removed PFAS from US Act II popcorn bags in 2022, globally March 2023",
+      "source": "https://salon.com/2023/03/31/your-microwave-popcorn-bags-are-full-of-harmful-forever-chemicals",
+      "status": "VERIFIED (company statement in news)"
+    }
+  ],
+  "notes": [
+    "MODEL INPUTS: Only the paper-cup PE layer (15 g/m2, ~16 um at 0.92 g/cm3; up to ~40% thinner for ultrathin grades) and the PET coating on ovenable board (40 g/m2, 29 um) have layer data. No measured additive content c_P0 inside the PE or PET layer itself was found; all content data are whole-item (paper+coating) or per area. Park 2016 phthalates (whole cup mg/kg) cannot be assigned to the PE layer because phthalates in paper cups may sit in ink or recycled fibre.",
+    "RECOMMENDED APPROACH for paper containers: measurement-based estimates rather than diffusion modelling. Paper is porous and PFAS/MOH transfer via gas phase and fat wicking, which Piringer-type PE/PET models do not represent.",
+    "Best microwave dataset: Lerch et al. 2022 (1 min, 800 W, PFAS-treated paper plates). Illustrative worst case (assumptions: 300 g serving, 70 kg adult): tomato soup plate C 0.63 ng PFOA-eq/g x 300 g = 189 ng = 2.7 ng/kg bw = ~61% of the 4.4 ng/kg bw/week TWI per serving; on the strict PFAS4 basis (PFOA+PFNA 0.05 ng/g) = 15 ng = 0.21 ng/kg bw = ~5% TWI. These items were legacy PFAS-treated (Scandinavia 2017-2019); US products after the Feb 2024 FDA announcement should not carry intentionally added PFAS grease-proofing.",
+    "Paper cup hot water (Mohery 2025): Pb median 1.38 ug/L -> ~0.28 ug per 200 mL cup; Ranjan 2021: ~25,000 microplastic particles per 100 mL at 85-90 C/15 min (no tox reference value; report count only).",
+    "Susceptors reach >200 C within 1-2 min (Begley 2005). Historic BADGE migration 0.1-0.7 mg/kg into pizza (1992 UK) shows susceptor adhesives can migrate; no post-2010 susceptor migration data found.",
+    "No antimony data for PET-coated paperboard were found. Existing CPET Sb data (Haldimann 2007/2013, already in substances.json) are the closest proxy; PET coating mass is ~40 g/m2.",
+    "No measured MOSH/MOAH, photoinitiator, PFAS or primary aromatic amine migration specifically from instant-noodle paper cups or paper bowls under microwave heating was found. Pack 2020 (Korea) is the closest MOSH/MOAH dataset (25 C/10 min, ug/L in fatty simulant).",
+    "Unit cautions: Begley 2005 values were reconciled by arithmetic (PFOA in bag 6-290 ug/kg; PFOA migration <1 ug/kg oil; telomer additive 2.1 mg/kg oil ~7 ug/dm2). Fraunhofer 2012 muffin migration (3594 ng/dm2) exceeds the listed cp0 (636 ng/dm2) in the source table; treat as reported, not re-derived.",
+    "Access problems this session: PubMed and PMC pages returned captcha/redirect; Europe PMC REST returned HTTP 429 (rate limited) and the Norwegian Mattilsynet PFAS-in-paper report URL was too long to fetch; BfR PFAS migration PDF fetch failed. WebSearch quota was exhausted before searching recycled-board phthalate migration data and post-2023 US popcorn-bag PFAS measurements, so those remain open.",
+    "Not found / open items: PE lining thickness measured in Ranjan 2021; ion and metal concentrations from Ranjan 2021; ITX/benzophenone migration from printed paper cups into hot water (only material detection in Kiralan 2026); primary aromatic amines from paper cups; any US popcorn bag PFAS concentrations measured after the 2024 FDA announcement."
+  ]
+}

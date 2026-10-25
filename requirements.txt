@@ -1,0 +1,11 @@
+# Python tools for the database, the science engine and the models (Python 3.10+).
+#   pip install -r requirements.txt
+openpyxl>=3.1      # db/build_db.py, db/export_assets.py
+numpy>=1.26
+pandas>=2.0        # ml/train_kpf.py
+scikit-learn>=1.4  # ml/train_kpf.py (gradient boosting comparison)
+matplotlib>=3.8    # figures in engine_py/validate.py and ml/train_kpf.py
+pillow>=10.0       # design/ pixel art tools, ml image tools
+# Only for retraining the vision model or rebuilding the product photo catalog
+# (ml/train_vision.py, ml/build_catalog.py). Google Colab already has it.
+# tensorflow-cpu>=2.15

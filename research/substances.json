@@ -1,0 +1,370 @@
+{
+  "meta": {
+    "compiled": "2026-10-14",
+    "purpose": "ZapWise substance, migration, toxicology and exposure-default inputs",
+    "status_legend": {
+      "VERIFIED": "number read directly from the cited page/abstract during this session",
+      "DERIVED": "computed by the compiler from verified inputs; formula given",
+      "UNVERIFIED": "commonly cited or inferred but not confirmed from a primary/official text in this session"
+    },
+    "units": "c_p0 in mg per kg of plastic (= ug/g). Migration in ug/L or ug/kg food as stated."
+  },
+
+  "material_substances": [
+    {
+      "material": "PP (#5) disposable lunch box / takeaway container",
+      "substance": "DBP (dibutyl phthalate)",
+      "role": "phthalate plasticiser; not an intended PP additive, likely contaminant or processing aid",
+      "c_p0_mg_per_kg": {"min": 1.39, "median": null, "max": 2.83, "n_samples": null},
+      "detection_note": "Liu et al. 2020 tested four commercial disposable lunch boxes; PP box had the highest phthalate levels. Abstract quotes ~1.5 mg/kg DBP; methods/results give 1.39-2.83 mg/kg (inconsistent in paper). n of PP items not stated clearly. Status: VERIFIED (values as reported).",
+      "source": "Liu J-M et al. 2020, Food Sci Nutr 8(10):5738-5747, doi:10.1002/fsn3.1863, https://pmc.ncbi.nlm.nih.gov/articles/PMC7590312"
+    },
+    {
+      "material": "PP (#5) disposable lunch box / takeaway container",
+      "substance": "DIBP (diisobutyl phthalate)",
+      "role": "phthalate plasticiser (contaminant in PP)",
+      "c_p0_mg_per_kg": {"min": 0.53, "median": null, "max": 1.84, "n_samples": null},
+      "detection_note": "Same study; abstract quotes ~2.4 mg/kg DIBP, results 0.53-1.84 mg/kg. Status: VERIFIED (as reported, internally inconsistent).",
+      "source": "Liu J-M et al. 2020, doi:10.1002/fsn3.1863, https://pmc.ncbi.nlm.nih.gov/articles/PMC7590312"
+    },
+    {
+      "material": "PP (#5) containers (China)",
+      "substance": "DEHP",
+      "role": "phthalate plasticiser (contaminant in PP)",
+      "c_p0_mg_per_kg": {"min": 0.0, "median": null, "max": 2.302, "n_samples": null},
+      "detection_note": "Lan et al. 2022: DEHP ND-2.302, detection rate 78% (16 PAEs screened). The English abstract prints the unit as mg/g; values are entered here assuming ug/g (= mg/kg) because 2302 mg/kg in PP is implausible. UNIT = UNVERIFIED. min=0 denotes ND.",
+      "source": "Lan M, Li H, Ying G. 2022, J South China Normal Univ (Nat Sci) 54(2):52-62, doi:10.6054/j.jscnun.2022026, https://journal-n.scnu.edu.cn/en/article/doi/10.6054/j.jscnun.2022026"
+    },
+    {
+      "material": "PP (#5) containers (China)",
+      "substance": "DBP",
+      "role": "phthalate plasticiser (contaminant in PP)",
+      "c_p0_mg_per_kg": {"min": 0.0, "median": null, "max": 0.995, "n_samples": null},
+      "detection_note": "ND-0.995, detection rate 78%. Same unit caveat (UNVERIFIED unit). Also reported: DIBP 0.237-1.676 (100% detected), DEP 0.140-0.829 (100%), DPhP ND-1.714 (92%), DNOP ND-0.213 (85%). Only DEP, DBP, DIBP, DEHP were detected in migrates (water, 4% acetic acid, 10% ethanol, isooctane at 25/40/55 C); no numeric migration values in abstract.",
+      "source": "Lan et al. 2022, doi:10.6054/j.jscnun.2022026, https://journal-n.scnu.edu.cn/en/article/doi/10.6054/j.jscnun.2022026"
+    },
+    {
+      "material": "PP (#5) containers",
+      "substance": "BBP",
+      "role": "phthalate plasticiser",
+      "c_p0_mg_per_kg": null,
+      "detection_note": "No content data found. BBP was not detected in water migrates from 10 PP containers microwaved up to 30 min (LOD 0.31 ug/L) in Moreira et al. 2014. Treat as typically non-detect in PP.",
+      "source": "Moreira MA, Andre LC, Cardeal ZL 2014, IJERPH 11(1):507-526, doi:10.3390/ijerph110100507, https://www.mdpi.com/1660-4601/11/1/507/html"
+    },
+    {
+      "material": "PP (#5) containers",
+      "substance": "DINP",
+      "role": "phthalate plasticiser",
+      "c_p0_mg_per_kg": null,
+      "detection_note": "No measured DINP content in PP or PET food containers found in this session. DINP is a PVC plasticiser; app should treat PP/PET DINP as no-data rather than assume a value.",
+      "source": "none found (search via FCCmigex paper and PP lunch-box studies)"
+    },
+    {
+      "material": "PET / CPET trays (frozen meals), PET-coated paperboard, PET lidding",
+      "substance": "Phthalates (DEHP, DBP, BBP, DINP)",
+      "role": "not intended PET additives",
+      "c_p0_mg_per_kg": null,
+      "detection_note": "No measured phthalate content for CPET trays or PET-coated board was found in this session. FCCmigex reports DEHP and DBP as the most commonly found FCCs across plastics overall, but the paper does not break this down by polymer. Data for PP/PET are sparse; available PP values are low (single-digit mg/kg or ND).",
+      "source": "Geueke B et al. 2022, Crit Rev Food Sci Nutr, doi:10.1080/10408398.2022.2067828, https://bura.brunel.ac.uk/bitstream/2438/25123/1/FullText.pdf"
+    },
+    {
+      "material": "CPET ovenable tray (multilayer CPET with APET sealing layer; Etimex E1231 lasagne tray)",
+      "substance": "Antimony (Sb, polycondensation catalyst residue, Sb2O3/Sb glycolate)",
+      "role": "catalyst residue",
+      "c_p0_mg_per_kg": {"min": 290, "median": null, "max": 318, "n_samples": 1},
+      "detection_note": "290 +/- 5.7 mg/kg by ICP-MS and 318 +/- 18.1 mg/kg by XRF on one tray type. ~62% of Sb is diffusible, ~38% bound. Tray thickness 0.031 cm, density 1.35 g/cm3, crystallinity 27%, TiO2 pigment 0.50% Ti. Status: VERIFIED.",
+      "source": "Haldimann M et al. 2013, Food Addit Contam A 30(3):587-598, doi:10.1080/19440049.2012.751631, https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/"
+    },
+    {
+      "material": "PET (bottles/containers, general)",
+      "substance": "Antimony (Sb)",
+      "role": "catalyst residue",
+      "c_p0_mg_per_kg": {"min": 100, "median": null, "max": 400, "n_samples": null},
+      "detection_note": "Review statement: total Sb 100-400 mg/kg reported in PET containers regardless of brand (refs incl. Shotyk 2006, Westerhoff 2008, Keresztes 2009, Welle & Franz 2011). Use 250 mg/kg as a central default only as a modelling assumption (UNVERIFIED as a median). Welle & Franz 2011 numeric values were not accessible in this session.",
+      "source": "Molecules 2023, 28(20):7166, 'Antimony in PET-Bottled Beverages: The Migration Puzzle', https://www.mdpi.com/1420-3049/28/20/7166/htm"
+    },
+    {
+      "material": "PET-coated paperboard trays",
+      "substance": "Antimony (Sb)",
+      "role": "catalyst residue in PET coating",
+      "c_p0_mg_per_kg": null,
+      "detection_note": "No measurement specific to PET-coated board found. Reasonable to reuse PET Sb content (100-400 mg/kg of PET) scaled by the thin coating mass; UNVERIFIED assumption.",
+      "source": "none found"
+    },
+    {
+      "material": "PP (#5) food-contact products (Japan, 39 products)",
+      "substance": "Irganox 1010 (phenolic antioxidant)",
+      "role": "antioxidant additive",
+      "c_p0_mg_per_kg": {"min": 74, "median": null, "max": 2649, "n_samples": 39},
+      "detection_note": "Most frequently detected antioxidant; n=39 is the number of PP product types analysed, not the number of positives. Status: VERIFIED (abstract).",
+      "source": "Kawamura Y et al. 2000, J Food Hyg Soc Japan 41:154-161, https://hero.epa.gov/hero/index.cfm/reference/details/reference_id/1325732"
+    },
+    {
+      "material": "PP (#5) cups, tubs, takeaway containers",
+      "substance": "Irgafos 168 (tris(2,4-di-tert-butylphenyl) phosphite)",
+      "role": "phosphite processing antioxidant",
+      "c_p0_mg_per_kg": null,
+      "detection_note": "Second most frequent antioxidant in 39 Japanese PP products (Kawamura 2000) but no concentration in abstract. Present in all three PP packages (homopolymer, copolymer, random copolymer) studied by Alin & Hakkarainen (KTH); microwave heating in ethanol or 90/10 isooctane/ethanol caused significant antioxidant degradation not seen with conventional heating. Typical loading 500-2000 mg/kg is an industry rule of thumb: UNVERIFIED.",
+      "source": "https://hero.epa.gov/hero/index.cfm/reference/details/reference_id/1325732 ; https://www.avhandlingar.se/avhandling/bafce67108/"
+    },
+    {
+      "material": "PP (#5)",
+      "substance": "Irgafos 168 degradation products: tris(2,4-di-tert-butylphenyl) phosphate (oxidised I-168) and 2,4-di-tert-butylphenol (2,4-DTBP)",
+      "role": "NIAS (non-intentionally added substances)",
+      "c_p0_mg_per_kg": null,
+      "detection_note": "Yang et al. 2016: Irgafos 168 added to PP degraded 11.7% under microwave and 31.88% under UV (pure standard <5%). FCCmigex lists 2,4-DTBP among the most frequently detected FCCs overall. No content values in mg/kg found.",
+      "source": "Yang YP et al. 2016, Xiandai Shipin Keji 32:304-309, https://hero.epa.gov/hero/index.cfm/reference/details/reference_id/8310653 ; https://bura.brunel.ac.uk/bitstream/2438/25123/1/FullText.pdf"
+    },
+    {
+      "material": "PS / EPS foam",
+      "substance": "Styrene (monomer)",
+      "role": "residual monomer",
+      "c_p0_mg_per_kg": null,
+      "detection_note": "Residual monomer content in PS not verified this session (UNVERIFIED). EFSA 2025 (as reported by BfR): most styrene levels detected in food were <10 ug/kg, isolated cases up to 230 ug/kg; EFSA did not assess >50 ug/kg. Supports a 'do not heat' warning rather than a quantitative model.",
+      "source": "BfR communication 026/2025 (17 Jul 2025) on EFSA Journal pub 9473, https://www.bfr.bund.de/en/notification/new-efsa-assessment-no-evidence-of-genomic-damage-from-styrene-in-food-packaging/"
+    },
+    {
+      "material": "LDPE / PET lidding films",
+      "substance": "(no chemical-specific data found)",
+      "role": "n/a",
+      "c_p0_mg_per_kg": null,
+      "detection_note": "No lidding-film migration data located. Context only: a PE reusable pouch released more micro/nanoplastic particles than PP containers on microwaving (Hussain 2023). PET component would carry Sb as above.",
+      "source": "Hussain KA et al. 2023, Environ Sci Technol 57:9782-9792, doi:10.1021/acs.est.3c01942, https://digitalcommons.unl.edu/civilengfacpub/298"
+    }
+  ],
+
+  "microwave_migration_measurements": [
+    {
+      "container": "5 new PP household containers (480-1200 mL), filled 90% with water",
+      "material": "PP",
+      "food_or_simulant": "ultrapure water",
+      "heating": "domestic microwave: 700 W for 1/3/5/7 min; 350 W for 1/3/5/7 min; 210 W for 10/15/20/30 min",
+      "substance": "DBP",
+      "measured_value": "<LOQ to 2.0 (max in 1200 mL container D)",
+      "unit": "ug/L",
+      "source": "Moreira, Andre, Cardeal 2014, IJERPH 11:507-526, doi:10.3390/ijerph110100507, https://www.mdpi.com/1660-4601/11/1/507/html (LOD 0.08, LOQ 0.2 ug/L)"
+    },
+    {
+      "container": "5 PP household containers used ~1 year (300-1200 mL), filled 90% with water",
+      "material": "PP (aged)",
+      "food_or_simulant": "ultrapure water",
+      "heating": "same as above (700/350/210 W, 1-30 min)",
+      "substance": "DBP",
+      "measured_value": "<LOQ to 7.5",
+      "unit": "ug/L",
+      "source": "Moreira et al. 2014, https://www.mdpi.com/1660-4601/11/1/507/html ; per-condition values only in figures (not extracted)"
+    },
+    {
+      "container": "10 PP containers (new and used)",
+      "material": "PP",
+      "food_or_simulant": "ultrapure water",
+      "heating": "700/350/210 W, 1-30 min",
+      "substance": "BBP",
+      "measured_value": "not detected",
+      "unit": "ug/L (LOD 0.31, LOQ 0.5)",
+      "source": "Moreira et al. 2014, https://www.mdpi.com/1660-4601/11/1/507/html"
+    },
+    {
+      "container": "PP baby-food containers and PE reusable pouch",
+      "material": "PP; PE",
+      "food_or_simulant": "deionised water; 3% acetic acid",
+      "heating": "microwave 3 min (1000 W full power per press coverage; power not in abstract: UNVERIFIED)",
+      "substance": "microplastic and nanoplastic particles (context only, not a chemical migrant)",
+      "measured_value": "up to 4.22 million microplastics and 2.11 billion nanoplastics per cm2",
+      "unit": "particles per cm2 of container surface",
+      "source": "Hussain KA et al. 2023, Environ Sci Technol 57:9782-9792, doi:10.1021/acs.est.3c01942, https://digitalcommons.unl.edu/civilengfacpub/298"
+    },
+    {
+      "container": "CPET ovenable ready-meal tray, lasagna with meat",
+      "material": "CPET (Sb 290-318 mg/kg)",
+      "food_or_simulant": "lasagna (meat)",
+      "heating": "CONVENTIONAL OVEN 200 C, 30 min (not microwave)",
+      "substance": "Sb",
+      "measured_value": "raw 1.7 -> cooked 9.4 (3.0 ug migrated measured; 4.0 ug modelled)",
+      "unit": "ug/kg fresh weight",
+      "source": "Haldimann et al. 2013, doi:10.1080/19440049.2012.751631, https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/"
+    },
+    {
+      "container": "CPET ovenable tray, pasta gratin",
+      "material": "CPET",
+      "food_or_simulant": "pasta gratin",
+      "heating": "conventional oven 200 C, 30 min",
+      "substance": "Sb",
+      "measured_value": "raw 2.2 -> cooked 13.7 (2.0 ug measured; 2.4 ug modelled)",
+      "unit": "ug/kg fresh weight",
+      "source": "Haldimann et al. 2013, https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/"
+    },
+    {
+      "container": "CPET ovenable tray, cannelloni bolognese",
+      "material": "CPET",
+      "food_or_simulant": "cannelloni (bolognese)",
+      "heating": "conventional oven 200 C, 30 min",
+      "substance": "Sb",
+      "measured_value": "raw 2.8 -> cooked 13.6 (1.8 ug measured; 2.2 ug modelled)",
+      "unit": "ug/kg fresh weight",
+      "source": "Haldimann et al. 2013, https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/"
+    },
+    {
+      "container": "CPET ovenable tray, cannelloni",
+      "material": "CPET",
+      "food_or_simulant": "cannelloni",
+      "heating": "conventional oven 200 C, 30 min",
+      "substance": "Sb",
+      "measured_value": "raw 3.7 -> cooked 14.9 (4.7 ug measured; 4.7 ug modelled)",
+      "unit": "ug/kg fresh weight",
+      "source": "Haldimann et al. 2013, https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/"
+    },
+    {
+      "container": "CPET ovenable tray, fish fillets provencal",
+      "material": "CPET",
+      "food_or_simulant": "fish fillets (provencal)",
+      "heating": "conventional oven 200 C, 30 min",
+      "substance": "Sb",
+      "measured_value": "raw 3.0 -> cooked 9.1 (3.6 ug measured; 3.4 ug modelled)",
+      "unit": "ug/kg fresh weight",
+      "source": "Haldimann et al. 2013, https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/"
+    },
+    {
+      "container": "CPET ovenable tray, pasta with meat",
+      "material": "CPET",
+      "food_or_simulant": "pasta (meat)",
+      "heating": "conventional oven 200 C, 30 min",
+      "substance": "Sb",
+      "measured_value": "raw 2.6 -> cooked 13.8 (2.1 ug measured; 2.8 ug modelled)",
+      "unit": "ug/kg fresh weight",
+      "source": "Haldimann et al. 2013, https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/"
+    },
+    {
+      "container": "CPET tray strips",
+      "material": "CPET",
+      "food_or_simulant": "3% acetic acid",
+      "heating": "24 h at 120 / 135 / 150 C (simulant test, not microwave)",
+      "substance": "Sb",
+      "measured_value": "6.8 / 18.6 / 62.0 % of Sb in polymer migrated; D = 3.0e-11 / 2.4e-10 / 3.3e-9 cm2/s; Ea = 188 +/- 36 kJ/mol; D0 = 3.6e14 cm2/s",
+      "unit": "% of initial Sb; cm2/s",
+      "source": "Haldimann et al. 2013, https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/"
+    },
+    {
+      "container": "PS dish (n=3), 380 mL water, 337 cm2",
+      "material": "PS",
+      "food_or_simulant": "distilled water",
+      "heating": "40 C, 10 days (NOT microwave; EU 'extreme conditions')",
+      "substance": "DEHP (also DMP 19, DBP <LOD, BBP <LOD, DEHA 40, NP 184, OP 39 ng/L)",
+      "measured_value": "701 +/- 479 (range 323-1239)",
+      "unit": "ng/L",
+      "source": "Fasano E et al. 2012, Food Control 27:132-138, doi:10.1016/j.foodcont.2012.03.005, https://www.iris.unina.it/retrieve/handle/11588/469035/52932/Migration%20of%20phthalates%2C.pdf"
+    }
+  ],
+
+  "tox_values": [
+    {
+      "substance": "DBP + BBP + DEHP + DINP (group)",
+      "agency": "EFSA CEP Panel",
+      "value": 50,
+      "unit": "ug/kg bw/day, expressed as DEHP equivalents",
+      "year": 2019,
+      "basis": "Reduction in fetal testosterone (common mode of action); DEHP as index compound; DINP included conservatively. Temporary (t-TDI) per Reg. 2023/1442 recitals 6-7. DIDP not in group. Apply as: sum_i(intake_i x RPF_i) <= 50 ug/kg bw/day.",
+      "source": "EFSA Journal 2019;17(12):5838, doi:10.2903/j.efsa.2019.5838, https://doaj.org/article/cad5a51311ba4452b9b5807ddfb881a9 ; https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442"
+    },
+    {"substance": "DBP", "agency": "EFSA", "value": 10, "unit": "ug/kg bw/day (individual t-TDI)", "year": 2019, "basis": "reproductive effects", "source": "https://doaj.org/article/cad5a51311ba4452b9b5807ddfb881a9"},
+    {"substance": "BBP", "agency": "EFSA", "value": 500, "unit": "ug/kg bw/day (individual t-TDI)", "year": 2019, "basis": "reproductive effects", "source": "https://doaj.org/article/cad5a51311ba4452b9b5807ddfb881a9"},
+    {"substance": "DEHP", "agency": "EFSA", "value": 50, "unit": "ug/kg bw/day (individual t-TDI)", "year": 2019, "basis": "reproductive effects", "source": "https://doaj.org/article/cad5a51311ba4452b9b5807ddfb881a9"},
+    {"substance": "DINP", "agency": "EFSA", "value": 150, "unit": "ug/kg bw/day (individual t-TDI)", "year": 2019, "basis": "liver effects", "source": "https://doaj.org/article/cad5a51311ba4452b9b5807ddfb881a9"},
+    {"substance": "DIDP", "agency": "EFSA", "value": 150, "unit": "ug/kg bw/day (individual t-TDI, not in group)", "year": 2019, "basis": "liver effects", "source": "https://doaj.org/article/cad5a51311ba4452b9b5807ddfb881a9"},
+    {
+      "substance": "Relative potency factors to DEHP-eq",
+      "agency": "EFSA 2019 (method) / European Commission 2023 (DIBP)",
+      "value": {"DEHP": 1, "DBP": 5, "BBP": 0.1, "DIBP": 4, "DINP": 0.3},
+      "unit": "dimensionless multiplier",
+      "year": 2019,
+      "basis": "RPF = TDI_DEHP / HBGV_i (COT summary of EFSA method). DBP 5, BBP 0.1, DEHP 1 VERIFIED via the DEHP-eq formula in Reg. 2023/1442 entry 36 and consistent with TDI ratios. DIBP 4 VERIFIED (Commission, entry 36; DIBP not in EFSA group). DINP 0.3 = UNVERIFIED: the EFSA table was not accessible; COT states an extra factor 3.3 was applied for DINP; 0.05/0.15 = 0.33. DINP is excluded from the regulatory DEHP-eq sum.",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442 ; https://cot.food.gov.uk/sites/default/files/tox2019-12.pdf"
+    },
+    {
+      "substance": "Bisphenol A (BPA)",
+      "agency": "EFSA CEP Panel",
+      "value": 0.2,
+      "unit": "ng/kg bw/day",
+      "year": 2023,
+      "basis": "Th17 cell increase in mice (immune); reference point 8.2 ng/kg bw/day HED; overall UF 50. Replaces 2015 t-TDI of 4 ug/kg bw/day.",
+      "source": "EFSA Journal 2023;21(4):6857, doi:10.2903/j.efsa.2023.6857, https://doaj.org/article/baf196cb09d54c4db530f4b44f9d37b5"
+    },
+    {
+      "substance": "DEHP",
+      "agency": "US EPA IRIS",
+      "value": 0.02,
+      "unit": "mg/kg bw/day (oral RfD) = 20 ug/kg bw/day",
+      "year": 1987,
+      "basis": "Increased relative liver weight; LOAEL 19 mg/kg-day; UF 1000; medium confidence. Also oral slope factor 1.4e-2 per mg/kg-day (B2, 1988).",
+      "source": "https://iris.epa.gov/ChemicalLanding/&substance_nmbr=14"
+    },
+    {
+      "substance": "Antimony (Sb)",
+      "agency": "WHO (GDWQ)",
+      "value": 6,
+      "unit": "ug/kg bw/day",
+      "year": 2003,
+      "basis": "90-day rat drinking-water study (potassium antimony tartrate), NOAEL 6.0 mg/kg bw/day (body weight gain, food/water intake), UF 1000. Drinking-water GV 20 ug/L.",
+      "source": "WHO Antimony chemical fact sheet 2022, https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/chemical-fact-sheets-2022/antimony-fact-sheet-2022.pdf"
+    },
+    {
+      "substance": "Styrene",
+      "agency": "WHO (GDWQ)",
+      "value": 7.7,
+      "unit": "ug/kg bw/day",
+      "year": null,
+      "basis": "DERIVED: NOAEL 7.7 mg/kg bw/day (2-yr rat drinking-water study, Beliles 1985) / UF 1000 (10x10x10 incl. carcinogenicity/genotoxicity); WHO GV 0.02 mg/L at 60 kg. TDI value itself not read on a WHO page: treat as UNVERIFIED-derived. Year of WHO assessment not confirmed.",
+      "source": "Australian Drinking Water Guidelines styrene page citing WHO, https://guidelines.nhmrc.gov.au/australian-drinking-water-guidelines/part-5/physical-chemical-characteristics/styrene-vinylbenzene"
+    },
+    {
+      "substance": "Styrene",
+      "agency": "EFSA CEP Panel",
+      "value": null,
+      "unit": "no TDI established",
+      "year": 2025,
+      "basis": "2020 opinion (IARC Monograph 121 impact): no evidence styrene from FCM raises cancer risk, but genotoxicity data gaps. 2025 opinion (EFSA Journal pub 9473): no evidence of oral mutagenicity; no health concern if migration does not exceed the Commission-proposed 40 ug/kg food. No numeric HBGV found.",
+      "source": "https://www.bfr.bund.de/en/notification/new-efsa-assessment-no-evidence-of-genomic-damage-from-styrene-in-food-packaging/ ; https://doaj.org/article/59addf3454594c6ea1a57676bdf00baf"
+    }
+  ],
+
+  "sml": [
+    {"substance": "DBP", "fcm_no": 157, "regulation": "Reg (EU) 10/2011 as amended by Reg (EU) 2023/1442", "sml_mg_per_kg": 0.12, "previous_sml_mg_per_kg": 0.3, "conditions": "Plasticiser only in repeated-use articles for non-fatty foods; technical support agent in polyolefins <= 0.05% w/w. Not authorised as plasticiser in single-use packaging.", "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442 ; previous value per https://www.tuvsud.com/en/e-ssentials-newsletter/consumer-products-and-retail-essentials/e-ssentials-6-2023/eu-the-16th-amendment-to-the-eu-plastic-food-contact-regulation-adopted"},
+    {"substance": "BBP", "fcm_no": 159, "regulation": "Reg 10/2011 as amended by 2023/1442", "sml_mg_per_kg": 6, "previous_sml_mg_per_kg": 30, "conditions": "Repeated-use articles; single-use articles for non-fatty foods except infant/follow-on formula; technical support agent <= 0.1% w/w.", "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442"},
+    {"substance": "DEHP", "fcm_no": 283, "regulation": "Reg 10/2011 as amended by 2023/1442", "sml_mg_per_kg": 0.6, "previous_sml_mg_per_kg": 1.5, "conditions": "Plasticiser only in repeated-use articles for non-fatty foods; technical support agent <= 0.1% w/w.", "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442"},
+    {"substance": "DINP + DIDP (group restriction 26)", "fcm_no": "728, 729", "regulation": "Reg 10/2011 as amended by 2023/1442", "sml_mg_per_kg": 1.8, "previous_sml_mg_per_kg": 9, "conditions": "Sum of DINP and DIDP. DINP not to be used together with FCM 157, 159, 283 or 1085.", "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442"},
+    {"substance": "DBP + DIBP + BBP + DEHP (new group restriction 36)", "fcm_no": "157, 1085, 159, 283", "regulation": "Reg (EU) 2023/1442", "sml_mg_per_kg": 0.6, "previous_sml_mg_per_kg": null, "conditions": "Expressed as DEHP equivalents: DBP*5 + DIBP*4 + BBP*0.1 + DEHP*1 <= 0.6 mg/kg food. DINP/DIDP excluded.", "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442"},
+    {"substance": "Plasticiser group restriction 32 (sum incl. phthalates 157, 159, 283, 728, 729, DIBP and other plasticisers)", "fcm_no": "group 32", "regulation": "Reg 10/2011 (entry retained/extended by 2023/1442)", "sml_mg_per_kg": 60, "previous_sml_mg_per_kg": 60, "conditions": "Sum of listed plasticisers; 2023 amendment added DIBP (1085) and another FCM number. The exact substance list was garbled in the fetched text: verify in the Official Journal.", "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442"},
+    {"substance": "DIBP", "fcm_no": 1085, "regulation": "Reg 2023/1442", "sml_mg_per_kg": null, "previous_sml_mg_per_kg": null, "conditions": "Not authorised as additive; controlled only through group restrictions 32 and 36 because it co-occurs.", "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442"},
+    {"substance": "Antimony (Sb)", "fcm_no": "Annex II metal", "regulation": "Reg (EU) 10/2011 Annex II", "sml_mg_per_kg": 0.04, "previous_sml_mg_per_kg": null, "conditions": "Applies to plastic FCM incl. PET/CPET; Haldimann 2013 found no exceedance in 6 oven-cooked meals.", "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/ ; https://foodpackagingforum.org/Research/Antimony-migration-from-PET"},
+    {"substance": "Styrene", "fcm_no": 193, "regulation": "Commission proposal (status UNVERIFIED as of Oct 2026)", "sml_mg_per_kg": 0.04, "previous_sml_mg_per_kg": null, "conditions": "Proposed SML 40 ug/kg; EFSA 2025 found no health concern at or below this. Whether it has been adopted into 10/2011 was not checked.", "source": "https://www.bfr.bund.de/en/notification/new-efsa-assessment-no-evidence-of-genomic-damage-from-styrene-in-food-packaging/"},
+    {"substance": "Derivation check (all phthalate SMLs)", "fcm_no": null, "regulation": "Reg 2023/1442 recital 12 (20% allocation)", "sml_mg_per_kg": null, "previous_sml_mg_per_kg": null, "conditions": "DERIVED: SML = TDI x 60 kg x 0.20 / 1 kg food reproduces DEHP 0.6, DBP 0.12, BBP 6, DINP/DIDP 1.8 exactly. The recitals do not state the 60 kg / 1 kg assumption explicitly.", "source": "compiler calculation from values above"},
+    {"substance": "Transition dates for 2023/1442", "fcm_no": null, "regulation": "Reg 2023/1442 Art. 2-3", "sml_mg_per_kg": null, "previous_sml_mg_per_kg": null, "conditions": "Published 12 Jul 2023, in force 1 Aug 2023; compliant-with-old-rules materials placed on market before 1 Feb 2025 may be sold until stocks run out.", "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442"}
+  ],
+
+  "body_weights": [
+    {"group": "adult", "body_weight_kg": 70, "food_assumption": null, "agency": "EFSA Scientific Committee", "year": 2012, "note": "EFSA default for EU adults in absence of data; replaces 60 kg in EFSA work.", "source": "https://www.efsa.europa.eu/en/press/news/120307a"},
+    {"group": "toddler", "body_weight_kg": 12, "food_assumption": null, "agency": "EFSA Scientific Committee", "year": 2012, "note": "", "source": "https://www.efsa.europa.eu/en/press/news/120307a"},
+    {"group": "infant", "body_weight_kg": 5, "food_assumption": null, "agency": "EFSA Scientific Committee", "year": 2012, "note": "", "source": "https://www.efsa.europa.eu/en/press/news/120307a"},
+    {"group": "adult (EU FCM convention)", "body_weight_kg": 60, "food_assumption": "1 kg/day of food packaged in 6 dm2 (cube) = ~17 g food/kg bw/day", "agency": "EU/SCF convention underlying Reg 10/2011 SMLs", "year": null, "note": "WHO also uses 60 kg adult for drinking-water GVs (e.g., styrene).", "source": "https://foodpackagingforum.org/news/efsa-scientific-opinion-on-fcms ; https://www.efsa.europa.eu/sites/default/files/2025-01/21_EFSA_exposure%20from%202016%20opinion_11th%20FCM%20Network_L%20Castle.pdf"},
+    {"group": "EFSA 2016 FCM consumption categories", "body_weight_kg": null, "food_assumption": "about 9x, 5x, 3x and 1.2x the 17 g/kg bw/day default, i.e. ~150, ~85, ~50, ~20 g food/kg bw/day (DERIVED from stated multipliers; category names not extracted)", "agency": "EFSA CEF Panel", "year": 2016, "note": "Based on infant and toddler consumption.", "source": "https://www.efsa.europa.eu/en/efsajournal/pub/4357"},
+    {"group": "surface-to-mass ratio", "body_weight_kg": null, "food_assumption": "default 6 dm2/kg confirmed appropriate; children 1-4 y mean 8 (4.2-18.5), 4-6 y mean 10 (2.7-20.8), infants <12 mo below 6 (0.8-11.6) dm2/kg", "agency": "EFSA CEF Panel", "year": 2016, "note": "Small packs (snacks) well above 6 dm2/kg.", "source": "https://www.efsa.europa.eu/sites/default/files/2025-01/21_EFSA_exposure%20from%202016%20opinion_11th%20FCM%20Network_L%20Castle.pdf"}
+  ],
+
+  "fccmigex_summary": "FCCmigex (Food Packaging Forum; Geueke et al. 2022, Crit Rev Food Sci Nutr, doi:10.1080/10408398.2022.2067828) systematically maps 1,210 studies and 22,522 entries; 2,881 of 3,142 food contact chemicals investigated were detected. Plastics are the most studied material (759 studies, 1,975 chemicals detected; >1,000 detected migrating into food/simulants, mostly from single-use items). Entries by polymer: PE 1,842, PP 1,763, multilayer 1,306, PET 1,258 (rPET 207), PS 880, PA 753, PVC 736. Across plastics DEHP and DBP are the two most commonly found chemicals; DiBP, DEHA, BHT, the antioxidant breakdown product 2,4-di-tert-butylphenol and cyclic siloxanes D5/D6 are also among the most frequent; BPA mainly from polycarbonate. The paper does not give per-polymer rankings (the online dashboard allows filtering by 12 polymers), and it does not specifically discuss Sb in PET or styrene in PS. Sources: https://bura.brunel.ac.uk/bitstream/2438/25123/1/FullText.pdf ; https://foodpackagingforum.org/news/fccmigex-dashboard-now-has-in-depth-plastics-page",
+
+  "notes": [
+    "Phthalates are PVC plasticisers. For PP the only quantitative content data found are two Chinese studies (DBP/DIBP/DEHP up to ~1-3 mg/kg, often ND). No content data were found for CPET trays, PET-coated board or lidding films. Do not invent defaults for DINP in PP/PET.",
+    "Under Reg 2023/1442 DBP and DEHP may be used as plasticisers only in repeated-use articles for non-fatty food, so their presence in single-use PP/PET packaging is as a contaminant (or technical support agent at <=0.05-0.1%), not an intended additive.",
+    "Microwave phthalate data suitable for validation are thin: Moreira et al. 2014 (PP, water, 210-700 W, 1-30 min) gives DBP <LOQ-2.0 ug/L new and <LOQ-7.5 ug/L for 1-year-used containers; BBP ND. Per-condition values are only in figures.",
+    "Haldimann et al. 2013 is the best CPET validation set but is conventional oven 200 C/30 min. The same paper (citing Haldimann et al. 2007, Food Addit Contam 24:860-868) states microwave heating gives lower Sb migration than conventional oven heating, and that some ready meals in the 2007 study exceeded 40 ug/kg. The 2007 numbers were not accessible (PubMed page did not load).",
+    "Haldimann 2013 diffusion parameters (D0 = 3.6e14 cm2/s, Ea = 188 kJ/mol, 62% diffusible Sb) can parametrise an Arrhenius/Fickian Sb model for CPET. Note that 'Haldimann 2013' is about one CPET lasagne tray type and filled-to-brim trays overstate typical retail conditions.",
+    "Welle & Franz 2011 (Sb in PET bottles, activation-energy model) was identified but its numeric values were not retrieved; cited only through the 2023 Molecules review.",
+    "Microwave degrades PP antioxidants in fatty/ethanolic simulants (Alin & Hakkarainen, KTH) and Irgafos 168 in PP (11.7% degradation, Yang et al. 2016), producing 2,4-DTBP and oxidised Irgafos 168 (NIAS).",
+    "Chang et al. 2019 (J Food Eng 244:142-149, doi:10.1016/j.jfoodeng.2018.09.028) modelled BHT and Irganox 1010 migration from PP including 700 W microwave; model overestimated HPLC values by 1.5-2x; no numbers in abstract (https://scholar.korea.ac.kr/handle/2021.sw.korea/67163?mode=full).",
+    "Liu et al. 2020: PP lunch-box DBP/DIBP mobility into isooctane ~9-10% at 4-40 C, rising quickly at 60 C (first-order k1 0.2256 for DBP at 60 C, units not stated).",
+    "Recommended app defaults (compiler suggestion): adult 70 kg (EFSA 2012) with a toggle for 60 kg (the convention behind SMLs and WHO GVs); child 12 kg toddler; infant 5 kg. For phthalate group risk, compute DEHP-eq = 1*DEHP + 5*DBP + 0.1*BBP (+4*DIBP if modelled) and compare with 50 ug/kg bw/day; handle DINP against its own 150 ug/kg bw/day TDI unless the user opts to add it at RPF 0.3 (UNVERIFIED).",
+    "UNVERIFIED items: DINP RPF 0.3; unit of Lan et al. 2022 PP phthalate contents; typical Irgafos 168 loading (500-2000 mg/kg); residual styrene in PS; WHO styrene TDI 7.7 ug/kg bw/day (derived from NOAEL/UF, not read on WHO page); styrene SML 0.04 mg/kg adoption status; Hussain 2023 microwave power 1000 W (press report only); 250 mg/kg central Sb default; Sb in PET-coated board.",
+    "Not checked in this session: Regulation (EU) 2024/3190 restricting BPA in food contact materials; EFSA 2026 draft update of default values (COT paper TOX-2026-13 exists: https://cot.food.gov.uk/sites/default/files/2026-03/TOX-2026-13%20EFSA%20consultation%20on%20UF%20and%20DVs%20Acc%20V%20SO.pdf), which may change the 70/12/5 kg defaults.",
+    "Access failures: EFSA Wiley full text (403), Europe PMC API (429 rate limit), PubMed 17613073 and PMC2739648 (captcha). Numbers from those sources are therefore absent."
+  ]
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ZapWise heating guide</title>
+<link rel="stylesheet" href="zapwise.css">
+<style>
+  .wrap { padding: 0 16px; }
+  .product { display: grid; grid-template-columns: 76px 1fr; gap: 14px; align-items: center; padding: 14px 16px; margin-top: 10px; }
+  .product .thumb { width: 76px; height: 76px; border-radius: 16px; box-shadow: var(--inset-sm); display: grid; place-items: center; }
+  .product h2 { font: 800 18px/1.2 'Nunito'; }
+  .product p { font: 700 13px/1.35 'Nunito'; color: var(--cocoa-2); margin-top: 4px; }
+  .steps { margin-top: 18px; padding: 16px; }
+  .steps h3 { font: 600 17px/1 'Pixelify Sans'; margin-bottom: 12px; }
+  .step { display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: center; padding: 7px 0; font: 700 15px/1.3 'Nunito'; }
+  .mine { margin-top: 14px; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; }
+  .mine .l { font: 800 14px/1.3 'Nunito'; color: var(--cocoa-2); }
+  .mine .big { font: 600 30px/1 'Pixelify Sans'; color: var(--cocoa); }
+  .ask { font: 800 17px/1.3 'Nunito'; margin: 22px 4px 12px; }
+  .opts { display: grid; gap: 12px; }
+</style></head>
+<body>
+<div class="phone" id="shot">
+  <div class="status"><span>9:41</span><span>5G 100%</span></div>
+  <div class="topbar">
+    <div class="round"><span style="font:800 20px/1 Nunito">&lsaquo;</span></div>
+    <div class="title">Heating guide</div>
+    <div style="width:44px"></div>
+  </div>
+  <div class="wrap">
+    <div class="raised product">
+      <div class="thumb"><img class="px" src="img/obj_meal_box.png" style="width:60px;height:46px"></div>
+      <div><h2>Mac and cheese bowl</h2><p>Sample product, 9.5 oz<br>Black tray, CPET #1, film lid</p></div>
+    </div>
+    <div class="raised steps">
+      <h3>The box says</h3>
+      <div class="step"><img class="px" src="img/icon_timer.png" style="width:32px;height:32px">1100 W for 2 min</div>
+      <div class="step"><img class="px" src="img/icon_info.png" style="width:32px;height:32px">Peel back the film at one corner</div>
+      <div class="step"><img class="px" src="img/icon_swap.png" style="width:32px;height:32px">Stir, then heat 1 more min</div>
+      <div class="step"><img class="px" src="img/icon_check.png" style="width:32px;height:32px">Let it stand for 1 min</div>
+    </div>
+    <div class="well mine">
+      <div class="l">On your 700 W<br>microwave</div>
+      <div class="big">4:43</div>
+    </div>
+    <div class="ask">Heat it like the box says, or change something?</div>
+    <div class="opts">
+      <div class="cta" style="height:56px;font-size:17px">Heat as the box says</div>
+      <div class="soft-btn" style="margin-top:6px"><img class="px" src="img/icon_plate.png" style="width:32px;height:32px">Move it to a plate</div>
+      <div class="soft-btn"><img class="px" src="img/icon_container.png" style="width:32px;height:32px">Use one of my containers</div>
+    </div>
+  </div>
+</div>
+</body></html>

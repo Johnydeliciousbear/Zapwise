@@ -1,0 +1,1130 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZapWise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800;900&display=swap">
+<style>
+/* the hidden attribute must win over display rules (the sheet and coach overlays use display:flex) */
+[hidden] { display: none !important; }
+/* Layout: one phone-sized app; pixel kitchen as the home, soft UI cards and sheets around it. Single warm-pink look by design. */
+:root {
+  --milk: #FDE9E7;      /* app ground and soft surfaces */
+  --stage: #F6D9D7;     /* desktop backdrop around the phone */
+  --shade: #E9C3C2;     /* soft shadow, bottom right */
+  --glow: #FFFFFF;      /* soft highlight, top left */
+  --cocoa: #4B2E39;     /* text and pixel outline */
+  --cocoa-2: #8A5F6C;   /* secondary text */
+  --rose: #E0607A;      /* brand graphics only */
+  --rose-deep: #B23A57; /* links, active labels */
+  --straw: #F59BAA;     /* pixel button fill */
+  --straw-shade: #E27C8F;
+  --blush: #FBC9CF;
+  --butter: #FFE3A3;
+  --mint: #A8DCC6;
+  --mint-deep: #2E6E58;
+  --peach: #FFC4A3;
+  --sky: #C6E6F3;
+  --paper: #FFFFFF;
+  --dim: rgba(75, 46, 57, 0.58);
+  --display: 'Fredoka', 'Nunito', ui-rounded, system-ui, sans-serif;
+  --body: 'Nunito', ui-rounded, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --raised: 6px 6px 14px var(--shade), -6px -6px 14px var(--glow);
+  --raised-sm: 3px 3px 8px var(--shade), -3px -3px 8px var(--glow);
+  --inset: inset 4px 4px 9px var(--shade), inset -4px -4px 9px var(--glow);
+  --inset-sm: inset 2px 2px 5px var(--shade), inset -2px -2px 5px var(--glow);
+  color-scheme: light;
+}
+html, body { height: 100%; }
+body { background: var(--stage); color: var(--cocoa); font-family: var(--body); font-weight: 600; -webkit-font-smoothing: antialiased; }
+* { box-sizing: border-box; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; text-align: inherit; }
+button:focus-visible, input:focus-visible { outline: 3px solid var(--rose-deep); outline-offset: 2px; }
+img.px { image-rendering: pixelated; image-rendering: crisp-edges; display: block; }
+h1, h2, h3, p { margin: 0; }
+
+.stage { min-height: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 28px; padding-block: 24px; padding-inline: 16px; }
+.phone { position: relative; width: 392px; height: min(844px, calc(100dvh - 48px)); min-height: 640px; background: var(--milk); border-radius: 40px; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(75, 46, 57, 0.35), 0 0 0 10px var(--paper), 0 0 0 12px var(--shade); display: flex; flex-direction: column; }
+.side-note { max-width: 260px; display: grid; gap: 12px; font-size: 14px; line-height: 1.45; color: var(--cocoa-2); }
+.side-note h2 { font: 600 22px/1.2 var(--display); color: var(--cocoa); text-wrap: balance; }
+.side-note .row { display: flex; gap: 10px; flex-wrap: wrap; }
+@media (max-width: 520px) {
+  .stage { padding: 0; gap: 0; display: block; height: 100%; min-height: 0; }
+  .phone { width: 100%; height: 100%; min-height: 0; border-radius: 0; box-shadow: none; }
+  .side-note { display: none; }
+}
+
+.view { flex: 1; overflow-y: auto; overflow-x: hidden; padding-bottom: 24px; scrollbar-width: none; }
+.view::-webkit-scrollbar { display: none; }
+.view.with-tabs { padding-bottom: 104px; }
+
+/* surfaces */
+.raised { background: var(--milk); border-radius: 22px; box-shadow: var(--raised); }
+.well { background: var(--milk); border-radius: 18px; box-shadow: var(--inset); }
+.pad { padding: 14px 16px; }
+.wrap { padding-inline: 16px; display: grid; gap: 14px; }
+
+/* top bar */
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px 8px; min-height: 64px; }
+.topbar .title { font: 600 21px/1.2 var(--display); text-align: center; flex: 1; }
+.round { width: 44px; height: 44px; border-radius: 50%; box-shadow: var(--raised-sm); display: grid; place-items: center; flex: none; font: 800 22px/1 var(--body); }
+.round:active { box-shadow: var(--inset-sm); }
+.pill { display: flex; align-items: center; gap: 6px; height: 40px; padding: 0 14px 0 8px; border-radius: 999px; box-shadow: var(--raised-sm); font: 600 18px/1 var(--display); font-variant-numeric: tabular-nums; }
+
+/* buttons */
+.cta { width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 58px; padding: 0 16px; border: 3px solid var(--cocoa); border-radius: 6px; background: var(--straw); color: var(--cocoa); font: 600 19px/1.1 var(--display); box-shadow: 0 5px 0 var(--cocoa); position: relative; text-align: center; transition: transform .08s, box-shadow .08s; }
+.cta::after { content: ''; position: absolute; left: 6px; right: 6px; top: 4px; height: 4px; background: var(--blush); border-radius: 2px; pointer-events: none; }
+.cta:active { transform: translateY(5px); box-shadow: 0 0 0 var(--cocoa); }
+.cta[disabled] { background: #EED9DB; color: #8E7480; border-color: #B79AA3; box-shadow: 0 5px 0 #B79AA3; cursor: default; }
+.cta[disabled]::after { display: none; }
+.soft { width: 100%; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 8px 14px; border-radius: 16px; background: var(--milk); box-shadow: var(--raised-sm); font: 800 16px/1.25 var(--body); }
+.soft:active, .soft[aria-pressed="true"] { box-shadow: var(--inset-sm); }
+.soft .sub { margin-left: auto; font: 700 13px/1.2 var(--body); color: var(--cocoa-2); text-align: right; }
+.soft .sub b { color: var(--mint-deep); font-weight: 800; }
+.soft .txt { display: grid; gap: 2px; min-width: 0; }
+.soft .txt small { font: 700 12.5px/1.3 var(--body); color: var(--cocoa-2); }
+.link { color: var(--rose-deep); font: 800 14px/1.2 var(--body); border-bottom: 1.5px solid currentColor; padding-bottom: 1px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; min-height: 30px; padding: 3px 12px 3px 8px; border-radius: 999px; border: 2px solid var(--cocoa); font: 800 13px/1 var(--body); background: var(--paper); }
+.chip.lower { background: var(--mint); } .chip.middle { background: var(--butter); } .chip.higher { background: var(--peach); }
+.tag { display: inline-block; padding: 3px 8px; border-radius: 6px; background: var(--butter); font: 800 11px/1.2 var(--body); letter-spacing: .02em; }
+.choice { display: flex; flex-wrap: wrap; gap: 8px; }
+.choice button { min-height: 44px; padding: 0 14px; border-radius: 999px; box-shadow: var(--raised-sm); font: 800 14px/1 var(--body); }
+.choice button[aria-pressed="true"] { box-shadow: var(--inset-sm); color: var(--rose-deep); background: var(--blush); }
+.muted { color: var(--cocoa-2); }
+.small { font-size: 13px; line-height: 1.4; }
+.h2 { font: 600 18px/1.2 var(--display); }
+.h3 { font: 600 16px/1.25 var(--display); }
+
+/* home */
+.quest-banner { display: grid; grid-template-columns: 44px 1fr; gap: 6px 12px; align-items: center; margin: 4px 16px 0; padding: 12px 14px; width: calc(100% - 32px); }
+.quest-banner .ic { grid-row: span 2; width: 44px; height: 44px; border-radius: 12px; box-shadow: var(--inset-sm); display: grid; place-items: center; }
+.quest-banner .t { font: 600 16px/1.2 var(--display); }
+.quest-banner .row { display: flex; align-items: center; gap: 10px; }
+.track { flex: 1; height: 14px; border-radius: 999px; box-shadow: var(--inset-sm); padding: 3px; overflow: hidden; background: var(--milk); }
+.track > i { display: block; height: 100%; border-radius: 999px; background: var(--butter); border: 1.5px solid var(--cocoa); min-width: 8px; transition: width .4s; }
+.count { font: 600 15px/1 var(--display); color: var(--cocoa-2); font-variant-numeric: tabular-nums; }
+.scene { position: relative; width: 100%; aspect-ratio: 196 / 216; margin-top: 14px; max-width: 100%; }
+.scene > img.base { position: absolute; inset: 0; width: 100%; height: 100%; }
+.scene .hot { position: absolute; display: block; border-radius: 6px; }
+.scene .hot img { width: 100%; height: 100%; }
+.scene .hot:focus-visible { outline-offset: 1px; }
+.scene .slot { border: 2px dashed var(--straw-shade); display: grid; place-items: center; color: var(--straw-shade); font: 700 26px/1 var(--display); background: rgba(255, 255, 255, .35); }
+.scene .item { position: absolute; pointer-events: none; }
+.scene .spark { position: absolute; width: 4.6%; pointer-events: none; animation: twinkle 1.6s ease-in-out infinite; }
+@keyframes twinkle { 50% { transform: scale(.7); opacity: .6; } }
+.zappy-hop { animation: hop .5s ease-out; }
+@keyframes hop { 30% { transform: translateY(-8%); } }
+.home-cta { padding: 10px 16px 0; }
+.scene { max-width: 100%; }
+
+/* tabbar */
+.tabbar { position: absolute; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); display: flex; justify-content: space-around; align-items: center; height: 76px; border-radius: 28px; background: var(--milk); box-shadow: var(--raised); padding: 0 8px; z-index: 5; }
+.tab { display: flex; flex-direction: column; align-items: center; gap: 4px; width: 78px; padding: 7px 0 6px; border-radius: 18px; font: 800 12px/1 var(--body); color: var(--cocoa-2); }
+.tab[aria-current="page"] { box-shadow: var(--inset-sm); color: var(--rose-deep); }
+
+/* scan */
+.viewfinder { position: relative; margin: 6px 16px 0; height: 300px; border-radius: 24px; background: #2F1F27; display: grid; place-items: center; overflow: hidden; }
+.viewfinder::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 45%, rgba(255, 255, 255, .10), transparent 60%); }
+.viewfinder .corner { position: absolute; width: 34px; height: 34px; border: 4px solid var(--paper); }
+.vf-hint { position: absolute; bottom: 14px; left: 0; right: 0; text-align: center; color: var(--paper); font: 700 13px/1.3 var(--body); }
+.samples { padding: 16px 16px 0; display: grid; gap: 10px; }
+.sample-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.sample { display: flex; align-items: center; gap: 10px; min-height: 60px; padding: 8px 10px; border-radius: 14px; box-shadow: var(--raised-sm); font: 800 13px/1.2 var(--body); }
+.sample[aria-pressed="true"] { box-shadow: var(--inset-sm); background: var(--blush); }
+.shutter-row { display: flex; justify-content: center; padding: 18px 0 22px; }
+.shutter { width: 76px; height: 76px; border-radius: 50%; background: var(--straw); border: 4px solid var(--cocoa); box-shadow: 0 5px 0 var(--cocoa), inset 0 0 0 5px var(--blush); display: grid; place-items: center; }
+.shutter:active { transform: translateY(5px); box-shadow: 0 0 0 var(--cocoa), inset 0 0 0 5px var(--blush); }
+
+/* reading */
+.reading { display: grid; justify-items: center; gap: 18px; padding: 48px 24px; text-align: center; }
+.checks { width: 100%; display: grid; gap: 10px; }
+.check-row { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 14px; box-shadow: var(--inset-sm); font: 700 14px/1.3 var(--body); text-align: left; opacity: .45; transition: opacity .3s; }
+.check-row.on { opacity: 1; }
+
+/* product */
+.product { display: grid; grid-template-columns: 78px 1fr; gap: 14px; align-items: center; }
+.thumb { width: 78px; height: 78px; border-radius: 16px; box-shadow: var(--inset-sm); display: grid; place-items: center; }
+.product h2 { font: 600 18px/1.2 var(--display); }
+.product p { font: 700 13px/1.4 var(--body); color: var(--cocoa-2); margin-top: 3px; }
+.steps { display: grid; gap: 4px; }
+.step { display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: center; min-height: 44px; font: 700 15px/1.3 var(--body); }
+.time-well { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; }
+.time-well .big { font: 600 34px/1 var(--display); font-variant-numeric: tabular-nums; }
+.warn { border: 3px solid var(--cocoa); border-radius: 16px; background: var(--peach); padding: 14px; display: grid; gap: 8px; }
+.warn .hd { display: flex; align-items: center; gap: 10px; font: 600 17px/1.2 var(--display); }
+
+/* result */
+.gauge-card { display: grid; grid-template-columns: 168px 1fr; gap: 12px; align-items: center; padding: 16px; }
+.ring { width: 168px; height: 168px; border-radius: 50%; box-shadow: var(--inset); position: relative; display: grid; place-items: center; }
+.ring svg { position: absolute; inset: 0; }
+.ring .v { text-align: center; position: relative; }
+.ring .v b { display: block; font: 600 40px/1 var(--display); font-variant-numeric: tabular-nums; }
+.ring .v span { font: 800 12px/1.25 var(--body); color: var(--cocoa-2); }
+.side { display: grid; gap: 10px; justify-items: start; }
+.who { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 6px; padding: 6px; }
+.who button { border-radius: 14px; padding: 10px 12px; font: 800 14px/1.2 var(--body); display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 44px; }
+.who button[aria-pressed="true"] { box-shadow: var(--raised-sm); }
+.who b { font: 600 19px/1 var(--display); font-variant-numeric: tabular-nums; }
+.foot { font: 700 12.5px/1.45 var(--body); color: var(--cocoa-2); }
+
+/* tips and coach */
+.tip { display: grid; grid-template-columns: 46px 1fr; gap: 10px; align-items: start; background: var(--paper); border: 3px solid var(--cocoa); border-radius: 6px; padding: 10px 12px; box-shadow: 4px 4px 0 var(--cocoa); font: 700 14px/1.4 var(--body); }
+.tip .act { grid-column: 2; justify-self: end; }
+.coach { position: absolute; inset: 0; z-index: 30; }
+.coach .ring-hole { position: absolute; border-radius: 14px; box-shadow: 0 0 0 9999px var(--dim); border: 3px solid var(--butter); transition: all .25s; pointer-events: none; }
+.coach .ring-hole.none { left: 50%; top: 40%; width: 0; height: 0; border: 0; }
+.coach .bubble { position: absolute; left: 16px; right: 16px; background: var(--paper); border: 3px solid var(--cocoa); border-radius: 6px; box-shadow: 4px 4px 0 var(--cocoa); padding: 12px 14px; display: grid; grid-template-columns: 60px 1fr; gap: 12px; align-items: start; }
+.coach .bubble p { font: 700 15px/1.4 var(--body); }
+.coach .bubble .btns { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; }
+.coach .dots { display: flex; gap: 6px; }
+.coach .dots i { width: 8px; height: 8px; border-radius: 50%; background: var(--blush); border: 1.5px solid var(--cocoa); }
+.coach .dots i.on { background: var(--rose); }
+.mini-btn { min-height: 40px; padding: 0 16px; border: 2.5px solid var(--cocoa); border-radius: 6px; background: var(--straw); font: 600 15px/1 var(--display); box-shadow: 0 3px 0 var(--cocoa); }
+.mini-btn:active { transform: translateY(3px); box-shadow: none; }
+.mini-btn.ghost { background: var(--paper); }
+
+/* sheet */
+.sheet-wrap { position: absolute; inset: 0; z-index: 20; display: flex; align-items: flex-end; }
+.sheet-wrap .backdrop { position: absolute; inset: 0; background: var(--dim); animation: fade .2s; }
+.sheet { position: relative; width: 100%; max-height: 88%; overflow-y: auto; background: var(--milk); border-radius: 28px 28px 0 0; padding: 10px 16px calc(24px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 14px; animation: rise .25s ease-out; }
+.sheet .grab { width: 44px; height: 5px; border-radius: 3px; background: var(--shade); justify-self: center; }
+.sheet .sh-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.sheet .sh-head h2 { font: 600 20px/1.2 var(--display); }
+@keyframes rise { from { transform: translateY(40px); opacity: .4; } }
+@keyframes fade { from { opacity: 0; } }
+.toast { position: absolute; left: 50%; bottom: 112px; transform: translateX(-50%); background: var(--cocoa); color: var(--paper); padding: 10px 16px; border-radius: 999px; font: 800 14px/1.2 var(--body); z-index: 40; white-space: nowrap; max-width: calc(100% - 32px); overflow: hidden; text-overflow: ellipsis; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.tile { display: grid; justify-items: center; gap: 8px; padding: 14px 8px; border-radius: 16px; box-shadow: var(--raised-sm); font: 800 13px/1.25 var(--body); text-align: center; min-height: 112px; align-content: center; }
+.tile[aria-pressed="true"] { box-shadow: var(--inset-sm); background: var(--blush); }
+.list { display: grid; gap: 10px; }
+.formula { font: 700 14px/1.6 var(--body); padding: 12px 14px; overflow-x: auto; }
+table.params { width: 100%; border-collapse: collapse; font: 700 13px/1.35 var(--body); }
+table.params td, table.params th { padding: 7px 6px; border-bottom: 1px solid var(--shade); text-align: left; vertical-align: top; }
+table.params th { font: 800 12px/1.2 var(--body); color: var(--cocoa-2); }
+table.params td.n { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* log */
+.seg { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 6px; }
+.seg button { min-height: 44px; border-radius: 14px; font: 800 14px/1 var(--body); color: var(--cocoa-2); }
+.seg button[aria-pressed="true"] { box-shadow: var(--raised-sm); color: var(--rose-deep); }
+.entry { display: grid; grid-template-columns: 56px 1fr auto; gap: 12px; align-items: center; padding: 10px 12px; }
+.entry .when { font: 700 12.5px/1.3 var(--body); color: var(--cocoa-2); }
+.entry b { font: 800 15px/1.2 var(--body); }
+.bars text { font: 700 11px var(--body); fill: var(--cocoa-2); }
+.bars .val { font: 600 12px var(--display); fill: var(--cocoa); }
+.empty { display: grid; justify-items: center; gap: 12px; text-align: center; padding: 28px 18px; }
+
+.field { width: 100%; min-height: 48px; border-radius: 14px; border: 2px solid var(--cocoa); padding: 0 14px; font: 700 16px var(--body); background: #fff; color: var(--cocoa); }
+.sci summary, .limits summary { cursor: pointer; }
+/* quick estimate */
+.qgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.qcell { display: grid; justify-items: center; gap: 6px; padding: 12px 8px; border-radius: 16px; font: 800 12.5px/1.25 var(--body); color: var(--cocoa); text-align: center; min-height: 96px; align-content: center; }
+.qcell[aria-pressed="true"] { background: var(--blush, #FBC9CF); color: var(--rose-deep); outline: 3px solid var(--cocoa); }
+.limits summary { cursor: pointer; min-height: 32px; }
+
+/* learn */
+.card-t { display: flex; align-items: center; gap: 10px; font: 600 17px/1.2 var(--display); margin-bottom: 6px; }
+.learn p { font: 600 14.5px/1.5 var(--body); }
+.learn p + p { margin-top: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<div class="stage">
+  <main class="phone" id="phone" aria-label="ZapWise app prototype">
+    <div class="view" id="view"></div>
+    <nav class="tabbar" id="tabbar" aria-label="Main">
+      <button class="tab" data-act="tab" data-to="home"><img class="px" src="img/icon_kitchen.png" alt="" width="32" height="32">Kitchen</button>
+      <button class="tab" data-act="tab" data-to="log"><img class="px" src="img/icon_log.png" alt="" width="32" height="32">Log</button>
+      <button class="tab" data-act="tab" data-to="learn"><img class="px" src="img/icon_learn.png" alt="" width="32" height="32">Learn</button>
+      <button class="tab" data-act="tab" data-to="me"><img class="px" src="img/icon_me.png" alt="" width="32" height="32">Me</button>
+    </nav>
+    <div class="sheet-wrap" id="sheet" hidden><div class="backdrop" data-act="closeSheet"></div><section class="sheet" id="sheetBody" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"></section></div>
+    <div class="coach" id="coach" hidden></div>
+    <div class="toast" id="toast" role="status" hidden></div>
+  </main>
+  <aside class="side-note">
+    <img class="px" src="img/zappy_happy.png" alt="Zappy" width="126" height="96">
+    <h2>ZapWise prototype</h2>
+    <p>Tap around the kitchen, scan a sample box and save how you heated it. Products and percentages are sample values for the demo.</p>
+    <div class="row"><button class="mini-btn ghost" data-act="replayTour">Replay tour</button><button class="mini-btn ghost" data-act="resetAsk">Reset demo</button></div>
+  </aside>
+</div>
+
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script>
+(function () {
+'use strict';
+
+/* ---------------- data ---------------- */
+/* ---------------- real data and engine ----------------
+   Products, containers and limits come from app/assets/data (the same files the Flutter app ships),
+   and every number comes from engine.js, a line-by-line port of the Python reference engine. */
+var ZD = window.ZW_DATA;
+var ENG = new ZapEngine.Engine(ZD.params, {});
+var REAL2KIND = { cpet_tray: 'cpet', pp_container: 'pp', takeout_tub: 'deli', pet_clamshell: 'pet', eps_foam: 'eps', glass: 'glass', ceramic: 'plate', stove_pot: 'pot',
+  paperboard_tray: 'paper', pet_board_tray: 'petboard', paper_cup: 'papercup', steam_bag: 'steam', pouch: 'pouch', popcorn_bag: 'popcorn', susceptor_sleeve: 'sleeve', ps_rigid: 'psrigid', metal: 'metal' };
+var KIND_ART = { cpet: ['cpet_tray', 24, 9, 'tray'], pp: ['pp_tray', 24, 10, 'container'], deli: ['deli_tub', 18, 13, 'tub'], pet: ['pet_clam', 20, 11, 'clamshell'],
+  eps: ['foam_box', 22, 13, 'foam box'], glass: ['glass_box', 20, 13, 'glass dish'], plate: ['plates', 26, 10, 'plate'], pot: ['pot', 26, 17, 'pot'],
+  paper: ['paper_tray', 24, 9, 'tray'], petboard: ['paper_tray', 24, 9, 'tray'], papercup: ['paper_cup', 14, 16, 'cup'], steam: ['steam_bag', 20, 17, 'bag'],
+  pouch: ['pouch', 16, 19, 'pouch'], popcorn: ['popcorn_bag', 18, 15, 'bag'], sleeve: ['sleeve', 20, 12, 'sleeve'], psrigid: ['foam_box', 22, 13, 'container'], metal: ['can', 14, 15, 'container'] };
+var CONT = {};
+Object.keys(REAL2KIND).forEach(function (key) {
+  var c = ZD.params.containers[key], k = REAL2KIND[key], a = KIND_ART[k];
+  var block = c.status === 'block' ? (c.reason_en || 'This container is not made for heating.') : null;
+  CONT[k] = { key: key, name: c.label_en, resin: c.polymer || '', status: c.status, reason: c.reason_en || '', limit: block ? 60 : 200,
+    base: c.status === 'inert' ? 0 : (c.status === 'ok' || c.status === 'measured') ? 1 : null, block: block, sprite: a[0], w: a[1], h: a[2], from: a[3], sure: 90 };
+});
+function ozText(g) { return g ? (g / 28.3495).toFixed(1).replace(/\.0$/, '') + ' oz (' + Math.round(g) + ' g)' : ''; }
+function protoProduct(r) {
+  var kind = REAL2KIND[r.container_key] || 'pp', a = CONT[kind], box = r.category === 'frozen_tray' || r.category === 'oven_only';
+  return { id: r.id, name: r.name, size: [r.brand, ozText(r.net_g)].filter(Boolean).join(', '), sprite: box ? 'meal_box' : a.sprite, w: box ? 30 : a.w, h: box ? 23 : a.h,
+    tray: kind, trayLabel: a.name, fat: r.fat_class, ok: !r.recipe.oven_only, watt: r.recipe.ref_watt,
+    oven: r.recipe.oven_text || 'Follow the oven directions on the box.', match: 90, real: r };
+}
+var PRODUCTS = {};
+ZD.products.products.forEach(function (r) { PRODUCTS[r.id] = protoProduct(r); });
+var ORDER = ['zw-001', 'zw-015', 'zw-023', 'zw-017', 'zw-031']; // sample boxes on the camera screen
+function W() { return S.watts || ZD.params.params.default_ref_watt; }
+var FLAG_TEXT = {
+  below_recipe_energy: 'This is shorter than the box says. The middle may not reach 165°F (74°C), so check before you eat.',
+  above_container_max_use: 'The container wall gets hotter than the temperature it is rated for.',
+  outside_model_validity: 'The plastic gets hotter than the range the diffusion model was checked for, so treat the number as rough.',
+  arrhenius_extrapolated: 'Antimony numbers come from lab tests at 120 to 150°C, a little hotter than most microwave heating.',
+  fat_unknown: 'The fat content is not on file, so I assumed a medium-fat meal.',
+  ref_watt_assumed: 'The box does not say which wattage its times are for, so I assumed 1100 W.',
+  below_label_min_watt: 'The box says this meal needs a stronger microwave than yours.',
+  outside_label_table: 'Your wattage is outside the box\'s table, so I stretched the nearest row.',
+  measurement_based: 'This number comes from lab measurements of similar cups, not from the model.'
+};
+var FAT = { fatty: 1.0, medium: 0.6, lean: 0.35 };
+var ADDABLE = ['glass', 'plate', 'pp', 'deli', 'pet', 'eps'];
+var BANDS = { adult: { label: 'Adult', kg: 70 }, teen: { label: 'Teen, 13 to 17', kg: 55 }, kid: { label: 'Kid, 8 to 12', kg: 30 }, little: { label: 'Toddler, 1 to 3', kg: 12 } };
+var AGENCY = { efsa: { label: 'EFSA 2019', note: 'Group limit for DEHP, DBP and DIBP, 50 µg per kg body weight per day, counted as DEHP', factor: 1 },
+               epa: { label: 'US EPA', note: 'DEHP reference dose, 20 µg per kg body weight per day', factor: 2.5 } };
+var SHELF_SLOTS = [[123, 91], [146, 91], [168, 91], [123, 121], [155, 121]];
+
+/* ---------------- state ---------------- */
+var KEY = 'zapwise-web-v1';
+function fresh() {
+  return { tutorialDone: false, tips: {}, seen: {}, watts: null, airfryer: false, extras: [], shelf: [],
+    profiles: [{ id: 'me', name: 'You', band: 'adult', pregnant: false }], active: 'me', profileSet: false, agency: 'efsa',
+    log: [], stars: 0, starterDone: false, weeklyDone: false, rewards: [], lang: 'en', quicks: {} };
+}
+var S = fresh();
+try { var raw = localStorage.getItem(KEY); if (raw) { var got = JSON.parse(raw); for (var k in got) S[k] = got[k]; } } catch (e) {}
+if (!S.quicks) S.quicks = {};
+if (!S.lang) S.lang = 'en';
+for (var qk in S.quicks) PRODUCTS[qk] = S.quicks[qk];
+function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+
+var R = { name: 'home' };          // current route
+var F = { pid: 'zw-001', method: 'asis', cid: null, unverified: false, logSeg: 'today' };
+var EXTRA = 0; // seconds added to or taken off the last cook step in the heating guide
+var Q = { kind: null, secs: 180, watt: 1100, wattPicked: false, fat: 'medium' }; // quick estimate form // current flow
+var sheetState = {};
+var coachStep = -1;
+var blinkTimer = null;
+
+/* ---------------- helpers ---------------- */
+var $ = function (id) { return document.getElementById(id); };
+function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+function img(name, w, h, scale, alt) { scale = scale || 2; return '<img class="px" src="img/' + name + '.png" width="' + (w * scale) + '" height="' + (h * scale) + '" alt="' + esc(alt || '') + '">'; }
+function icon(name, size) { size = size || 32; return '<img class="px" src="img/icon_' + name + '.png" width="' + size + '" height="' + size + '" alt="">'; }
+function pctTxt(p) { if (p <= 0) return 'near 0%'; if (p < 0.1) return '<0.1%'; if (p < 10) return p.toFixed(1) + '%'; return Math.round(p) + '%'; } // same rules as pctText in the app
+function mmss(sec) { sec = Math.round(sec); return Math.floor(sec / 60) + ':' + String(sec % 60).padStart(2, '0'); }
+function profile(id) { for (var i = 0; i < S.profiles.length; i++) if (S.profiles[i].id === id) return S.profiles[i]; return S.profiles[0]; }
+function weekStart(d) { var x = new Date(d); x.setHours(0, 0, 0, 0); var day = (x.getDay() + 6) % 7; x.setDate(x.getDate() - day); return x.getTime(); }
+function sameDay(a, b) { var x = new Date(a), y = new Date(b); return x.toDateString() === y.toDateString(); }
+function shelfItem(id) { for (var i = 0; i < S.shelf.length; i++) if (S.shelf[i].id === id) return S.shelf[i]; return null; }
+
+function kindFor(method, product, cid) {
+  if (method === 'asis') return product.tray;
+  if (method === 'plate') return 'plate';
+  if (method === 'pot') return 'pot';
+  if (method === 'oven') return 'paper';
+  if (method === 'container') { var it = shelfItem(cid); return it ? it.kind : 'glass'; }
+  return product.tray;
+}
+function methodLabel(method, product, cid) {
+  if (method === 'asis') return 'In the ' + CONT[product.tray].from + ', microwave';
+  if (method === 'plate') return 'On a ceramic plate, microwave';
+  if (method === 'pot') return 'In a metal pot, stove';
+  if (method === 'oven') return 'In the oven, as the box says';
+  var it = shelfItem(cid); return 'In your ' + (it ? CONT[it.kind].name.toLowerCase() : 'container') + ', microwave';
+}
+/* Estimate from the engine. % of the daily limit scales with 1 / body weight, so each meal is run
+   once at 70 kg (with the Monte Carlo range) and scaled for each person. */
+var EST_CACHE = {};
+function engineRun(product, kind, extra, mc) {
+  extra = (extra || 0) + EXTRA;
+  var key = product.id + '|' + CONT[kind].key + '|' + W() + '|' + extra + '|' + (mc ? 1 : 0);
+  if (!EST_CACHE[key]) EST_CACHE[key] = ENG.evaluate({ product: product.real, container_key: CONT[kind].key, watt: W(), extra_cook_s: extra, body_weight_kg: 70 }, mc);
+  return EST_CACHE[key];
+}
+function estimate(product, kind, prof) {
+  var c = CONT[kind];
+  if (!product.ok || c.block || c.base === null || c.base === undefined) return { na: true };
+  if (c.base === 0) return { pct: 0, lo: 0, hi: 0, band: 'lower' };
+  var r = engineRun(product, kind, 0, true);
+  if (r.headline_pct === null) return { na: true };
+  var f = 70 / BANDS[prof.band].kg, pct = r.headline_pct * f;
+  return { pct: pct, lo: r.range ? r.range.p05 * f : pct, hi: r.range ? r.range.p95 * f : pct, band: ENG.band(pct), r: r };
+}
+/* How many times bigger the estimate gets with 2 more minutes (centre values, like the app). */
+function plus2Ratio(product, kind) {
+  var c = CONT[kind];
+  if (!product.ok || c.status !== 'ok') return null;
+  var a = engineRun(product, kind, 0, false).headline_pct, b = engineRun(product, kind, 120, false).headline_pct;
+  return a > 0 && b ? b / a : null;
+}
+var BAND_UI = { lower: { label: 'Low', icon: 'check', face: 'happy' }, middle: { label: 'Medium', icon: 'info', face: 'neutral' }, higher: { label: 'High', icon: 'alert', face: 'worried' } };
+
+/* quests */
+function starterTasks() {
+  return [
+    { t: 'Set your microwave’s watts', done: !!S.watts },
+    { t: 'Put a container on your shelf', done: S.shelf.length > 0 },
+    { t: 'Save your first heated meal', done: S.log.some(function (l) { return !l.sample; }) }
+  ];
+}
+function weekCount(test) {
+  var ws = weekStart(Date.now());
+  return S.log.filter(function (l) { return !l.sample && l.ts >= ws && test(l); }).length;
+}
+var QUESTS = [
+  { id: 'boil', title: 'Find your microwave power', of: 1, stars: 2, decor: 'wall clock', count: function () { return S.boilDone ? 1 : 0; } },
+  { id: 'plate', title: 'Plate it 3 times this week', of: 3, stars: 5, decor: 'strawberry rug', weekly: true, count: function () { return weekCount(function (l) { return l.zero; }); } },
+  { id: 'box', title: 'Follow the label time 3 times', of: 3, stars: 3, decor: 'fridge plant', weekly: true, count: function () { return weekCount(function (l) { return l.method === 'asis' && !l.extra; }); } }
+];
+function claimedKey(q) { return q.weekly ? q.id + '@' + weekStart(Date.now()) : q.id; }
+function quest() {
+  if (!S.starterDone) { var t = starterTasks(); var n = t.filter(function (x) { return x.done; }).length; return { id: 'starter', title: 'Set up your kitchen', n: n, of: 3, reward: 3, tasks: t }; }
+  S.claimed = S.claimed || [];
+  for (var i = 0; i < QUESTS.length; i++) {
+    var q = QUESTS[i];
+    if (S.claimed.indexOf(claimedKey(q)) < 0) return { id: q.id, def: q, title: q.title, n: Math.min(q.of, q.count()), of: q.of, reward: q.stars };
+  }
+  return { id: 'done', title: 'Quests done. A new one arrives Monday.', n: 3, of: 3, reward: 0 };
+}
+function checkQuests() {
+  var q = quest();
+  if (q.id === 'starter' && q.n >= 3) { S.starterDone = true; S.stars += 3; save(); celebrate('Kitchen set up', '+3 stars. Your weekly quests are ready.'); return true; }
+  if (q.def && q.n >= q.of) {
+    S.claimed.push(claimedKey(q.def)); S.stars += q.def.stars;
+    var rw = { 'strawberry rug': 'rug', 'fridge plant': 'plant', 'wall clock': 'clock' }[q.def.decor];
+    if (rw && S.rewards.indexOf(rw) < 0) S.rewards.push(rw);
+    save(); celebrate('Quest complete', '+' + q.def.stars + ' stars. You unlocked ' + q.def.decor + ' for your kitchen.'); return true;
+  }
+  return false;
+}
+
+/* ---------------- screens ---------------- */
+function topbar(title, back) {
+  return '<header class="topbar"><button class="round" data-act="go" data-to="' + back + '" aria-label="Back">‹</button><h1 class="title">' + title + '</h1><span style="width:44px" aria-hidden="true"></span></header>';
+}
+function pos(x, y, w, h) { return 'left:' + (x / 196 * 100) + '%;top:' + (y / 216 * 100) + '%;width:' + (w / 196 * 100) + '%;height:' + (h / 216 * 100) + '%'; }
+
+function scrHome() {
+  var q = quest();
+  var h = '<header class="topbar"><img class="px" src="img/wordmark.png" alt="ZapWise" width="142" height="42"><button class="pill" data-act="sheet" data-sheet="quest" aria-label="' + S.stars + ' stars, open quest">' + icon('star') + S.stars + '</button></header>';
+  h += '<button class="raised quest-banner" id="questBanner" data-act="sheet" data-sheet="quest"><span class="ic">' + icon(q.id === 'starter' ? 'quest' : 'star') + '</span><span class="t">' + esc(q.title) + '</span><span class="row"><span class="track"><i style="width:' + (q.n / q.of * 100) + '%"></i></span><span class="count">' + q.n + '/' + q.of + '</span></span></button>';
+  h += '<div class="scene" id="scene"><img class="px base" src="img/' + (S.rewards.indexOf('rug') >= 0 ? 'kitchen_reward' : 'kitchen') + '.png" alt="Your pixel kitchen">';
+  // shelf items
+  S.shelf.slice(0, SHELF_SLOTS.length).forEach(function (it, i) {
+    var c = CONT[it.kind], sl = SHELF_SLOTS[i];
+    h += '<img class="px item" src="img/' + c.sprite + '.png" alt="" style="' + pos(sl[0], sl[1] - c.h, c.w, c.h) + '">';
+  });
+  h += '<button class="hot" id="hotShelf" data-act="sheet" data-sheet="shelf" aria-label="Container shelf, ' + S.shelf.length + ' containers" style="' + pos(118, 74, 76, 50) + '"></button>';
+  h += '<button class="hot" id="hotFridge" data-act="sheet" data-sheet="quest" aria-label="Quest note on the fridge" style="' + pos(2, 124, 38, 70) + '"></button>';
+  h += '<button class="hot" id="hotStove" data-act="sheet" data-sheet="stove" aria-label="Stove" style="' + pos(152, 140, 34, 54) + '"></button>';
+  h += '<button class="hot" id="hotZappy" data-act="sheet" data-sheet="microwave" aria-label="Zappy, your microwave' + (S.watts ? ', ' + S.watts + ' watts' : ', watts not set') + '" style="' + pos(48, 132, 30, 22) + '"><img class="px" id="zappyImg" src="img/zappy_body_neutral.png" alt=""></button>';
+  // counter between Zappy and the stove: each appliance takes the next spot, the + slot follows if it fits
+  var x = 84, counter = [];
+  if (S.airfryer) counter.push(['hotFryer', 'airfryer', 'air_fryer', 22, 25, 'Air fryer']);
+  if (S.extras.indexOf('Toaster oven') >= 0) counter.push(['hotToaster', 'toaster', 'toaster_oven', 24, 16, 'Toaster oven']);
+  if (S.extras.indexOf('Electric kettle') >= 0) counter.push(['hotKettle', 'kettle', 'kettle', 14, 16, 'Electric kettle']);
+  counter.forEach(function (a) {
+    h += '<button class="hot" id="' + a[0] + '" data-act="sheet" data-sheet="' + a[1] + '" aria-label="' + a[5] + '" style="' + pos(x, 154 - a[4], a[3], a[4]) + '"><img class="px" src="img/' + a[2] + '.png" alt=""></button>';
+    x += a[3] + 2;
+  });
+  if (x + 26 <= 151) h += '<button class="hot slot" id="hotSlot" data-act="sheet" data-sheet="addAppliance" aria-label="Add an appliance" style="' + pos(x + 2, 131, 26, 22) + '">+</button>';
+  var hints = [['hotZappy', 74, 124], ['hotShelf', 186, 68], ['hotFridge', 30, 118], ['hotStove', 180, 134], ['hotSlot', 108, 124]];
+  hints.forEach(function (s) { if (!S.seen[s[0]]) h += '<img class="px spark" src="img/sparkle.png" alt="" style="left:' + (s[1] / 196 * 100) + '%;top:' + (s[2] / 216 * 100) + '%">'; });
+  h += '</div>';
+  h += '<div class="home-cta"><button class="cta" id="ctaScan" data-act="go" data-to="scan">' + icon('camera') + 'Scan before you heat</button></div>';
+  return h;
+}
+
+function scrScan() {
+  if (!PRODUCTS[F.pid] || PRODUCTS[F.pid].quick) F.pid = ORDER[0]; // the camera demo uses the sample boxes
+  var p = PRODUCTS[F.pid];
+  var h = topbar('Scan the box', 'home');
+  h += '<div class="viewfinder" aria-label="Camera preview, sample">';
+  [['top:22px;left:22px;border-right:0;border-bottom:0'], ['top:22px;right:22px;border-left:0;border-bottom:0'], ['bottom:44px;left:22px;border-right:0;border-top:0'], ['bottom:44px;right:22px;border-left:0;border-top:0']].forEach(function (s) { h += '<span class="corner" style="' + s[0] + '"></span>'; });
+  var sc = p.w > 20 ? 6 : 10;
+  h += img(p.sprite, p.w, p.h, sc, p.name) + '<p class="vf-hint">Fit the front of the box inside the corners</p></div>';
+  h += '<div class="samples"><p class="small muted">Sample boxes for this demo. In the real app this is your camera.</p><div class="sample-row">';
+  ORDER.forEach(function (id) { var q = PRODUCTS[id]; h += '<button class="sample" data-act="pick" data-id="' + id + '" aria-pressed="' + (id === F.pid) + '">' + img(q.sprite, q.w, q.h, q.w > 20 ? 1 : 2) + '<span>' + esc(q.name) + '</span></button>'; });
+  h += '</div></div><div class="shutter-row"><button class="shutter" data-act="shoot" aria-label="Take photo">' + icon('camera') + '</button></div>';
+  h += '<div class="wrap" style="padding-top:0"><button class="soft" data-act="sheet" data-sheet="search">' + icon('learn') + '<span class="txt">Find it by name<small>No camera handy, or the box is gone</small></span></button><button class="soft" data-act="go" data-to="quick">' + icon('timer') + '<span class="txt">Skip the scan<small>Pick the container and type the box time</small></span></button></div>';
+  return h;
+}
+
+function scrReading() {
+  var p = PRODUCTS[F.pid];
+  var h = '<div class="reading">' + img('zappy_thinking', 42, 32, 4, 'Zappy thinking') + '<h1 class="h2">Reading the box</h1><div class="checks">';
+  h += '<div class="check-row" id="ck1">' + icon('check', 24) + 'Barcode: not in view, using the photo</div>';
+  h += '<div class="check-row" id="ck2">' + icon('check', 24) + 'Text: ' + esc(p.name.toUpperCase()) + ', ' + esc(p.size.split(' (')[0]) + '</div>';
+  h += '<div class="check-row" id="ck3">' + icon('check', 24) + 'Photo match: ' + p.match + '%</div>';
+  return h + '</div></div>';
+}
+
+function scrConfirm() {
+  var p = PRODUCTS[F.pid];
+  var h = topbar('Is this your product?', 'scan') + '<div class="wrap">';
+  h += '<div class="raised pad product"><div class="thumb">' + img(p.sprite, p.w, p.h, p.w > 20 ? 2 : 4) + '</div><div><h2>' + esc(p.name) + '</h2><p>' + esc(p.size) + '<br>Sample product</p><span class="chip lower" style="margin-top:8px">' + icon('check', 20) + p.match + '% match</span></div></div>';
+  h += '<button class="cta" data-act="confirmYes">Yes, that’s it</button>';
+  h += '<p class="h3" style="margin-top:6px">Other close matches</p>';
+  ORDER.filter(function (id) { return id !== F.pid; }).slice(0, 2).forEach(function (id) { var q = PRODUCTS[id]; h += '<button class="soft" data-act="altPick" data-id="' + id + '">' + img(q.sprite, q.w, q.h, q.w > 20 ? 1 : 2) + '<span class="txt">' + esc(q.name) + '<small>' + esc(q.size) + '</small></span></button>'; });
+  h += '<button class="soft" data-act="go" data-to="quick">' + icon('timer') + '<span class="txt">Skip the scan<small>Pick the container and type the box time</small></span></button>';
+  h += '<p style="text-align:center;margin-top:6px"><button class="link" data-act="sheet" data-sheet="register">My product isn’t here</button></p></div>';
+  return h;
+}
+
+function tipHtml(key, text) {
+  if (S.tips[key]) return '';
+  return '<div class="tip">' + img('zappy_body_happy', 30, 22, 1.5) + '<p>' + text + '</p><button class="mini-btn act" data-act="tipOk" data-key="' + key + '">Got it</button></div>';
+}
+
+function scrGuide() {
+  var p = PRODUCTS[F.pid];
+  var h = topbar('Heating guide', p.quick ? 'quick' : 'confirm') + '<div class="wrap">';
+  h += '<div class="raised pad product"><div class="thumb">' + img(p.sprite, p.w, p.h, p.w > 20 ? 2 : 4) + '</div><div><h2>' + esc(p.name) + '</h2><p>' + esc(p.size) + '<br>' + esc(p.trayLabel) + '</p>' + (F.unverified ? '<span class="tag" style="margin-top:6px">Not verified yet</span>' : '') + '</div></div>';
+  if (!p.ok) {
+    h += '<div class="warn"><div class="hd">' + icon('alert') + 'Don’t microwave this one</div><p class="small">' + (p.real.recipe.do_not_microwave === 'yes' ? 'The box says not to use a microwave. Raw or breaded foods need to reach 165°F (74°C) all the way through, and microwaves heat unevenly.' : 'The box only gives oven directions.') + '</p></div>';
+    if (p.real.recipe.oven_text) h += '<div class="raised pad steps"><p class="h3">The box says</p><div class="step">' + icon('flame') + '<span>' + esc(p.oven) + '</span></div></div>';
+    if (p.real.recipe.oven_text) h += '<button class="cta" data-act="heat" data-m="oven">Heat it in the oven</button>';
+    else h += '<p class="small muted">Follow the directions on the box.</p>';
+    return h + '</div>';
+  }
+  h += tipHtml('guide', 'This is what the box says. I changed the time to fit your microwave.');
+  h += '<div class="raised pad steps"><p class="h3">The box says</p>';
+  var rec = ZapEngine.resolveRecipe(p.real, W());
+  rec.steps.forEach(function (s) {
+    var t = s.text ? s.text.charAt(0).toUpperCase() + s.text.slice(1) : s.kind;
+    var ic = s.kind === 'cook' ? 'timer' : s.kind === 'stand' ? 'check' : s.kind === 'oven' ? 'flame' : 'swap';
+    h += '<div class="step">' + icon(ic) + '<span>' + esc(t) + (s.kind === 'cook' || s.kind === 'stand' ? ' <b style="white-space:nowrap;color:var(--rose-deep)">' + mmss(s.time_s) + '</b>' : '') + '</span></div>';
+  });
+  if (!rec.steps.some(function (s) { return s.kind === 'cook'; })) h += '<p class="small muted">No microwave steps on file</p>';
+
+  h += '</div>';
+  if (S.watts) {
+    h += '<div class="well time-well"><span class="muted" style="font:800 14px/1.35 var(--body)">On your ' + S.watts + ' W microwave<br>total heating time</span><span class="big">' + mmss(cookSecs(p) + EXTRA) + '</span></div>';
+  } else {
+    h += '<div class="well time-well"><span style="font:800 14px/1.35 var(--body)"><span class="muted">Box time at ' + W() + ' W</span><br><button class="link" data-act="sheet" data-sheet="microwave">Set your microwave</button></span><span class="big">' + mmss(cookSecs(p) + EXTRA) + '</span></div>';
+  }
+  // undercooking is the faster danger, so every microwave meal gets this card
+  h += '<div class="warn"><div class="hd">' + icon('alert') + 'Heat it all the way through</div><p class="small">' + (S.watts
+    ? 'Undercooked frozen meals can make you sick. Stir and let it stand when the box says. The middle should be steaming hot: 165°F (74°C).'
+    : 'I don’t know your microwave’s power yet, so this is the time printed on the box. A weaker microwave needs longer. Check that the middle is steaming hot, 165°F (74°C). If not, stir and heat 30 seconds more.') + '</p></div>';
+  h += '<div class="raised pad" style="display:flex;align-items:center;gap:12px">' + icon('timer') + '<span style="flex:1"><b>Change the time</b><br><span class="small muted">' + (EXTRA === 0 ? 'Same as the box' : (EXTRA > 0 ? '+' : '−') + timeWords(Math.abs(EXTRA))) + '</span></span>'
+    + '<button class="round" data-act="extra" data-d="-30" aria-label="30 seconds less"' + (cookSecs(p) + EXTRA - 30 < cookSecs(p) * 0.5 ? ' disabled' : '') + '>−</button><button class="round" data-act="extra" data-d="30" aria-label="30 seconds more"' + (EXTRA >= 600 ? ' disabled' : '') + '>+</button></div>';
+  if (EXTRA < 0) h += '<p class="small muted">This is shorter than the box says. The middle may not reach 165°F (74°C), so check before you eat.</p>';
+  h += '<p class="h2" style="margin-top:6px">Heat it like the box says, or change something?</p>';
+  h += '<button class="cta" data-act="heat" data-m="asis">' + (EXTRA === 0 ? 'Heat as the box says' : EXTRA > 0 ? 'Heat it longer' : 'Heat it shorter') + '</button>';
+  h += '<button class="soft" data-act="heat" data-m="plate" style="margin-top:4px">' + icon('plate') + 'Move it to a plate</button>';
+  h += '<button class="soft" data-act="sheet" data-sheet="choose">' + icon('container') + '<span class="txt">Use one of my containers<small>' + (S.shelf.length ? S.shelf.length + ' on your shelf' : 'Your shelf is empty') + '</small></span></button>';
+  h += '<button class="soft" data-act="heat" data-m="pot">' + icon('flame') + 'Heat it in a pot on the stove</button>';
+  return h + '</div>';
+}
+
+var QUICK_KINDS = ['cpet', 'pp', 'papercup', 'steam', 'pouch', 'paper', 'deli', 'eps', 'pet'];
+var QUICK_NAMES = { cpet: 'Black oven tray (CPET)', pp: 'Microwave tray or cup (PP #5)', papercup: 'Paper cup or bowl', steam: 'Steam bag', pouch: 'Microwave pouch', deli: 'Take-out or deli tub', paper: 'Paper or fibre tray', eps: 'Foam box or cup', pet: 'Clear clamshell (#1)' };
+function scrQuick() {
+  var h = topbar('Quick estimate', 'scan') + '<div class="wrap">';
+  h += '<p class="small">No product needed. Pick the container and type the time printed on the box.</p>';
+  h += '<p class="h3">What is the meal in?</p><div class="qgrid">';
+  QUICK_KINDS.forEach(function (k) { var c = CONT[k]; h += '<button class="raised qcell" data-act="qKind" data-k="' + k + '" aria-pressed="' + (Q.kind === k) + '">' + img(c.sprite, c.w, c.h, c.w > 20 ? 2 : 3) + '<span>' + QUICK_NAMES[k] + '</span></button>'; });
+  h += '</div><p class="h3">Time on the box</p>';
+  h += '<div class="well time-well" style="align-items:center"><button class="round" data-act="qTime" data-d="-30" aria-label="30 seconds less">−</button><span class="big">' + mmss(Q.secs) + '</span><button class="round" data-act="qTime" data-d="30" aria-label="30 seconds more">+</button></div>';
+  h += '<p class="small muted">For how many watts? Leave it at 1100 if the box doesn’t say.</p><div class="choice">';
+  [700, 800, 900, 1000, 1100, 1200].forEach(function (w) { h += '<button data-act="qWatt" data-w="' + w + '" aria-pressed="' + (Q.watt === w) + '">' + w + ' W</button>'; });
+  h += '</div><p class="h3">How fatty is it?</p><div class="choice">';
+  [['lean', 'Not much (rice, veggies, soup)'], ['medium', 'Some (pasta, chicken)'], ['fatty', 'A lot (cheese, cream, fried)']].forEach(function (f) { h += '<button data-act="qFat" data-v="' + f[0] + '" aria-pressed="' + (Q.fat === f[0]) + '">' + f[1] + '</button>'; });
+  h += '</div><button class="cta" data-act="qGo"' + (Q.kind ? '' : ' disabled') + ' style="margin-top:8px">Show my estimate</button>';
+  return h + '</div>';
+}
+function quickProduct() {
+  var id = 'quick' + Date.now(), key = CONT[Q.kind].key;
+  var real = { id: id, brand: 'My meal', name: 'Quick estimate', category: 'user', net_g: null, servings: 1, food_mass_g: 300,
+    fat_fraction: { lean: 0.02, medium: 0.06, fatty: 0.14 }[Q.fat], fat_class: Q.fat, fat_known: true,
+    storage: key === 'paper_cup' ? 'shelf' : 'frozen', container_key: key,
+    recipe: { ref_watt: Q.watt, ref_watt_assumed: !Q.wattPicked, steps: [{ kind: 'cook', text: 'cook on HIGH', time_s: Q.secs, time_s_max: null }],
+      watt_table: [], completeness: 'complete', do_not_microwave: 'no', oven_only: false, min_watt: null, oven_text: '' } };
+  var p = protoProduct(real); p.quick = true; p.size = 'My meal'; p.sprite = CONT[Q.kind].sprite; p.w = CONT[Q.kind].w; p.h = CONT[Q.kind].h;
+  return p;
+}
+function timeWords(t) { t = Math.round(t); var m = Math.floor(t / 60), r = t % 60; return m === 0 ? r + ' s' : r === 0 ? m + ' min' : m + ' min ' + r + ' s'; }
+function cookSecs(p) { return ZapEngine.resolveRecipe(p.real, W()).steps.reduce(function (a, s) { return a + (s.kind === 'cook' ? s.time_s : 0); }, 0); }
+
+function ringSvg(pct, band) {
+  var r = 70, C = 2 * Math.PI * r, f = Math.max(0, Math.min(1, pct / 100)), a = C * f;
+  var col = band === 'higher' ? 'var(--peach)' : band === 'middle' ? 'var(--butter)' : 'var(--mint)';
+  if (a <= 0) return '<svg viewBox="0 0 168 168" aria-hidden="true"></svg>';
+  return '<svg viewBox="0 0 168 168" aria-hidden="true"><circle cx="84" cy="84" r="' + r + '" fill="none" stroke="var(--cocoa)" stroke-width="18" stroke-dasharray="' + (a + 3) + ' ' + C + '" stroke-dashoffset="1.5" transform="rotate(-90 84 84)"/><circle cx="84" cy="84" r="' + r + '" fill="none" stroke="' + col + '" stroke-width="12" stroke-dasharray="' + a + ' ' + C + '" transform="rotate(-90 84 84)"/></svg>';
+}
+
+function scrResult() {
+  var p = PRODUCTS[F.pid];
+  var kind = kindFor(F.method, p, F.cid);
+  var prof = profile(S.active);
+  var e = estimate(p, kind, prof);
+  var h = topbar('Your estimate', 'guide') + '<div class="wrap">';
+  if (!S.profileSet) {
+    h += '<div class="raised pad" style="display:grid;gap:10px"><p class="h3">Who’s eating this?</p><p class="small muted">Until you choose, I use an adult at 70 kg (154 lb).</p><div class="choice">';
+    Object.keys(BANDS).forEach(function (b) { h += '<button data-act="setBand" data-band="' + b + '" aria-pressed="' + (prof.band === b) + '">' + BANDS[b].label + '</button>'; });
+    h += '</div></div>';
+  }
+  h += '<p class="small muted" style="text-align:center">' + esc(methodLabel(F.method, p, F.cid)) + '</p>';
+  if (CONT[kind].block) {
+    h += '<div class="warn"><div class="hd">' + icon('alert') + 'Don’t heat food in this</div><p class="small">' + esc(CONT[kind].block) + '</p></div>';
+    h += '<button class="soft" data-act="heat" data-m="plate">' + icon('plate') + 'Move it to a plate<span class="sub">near <b>0%</b></span></button>';
+  } else if (e.na && p.ok) {
+    h += '<div class="raised pad" style="display:grid;gap:10px;justify-items:center;text-align:center">' + img('zappy_neutral', 42, 32, 3, 'Zappy') + '<p class="h2">' + (CONT[kind].status === 'info' ? 'No number for this one' : 'No data for this container yet') + '</p><p class="small muted">' + esc(CONT[kind].reason || 'There are no measurements to base a number on.') + '</p></div>';
+  } else if (e.na) {
+    h += '<div class="raised pad" style="display:grid;gap:10px;justify-items:center;text-align:center">' + img('zappy_neutral', 42, 32, 3, 'Zappy') + '<p class="h2">Use the oven for this one</p><p class="small muted">' + esc(p.oven) + '</p><p class="small muted">ZapWise estimates microwave heating, so there is no number for oven heating yet.</p></div>';
+  } else {
+    var ui = BAND_UI[e.band];
+    var big = e.pct > 0 ? pctTxt(e.pct) : '~0%';
+    h += '<div class="raised gauge-card"><div class="ring">' + ringSvg(e.pct, e.band) + '<div class="v"><b>' + big + '</b><span>of ' + (prof.id === 'me' ? 'your' : esc(prof.name) + '’s') + ' daily safe limit<br>from this ' + esc(CONT[kind].from) + '</span></div></div>';
+    h += '<div class="side">' + img('zappy_' + ui.face, 42, 32, 2, 'Zappy looks ' + ui.face) + '<span class="chip ' + e.band + '">' + icon(ui.icon, 24) + ui.label + '</span>';
+    h += '<p class="small muted">' + (e.pct > 0 ? 'Likely ' + pctTxt(e.lo) + ' to ' + pctTxt(e.hi) : 'Glass, ceramic and steel add no plastic chemicals') + '</p>' + (e.r && e.r.status === 'measured' ? '<span class="tag">From lab measurements</span>' : '') + '</div>';
+    if (e.pct > 0) h += '<p class="small" style="grid-column:1/-1;text-align:center;margin-top:10px">The daily limit is how much of these chemicals health agencies say a person can take in every day for life without a known health risk.</p>';
+    h += '</div>';
+    if (EXTRA !== 0 && e.r && e.r.vs_label) h += '<p class="small" style="text-align:center">' + (EXTRA > 0 ? 'Heating longer' : 'Heating less') + ' gives ' + e.r.vs_label.toFixed(1) + ' times the estimate for the box time.</p>';
+    // the habit that changes the number most: heating past the box time
+    var x2 = e.pct > 0 && EXTRA === 0 ? plus2Ratio(p, kind) : null;
+    if (x2 && x2 >= 1.2) {
+      h += '<div class="raised pad" style="display:flex;gap:12px;align-items:center">' + icon('timer') + '<span><span class="h3">2 more minutes: about ' + x2.toFixed(1) + '× more</span><br><span class="small">Heating past the box time adds the most. Stick to the box time, or move it to a plate.</span></span></div>';
+    }
+    // with no family added, still show what the same meal means for a child
+    if (e.pct > 0 && S.profiles.length <= 1 && (prof.band === 'adult' || prof.band === 'teen')) {
+      var kidE = estimate(p, kind, { band: 'kid' });
+      h += '<p class="small" style="text-align:center">For a ' + BANDS.kid.kg + ' kg kid, this same meal is ' + pctTxt(kidE.pct) + '.</p>';
+    }
+    if (S.profiles.length > 1) {
+      h += '<div class="well who">';
+      S.profiles.forEach(function (pr) { var ee = estimate(p, kind, pr); h += '<button data-act="who" data-id="' + pr.id + '" aria-pressed="' + (pr.id === S.active) + '">' + esc(pr.name) + ' <b>' + (ee.na ? '–' : (ee.pct > 0 ? pctTxt(ee.pct) : '~0%')) + '</b></button>'; });
+      h += '</div>';
+    }
+    h += tipHtml('result', 'This counts only what moves from the container while it heats. Chemicals added in the factory aren’t included.');
+    if (e.pct > 0) {
+      h += '<p class="h2" style="margin-top:4px">Ways to lower it</p>';
+      h += '<button class="soft" data-act="heat" data-m="plate">' + icon('plate') + 'Move it to a plate<span class="sub">near <b>0%</b></span></button>';
+      var glass = S.shelf.filter(function (it) { return CONT[it.kind].base === 0; })[0];
+      if (glass) h += '<button class="soft" data-act="heatWith" data-id="' + glass.id + '">' + icon('container') + 'My ' + esc(CONT[glass.kind].name.toLowerCase()) + '<span class="sub">near <b>0%</b></span></button>';
+      h += '<button class="soft" data-act="heat" data-m="pot">' + icon('flame') + 'A pot on the stove<span class="sub">near <b>0%</b></span></button>';
+    }
+  }
+  if (e && e.r) {
+    e.r.flags.forEach(function (f) { if (FLAG_TEXT[f]) h += '<p class="small muted" style="display:flex;gap:8px;align-items:flex-start">' + icon('info', 20) + '<span>' + FLAG_TEXT[f] + '</span></p>'; });
+    h += sciDetails(e.r, prof);
+  }
+  h += '<button class="cta" data-act="saveLog" style="margin-top:8px">Save how I heated it</button>';
+  h += '<p class="foot">Counts what moves from the container during heating only. This is an estimate, not a diagnosis. <button class="link" data-act="sheet" data-sheet="calc" style="font-size:12.5px">How we calculate</button></p>';
+  return h + '</div>';
+}
+
+function num(v) { return v === 0 ? '0' : v >= 100 ? String(Math.round(v)) : v >= 1 ? v.toFixed(1) : v >= 0.01 ? v.toFixed(2) : v.toExponential(1); }
+function sciDetails(r, prof) {
+  var f = 70 / BANDS[prof.band].kg, P = ZD.params, h = '<details class="raised pad sci"><summary class="h3">Details for the science fair</summary><div class="small" style="display:grid;gap:6px;margin-top:8px">';
+  if (r.temperature) h += '<p>Food ends at ' + r.temperature.t_end_avg.toFixed(0) + '°C on average; the container wall peaks at ' + r.temperature.t_contact_max.toFixed(0) + '°C.</p>';
+  Object.keys(r.groups).forEach(function (g) { h += '<p>' + esc(P.groups[g].label_en) + ': ' + pctTxt(r.groups[g] * f) + ' of the limit (' + num(P.groups[g].tdi) + ' µg per kg per day, ' + esc(P.groups[g].agency || '') + ' ' + (P.groups[g].year || '') + ')</p>'; });
+  Object.keys(r.substances).forEach(function (s) { var m = r.substances[s]; h += '<p class="muted">' + esc(P.substances[s].name || s) + ': ' + num(m.ug) + ' µg in the whole package, ' + (m.fraction * 100).toFixed(1) + '% of the way to equilibrium, log K ' + m.log_k.toFixed(2) + ' at ' + m.t_eff.toFixed(0) + '°C</p>'; });
+  if (r.range && r.status !== 'measured') h += '<p class="muted">Range from ' + P.params.mc_samples + ' Monte Carlo runs (5th to 95th percentile).</p>';
+  return h + '</div></details>';
+}
+function entryPct(l) {
+  var p = PRODUCTS[l.pid]; var prof = profile(S.active);
+  var e = estimate(p, l.kind, prof); return e.na ? null : e.pct;
+}
+function scrLog() {
+  var h = '<header class="topbar"><h1 class="title" style="text-align:left">Log</h1><button class="pill" data-act="sheet" data-sheet="quest">' + icon('star') + S.stars + '</button></header><div class="wrap">';
+  h += '<div class="well seg"><button data-act="seg" data-v="today" aria-pressed="' + (F.logSeg === 'today') + '">Today</button><button data-act="seg" data-v="week" aria-pressed="' + (F.logSeg === 'week') + '">Last 7 days</button></div>';
+  if (!S.log.length) {
+    h += '<div class="raised empty">' + img('zappy_sleepy', 42, 32, 3, 'Zappy sleeping') + '<p class="h2">No meals logged yet</p><p class="small muted">Scan a meal before you heat it, then tap Save. Each meal shows up here.</p><button class="cta" data-act="go" data-to="scan">' + icon('camera') + 'Scan a meal</button><button class="link" data-act="sample">Load a sample week</button></div>';
+    return h + '</div>';
+  }
+  var prof = profile(S.active);
+  if (F.logSeg === 'today') {
+    var today = S.log.filter(function (l) { return sameDay(l.ts, Date.now()); });
+    var sum = today.reduce(function (a, l) { var v = entryPct(l); return a + (v || 0); }, 0);
+    h += '<div class="raised pad" style="display:flex;justify-content:space-between;align-items:center;gap:12px"><span><span class="h3">Today for ' + (prof.id === 'me' ? 'you' : esc(prof.name)) + '</span><br><span class="small muted">' + today.length + ' heated meal' + (today.length === 1 ? '' : 's') + '</span></span><span style="font:600 32px/1 var(--display)">' + pctTxt(sum).replace('near ', '~') + '</span></div>';
+    if (!today.length) h += '<p class="small muted" style="text-align:center">Nothing heated today yet. Switch to Last 7 days to see earlier meals.</p>';
+    today.slice().reverse().forEach(function (l) { h += entryHtml(l); });
+  } else {
+    h += weekHtml(prof);
+    S.log.slice().reverse().slice(0, 8).forEach(function (l) { h += entryHtml(l); });
+  }
+  return h + '</div>';
+}
+function entryHtml(l) {
+  var p = PRODUCTS[l.pid]; var v = entryPct(l);
+  var band = v === null ? 'none' : v === 0 ? 'lower' : (v < 2 ? 'lower' : v < 10 ? 'middle' : 'higher');
+  var d = new Date(l.ts);
+  var loc = S.lang === 'es' ? 'es-US' : 'en-US';
+  var when = (sameDay(l.ts, Date.now()) ? (S.lang === 'es' ? 'Hoy ' : 'Today ') : d.toLocaleDateString(loc, { weekday: 'short' }) + ' ') + d.toLocaleTimeString(loc, { hour: 'numeric', minute: '2-digit' });
+  return '<div class="raised entry"><div class="thumb" style="width:56px;height:56px">' + img(p.sprite, p.w, p.h, p.w > 20 ? 1 : 2) + '</div><div style="min-width:0"><b>' + esc(p.name) + '</b><div class="when">' + esc(l.label) + '<br>' + when + (l.sample ? ', sample' : '') + '</div></div>' + (v === null ? '<span class="chip">Oven</span>' : '<span class="chip ' + band + '">' + (v > 0 ? pctTxt(v) : '~0%') + '</span>') + '</div>';
+}
+function weekHtml(prof) {
+  var t0 = new Date(); t0.setHours(0, 0, 0, 0); var ws = t0.getTime() - 6 * 86400000; var days = [];
+  for (var i = 0; i < 7; i++) days.push(0);
+  var bySrc = {};
+  S.log.forEach(function (l) { if (l.ts < ws) return; var v = entryPct(l) || 0; var di = Math.floor((l.ts - ws) / 86400000); if (di >= 0 && di < 7) days[di] += v; bySrc[l.label] = (bySrc[l.label] || 0) + v; });
+  var max = Math.max(10, Math.max.apply(null, days));
+  var W = 330, H = 150, bw = 30, gap = (W - 7 * bw) / 6, top = 22, base = H - 22;
+  var s = '<svg class="bars" viewBox="0 0 ' + W + ' ' + H + '" width="100%" role="img" aria-label="Daily share of the limit this week">';
+  s += '<line x1="0" x2="' + W + '" y1="' + base + '" y2="' + base + '" stroke="var(--shade)" stroke-width="2"/>';
+  var names = []; for (var j = 0; j < 7; j++) names.push(j === 6 ? 'Today' : new Date(ws + j * 86400000).toLocaleDateString('en-US', { weekday: 'short' }));
+  names.forEach(function (d, i) {
+    var x = i * (bw + gap), v = days[i], hh = v > 0 ? Math.max(4, (base - top) * v / max) : 0;
+    var col = v < 2 ? 'var(--mint)' : v < 10 ? 'var(--butter)' : 'var(--peach)';
+    if (hh) s += '<rect x="' + x + '" y="' + (base - hh) + '" width="' + bw + '" height="' + hh + '" rx="5" fill="' + col + '" stroke="var(--cocoa)" stroke-width="2"/>';
+    if (v > 0) s += '<text class="val" x="' + (x + bw / 2) + '" y="' + (base - hh - 6) + '" text-anchor="middle">' + Math.round(v) + '</text>';
+    s += '<text x="' + (x + bw / 2) + '" y="' + (H - 4) + '" text-anchor="middle">' + d + '</text>';
+  });
+  s += '</svg>';
+  var tot = days.reduce(function (a, b) { return a + b; }, 0); var big = null, bigV = 0;
+  for (var k in bySrc) if (bySrc[k] > bigV) { bigV = bySrc[k]; big = k; }
+  var h = '<div class="raised pad" style="display:grid;gap:8px"><p class="h3">Last 7 days, % of ' + (prof.id === 'me' ? 'your' : esc(prof.name) + '’s') + ' daily limit by day</p>' + s;
+  if (big && tot > 0) h += '<p class="small"><b>' + Math.round(bigV / tot * 100) + '%</b> came from heating ' + esc(big.split(',')[0].toLowerCase()) + '. Moving those meals to a plate is the biggest change you can make.</p>';
+  return h + '</div>';
+}
+
+function scrLearn() {
+  var h = '<header class="topbar"><h1 class="title" style="text-align:left">Learn</h1></header><div class="wrap learn">';
+  h += '<div class="raised pad"><p class="card-t">' + icon('timer') + 'Heat it all the way</p><p>Frozen meals can carry germs like Salmonella, especially raw or breaded chicken. If the middle does not get hot enough, the germs survive. ZapWise changes the box time to fit your microwave so the meal heats all the way. The middle should reach 165°F (74°C).</p></div>';
+  h += '<div class="raised pad"><p class="card-t">' + icon('flame') + 'Why heat matters</p><p>Hot plastic lets more chemicals out. In ZapWise’s model, plastic at boiling heat (100°C) lets a chemical called DEHP out about 20 times faster than at 70°C. Food touching the sides gets hotter than the middle.</p></div>';
+  h += '<div class="raised pad"><p class="card-t">' + icon('plate') + 'Why fat matters</p><p>These chemicals mix into fat much more easily than into water. So a cheesy or oily meal pulls out more than soup or rice does.</p></div>';
+  h += '<div class="raised pad"><p class="card-t">' + icon('alert') + 'Phthalates: softeners in plastic</p><p>DEHP, DBP and DIBP are phthalates: chemicals that make plastic soft. Europe’s food safety agency (EFSA) set one shared daily limit for them: 50 micrograms for each kg of body weight. Kids weigh less, so the same meal is a bigger share of a kid’s limit.</p></div>';
+  h += '<div class="raised pad"><p class="card-t">' + icon('container') + 'Antimony in black trays</p><p>Black trays that can go in the oven are usually CPET plastic, which is made with a metal called antimony. The World Health Organization set a daily limit of 6 micrograms for each kg of body weight.</p></div>';
+  h += '<div class="raised pad"><p class="card-t">' + icon('info') + 'Lead in paper cups</p><p>Paper cups and bowls, like the ones for instant noodles, are lined with a thin plastic. A lab study filled 20 of these cups with near-boiling water for 15 minutes and found small amounts of lead. ZapWise compares lead with a reference point, not a safe limit. Making the noodles in a pot or a bowl skips the cup.</p></div>';
+  h += '<div class="raised pad"><p class="card-t">' + icon('info') + 'BPA and microplastics</p><p>BPA comes from hard clear plastics and can linings, not from the trays ZapWise checks. There is no agreed daily limit for microplastics yet, so ZapWise does not give them a percentage.</p></div>';
+  h += '<div class="raised pad"><p class="card-t">' + icon('check') + 'What ZapWise counts</p><p>Only what comes out of the container while your food heats and while you eat. Chemicals already in the food from the factory are not counted. Every number is an estimate, not a medical test.</p></div>';
+  return h + '</div>';
+}
+
+function scrMe() {
+  var h = '<header class="topbar"><h1 class="title" style="text-align:left">Me</h1></header><div class="wrap">';
+  // first on the tab and in both languages, so someone who reads only Spanish can find it
+  h += '<p class="h3" data-notr>Language / Idioma</p><div class="choice"><button data-act="lang" data-v="en" aria-pressed="' + (S.lang === 'en') + '" data-notr>English</button><button data-act="lang" data-v="es" aria-pressed="' + (S.lang === 'es') + '" data-notr>Español</button></div>';
+  h += '<p class="h3" style="margin-top:6px">Who eats at home</p><div class="list">';
+  S.profiles.forEach(function (pr) { var b = BANDS[pr.band]; h += '<button class="soft" data-act="who" data-id="' + pr.id + '" aria-pressed="' + (pr.id === S.active) + '">' + icon(pr.id === 'me' ? 'me' : 'heart') + '<span class="txt">' + esc(pr.name) + '<small>' + b.label + ', about ' + b.kg + ' kg' + (pr.pregnant ? ', pregnant' : '') + '</small></span><span class="sub">' + (pr.id === S.active ? 'Showing' : '') + '</span></button>'; });
+  h += '<button class="soft" data-act="sheet" data-sheet="addPerson">' + icon('heart') + 'Add a family member</button></div>';
+  h += '<p class="h3" style="margin-top:6px">Your kitchen</p><div class="list"><button class="soft" data-act="sheet" data-sheet="microwave">' + img('zappy_body_neutral', 30, 22, 1.4) + '<span class="txt">Microwave<small>' + (S.watts ? S.watts + ' W' + (S.boilDone ? ', boil test done' : '') : 'Watts not set, using ' + ZD.params.params.default_ref_watt + ' W') + '</small></span></button></div>';
+  h += '<p class="h3" style="margin-top:6px">Your data</p><p class="small muted">Your profiles and log stay on this device.</p>';
+  h += '<div class="list"><button class="soft" data-act="replayTour">' + icon('quest') + 'Replay the kitchen tour</button><button class="soft" data-act="resetAsk">' + icon('swap') + 'Reset this demo</button></div>';
+  h += '<details class="raised pad limits"><summary class="h3">Daily limits in use</summary><div style="display:grid;gap:6px;margin-top:10px">';
+  Object.keys(ZD.params.groups).forEach(function (g) { var x = ZD.params.groups[g]; h += '<p class="small">' + esc(x.label_en) + ': ' + num(x.tdi) + ' µg/kg/day (' + esc(x.agency || '') + ' ' + (x.year || '') + ')</p>'; });
+  h += '<p class="small muted">Where agencies disagree, the Learn tab says so. The lead value is a reference point, not a safe level.</p></div></details>';
+  return h + '</div>';
+}
+
+/* ---------------- sheets ---------------- */
+function sheetHead(t) { return '<div class="grab" aria-hidden="true"></div><div class="sh-head"><h2 id="sheetTitle">' + t + '</h2><button class="round" data-act="closeSheet" aria-label="Close">×</button></div>'; }
+
+var BOIL = { start: 0, t: null };
+function boilWatt(secs) { return secs < 120 ? 1000 : secs < 165 ? 800 : secs < 200 ? 700 : 600; }
+function shBoil() {
+  var running = BOIL.start > 0, el = running ? (Date.now() - BOIL.start) / 1000 : (sheetState.secs || 0);
+  var h = sheetHead('Boil test');
+  h += '<div class="raised pad"><p class="small" style="white-space:pre-line">1. Pour 1 cup of ice-cold water into a 2-cup glass measuring cup.\n2. Start the microwave on HIGH and tap Start at the same time.\n3. Tap Stop when the water boils.</p><p class="small muted" style="margin-top:6px">Under 2 min means 1000 W or more, about 2:30 means 800 W, about 3 min means 650 to 700 W. (USDA guidance via Conagra)</p></div>';
+  h += '<div class="well time-well"><span class="muted">' + (running ? 'Waiting for the boil' : 'Stopwatch') + '</span><span class="big" id="boilClock">' + mmss(el) + '</span></div>';
+  h += '<button class="soft" data-act="boilToggle" style="justify-content:center">' + icon('timer') + (running ? 'Stop, it boils' : 'Start') + '</button>';
+  if (sheetState.secs && !running) h += '<p class="small" style="color:var(--mint-deep,#2E6E58)">Boiled in ' + timeWords(sheetState.secs) + ': about ' + boilWatt(sheetState.secs) + ' W or more.</p><button class="cta" data-act="boilSave">Save ' + boilWatt(sheetState.secs) + ' W</button>';
+  return h + '<p style="text-align:center"><button class="link" data-act="sheet" data-sheet="microwave">Back to the label</button></p>';
+}
+function shMicrowave() {
+  var st = sheetState;
+  var h = sheetHead('Your microwave');
+  h += '<div style="display:flex;gap:14px;align-items:center">' + img('zappy_happy', 42, 32, 3, 'Zappy') + '<p class="small">Watts are printed on a label inside the door or on the back. I use them to change the box’s cooking time for your microwave.</p></div>';
+  h += '<button class="soft" data-act="snapLabel">' + icon('camera') + '<span class="txt">Snap the label<small>' + (st.reading ? 'Reading the label…' : st.found ? 'Found ' + st.found + ' W on the label' : 'Sample photo in this demo') + '</small></span></button>';
+  h += '<p class="small muted">Or pick it yourself</p><div class="choice">';
+  [600, 700, 800, 900, 1000, 1100, 1200].forEach(function (w) { h += '<button data-act="pickW" data-w="' + w + '" aria-pressed="' + (st.w === w) + '">' + w + ' W</button>'; });
+  h += '</div><p style="text-align:center"><button class="link" data-act="boilMode">No label? Try the boil test</button></p>';
+  h += '<button class="soft" data-act="wattUnknown">' + icon('info') + '<span class="txt">I don’t know<small>Use the box time and check that it’s hot</small></span></button>';
+  h += '<button class="cta" data-act="saveW"' + (st.w ? '' : ' disabled') + '>' + (st.w ? 'Save ' + st.w + ' W' : 'Save') + '</button>';
+  return h;
+}
+function shAirfryer() {
+  return sheetHead('Air fryer') + '<div style="display:flex;gap:14px;align-items:center">' + img('air_fryer', 22, 25, 3) + '<p class="small">It’s on your counter. Air fryer heating isn’t estimated yet. Food goes in the basket, not in its plastic tray, so the tray chemicals ZapWise counts stay out.</p></div><button class="soft" data-act="removeFryer">' + icon('swap') + 'Take it off the counter</button><p style="text-align:center"><button class="link" data-act="sheet" data-sheet="addAppliance">Add an appliance</button></p>';
+}
+function shAddAppliance() {
+  var h = sheetHead('Add an appliance') + '<p class="small muted">Pick what you have. It shows up on your counter.</p><div class="grid-2">';
+  h += '<button class="tile" data-act="addFryer" aria-pressed="' + S.airfryer + '">' + img('air_fryer', 22, 25, 2) + 'Air fryer</button>';
+  [['Toaster oven', 'toaster_oven', 24, 16], ['Electric kettle', 'kettle', 14, 16]].forEach(function (e) { var n = e[0], on = S.extras.indexOf(n) >= 0; h += '<button class="tile" data-act="toggleExtra" data-n="' + n + '" aria-pressed="' + on + '">' + img(e[1], e[2], e[3], 3) + n + (on ? '<span class="small muted">Added</span>' : '') + '</button>'; });
+  return h + '</div>';
+}
+function shToaster() {
+  return sheetHead('Toaster oven') + '<div style="display:flex;gap:14px;align-items:center">' + img('toaster_oven', 24, 16, 4) + '<p class="small">It’s on your counter. Toaster oven heating isn’t estimated yet. Food goes on the metal rack or a pan, so the plastic tray stays out.</p></div>'
+    + '<button class="soft" data-act="removeExtra" data-n="Toaster oven">' + icon('swap') + 'Take it off the counter</button><p style="text-align:center"><button class="link" data-act="sheet" data-sheet="addAppliance">Add an appliance</button></p>';
+}
+function shKettle() {
+  return sheetHead('Electric kettle') + '<div style="display:flex;gap:14px;align-items:center">' + img('kettle', 14, 16, 5) + '<p class="small">It’s on your counter. For cup noodles, boil water here and pour it over the noodles in a bowl. That skips the paper or foam cup.</p></div>'
+    + '<button class="soft" data-act="removeExtra" data-n="Electric kettle">' + icon('swap') + 'Take it off the counter</button><p style="text-align:center"><button class="link" data-act="sheet" data-sheet="addAppliance">Add an appliance</button></p>';
+}
+function shStove() {
+  return sheetHead('Stove') + '<div style="display:flex;gap:14px;align-items:center">' + img('stove', 34, 38, 2) + '<p class="small">Heating food in a metal pot adds no plastic chemicals. When a meal can go in a pot, I list it as a choice.</p></div>';
+}
+function shShelf() {
+  var h = sheetHead('Your container shelf');
+  if (!S.shelf.length) h += '<p class="small muted">Nothing here yet. Add the containers you heat food in, and they’ll sit on your shelf.</p>';
+  h += '<div class="list">';
+  S.shelf.forEach(function (it) { var c = CONT[it.kind]; var ok = c.limit >= 100; h += '<div class="raised entry" style="grid-template-columns:56px 1fr auto auto"><div class="thumb" style="width:56px;height:56px">' + img(c.sprite, c.w, c.h, c.w > 20 ? 2 : 3) + '</div><div><b>' + esc(c.name) + '</b><div class="when">' + esc(c.resin) + ', ' + it.sure + '% sure</div></div><span class="chip ' + (ok ? 'lower' : 'higher') + '">' + (ok ? 'Microwave OK' : 'Not for heating') + '</span><button class="round" data-act="removeShelf" data-id="' + it.id + '" aria-label="Take it off the shelf">×</button></div>'; });
+  h += '</div><button class="cta" data-act="sheet" data-sheet="addContainer">' + icon('camera') + 'Add a container</button>';
+  return h;
+}
+function shAddContainer() {
+  var st = sheetState;
+  var h = sheetHead('Add a container');
+  if (!st.pick) {
+    h += '<p class="small">Snap the container from the side. If there’s a number in a triangle on the bottom, snap that too.</p><p class="small muted">For this demo, pick the photo you would take.</p><div class="grid-2">';
+    ADDABLE.forEach(function (k) { var c = CONT[k]; h += '<button class="tile" data-act="pickContainer" data-k="' + k + '">' + img(c.sprite, c.w, c.h, c.w > 20 ? 2 : 3) + c.name + '</button>'; });
+    return h + '</div>';
+  }
+  var c = CONT[st.pick]; var ok = c.limit >= 100;
+  h += '<div class="raised pad" style="display:grid;gap:10px"><div style="display:flex;gap:14px;align-items:center">' + img(c.sprite, c.w, c.h, 3) + '<div><p class="h3">' + esc(c.name) + '</p><p class="small muted">Recognised from the photo.</p></div></div>';
+  h += '<p class="small">' + esc(c.block ? 'Don’t heat food in this. ' + c.block : c.base === 0 ? 'Microwave OK. No plastic touches the food.' : 'Made for microwave heating. Some chemicals can still move into hot, fatty food, and ZapWise estimates how much.') + '</p>';
+  h += '<span class="chip ' + (ok ? 'lower' : 'higher') + '">' + icon(ok ? 'check' : 'alert', 20) + (ok ? 'Microwave OK' : 'Not for heating') + '</span></div>';
+  h += '<button class="cta" data-act="saveContainer">Put it on my shelf</button><button class="link" data-act="pickContainerReset" style="justify-self:center">Pick a different photo</button>';
+  return h;
+}
+function shChoose() {
+  var h = sheetHead('Use one of my containers');
+  if (!S.shelf.length) return h + '<p class="small muted">Your shelf is empty. Add the containers you heat food in first.</p><button class="cta" data-act="sheet" data-sheet="addContainer">' + icon('camera') + 'Add a container</button>';
+  if (sheetState.blocked) {
+    var c0 = CONT[sheetState.blocked];
+    return h + '<div class="warn"><div class="hd">' + icon('alert') + 'Not this one</div><p class="small">' + esc(c0.name) + ' (' + esc(c0.resin) + ') softens around ' + c0.limit + '°C, and food in a microwave gets close to 100°C. Pick another container or a plate.</p></div><button class="soft" data-act="chooseReset">' + icon('swap') + 'Pick another</button>';
+  }
+  h += '<div class="list">';
+  S.shelf.forEach(function (it) { var c = CONT[it.kind]; h += '<button class="soft" data-act="chooseItem" data-id="' + it.id + '">' + img(c.sprite, c.w, c.h, c.w > 20 ? 1 : 2) + '<span class="txt">' + esc(c.name) + '<small>' + esc(c.resin) + '</small></span></button>'; });
+  return h + '</div>';
+}
+function shQuest() {
+  var q = quest();
+  var h = sheetHead(q.id === 'starter' ? 'Your first quest' : 'Your quests');
+  h += '<div class="raised pad" style="display:grid;gap:10px"><p class="h2">' + esc(q.title) + '</p><div class="row" style="display:flex;gap:10px;align-items:center"><span class="track"><i style="width:' + (q.n / q.of * 100) + '%"></i></span><span class="count">' + q.n + '/' + q.of + '</span></div>';
+  if (q.tasks) q.tasks.forEach(function (t) { h += '<div class="step">' + icon(t.done ? 'check' : 'quest') + '<span' + (t.done ? ' class="muted"' : '') + '>' + t.t + '</span></div>'; });
+  var how = { boil: 'Time how long a cup of water takes to boil (tap Zappy, then "Try the boil test")', plate: 'Heat a meal on a plate, in glass or in a pot and save it, 3 times this week', box: 'Heat a meal for exactly the box time and save it, 3 times this week' }[q.id];
+  if (how) h += '<p class="small">' + how + '</p>';
+  if (q.reward) h += '<p class="small muted">Reward: ' + q.reward + ' stars' + (q.def && q.def.decor ? ' and ' + q.def.decor : '') + '.</p>';
+  h += '</div>';
+  if (q.id !== 'starter') {
+    h += '<p class="h3">This week\'s quests</p>';
+    QUESTS.forEach(function (d) { var done = (S.claimed || []).indexOf(claimedKey(d)) >= 0; h += '<div class="step">' + icon(done ? 'check' : 'star') + '<span' + (done ? ' class="muted"' : '') + '>' + esc(d.title) + ' (' + Math.min(d.of, d.count()) + '/' + d.of + ')</span></div>'; });
+  }
+  h += '<p class="small muted">Quests come from your log. Heating more often doesn\'t help; only how you heat counts.</p>';
+  h += '<p class="small">Stars: <b>' + S.stars + '</b></p>';
+  return h;
+}
+function searchHits(q) {
+  var words = q.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!words.length) return [];
+  return ZD.products.products.filter(function (r) {
+    var t = (r.brand + ' ' + r.name).toLowerCase(); return words.every(function (w) { return t.indexOf(w) >= 0; });
+  }).slice(0, 25);
+}
+function searchList(q) {
+  if (!q) return '<p class="small muted">' + ZD.products.products.length + ' products in the database.</p>';
+  var hits = searchHits(q);
+  if (!hits.length) return '<p class="small muted">Nothing matches yet. Try one word from the box.</p>';
+  return hits.map(function (r) { var p = PRODUCTS[r.id]; return '<button class="soft" data-act="pickProduct" data-id="' + r.id + '">' + img(p.sprite, p.w, p.h, p.w > 20 ? 1 : 2) + '<span class="txt">' + esc(r.name) + '<small>' + esc(p.size) + '</small></span></button>'; }).join('');
+}
+function shSearch() {
+  var h = sheetHead('Find your product');
+  h += '<input id="searchBox" class="field" type="search" autocomplete="off" placeholder="Brand or meal, e.g. lean cuisine" value="' + esc(sheetState.q || '') + '">';
+  return h + '<div class="list" id="searchResults">' + searchList(sheetState.q) + '</div>';
+}
+document.addEventListener('input', function (ev) {
+  if (ev.target.id !== 'searchBox') return;
+  sheetState.q = ev.target.value; $('searchResults').innerHTML = searchList(sheetState.q);
+});
+function shCalc() {
+  var P = ZD.params.params, h = sheetHead('How we calculate');
+  h += '<div class="well formula">% of daily limit = (amount moved into the food you eat × relative potency) ÷ (body weight × daily limit) × 100</div>';
+  h += '<p class="small" style="white-space:pre-line">1. Recipe: the box time is converted to your microwave\'s watts.\n2. Heat: an energy balance gives the food temperature second by second, and the wall next to the food runs hotter.\n3. Diffusion: how fast each chemical moves through the plastic at that temperature, between a realistic estimate (Huang et al. 2017) and the regulatory upper bound (Piringer).\n4. Partition: how much the chemical prefers the food over the plastic, from a regression fitted to 1,881 measurements (Huang and Jolliet 2019), using how fatty the meal is.\n5. Migration: the diffusion equation for a plastic layer touching food (Crank).\n6. Exposure: the eaten share is compared with the daily limit for your body weight.</p>';
+  h += '<table class="params"><tr><th>Setting</th><th style="text-align:right">Value</th></tr>';
+  h += '<tr><td>Monte Carlo runs per estimate</td><td class="n">' + P.mc_samples + '</td></tr>';
+  h += '<tr><td>Bands: Lower, Middle, Higher</td><td class="n">&lt;' + P.band_low_pct + '%, ' + P.band_low_pct + '–' + P.band_high_pct + '%, ≥' + P.band_high_pct + '%</td></tr>';
+  h += '<tr><td>Microwave when watts are not set</td><td class="n">' + P.default_ref_watt + ' W</td></tr>';
+  h += '<tr><td>Time step</td><td class="n">' + P.dt_s + ' s</td></tr></table>';
+  h += '<p class="small muted">Containers that soften below cooking heat (clear PET, foam, take-out tubs) get a do-not-heat warning instead of a number. This web version runs the same engine as the app (engine.js, checked against the Python reference).</p>';
+  return h;
+}
+function shRegister() {
+  var st = sheetState; st.steps = st.steps || [false, false];
+  var h = sheetHead('Help add this product') + '<p class="small">It’s not in our list yet. Two photos let me read the cooking steps and the container. Others will see it after a second person confirms it.</p>';
+  h += '<button class="soft" data-act="regStep" data-i="0" aria-pressed="' + st.steps[0] + '">' + icon(st.steps[0] ? 'check' : 'camera') + '<span class="txt">Snap the back of the box<small>' + (st.steps[0] ? 'Read: 1100 W, 2 min, stir, 1 more min' : 'Where the microwave steps are') + '</small></span></button>';
+  h += '<button class="soft" data-act="regStep" data-i="1" aria-pressed="' + st.steps[1] + '">' + icon(st.steps[1] ? 'check' : 'camera') + '<span class="txt">Snap the bottom of the tray<small>' + (st.steps[1] ? 'Read: #1 in a triangle, black tray' : 'Where the number in a triangle is') + '</small></span></button>';
+  h += '<label class="small" style="display:flex;gap:10px;align-items:center;min-height:44px"><input type="checkbox" id="offShare" checked style="width:22px;height:22px;accent-color:var(--rose-deep)"> Also share the packaging info with Open Food Facts</label>';
+  h += '<button class="cta" data-act="regDone"' + (st.steps[0] && st.steps[1] ? '' : ' disabled') + '>Add product</button>';
+  return h;
+}
+function shAddPerson() {
+  var st = sheetState; st.band = st.band || 'kid';
+  var h = sheetHead('Add a family member');
+  h += '<label class="small" for="personName" style="font-weight:800">Name or nickname</label><input id="personName" maxlength="20" value="' + esc(st.name || 'Mia') + '" style="min-height:48px;border:0;border-radius:14px;padding:0 14px;font:700 16px var(--body);color:var(--cocoa);background:var(--milk);box-shadow:var(--inset-sm)">';
+  h += '<p class="small" style="font-weight:800">Age group</p><div class="choice">';
+  Object.keys(BANDS).forEach(function (b) { h += '<button data-act="personBand" data-band="' + b + '" aria-pressed="' + (st.band === b) + '">' + BANDS[b].label + '</button>'; });
+  h += '</div><p class="small muted">Stays on this device. I only use the age group to pick a typical body weight.</p><button class="cta" data-act="savePerson">Add</button>';
+  return h;
+}
+function shReset() {
+  return sheetHead('Reset this demo?') + '<p class="small">This clears your kitchen, shelf, log, stars and family members on this device.</p><button class="cta" data-act="resetDo">Reset everything</button><button class="soft" data-act="closeSheet" style="justify-content:center">Keep my data</button>';
+}
+function shCelebrate() {
+  var st = sheetState;
+  return '<div class="grab" aria-hidden="true"></div><div style="display:grid;justify-items:center;gap:10px;text-align:center;padding:8px 0">' + img('zappy_celebrate', 42, 32, 4, 'Zappy celebrating') + '<h2 id="sheetTitle" class="h2" style="font-size:24px">' + esc(st.title) + '</h2><p class="small">' + esc(st.text) + '</p></div><button class="cta" data-act="celebrateOk">See my kitchen</button>';
+}
+var SHEETS = { boil: shBoil, search: shSearch, microwave: shMicrowave, airfryer: shAirfryer, toaster: shToaster, kettle: shKettle, addAppliance: shAddAppliance, stove: shStove, shelf: shShelf, addContainer: shAddContainer, choose: shChoose, quest: shQuest, calc: shCalc, register: shRegister, addPerson: shAddPerson, reset: shReset, celebrate: shCelebrate };
+
+/* ---------------- render ---------------- */
+var TAB_SCREENS = { home: scrHome, log: scrLog, learn: scrLearn, me: scrMe };
+var FLOW_SCREENS = { quick: scrQuick, scan: scrScan, reading: scrReading, confirm: scrConfirm, guide: scrGuide, result: scrResult };
+function render(keepScroll) {
+  var view = $('view'); var top = view.scrollTop;
+  var fn = TAB_SCREENS[R.name] || FLOW_SCREENS[R.name] || scrHome;
+  view.innerHTML = fn();
+  var isTab = !!TAB_SCREENS[R.name];
+  $('tabbar').hidden = !isTab;
+  view.classList.toggle('with-tabs', isTab);
+  Array.prototype.forEach.call(document.querySelectorAll('.tab'), function (t) { if (t.dataset.to === R.name) t.setAttribute('aria-current', 'page'); else t.removeAttribute('aria-current'); });
+  view.scrollTop = keepScroll ? top : 0;
+  if (R.name === 'home') { startBlink(); fitHome(); } else stopBlink();
+}
+function fitHome() {
+  var view = $('view'), scene = $('scene');
+  if (R.name !== 'home' || !scene) return;
+  scene.style.width = '';
+  var used = 0;
+  Array.prototype.forEach.call(view.children, function (el) { if (el !== scene) used += el.offsetHeight; });
+  var room = view.clientHeight - parseFloat(getComputedStyle(view).paddingBottom) - used - 22;
+  var w = Math.min(view.clientWidth, Math.max(200, room * 196 / 216));
+  scene.style.width = w + 'px'; scene.style.marginLeft = scene.style.marginRight = 'auto';
+}
+window.addEventListener('resize', fitHome);
+function go(name) { R = { name: name }; render(); if (name === 'reading') runReading(); }
+function openSheet(name, st) { sheetState = st || {}; sheetState.name = name; $('sheetBody').innerHTML = SHEETS[name](); $('sheet').hidden = false; var b = $('sheetBody').querySelector('button, input'); if (b) b.focus({ preventScroll: true }); }
+function refreshSheet() { if (!$('sheet').hidden && sheetState.name) $('sheetBody').innerHTML = SHEETS[sheetState.name](); }
+function closeSheet() { if (BOIL.start) { BOIL.start = 0; clearInterval(BOIL.t); } $('sheet').hidden = true; sheetState = {}; render(true); }
+var toastT = null;
+function toast(msg) { var t = $('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(function () { t.hidden = true; }, 2600); }
+function celebrate(title, text) { setTimeout(function () { openSheet('celebrate', { title: title, text: text }); }, 350); }
+
+function startBlink() {
+  stopBlink();
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  blinkTimer = setInterval(function () { var z = $('zappyImg'); if (!z) return; z.src = 'img/zappy_body_blink.png'; setTimeout(function () { if (z) z.src = 'img/zappy_body_neutral.png'; }, 160); }, 3800);
+}
+function stopBlink() { if (blinkTimer) clearInterval(blinkTimer); blinkTimer = null; }
+
+function runReading() {
+  var ids = ['ck1', 'ck2', 'ck3'];
+  ids.forEach(function (id, i) { setTimeout(function () { var el = $(id); if (el) el.classList.add('on'); }, 350 + i * 420); });
+  setTimeout(function () { if (R.name === 'reading') go('confirm'); }, 1750);
+}
+
+/* ---------------- coach (first-run tour) ---------------- */
+var COACH = [
+  { el: null, text: 'Hi, I’m Zappy. I help you check a meal before you heat it. Let me show you around the kitchen.' },
+  { el: 'hotZappy', text: 'Tap me any time to set your microwave’s watts. They’re printed inside the door.' },
+  { el: 'hotShelf', text: 'Your containers live on these shelves. Add the ones you heat food in.' },
+  { el: 'ctaScan', text: 'Before you heat a packaged meal, scan the front of the box.' },
+  { el: 'questBanner', text: 'Each week I pin one small habit here. First quest: set up your kitchen.' }
+];
+function showCoach(i) {
+  coachStep = i;
+  var c = $('coach'); if (i < 0 || i >= COACH.length) { c.hidden = true; c.innerHTML = ''; return; }
+  if (R.name !== 'home') go('home');
+  var step = COACH[i], phone = $('phone').getBoundingClientRect();
+  var hole = '<div class="ring-hole none"></div>', bubbleTop = phone.height * 0.32;
+  if (step.el) {
+    var el = $(step.el); if (el) {
+      el.scrollIntoView({ block: 'center' });
+      var r = el.getBoundingClientRect(), pad = 6;
+      var x = r.left - phone.left - pad, y = r.top - phone.top - pad, w = r.width + pad * 2, h = r.height + pad * 2;
+      hole = '<div class="ring-hole" style="left:' + x + 'px;top:' + y + 'px;width:' + w + 'px;height:' + h + 'px"></div>';
+      bubbleTop = (y + h + 190 < phone.height) ? y + h + 14 : Math.max(16, y - 190);
+    }
+  }
+  var dots = ''; for (var k = 0; k < COACH.length; k++) dots += '<i class="' + (k === i ? 'on' : '') + '"></i>';
+  c.innerHTML = hole + '<div class="bubble" role="dialog" aria-label="Kitchen tour" style="top:' + bubbleTop + 'px">' + img('zappy_body_happy', 30, 22, 2, 'Zappy') + '<p>' + step.text + '</p><div class="btns"><button class="mini-btn ghost" data-act="coachSkip">Skip</button><span class="dots" aria-hidden="true">' + dots + '</span><button class="mini-btn" data-act="coachNext">' + (i === COACH.length - 1 ? 'Let’s go' : 'Next') + '</button></div></div>';
+  c.hidden = false;
+  var nb = c.querySelector('[data-act="coachNext"]'); if (nb) nb.focus({ preventScroll: true });
+}
+function endCoach() { S.tutorialDone = true; save(); showCoach(-1); }
+
+/* ---------------- actions ---------------- */
+function addLog() {
+  var p = PRODUCTS[F.pid]; var kind = kindFor(F.method, p, F.cid);
+  var zero = CONT[kind].base === 0;
+  S.log.push({ ts: Date.now(), pid: F.pid, kind: kind, method: F.method, extra: EXTRA, label: methodLabel(F.method, p, F.cid), zero: zero });
+  save();
+}
+function sampleWeek() {
+  var t0 = new Date(); t0.setHours(12, 30, 0, 0);
+  var plan = [['zw-001', 'asis'], ['zw-015', 'asis'], ['zw-023', 'asis'], ['zw-001', 'asis'], ['zw-015', 'plate'], ['zw-017', 'asis']];
+  plan.forEach(function (pl, i) {
+    var t = t0.getTime() - (6 - i) * 86400000;
+    var p = PRODUCTS[pl[0]]; var kind = kindFor(pl[1], p, null);
+    S.log.push({ ts: t, pid: pl[0], kind: kind, method: pl[1], label: methodLabel(pl[1], p, null), zero: CONT[kind].base === 0, sample: true });
+  });
+  S.log.sort(function (a, b) { return a.ts - b.ts; }); save();
+}
+
+document.addEventListener('click', function (ev) {
+  var t = ev.target.closest('[data-act]'); if (!t) return;
+  var a = t.dataset.act, d = t.dataset;
+  switch (a) {
+    case 'tab': go(d.to); break;
+    case 'go': go(d.to); break;
+    case 'sheet':
+      if (t.id && t.id.indexOf('hot') === 0 && !S.seen[t.id]) { S.seen[t.id] = true; save(); }
+      if (d.sheet === 'microwave') openSheet('microwave', { w: S.watts });
+      else openSheet(d.sheet);
+      break;
+    case 'closeSheet': closeSheet(); break;
+    case 'pick': F.pid = d.id; render(true); break;
+    case 'shoot': F.unverified = false; go('reading'); break;
+    case 'confirmYes': EXTRA = 0; go('guide'); break;
+    case 'altPick': F.pid = d.id; render(true); break;
+    case 'tipOk': S.tips[d.key] = true; save(); render(true); break;
+    case 'heat': F.method = d.m; F.cid = null; go('result'); break;
+    case 'heatWith': F.method = 'container'; F.cid = d.id; go('result'); break;
+    case 'setBand': profile('me').band = d.band; S.profileSet = true; save(); render(true); break;
+    case 'who': S.active = d.id; save(); render(true); break;
+    case 'saveLog':
+      addLog(); toast('Saved to today’s log');
+      go('home');
+      if (!checkQuests()) { var z = $('hotZappy'); if (z) { z.classList.add('zappy-hop'); } }
+      break;
+    case 'seg': F.logSeg = d.v; render(true); break;
+    case 'sample': sampleWeek(); F.logSeg = 'week'; render(true); toast('Loaded a sample week'); break;
+    case 'agency': S.agency = d.v; save(); render(true); break;
+    case 'snapLabel':
+      sheetState.reading = true; refreshSheet();
+      setTimeout(function () { sheetState.reading = false; sheetState.found = 1100; sheetState.w = 1100; refreshSheet(); }, 900);
+      break;
+    case 'pickW': sheetState.w = Number(d.w); refreshSheet(); break;
+    case 'pickProduct': EXTRA = 0; F.pid = d.id; F.unverified = false; F.method = 'asis'; F.cid = null; $('sheet').hidden = true; sheetState = {}; go('guide'); break;
+    case 'wattUnknown': closeSheet(); toast('OK. I’ll show the box time and remind you to check that it’s hot.'); break;
+    case 'lang': S.lang = d.v; save(); render(true); translateAll(); toast(d.v === 'es' ? 'Español activado' : 'English on'); break;
+    case 'qKind': Q.kind = d.k; render(true); break;
+    case 'qTime': Q.secs = Math.max(30, Math.min(1200, Q.secs + Number(d.d))); render(true); break;
+    case 'qWatt': Q.watt = Number(d.w); Q.wattPicked = true; render(true); break;
+    case 'qFat': Q.fat = d.v; render(true); break;
+    case 'qGo': EXTRA = 0; if (!Q.kind) break; var qp = quickProduct(); PRODUCTS[qp.id] = qp; S.quicks[qp.id] = qp; save(); F.pid = qp.id; F.unverified = true; F.method = 'asis'; F.cid = null; go('guide'); break;
+    case 'saveW': S.watts = sheetState.w; save(); closeSheet(); toast('Microwave set to ' + S.watts + ' W'); checkQuests(); break;
+    case 'addFryer': S.airfryer = !S.airfryer; save(); refreshSheet(); break;
+    case 'removeFryer': S.airfryer = false; save(); closeSheet(); break;
+    case 'removeExtra': S.extras = S.extras.filter(function (n) { return n !== d.n; }); save(); closeSheet(); break;
+    case 'removeShelf': S.shelf = S.shelf.filter(function (it) { return it.id !== d.id; }); save(); refreshSheet(); toast('Taken off the shelf'); break;
+    case 'extra': EXTRA += Number(d.d); render(true); break;
+    case 'boilMode': openSheet('boil'); break;
+    case 'boilToggle':
+      if (BOIL.start) { sheetState.secs = (Date.now() - BOIL.start) / 1000; BOIL.start = 0; clearInterval(BOIL.t); }
+      else { sheetState.secs = 0; BOIL.start = Date.now(); BOIL.t = setInterval(function () { var c = $('boilClock'); if (c && BOIL.start) c.textContent = mmss((Date.now() - BOIL.start) / 1000); }, 250); }
+      refreshSheet(); break;
+    case 'boilSave': S.watts = boilWatt(sheetState.secs); S.boilDone = true; save(); closeSheet(); toast('Microwave set to ' + S.watts + ' W'); checkQuests(); break;
+    case 'toggleExtra': var i = S.extras.indexOf(d.n); if (i >= 0) S.extras.splice(i, 1); else S.extras.push(d.n); save(); refreshSheet(); break;
+    case 'pickContainer': sheetState.pick = d.k; refreshSheet(); break;
+    case 'pickContainerReset': sheetState.pick = null; refreshSheet(); break;
+    case 'saveContainer':
+      if (S.shelf.length >= SHELF_SLOTS.length) { toast('Your shelf is full in this demo'); break; }
+      S.shelf.push({ id: 'c' + Date.now(), kind: sheetState.pick, sure: CONT[sheetState.pick].sure });
+      save(); closeSheet(); toast(CONT[S.shelf[S.shelf.length - 1].kind].name + ' is on your shelf'); checkQuests(); break;
+    case 'chooseItem':
+      var it = shelfItem(d.id);
+      if (it && CONT[it.kind].limit < 100) { sheetState.blocked = it.kind; refreshSheet(); break; }
+      $('sheet').hidden = true; sheetState = {}; F.method = 'container'; F.cid = d.id; go('result'); break;
+    case 'chooseReset': sheetState.blocked = null; refreshSheet(); break;
+    case 'regStep': sheetState.steps[Number(d.i)] = true; refreshSheet(); break;
+    case 'regDone':
+      $('sheet').hidden = true; sheetState = {}; F.unverified = true;
+      toast('Added. It shows as unverified for now.'); go('guide'); break;
+    case 'personBand': sheetState.band = d.band; sheetState.name = ($('personName') || {}).value; refreshSheet(); break;
+    case 'savePerson':
+      var nm = (($('personName') || {}).value || '').trim() || 'Family member';
+      S.profiles.push({ id: 'p' + Date.now(), name: nm.slice(0, 20), band: sheetState.band || 'kid', pregnant: false });
+      save(); closeSheet(); toast(nm + ' added'); break;
+    case 'resetAsk': openSheet('reset'); break;
+    case 'resetDo': for (var rk in PRODUCTS) if (PRODUCTS[rk].quick) delete PRODUCTS[rk]; var keepLang = S.lang; S = fresh(); S.lang = keepLang; save(); F = { pid: 'zw-001', method: 'asis', cid: null, unverified: false, logSeg: 'today' }; $('sheet').hidden = true; sheetState = {}; go('home'); setTimeout(function () { showCoach(0); }, 300); break;
+    case 'replayTour': $('sheet').hidden = true; go('home'); setTimeout(function () { showCoach(0); }, 150); break;
+    case 'coachNext': if (coachStep >= COACH.length - 1) endCoach(); else showCoach(coachStep + 1); break;
+    case 'coachSkip': endCoach(); break;
+    case 'celebrateOk': closeSheet(); go('home'); break;
+  }
+});
+document.addEventListener('keydown', function (ev) {
+  if (ev.key === 'Escape') { if (!$('coach').hidden) endCoach(); else if (!$('sheet').hidden) closeSheet(); }
+});
+window.addEventListener('resize', function () { if (coachStep >= 0 && !$('coach').hidden) showCoach(coachStep); });
+
+render();
+if (!S.tutorialDone) setTimeout(function () { showCoach(0); }, 400);
+/* Spanish for the web demo: the screens are written in English and every visible text is
+   swapped for its Spanish version after each render. Same table as the Flutter app
+   (app/tool/i18n/es_dict.py) plus the demo-only strings. Anything not in the table stays English. */
+var ZW_ES = {"Warming up the kitchen": "Calentando la cocina", "Something went wrong while starting.": "Algo salió mal al abrir la app.", "Try again": "Intentar de nuevo", "Kitchen": "Cocina", "Log": "Registro", "Learn": "Aprende", "Me": "Yo", "Close": "Cerrar", "Back": "Atrás", "Got it": "Entendido", "Lower": "Más bajo", "Middle": "Medio", "Higher": "Más alto", "Save": "Guardar", "Saved": "Guardado", "Add": "Agregar", "Edit": "Editar", "Keep": "Conservar", "Remove": "Quitar", "Optional": "Opcional", "Name": "Nombre", "Start": "Empezar", "Skip": "Saltar", "Next": "Siguiente", "Let's go": "¡Vamos!", "No camera found on this device.": "Este teléfono no tiene cámara.", "Camera access is off. Turn it on for ZapWise in your phone settings.": "La cámara está desactivada. Actívala para ZapWise en los ajustes del teléfono.", "The camera could not start.": "La cámara no pudo iniciar.", "That photo did not work. Try again.": "Esa foto no funcionó. Inténtalo otra vez.", "Take photo": "Tomar foto", "Scan the box": "Escanea la caja", "Fit the front of the box inside the corners": "Pon el frente de la caja dentro de las esquinas", "Find it by name": "Buscar por nombre", "No camera handy, or the box is gone": "Sin cámara a mano, o ya no tienes la caja", "My product isn't in the app": "Mi producto no está en la app", "Skip the scan": "Saltar el escaneo", "Pick the container and type the box time": "Elige el envase y escribe el tiempo de la caja", "Is this your product?": "¿Es este tu producto?", "Which one is it?": "¿Cuál es?", "New to me": "No lo conozco", "Yes, that's it": "Sí, es ese", "Other close matches": "Otros parecidos", "A few products look like your photo. Tap the one you have.": "Algunos productos se parecen a tu foto. Toca el que tienes.", "I don't know this box yet": "Todavía no conozco esta caja", "Two more photos let me read the cooking steps and the tray, and the next person who scans it will find it.": "Con dos fotos más puedo leer los pasos y la bandeja, y la próxima persona que la escanee la encontrará.", "My product isn't here": "Mi producto no está aquí", "Barcode match": "Coincide el código de barras", "Sample product": "Producto de muestra", "Find your product": "Busca tu producto", "Brand or meal, e.g. lean cuisine": "Marca o comida, ej. lean cuisine", "Nothing matches yet. Try one word from the box.": "Nada coincide todavía. Prueba una palabra de la caja.", "Barcode: not in view, using the photo": "Código de barras: no se ve, uso la foto", "Text: none readable": "Texto: nada legible", "Photo match: model not loaded": "Foto: el modelo no cargó", "Reading the box": "Leyendo la caja", "I couldn't read that photo": "No pude leer esa foto", "Go back": "Volver", "You checked it": "Lo revisaste tú", "From the box": "Según la caja", "Usual for this brand": "Lo usual en esta marca", "Added by you": "Agregado por ti", "Not checked yet": "Sin revisar", "Heating guide": "Cómo calentarlo", "Not verified yet": "Sin verificar", "Check the tray": "Revisa la bandeja", "The tray type for this one is not confirmed. A photo of the bottom settles it.": "No está confirmado el tipo de bandeja. Una foto de la parte de abajo lo resuelve.", "Don't microwave this one": "No lo calientes en el microondas", "The box says not to use a microwave. Raw or breaded foods need to reach 165°F (74°C) all the way through, and microwaves heat unevenly.": "La caja dice que no uses microondas. La comida cruda o empanizada tiene que llegar a 165°F (74°C) en todas partes, y el microondas calienta disparejo.", "The box only gives oven directions.": "La caja solo trae instrucciones para horno.", "The box says": "La caja dice", "Heat it in the oven": "Caliéntalo en el horno", "This is what the box says. I changed the time to fit your microwave.": "Esto dice la caja. Cambié el tiempo para tu microondas.", "No microwave steps on file": "No tengo los pasos para microondas", "Follow the directions on the box. I can't estimate this one until its cooking steps are added; heating it on a plate avoids the question.": "Sigue las instrucciones de la caja. No puedo calcular este hasta tener sus pasos; si lo calientas en un plato, no hace falta.", "Set your microwave": "Configura tu microondas", "Heat it like the box says, or change something?": "¿Lo calientas como dice la caja, o cambias algo?", "Heat as the box says": "Calentar como dice la caja", "Heat it longer": "Calentar más tiempo", "Heat it shorter": "Calentar menos tiempo", "Move it to a plate": "Pásalo a un plato", "Use one of my containers": "Usar uno de mis recipientes", "Your shelf is empty": "Tu repisa está vacía", "Heat it in a pot on the stove": "Calentar en una olla en la estufa", "Change the time": "Cambiar el tiempo", "Same as the box": "Igual que la caja", "30 seconds less": "30 segundos menos", "30 seconds more": "30 segundos más", "Heat it all the way through": "Caliéntalo bien por dentro", "Undercooked frozen meals can make you sick. Stir and let it stand when the box says. The middle should be steaming hot: 165°F (74°C).": "La comida congelada mal calentada puede enfermarte. Revuelve y déjala reposar cuando lo diga la caja. El centro debe quedar humeante: 165°F (74°C).", "I don't know your microwave's power yet, so this is the time printed on the box. A weaker microwave needs longer. Check that the middle is steaming hot, 165°F (74°C). If not, stir and heat 30 seconds more.": "Todavía no sé la potencia de tu microondas, así que este es el tiempo de la caja. Un microondas más débil necesita más tiempo. Revisa que el centro esté humeante, 165°F (74°C). Si no, revuelve y calienta 30 segundos más.", "Kitchen tour": "Recorrido por la cocina", "Scan before you heat": "Escanea antes de calentar", "Hi, I'm Zappy. I help you check a meal before you heat it. Let me show you around the kitchen.": "Hola, soy Zappy. Te ayudo a revisar una comida antes de calentarla. Te enseño la cocina.", "Tap me any time to set your microwave's watts. They're printed inside the door.": "Tócame cuando quieras para poner los vatios de tu microondas. Están impresos dentro de la puerta.", "Your containers live on these shelves. Add the ones you heat food in.": "Tus recipientes viven en estas repisas. Agrega los que usas para calentar comida.", "Before you heat a packaged meal, scan the front of the box.": "Antes de calentar una comida empaquetada, escanea el frente de la caja.", "Each week I pin one small habit here. First quest: set up your kitchen.": "Cada semana pongo aquí un pequeño hábito. Primera misión: arma tu cocina.", "Quests done. A new one arrives Monday.": "Misiones completas. El lunes llega una nueva.", "Your pixel kitchen": "Tu cocina de píxeles", "Quest note on the fridge": "Nota de misión en el refri", "Stove": "Estufa", "Air fryer": "Freidora de aire", "Add an appliance": "Agregar un aparato", "Zappy, your microwave, watts not set": "Zappy, tu microondas, sin vatios", "Set up your kitchen": "Arma tu cocina", "Find your microwave power": "Descubre la potencia de tu microondas", "Plate it 3 times this week": "Usa un plato 3 veces esta semana", "Follow the label time 3 times": "Sigue el tiempo de la caja 3 veces", "a wall clock": "un reloj de pared", "a strawberry rug": "un tapete de fresa", "a fridge plant": "una planta en el refri", "Set your microwave's watts": "Pon los vatios de tu microondas", "Put a container on your shelf": "Pon un recipiente en tu repisa", "Save your first heated meal": "Guarda tu primera comida calentada", "Time how long a cup of water takes to boil (tap Zappy, then \"Try the boil test\")": "Mide cuánto tarda en hervir una taza de agua (toca a Zappy y luego \"Prueba de hervor\")", "Heat a meal on a plate, in glass or in a pot and save it, 3 times this week": "Calienta una comida en plato, vidrio u olla y guárdala, 3 veces esta semana", "Heat a meal for exactly the box time and save it, 3 times this week": "Calienta una comida justo el tiempo de la caja y guárdala, 3 veces esta semana", "This week's quests": "Misiones de esta semana", "Your quests": "Tus misiones", "Opens after the first quest.": "Se abre después de la primera misión.", "Quests come from your log. Heating more often doesn't help; only how you heat counts.": "Las misiones salen de tu registro. Calentar más seguido no ayuda; solo cuenta cómo calientas.", "Kitchen set up": "Cocina lista", "Quest complete": "Misión completa", "See my kitchen": "Ver mi cocina", "Heat it all the way": "Caliéntalo bien", "Frozen meals can carry germs like Salmonella, especially raw or breaded chicken. If the middle does not get hot enough, the germs survive.": "La comida congelada puede traer gérmenes como la Salmonella, sobre todo el pollo crudo o empanizado. Si el centro no se calienta lo suficiente, los gérmenes sobreviven.", "ZapWise changes the box time to fit your microwave so the meal heats all the way. The middle should reach 165°F (74°C).": "ZapWise ajusta el tiempo de la caja a tu microondas para que la comida se caliente por completo. El centro debe llegar a 165°F (74°C).", "Why heat matters": "Por qué importa el calor", "Hot plastic lets more chemicals out. In ZapWise's model, plastic at boiling heat (100°C) lets a chemical called DEHP out about 20 times faster than at 70°C.": "El plástico caliente suelta más químicos. En el modelo de ZapWise, el plástico a temperatura de hervor (100°C) suelta un químico llamado DEHP unas 20 veces más rápido que a 70°C.", "Food touching the sides gets hotter than the middle. The corners of square trays get hottest.": "La comida que toca los lados se calienta más que el centro. Las esquinas de las bandejas cuadradas se calientan más.", "Why fat matters": "Por qué importa la grasa", "These chemicals mix into fat much more easily than into water. So a cheesy or oily meal pulls out more than soup or rice does.": "Estos químicos se mezclan con la grasa mucho más fácil que con el agua. Por eso una comida con queso o aceite saca más que una sopa o un arroz.", "That is why ZapWise looks at how much fat is in the meal, not only how long it heats.": "Por eso ZapWise mira cuánta grasa tiene la comida, no solo cuánto tiempo se calienta.", "Phthalates: softeners in plastic": "Ftalatos: suavizantes del plástico", "Kids weigh less, so the same meal is a bigger share of a kid's limit. A 30 kg kid gets more than twice the share of a 70 kg adult.": "Los niños pesan menos, así que la misma comida es una parte más grande de su límite. Un niño de 30 kg recibe más del doble de la parte de un adulto de 70 kg.", "Antimony in black trays": "Antimonio en bandejas negras", "ZapWise uses lab tests done on a real black tray to estimate how much antimony comes out.": "ZapWise usa pruebas de laboratorio hechas en una bandeja negra real para calcular cuánto antimonio sale.", "Lead in paper cups": "Plomo en vasos de papel", "Paper cups and bowls, like the ones for instant noodles, are lined with a thin plastic. A lab study filled 20 of these cups with near-boiling water for 15 minutes and found small amounts of lead in the water.": "Los vasos y tazones de papel, como los de sopa instantánea, tienen una capa delgada de plástico. Un estudio llenó 20 de estos vasos con agua casi hirviendo por 15 minutos y encontró pequeñas cantidades de plomo en el agua.", "For lead, ZapWise compares with a reference point from Europe's food safety agency, not a safe limit. Less lead is always better. Making the noodles in a pot or a bowl skips the cup.": "Para el plomo, ZapWise compara con un punto de referencia de la agencia europea de alimentos, no con un límite seguro. Menos plomo siempre es mejor. Hacer la sopa en una olla o un tazón evita el vaso.", "BPA and microplastics": "BPA y microplásticos", "BPA is a different chemical. It comes from hard clear plastics and can linings, not from the trays ZapWise checks. Europe lowered its BPA limit a lot in 2023; the US FDA has not.": "El BPA es otro químico. Viene de plásticos duros y transparentes y del interior de las latas, no de las bandejas que revisa ZapWise. Europa bajó mucho su límite de BPA en 2023; la FDA de EE. UU. no.", "Heating plastic can also release tiny bits of plastic (microplastics). There is no agreed daily limit for them yet, so ZapWise does not give them a percentage.": "Calentar plástico también puede soltar pedacitos de plástico (microplásticos). Todavía no hay un límite diario acordado, así que ZapWise no les da un porcentaje.", "What ZapWise counts": "Qué cuenta ZapWise", "Only what comes out of the container while your food heats and while you eat. Chemicals already in the food from the factory are not counted. Every number is an estimate, not a medical test.": "Solo lo que sale del envase mientras la comida se calienta y mientras comes. Los químicos que ya traía la comida de la fábrica no se cuentan. Cada número es un cálculo aproximado, no un examen médico.", "How we calculate": "Cómo calculamos", "Link copied": "Enlace copiado", "Press and hold a source to copy its link.": "Mantén presionada una fuente para copiar su enlace.", "About ZapWise": "Sobre ZapWise", "Today": "Hoy", "Last 7 days": "Últimos 7 días", "No meals logged yet": "Todavía no hay comidas", "Scan a meal before you heat it, then tap Save. Each meal shows up here.": "Escanea una comida antes de calentarla y toca Guardar. Cada comida aparece aquí.", "Scan a meal": "Escanear una comida", "Load a sample week": "Cargar una semana de ejemplo", "Today for you": "Hoy para ti", "Nothing heated today yet. Switch to Last 7 days to see earlier meals.": "Nada calentado hoy. Cambia a Últimos 7 días para ver comidas anteriores.", "Each bar adds the meals of one day for the reference group with the highest share.": "Cada barra suma las comidas de un día para el grupo con la parte más alta.", "A meal was heated in a container that is not made for heating.": "Una comida se calentó en un envase que no es para calentar.", "Many meals have no number yet. Adding their containers helps.": "Muchas comidas no tienen número todavía. Agregar sus envases ayuda.", "Remove this meal?": "¿Quitar esta comida?", "Oven": "Horno", "No number": "Sin número", "Mon": "lun", "Tue": "mar", "Wed": "mié", "Thu": "jue", "Fri": "vie", "Sat": "sáb", "Sun": "dom", "Who eats at home": "Quién come en casa", "You": "Tú", "Showing": "Mostrando", "Add a family member": "Agregar a alguien de la familia", "Your kitchen": "Tu cocina", "Microwave": "Microondas", "Daily limits in use": "Límites diarios que uso", "Where agencies disagree, the Learn tab says so. The lead value is a reference point, not a safe level.": "Cuando las agencias no están de acuerdo, la pestaña Aprende lo dice. El valor del plomo es un punto de referencia, no un nivel seguro.", "Products you added": "Productos que agregaste", "Language": "Idioma", "English": "English", "Español": "Español", "Your data": "Tus datos", "Your family, kitchen and log stay on this phone. Nothing is uploaded unless you choose to share a product you added.": "Tu familia, tu cocina y tu registro se quedan en este teléfono. No se sube nada, a menos que decidas compartir un producto que agregaste.", "Remove the sample week": "Quitar la semana de ejemplo", "Sample meals removed": "Comidas de ejemplo quitadas", "Replay the kitchen tour": "Repetir el recorrido", "Reset everything": "Borrar todo", "Saved to today's log": "Guardado en el registro de hoy", "Your estimate": "Tu cálculo", "Working it out": "Calculando", "Who's eating this?": "¿Quién va a comer esto?", "Until you choose, I use an adult at 70 kg (154 lb).": "Hasta que elijas, uso un adulto de 70 kg (154 lb).", "Don't heat food in this": "No calientes comida en esto", "This container is not made for heating.": "Este envase no es para calentar.", "near 0%": "casi 0%", "Use the oven for this one": "Usa el horno para este", "No number for this one": "No hay número para este", "No data for this container yet": "Todavía no hay datos de este envase", "There are no measurements to base a number on.": "No hay mediciones para calcular un número.", "No cooking steps on file": "No tengo los pasos de cocción", "I need the microwave directions from the box to estimate this one. Moving the meal to a plate needs no estimate.": "Necesito las instrucciones de microondas de la caja para calcular este. Si lo pasas a un plato, no hace falta calcular.", "This counts only what moves from the container while it heats. Chemicals added at the factory are not part of it.": "Esto cuenta solo lo que pasa del envase a la comida al calentarla. Los químicos de la fábrica no se incluyen.", "Ways to lower it": "Cómo bajarlo", "A pot on the stove": "Una olla en la estufa", "Saving": "Guardando", "Save how I heated it": "Guardar cómo lo calenté", "Counts what moves from the container during heating only. This is an estimate, not a diagnosis. ": "Cuenta solo lo que sale del envase al calentar. Es un cálculo aproximado, no un diagnóstico. ", "Glass, ceramic and steel add no plastic chemicals.": "El vidrio, la cerámica y el acero no agregan químicos de plástico.", "From lab measurements": "De mediciones de laboratorio", "Details for the science fair": "Detalles para la feria de ciencias", "The daily limit is how much of these chemicals health agencies say a person can take in every day for life without a known health risk.": "El límite diario es cuánto de estos químicos, según las agencias de salud, una persona puede recibir cada día de su vida sin un riesgo conocido para la salud.", "Heating past the box time adds the most. Stick to the box time, or move it to a plate.": "Calentar más de lo que dice la caja es lo que más suma. Sigue el tiempo de la caja, o pásalo a un plato.", "This is shorter than the box says. The middle may not reach 165°F (74°C), so check before you eat.": "Esto es menos tiempo del que dice la caja. Puede que el centro no llegue a 165°F (74°C); revísalo antes de comer.", "The container wall gets hotter than the temperature it is rated for.": "La pared del envase se calienta más de lo que aguanta.", "The plastic gets hotter than the range the diffusion model was checked for, so treat the number as rough.": "El plástico se calienta más de lo que se probó en el modelo, así que toma el número como aproximado.", "Antimony numbers come from lab tests at 120 to 150°C, a little hotter than most microwave heating.": "Los números de antimonio vienen de pruebas a 120–150°C, un poco más caliente que el microondas normal.", "The fat content is not on file, so I assumed a medium-fat meal.": "No tengo la grasa de este producto, así que supuse una comida con grasa media.", "The box does not say which wattage its times are for, so I assumed 1100 W.": "La caja no dice para qué vatios son los tiempos, así que supuse 1100 W.", "The box says this meal needs a stronger microwave than yours.": "La caja dice que esta comida necesita un microondas más fuerte que el tuyo.", "Your wattage is outside the box's table, so I stretched the nearest row.": "Tus vatios no están en la tabla de la caja, así que usé la fila más cercana.", "This number comes from lab measurements of similar cups, not from the model.": "Este número viene de mediciones de vasos parecidos, no del modelo.", "Oven steps are not part of the estimate.": "Los pasos de horno no entran en el cálculo.", "In a pot on the stove": "En una olla en la estufa", "On a ceramic plate, microwave": "En un plato de cerámica, microondas", "In a glass dish, microwave": "En un recipiente de vidrio, microondas", "No plastic": "Sin plástico", "Microwave OK": "Apto para microondas", "Not for heating": "No es para calentar", "Check the label": "Revisa la etiqueta", "Adult": "Adulto", "Teen, 13 to 17": "Adolescente, 13 a 17", "Kid, 8 to 12": "Niño, 8 a 12", "Toddler, 1 to 3": "Bebé, 1 a 3", "Snap the label": "Toma foto de la etiqueta", "The label is inside the door or on the back": "La etiqueta está dentro de la puerta o atrás", "I couldn't find the watts in that photo. Pick them below, or try the boil test.": "No encontré los vatios en esa foto. Elígelos abajo o haz la prueba de hervor.", "Your microwave": "Tu microondas", "Watts are printed on a label inside the door or on the back. I use them to change the box's cooking time for your microwave.": "Los vatios están en una etiqueta dentro de la puerta o atrás. Los uso para ajustar el tiempo de la caja a tu microondas.", "Reading the label…": "Leyendo la etiqueta…", "Camera": "Cámara", "Or pick it yourself": "O elígelo tú", "No label? Try the boil test": "¿Sin etiqueta? Haz la prueba de hervor", "Boil test": "Prueba de hervor", "1. Pour 1 cup of ice-cold water into a 2-cup glass measuring cup.\n2. Start the microwave on HIGH and tap Start at the same time.\n3. Tap Stop when the water boils.": "1. Pon 1 taza de agua helada en una taza medidora de vidrio de 2 tazas.\n2. Prende el microondas en ALTO y toca Empezar al mismo tiempo.\n3. Toca Parar cuando el agua hierva.", "Under 2 min means 1000 W or more, about 2:30 means 800 W, about 3 min means 650 to 700 W. (USDA guidance via Conagra)": "Menos de 2 min es 1000 W o más, unos 2:30 es 800 W, unos 3 min es 650 a 700 W. (Guía del USDA vía Conagra)", "Waiting for the boil": "Esperando el hervor", "Stopwatch": "Cronómetro", "Stop, it boils": "Parar, ya hierve", "Back to the label": "Volver a la etiqueta", "I don't know": "No sé", "Use the box time and check that it's hot": "Usa el tiempo de la caja y revisa que esté caliente", "OK. I'll show the box time and remind you to check that it's hot.": "Está bien. Te muestro el tiempo de la caja y te recuerdo revisar que esté caliente.", "Family member": "Familiar", "About you": "Sobre ti", "Name or nickname": "Nombre o apodo", "Age group": "Edad", "Weight": "Peso", "Stays on this phone. The daily limits are per kg of body weight, so a lighter person reaches the same share with less.": "Se queda en este teléfono. Los límites diarios son por kg de peso, así que una persona más liviana llega a la misma parte con menos.", "Reset everything?": "¿Borrar todo?", "This clears your kitchen, shelf, log, quests, stars and family members on this phone. Products you added are removed too.": "Esto borra tu cocina, repisa, registro, misiones, estrellas y familia en este teléfono. También se quitan los productos que agregaste.", "Keep my data": "Conservar mis datos", "Black oven tray (CPET)": "Bandeja negra para horno (CPET)", "Microwave tray or cup (PP #5)": "Bandeja o vaso para microondas (PP #5)", "Coated paper tray": "Bandeja de papel con capa", "Paper or fibre tray": "Bandeja de papel o fibra", "Paper cup or bowl": "Vaso o tazón de papel", "Steam bag": "Bolsa para vapor", "Microwave pouch": "Bolsita para microondas", "Take-out or deli tub": "Envase de comida para llevar", "Clear clamshell (#1)": "Envase transparente con tapa (#1)", "Foam box or cup": "Caja o vaso de espuma (unicel)", "Clear rigid #6 box": "Caja rígida transparente #6", "Metal or foil": "Metal o aluminio", "Glass dish": "Recipiente de vidrio", "Plate or bowl": "Plato o tazón", "Pot": "Olla", "Popcorn bag": "Bolsa de palomitas", "Crisping sleeve": "Funda para dorar", "Microwave OK. Take a plastic lid off, or set it loosely on top so it doesn't touch the food.": "Apto para microondas. Quita la tapa de plástico o ponla suelta encima para que no toque la comida.", "Microwave OK. No plastic touches the food.": "Apto para microondas. Ningún plástico toca la comida.", "Estimated from lab measurements.": "Calculado con mediciones de laboratorio.", "There is no data for this container yet.": "Todavía no hay datos de este envase.", "Your container shelf": "Tu repisa de recipientes", "Nothing here yet. Add the containers you heat food in, and they'll sit on your shelf.": "Aquí no hay nada. Agrega los recipientes donde calientas comida y aparecerán en tu repisa.", "Add a container": "Agregar un recipiente", "Take it off the shelf": "Quitar de la repisa", "Snap the tray bottom": "Toma foto de abajo de la bandeja", "Snap the container": "Toma foto del recipiente", "I couldn't read that photo. Which one looks like yours?": "No pude leer esa foto. ¿Cuál se parece al tuyo?", "Recognised from the photo.": "Reconocido en la foto.", "Which one looks like yours?": "¿Cuál se parece al tuyo?", "The markings narrowed it down. Which one looks like yours?": "Las marcas ayudaron a reducir opciones. ¿Cuál se parece al tuyo?", "Put it on my shelf": "Ponerlo en mi repisa", "That's the one": "Ese es", "Pick a different one": "Elegir otro", "Reading the photo…": "Leyendo la foto…", "Snap it": "Tomar foto", "Or pick the one that looks like yours": "O elige el que se parezca al tuyo", "Take the photo again": "Tomar la foto otra vez", "Not this one": "Este no", "Pick another": "Elegir otro", "Your shelf is empty. Add the containers you heat food in first.": "Tu repisa está vacía. Primero agrega los recipientes donde calientas comida.", "On your counter": "En tu cocina", "Pick what you have. It shows up on your counter, and I offer it as a way to heat.": "Elige lo que tienes. Aparece en tu cocina y te lo ofrezco como forma de calentar.", "Toaster oven": "Horno tostador", "Take it off the counter": "Quitar de la cocina", "Heating food in a metal pot adds no plastic chemicals. When a meal can go in a pot, the heating guide lists it as a choice.": "Calentar comida en una olla de metal no agrega químicos de plástico. Cuando una comida se puede hacer en olla, la guía lo ofrece como opción.", "Black ovenable tray (CPET)": "Bandeja negra para horno (CPET)", "Microwave plastic tray, bowl or cup (PP #5)": "Bandeja, tazón o vaso de plástico para microondas (PP #5)", "PET-coated paperboard tray (ovenable)": "Bandeja de cartón con capa de PET (para horno)", "Paper or pressed-fibre tray (coating unknown)": "Bandeja de papel o fibra prensada", "Paper cup or bowl (PE lining)": "Vaso o tazón de papel (capa de PE)", "Steam bag (PP sealant film)": "Bolsa para vapor (película de PP)", "Microwave pouch (CPP sealant)": "Bolsita para microondas (CPP)", "Take-out or margarine tub": "Envase de comida para llevar o de margarina", "Clear clamshell (PET #1)": "Envase transparente con tapa (PET #1)", "Foam tray or cup (EPS)": "Bandeja o vaso de espuma (unicel)", "Clear rigid PS container (#6)": "Envase rígido transparente de PS (#6)", "Metal or foil container": "Envase de metal o aluminio", "Ceramic plate or bowl": "Plato o tazón de cerámica", "Pot on the stove": "Olla en la estufa", "Microwave popcorn bag": "Bolsa de palomitas para microondas", "Crisping sleeve (susceptor)": "Funda para dorar", "FSIS says take-out and margarine tubs can warp or melt in the microwave.": "El FSIS dice que los envases de comida para llevar y de margarina se pueden deformar o derretir en el microondas.", "APET softens near 65-69 C, below reheating temperatures.": "Este plástico se ablanda a unos 65–69°C, menos que la temperatura para recalentar.", "FSIS: do not use foam trays, they are not heat stable.": "FSIS: no uses bandejas de espuma; no aguantan el calor.", "OPS is rated to 170 F (77 C).": "Este plástico solo aguanta hasta 170°F (77°C).", "Metal can spark in a microwave. Move the food to a plate.": "El metal puede sacar chispas en el microondas. Pasa la comida a un plato.", "No plastic touches the food.": "Ningún plástico toca la comida.", "No plastic touches the food. Avoid plates with metal trim.": "Ningún plástico toca la comida. Evita platos con bordes de metal.", "The food leaves its package before heating.": "La comida sale de su envase antes de calentarla.", "Phthalates (as DEHP equivalents)": "Ftalatos (como DEHP)", "Antimony": "Antimonio", "Antioxidant Irgafos 168": "Antioxidante Irgafos 168", "Lead (EFSA reference point)": "Plomo (punto de referencia de la EFSA)", "Back of the box": "Parte de atrás de la caja", "Get the microwave directions and the wattage in view": "Que se vean las instrucciones de microondas y los vatios", "Added. It shows as unverified for now.": "Agregado. Por ahora aparece sin verificar.", "Help add this product": "Ayuda a agregar este producto", "It's not in the app yet. Two photos let me read the cooking steps and the container. Others will see it after a second person confirms it.": "Todavía no está en la app. Con dos fotos puedo leer los pasos y el envase. Otras personas lo verán cuando alguien más lo confirme.", "Brand": "Marca", "Product name": "Nombre del producto", "Snap the back of the box": "Toma foto de atrás de la caja", "Reading…": "Leyendo…", "Where the microwave steps are": "Donde están los pasos de microondas", "No cooking time found, type it below": "No encontré el tiempo; escríbelo abajo", "Oven only": "Solo horno", "The box says not to microwave it. It will be saved as oven-only.": "La caja dice que no se use microondas. Se guardará como solo horno.", "Microwave minutes": "Minutos de microondas", "Watts on the box": "Vatios en la caja", "Snap the bottom of the tray": "Toma foto de abajo de la bandeja", "Where the number in a triangle is": "Donde está el número dentro de un triángulo", "Net weight (g)": "Peso neto (g)", "Fat in the box (g)": "Grasa en la caja (g)", "Only if the box says to add water": "Solo si la caja dice que agregues agua", "Added water (g)": "Agua agregada (g)", "Fat in the box = total fat per serving × servings per container. It tells me how fatty the meal is.": "Grasa en la caja = grasa total por porción × porciones por envase. Así sé qué tan grasosa es la comida.", "Where is it kept?": "¿Dónde se guarda?", "Freezer": "Congelador", "Fridge": "Refri", "Shelf": "Alacena", "Barcode digits (optional)": "Números del código de barras (opcional)", "Barcode": "Código de barras", "Also share the packaging info with Open Food Facts (needs the barcode)": "Compartir también la información del envase con Open Food Facts (necesita el código de barras)", "Adding": "Agregando", "Add product": "Agregar producto", "Quick estimate": "Cálculo rápido", "What is the meal in?": "¿En qué viene la comida?", "Time on the box": "Tiempo en la caja", "Minutes": "Minutos", "For how many watts? Leave it at 1100 if the box doesn't say.": "¿Para cuántos vatios? Déjalo en 1100 si la caja no dice.", "How fatty is it?": "¿Qué tan grasosa es?", "Not much (rice, veggies, soup)": "Poco (arroz, verduras, sopa)", "Some (pasta, chicken)": "Algo (pasta, pollo)", "A lot (cheese, cream, fried)": "Mucho (queso, crema, frito)", "Show my estimate": "Ver mi cálculo", "My meal": "Mi comida", "No product needed. Pick the container and type the time printed on the box.": "No necesitas el producto. Elige el envase y escribe el tiempo que dice la caja.", "How big is it?": "¿Qué tan grande es?", "Small": "Chica", "Regular": "Normal", "Large": "Grande", "Zappy looks happy": "Zappy se ve feliz", "Zappy looks neutral": "Zappy está tranquilo", "Zappy looks thinking": "Zappy está pensando", "Zappy looks worried": "Zappy se ve preocupado", "Zappy looks celebrate": "Zappy está festejando", "Zappy looks sleepy": "Zappy tiene sueño", "Zappy looks blink": "Zappy parpadea", "Last 7 days, % of your daily limit by day": "Últimos 7 días, % de tu límite diario por día", "Made by Woosung Choi, a California high school student, for the Congressional App Challenge. The kitchen, Zappy and every icon are original pixel art. The science, data and code were built with help from an AI assistant, and every number is traced to a source in the ZapWise database.": "Hecha por Woosung Choi, un estudiante de preparatoria de California, para el Congressional App Challenge. La cocina, Zappy y cada ícono son pixel art original. La ciencia, los datos y el código se hicieron con ayuda de un asistente de IA, y cada número tiene una fuente en la base de datos de ZapWise.", "Heating in an air fryer or oven is not estimated yet. The plastic tray usually stays out of those, which already avoids the migration ZapWise counts.": "Todavía no calculo la freidora de aire ni el horno. Ahí la bandeja de plástico casi nunca entra, así que ya se evita lo que cuenta ZapWise.", "It's on your counter. Air fryer heating isn't estimated yet. Food goes in the basket, not in its plastic tray, so the tray chemicals ZapWise counts stay out.": "Ya está en tu cocina. Todavía no calculo la freidora de aire. La comida va en la canasta, no en su bandeja de plástico, así que los químicos de la bandeja no entran.", "Get the number in a triangle and any words like \"microwave safe\" in view": "Que se vea el número dentro del triángulo y palabras como \"microwave safe\"", "Nickname, e.g. Mom's glass box (optional)": "Apodo, ej. el recipiente de vidrio de mamá (opcional)", "Turn the tray over. A number in a triangle and words like \"dual ovenable\" or \"microwave safe\" tell trays apart. Color does not: black trays can be either kind.": "Voltea la bandeja. El número dentro del triángulo y palabras como \"dual ovenable\" o \"microwave safe\" ayudan a distinguirlas. El color no: las bandejas negras pueden ser de los dos tipos.", "Snap the container from the side. If there's a number in a triangle on the bottom, snap that too.": "Toma foto del recipiente de lado. Si tiene un número dentro de un triángulo abajo, tómale foto también.", "e.g. Healthy Choice": "ej. Healthy Choice", "e.g. Chicken Teriyaki Bowl": "ej. Chicken Teriyaki Bowl", "Bands: Lower, Middle, Higher": "Niveles: Más bajo, Medio, Más alto", "The box gives oven directions only.": "La caja solo trae instrucciones para horno.", "Heating longer": "Calentar más tiempo", "Heating less": "Calentar menos tiempo", "Electric kettle": "Hervidor eléctrico", "It's on your counter. Toaster oven heating isn't estimated yet. Food goes on the metal rack or a pan, so the plastic tray stays out.": "Ya está en tu cocina. Todavía no calculo el horno tostador. La comida va en la rejilla de metal o en una bandeja, así que la bandeja de plástico no entra.", "It's on your counter. For cup noodles, boil water here and pour it over the noodles in a bowl. That skips the paper or foam cup.": "Ya está en tu cocina. Para la sopa instantánea, hierve el agua aquí y sírvela sobre los fideos en un tazón. Así evitas el vaso de papel o de espuma.", "Nothing heated today yet": "Nada calentado hoy", "See the last 7 days": "Ver los últimos 7 días", "Something went wrong while reading the box. Try another photo, or find the meal by name.": "Algo salió mal al leer la caja. Toma otra foto o busca la comida por nombre.", "Made by Woosung Choi, a California high school student, for the Congressional App Challenge. The kitchen, Zappy and every icon are original pixel art. The science, data and code were built with help from an AI assistant, and every number traces back to a source in the ZapWise database.": "Hecha por Woosung Choi, un estudiante de preparatoria de California, para el Congressional App Challenge. La cocina, Zappy y cada ícono son pixel art original. La ciencia, los datos y el código se hicieron con ayuda de un asistente de IA, y cada número tiene una fuente en la base de datos de ZapWise.", "Check your microwave's real power": "Revisa la potencia real de tu microondas", "Stick to the box time 3 times": "Sigue el tiempo de la caja 3 veces", "ZapWise couldn't start.": "ZapWise no pudo abrir.", "No camera found on this phone.": "Este teléfono no tiene cámara.", "The camera is off for ZapWise. Turn it on in Settings.": "La cámara está desactivada para ZapWise. Actívala en Ajustes.", "The camera didn't start.": "La cámara no inició.", "That photo didn't work. Try again.": "Esa foto no funcionó. Inténtalo otra vez.", "Fit the front of the box in the frame": "Pon el frente de la caja dentro del cuadro", "When the box isn't handy": "Cuando no tienes la caja a mano", "Checked by you": "Revisado por ti", "Typical for this brand": "Lo típico en esta marca", "Read from the tray": "Leído de la bandeja", "How to heat it": "Cómo calentarlo", "Not sure what this tray is. Snap the bottom to check.": "No sé qué bandeja es. Toma foto de abajo para revisar.", "The box says oven only. Raw or breaded food has to reach 165°F (74°C) all the way through, and microwaves heat unevenly.": "La caja dice solo horno. La comida cruda o empanizada tiene que llegar a 165°F (74°C) en todas partes, y el microondas calienta disparejo.", "The box only has oven directions.": "La caja solo trae instrucciones para horno.", "Oven directions": "Instrucciones para horno", "No microwave steps yet": "Todavía no hay pasos para microondas", "Follow the box, or move it to a plate and skip the plastic.": "Sigue la caja, o pásalo a un plato y evita el plástico.", "Steps from the box": "Pasos de la caja", "Total heating time": "Tiempo total", "Set your watts": "Pon tus vatios", "How do you want to heat it?": "¿Cómo lo quieres calentar?", "Use my own dish": "Usar mi propio recipiente", "Heat it on the stove": "Calentarlo en la estufa", "Box time": "Tiempo de la caja", "All done": "Todo listo", "Right time. Less plastic.": "Tiempo justo. Menos plástico.", "Hi, I'm Zappy! Hot plastic trays can let chemicals seep into food. I'll help you heat meals right and keep that low.": "¡Hola, soy Zappy! Las bandejas de plástico calientes pueden soltar químicos en la comida. Te ayudo a calentar bien y a mantener eso bajo.", "Tap me to set my watts. They're on a label inside the door. Then every box time fits your microwave.": "Tócame para poner mis vatios. Están en una etiqueta dentro de la puerta. Así cada tiempo de caja se ajusta a tu microondas.", "This shelf holds your dishes. Glass and ceramic add no plastic at all.": "Esta repisa guarda tus recipientes. El vidrio y la cerámica no agregan nada de plástico.", "Before you heat a boxed meal, scan the front. I'll tell you how long to heat it and what to heat it in.": "Antes de calentar una comida en caja, escanea el frente. Te digo cuánto tiempo y en qué calentarla.", "Each week I pin one easy habit here, like using a plate. Small swaps make the biggest difference.": "Cada semana pongo aquí un hábito fácil, como usar un plato. Los cambios pequeños hacen la mayor diferencia.", "All done! New quests on Monday.": "¡Todo listo! Nuevas misiones el lunes.", "Set watts": "Poner vatios", "Add dishes": "Agregar recipientes", "Chemicals move out of plastic by diffusion, which speeds up fast as things get hotter. In ZapWise's model, DEHP moves through polypropylene about 20 times faster at 212°F (100°C) than at 158°F (70°C). In the same few minutes, 4 to 5 times more can leave the plastic.": "Los químicos salen del plástico por difusión, que se acelera mucho con el calor. En el modelo de ZapWise, el DEHP pasa por el polipropileno unas 20 veces más rápido a 212°F (100°C) que a 158°F (70°C). En los mismos minutos puede salir del plástico de 4 a 5 veces más.", "Food touching the container wall gets hotter than the middle, and the corners of square trays heat fastest.": "La comida que toca la pared del envase se calienta más que el centro, y las esquinas de las bandejas cuadradas se calientan más rápido.", "Phthalates dissolve much better in fat than in water. Based on 1,881 lab measurements, DEHP at 212°F (100°C) moves about 3,000 times more readily into a high-fat meal than into a watery one.": "Los ftalatos se disuelven mucho mejor en grasa que en agua. Según 1,881 mediciones de laboratorio, a 212°F (100°C) el DEHP pasa unas 3,000 veces más fácil a una comida grasosa que a una aguada.", "That's why ZapWise checks how fatty a meal is (from the nutrition label), not just how long it heats.": "Por eso ZapWise revisa qué tan grasosa es la comida (según la etiqueta de nutrición), no solo cuánto tiempo se calienta.", "Phthalates": "Ftalatos", "DEHP, DBP, BBP and DINP are used to make plastic soft. EFSA set a combined daily limit of 50 µg per kg of body weight, counted as DEHP.": "DEHP, DBP, BBP y DINP se usan para hacer suave el plástico. La EFSA puso un límite diario combinado de 50 µg por kg de peso, contado como DEHP.", "Limits scale with body weight, so a 30 kg (66 lb) child hits the same share with less than half of what a 70 kg (154 lb) adult eats.": "Los límites dependen del peso, así que un niño de 30 kg (66 lb) llega a la misma parte con menos de la mitad de lo que come un adulto de 70 kg (154 lb).", "Black oven-safe trays are usually CPET, a type of PET made with an antimony catalyst. The WHO daily limit is 6 µg per kg of body weight.": "Las bandejas negras para horno casi siempre son de CPET, un tipo de PET hecho con antimonio. El límite diario de la OMS es 6 µg por kg de peso.", "For antimony, ZapWise uses values measured on a real CPET tray, because the general formula is built for organic chemicals.": "Para el antimonio, ZapWise usa valores medidos en una bandeja CPET real, porque la fórmula general es para químicos orgánicos.", "In 2023, EFSA cut its BPA limit to 0.2 ng per kg of body weight per day. The US FDA hasn't changed its view. BPA comes from polycarbonate and epoxy coatings, not the PET and PP trays ZapWise covers.": "En 2023, la EFSA bajó su límite de BPA a 0.2 ng por kg de peso al día. La FDA de EE. UU. no ha cambiado su postura. El BPA viene del policarbonato y de recubrimientos epóxicos, no de las bandejas de PET y PP que revisa ZapWise.", "There's no agreed daily limit for microplastics yet, so ZapWise doesn't give them a percentage.": "Todavía no hay un límite diario acordado para los microplásticos, así que ZapWise no les da un porcentaje.", "Only what comes out of the container while your food heats and while you eat from it. Anything that got into the food at the factory isn't counted. Every result is an estimate, not a medical test.": "Solo lo que sale del envase mientras la comida se calienta y mientras comes de él. Lo que entró a la comida en la fábrica no se cuenta. Cada resultado es un cálculo aproximado, no un examen médico.", "No meals yet": "Todavía no hay comidas", "Scan a meal, heat it, and tap Save. It shows up here.": "Escanea una comida, caliéntala y toca Guardar. Aparece aquí.", "Show a sample week": "Mostrar una semana de ejemplo", "Nothing yet today": "Nada todavía hoy", "Each bar is one day.": "Cada barra es un día.", "One meal was heated in a container that isn't made for heat.": "Una comida se calentó en un envase que no es para calentar.", "Many meals have no number yet. Add their containers to fix that.": "Muchas comidas no tienen número. Agrega sus envases para arreglarlo.", "Family": "Familia", "Everything stays on this phone unless you share a product.": "Todo se queda en este teléfono, a menos que compartas un producto.", "Daily safe limits": "Límites diarios seguros", "Lead has no safe level, so it uses a reference point instead.": "El plomo no tiene un nivel seguro, así que se usa un punto de referencia.", "Get the microwave directions and watts in the frame": "Que se vean las instrucciones de microondas y los vatios", "Added! It's marked unverified for now.": "¡Agregado! Por ahora aparece sin verificar.", "It's not in the app yet. Snap two photos and I'll add it.": "Todavía no está en la app. Toma dos fotos y lo agrego.", "Couldn't find a time. Type it below.": "No encontré el tiempo. Escríbelo abajo.", "The box says not to microwave it, so I'll save it as oven-only.": "La caja dice que no se use microondas, así que lo guardo como solo horno.", "The side with the number in a triangle": "El lado con el número dentro de un triángulo", "Total fat in the box (g)": "Grasa total en la caja (g)", "Fat per serving × servings per box.": "Grasa por porción × porciones por caja.", "Where do you keep it?": "¿Dónde lo guardas?", "Pantry": "Alacena", "Share with Open Food Facts too (needs the barcode)": "Compartir también con Open Food Facts (necesita el código de barras)", "Your result": "Tu resultado", "Who's eating?": "¿Quién va a comer?", "This container isn't made for heat.": "Este envase no es para calentar.", "almost 0%": "casi 0%", "No data on this container yet": "Todavía no hay datos de este envase", "No lab data to go on yet.": "Todavía no hay datos de laboratorio.", "I need the box's microwave directions to work this out. On a plate, there's no plastic to worry about.": "Necesito las instrucciones de microondas de la caja para calcularlo. En un plato no hay plástico de qué preocuparse.", "Make it lower": "Bájalo", "Save to my log": "Guardar en mi registro", "Only counts what comes from the container. Not a medical test. ": "Solo cuenta lo que sale del envase. No es un examen médico. ", "From lab tests": "De pruebas de laboratorio", "How we got this number": "Cómo sacamos este número", "Tap the one you have.": "Toca el que tienes.", "Snap two more photos and I'll add it, for you and the next person.": "Toma dos fotos más y lo agrego, para ti y para la próxima persona.", "Brand or meal, like Lean Cuisine": "Marca o comida, como Lean Cuisine", "No match. Try one word from the box.": "No hay coincidencias. Prueba una palabra de la caja.", "Photo match: not available": "Foto: no disponible", "Pick what you have. It goes on your counter.": "Elige lo que tienes. Va en tu cocina.", "No estimate for these yet. The plastic tray usually stays out of them, which already helps.": "Todavía no calculo estos. La bandeja de plástico casi nunca entra, y eso ya ayuda.", "No estimate for air fryers yet. The food goes in the basket, not its plastic tray, so that already helps.": "Todavía no calculo la freidora de aire. La comida va en la canasta, no en su bandeja de plástico, y eso ya ayuda.", "A metal pot adds no plastic. When a meal can go in a pot, I'll offer it.": "Una olla de metal no agrega plástico. Cuando una comida se pueda hacer en olla, te lo ofrezco.", "Couldn't find the watts. Pick them below or try the boil test.": "No encontré los vatios. Elígelos abajo o haz la prueba de hervor.", "Find the watts on a label inside the door or on the back.": "Busca los vatios en una etiqueta dentro de la puerta o atrás.", "Or pick yours": "O elige el tuyo", "1. Pour 1 cup of ice-cold water into a 2-cup glass measuring cup.\n2. Start the microwave on HIGH and tap Start here at the same time.\n3. Tap Stop when the water boils.": "1. Pon 1 taza de agua helada en una taza medidora de vidrio de 2 tazas.\n2. Prende el microondas en ALTO y toca Empezar aquí al mismo tiempo.\n3. Toca Parar cuando el agua hierva.", "Under 2 min: 1000 W or more. About 2:30: 800 W. About 3 min: 650 to 700 W.": "Menos de 2 min: 1000 W o más. Unos 2:30: 800 W. Unos 3 min: 650 a 700 W.", "It's boiling": "Ya hierve", "Saved only on this phone. Used to size the daily limit.": "Se guarda solo en este teléfono. Sirve para calcular el límite diario.", "This deletes your kitchen, shelf, log, quests, stars, family and added products from this phone.": "Esto borra de este teléfono tu cocina, repisa, registro, misiones, estrellas, familia y productos agregados.", "Then every scan fits your kitchen.": "Así cada escaneo se ajusta a tu cocina.", "Older microwaves can run weaker than their label says.": "Los microondas viejos pueden ser más débiles de lo que dice su etiqueta.", "No plastic in the heat means almost 0%.": "Sin plástico en el calor, casi 0%.", "Extra minutes can double what gets into food.": "Los minutos de más pueden duplicar lo que pasa a la comida.", "Add a container to your shelf": "Agrega un recipiente a tu repisa", "Save your first meal": "Guarda tu primera comida", "Tap Zappy and do the boil test": "Toca a Zappy y haz la prueba de hervor", "Heat on a plate, in glass or in a pot, then save": "Calienta en plato, vidrio u olla, y guarda", "Heat for the box time, then save": "Calienta el tiempo de la caja, y guarda", "Unlocks after your first quest.": "Se abre después de tu primera misión.", "Quests count how you heat, not how often.": "Las misiones cuentan cómo calientas, no cuántas veces.", "Black oven tray (#1)": "Bandeja negra para horno (#1)", "Microwave-safe plastic (#5)": "Plástico apto para microondas (#5)", "Paper plate or fiber box": "Plato de papel o caja de fibra", "Take-out tub": "Envase para llevar", "Clear hard plastic (#6)": "Plástico duro transparente (#6)", "Melamine or bamboo dish": "Plato de melamina o bambú", "No plastic touches your food. Rest any plastic lid loosely on top.": "Ningún plástico toca tu comida. Pon cualquier tapa de plástico suelta encima.", "No plastic touches your food.": "Ningún plástico toca tu comida.", "Safe to microwave, but some chemicals can still seep into hot, oily food.": "Apto para microondas, pero algunos químicos pueden pasar a comida caliente y grasosa.", "Based on lab tests.": "Basado en pruebas de laboratorio.", "No data on this container yet.": "Todavía no hay datos de este envase.", "Your shelf": "Tu repisa", "Nothing here yet. Add the containers you heat food in.": "Aquí no hay nada. Agrega los recipientes donde calientas comida.", "Get the number in the triangle and words like \"microwave safe\" in the frame": "Que se vean el número del triángulo y palabras como \"microwave safe\"", "Recognized from the photo.": "Reconocido en la foto.", "Narrowed it down. Which one is yours?": "Ya hay menos opciones. ¿Cuál es el tuyo?", "Nickname, like Mom's glass box (optional)": "Apodo, como el recipiente de vidrio de mamá (opcional)", "Add to my shelf": "Agregar a mi repisa", "Flip the tray and snap the bottom. The number in the triangle tells trays apart. Color doesn't.": "Voltea la bandeja y toma foto de abajo. El número del triángulo distingue las bandejas. El color no.", "Snap it from the side. If there's a number in a triangle on the bottom, snap that too.": "Tómale foto de lado. Si tiene un número dentro de un triángulo abajo, tómale foto también.", "Or pick it from the list": "O elígelo de la lista", "Retake photo": "Tomar otra foto", "Your shelf is empty. Add a container first.": "Tu repisa está vacía. Primero agrega un recipiente.", "That's less time than the box. Make sure the center is steaming hot (165°F).": "Es menos tiempo que el de la caja. Asegúrate de que el centro esté humeante (165°F).", "This gets hotter than the container is made for.": "Esto se calienta más de lo que aguanta el envase.", "The plastic gets hotter than the model was tested for, so this number is rough.": "El plástico se calienta más de lo que se probó en el modelo, así que el número es aproximado.", "Antimony numbers come from lab tests at 120 to 150°C, a bit hotter than most microwaving.": "Los números de antimonio vienen de pruebas a 120–150°C, un poco más que el microondas normal.", "I don't know how much fat is in this, so I guessed a medium amount.": "No sé cuánta grasa tiene, así que supuse una cantidad media.", "This box doesn't list a wattage, so I used 1100 W.": "Esta caja no dice los vatios, así que usé 1100 W.", "The box says your microwave is too weak for this meal.": "La caja dice que tu microondas es muy débil para esta comida.", "Your wattage isn't on the box's chart, so I used the closest one.": "Tus vatios no están en la tabla de la caja, así que usé los más cercanos.", "This number comes from lab tests on similar cups.": "Este número viene de pruebas de laboratorio en vasos parecidos.", "Oven steps aren't included.": "Los pasos de horno no se incluyen.", "No plastic touches your food. You're all set.": "Ningún plástico toca tu comida. Todo bien.", "of the lead\nreference point": "del punto de\nreferencia del plomo", "On the stove": "En la estufa", "Microwaved on a plate": "En microondas, en un plato", "Microwaved in a glass dish": "En microondas, en vidrio", "Microwave-safe": "Apto para microondas", "Don't heat": "No calentar", "Low": "Bajo", "Medium": "Medio", "High": "Alto", "Paper plate or fiber tray": "Plato de papel o bandeja de fibra", "The old worry was PFAS coatings, which US food packaging dropped in 2024.": "La preocupación antes eran los recubrimientos PFAS, que los envases de comida de EE. UU. dejaron en 2024.", "It's lined with a thin plastic film. Lab tests found traces of lead in hot water from these cups.": "Tiene una capa delgada de plástico. Pruebas de laboratorio encontraron rastros de plomo en agua caliente de estos vasos.", "Not made for heat. It can warp or melt.": "No es para calentar. Se puede deformar o derretir.", "It softens around 150°F, cooler than reheated food.": "Se ablanda a unos 150°F, menos que la comida recalentada.", "Foam tray or cup": "Bandeja o vaso de espuma (unicel)", "It's only made for up to 170°F. Reheated food gets hotter.": "Solo aguanta hasta 170°F. La comida recalentada se pone más caliente.", "Metal can spark in the microwave.": "El metal puede sacar chispas en el microondas.", "Not for hot food or the microwave. Heat can make it release chemicals.": "No es para comida caliente ni microondas. El calor puede hacer que suelte químicos.", "No plastic touches your food. Skip plates with gold or silver trim.": "Ningún plástico toca tu comida. Evita platos con bordes dorados o plateados.", "The food comes out of the package, so no plastic gets heated.": "La comida sale del envase, así que no se calienta plástico.", "US popcorn bags no longer use PFAS coatings.": "Las bolsas de palomitas de EE. UU. ya no usan recubrimientos PFAS.", "These get much hotter than boiling, so I can't estimate them.": "Estos se calientan mucho más que el hervor, así que no puedo calcularlos.", "Irgafos 168 (antioxidant)": "Irgafos 168 (antioxidante)", "Lead": "Plomo", "Steps from the box ": "Pasos de la caja ", "of your daily safe limit": "de tu límite diario seguro", "It’s on your counter. Toaster oven heating isn’t estimated yet. Food goes on the metal rack or a pan, so the plastic tray stays out.": "Ya está en tu cocina. Todavía no calculo el horno tostador. La comida va en la rejilla de metal o en una bandeja, así que la bandeja de plástico no entra.", "It’s on your counter. For cup noodles, boil water here and pour it over the noodles in a bowl. That skips the paper or foam cup.": "Ya está en tu cocina. Para la sopa instantánea, hierve el agua aquí y sírvela sobre los fideos en un tazón. Así evitas el vaso de papel o de espuma.", "Taken off the shelf": "Quitado de la repisa", "+3 stars. Your weekly quests are ready.": "+3 estrellas. Tus misiones de la semana están listas.", "Watts not set, using 1100 W": "Sin vatios, uso 1100 W", "Language / Idioma": "Language / Idioma", "1100 W for 2 min, film peeled back at one corner": "1100 W por 2 min, con la película abierta en una esquina", "Stir, then heat 1 more min": "Revuelve y calienta 1 min más", "Let it stand for 1 min": "Déjalo reposar 1 min", "Cut 3 slits in the film": "Haz 3 cortes en la película", "1100 W for 3 min 30 s": "1100 W por 3 min 30 s", "Add water to the fill line": "Agrega agua hasta la línea", "Stir in the cheese powder": "Mezcla el polvo de queso", "Black tray, CPET #1, film lid": "Bandeja negra, CPET #1, tapa de película", "Paper and PP cup, #5": "Vaso de papel y PP, #5", "Paperboard tray, oven safe": "Bandeja de cartón, apta para horno", "Oven at 400°F (204°C) for 18 to 20 min. Cook until it reaches 165°F (74°C).": "Horno a 400°F (204°C) por 18 a 20 min. Cocina hasta que llegue a 165°F (74°C).", "Don’t microwave this one": "No lo calientes en el microondas", "The box says to use the oven. Raw breaded chicken needs to reach 165°F (74°C) all the way through, and microwaves heat unevenly.": "La caja dice que uses el horno. El pollo empanizado crudo tiene que llegar a 165°F (74°C) en todas partes, y el microondas calienta disparejo.", "No estimate for oven heating yet": "Todavía no hay cálculo para horno", "The paperboard tray is made for the oven. This prototype estimates microwave heating in plastic only.": "La bandeja de cartón es para horno. Este prototipo solo calcula el microondas en plástico.", "Glass container": "Recipiente de vidrio", "Ceramic plate": "Plato de cerámica", "Deli tub": "Envase de comida para llevar", "Foam box": "Caja de espuma (unicel)", "Clear takeout clamshell": "Envase transparente con tapa", "Metal pot": "Olla de metal", "PP cup": "Vaso de PP", "Paperboard tray": "Bandeja de cartón", "Black CPET tray": "Bandeja negra de CPET", "Glass, PP #5 lid": "Vidrio, tapa de PP #5", "In the tray, microwave": "En la bandeja, microondas", "On your 900 W microwave": "En tu microondas de 900 W", "total heating time": "tiempo total", "of your daily limit": "de tu límite diario", "from this tray": "de esta bandeja", "from this cup": "de este vaso", "from this tub": "de este envase", "from this plate": "de este plato", "from this pot": "de esta olla", "from this glass container": "de este recipiente de vidrio", "near": "casi", "Sample numbers": "Números de muestra", "Sample photo in this demo": "Foto de muestra en esta demo", "Sample boxes for this demo. In the real app this is your camera.": "Cajas de muestra para esta demo. En la app real aquí está tu cámara.", "For this demo, pick the photo you would take.": "Para esta demo, elige la foto que tomarías.", "Counts what moves from the container during heating only. This is an estimate, not a diagnosis.": "Cuenta solo lo que sale del envase al calentar. Es un cálculo aproximado, no un diagnóstico.", "This counts only what moves from the container while it heats. Chemicals added in the factory aren’t included.": "Esto cuenta solo lo que pasa del envase a la comida al calentarla. Los químicos de la fábrica no se incluyen.", "Also share the packaging info with Open Food Facts": "Compartir también la información del envase con Open Food Facts", "It’s not in our list yet. Two photos let me read the cooking steps and the container. Others will see it after a second person confirms it.": "Todavía no está en la lista. Con dos fotos puedo leer los pasos y el envase. Otras personas lo verán cuando alguien más lo confirme.", "It’s on your counter. Air fryer heating isn’t estimated in this prototype yet, but I’ll suggest it once it is.": "Ya está en tu cocina. Este prototipo todavía no calcula la freidora de aire, pero te la sugeriré cuando pueda.", "Pick what you have. It shows up on your counter.": "Elige lo que tienes. Aparece en tu cocina.", "Heating food in a metal pot adds no plastic chemicals. When a meal can go in a pot, I list it as a choice.": "Calentar comida en una olla de metal no agrega químicos de plástico. Cuando una comida se puede hacer en olla, te lo ofrezco como opción.", "Quests come from your log. Each week I pick the one habit that adds the most to your number and suggest a swap for it.": "Las misiones salen de tu registro. Cada semana elijo el hábito que más suma a tu número y te sugiero un cambio.", "Your first quest": "Tu primera misión", "Stars:": "Estrellas:", "Reward: 3 stars.": "Premio: 3 estrellas.", "Stays on this device. I only use the age group to pick a typical body weight.": "Se queda en este dispositivo. Solo uso la edad para elegir un peso típico.", "Your profiles and log stay on this device.": "Tus perfiles y tu registro se quedan en este dispositivo.", "Reset this demo": "Reiniciar esta demo", "Reset this demo?": "¿Reiniciar esta demo?", "Replay tour": "Repetir recorrido", "Reset demo": "Reiniciar demo", "This clears your kitchen, shelf, log, stars and family members on this device.": "Esto borra tu cocina, repisa, registro, estrellas y familia en este dispositivo.", "ZapWise prototype": "Prototipo de ZapWise", "Tap around the kitchen, scan a sample box and save how you heated it. Products and percentages are sample values for the demo.": "Toca la cocina, escanea una caja de muestra y guarda cómo la calentaste. Los productos y porcentajes son valores de muestra.", "Group limit for DEHP, DBP and DIBP, 50 µg per kg body weight per day, counted as DEHP.": "Límite de grupo para DEHP, DBP y DIBP: 50 µg por kg de peso al día, contado como DEHP.", "DEHP reference dose, 20 µg per kg body weight per day.": "Dosis de referencia de DEHP: 20 µg por kg de peso al día.", "Frozen meals can carry germs like Salmonella, especially raw or breaded chicken. If the middle does not get hot enough, the germs survive. ZapWise changes the box time to fit your microwave so the meal heats all the way. The middle should reach 165°F (74°C).": "La comida congelada puede traer gérmenes como la Salmonella, sobre todo el pollo crudo o empanizado. Si el centro no se calienta lo suficiente, los gérmenes sobreviven. ZapWise ajusta el tiempo de la caja a tu microondas para que la comida se caliente por completo. El centro debe llegar a 165°F (74°C).", "Hot plastic lets more chemicals out. In ZapWise’s model, plastic at boiling heat (100°C) lets a chemical called DEHP out about 20 times faster than at 70°C. Food touching the sides gets hotter than the middle.": "El plástico caliente suelta más químicos. En el modelo de ZapWise, el plástico a temperatura de hervor (100°C) suelta un químico llamado DEHP unas 20 veces más rápido que a 70°C. La comida que toca los lados se calienta más que el centro.", "DEHP, DBP and DIBP are phthalates: chemicals that make plastic soft. Europe’s food safety agency (EFSA) set one shared daily limit for them: 50 micrograms for each kg of body weight. Kids weigh less, so the same meal is a bigger share of a kid’s limit.": "DEHP, DBP y DIBP son ftalatos: químicos que hacen suave el plástico. La agencia europea de alimentos (EFSA) puso un solo límite diario para todos: 50 microgramos por cada kg de peso. Los niños pesan menos, así que la misma comida es una parte más grande de su límite.", "Black trays that can go in the oven are usually CPET plastic, which is made with a metal called antimony. The World Health Organization set a daily limit of 6 micrograms for each kg of body weight.": "Las bandejas negras que pueden ir al horno casi siempre son de plástico CPET, que se hace con un metal llamado antimonio. La Organización Mundial de la Salud puso un límite diario de 6 microgramos por cada kg de peso.", "Paper cups and bowls, like the ones for instant noodles, are lined with a thin plastic. A lab study filled 20 of these cups with near-boiling water for 15 minutes and found small amounts of lead. ZapWise compares lead with a reference point, not a safe limit. Making the noodles in a pot or a bowl skips the cup.": "Los vasos y tazones de papel, como los de sopa instantánea, tienen una capa delgada de plástico. Un estudio llenó 20 de estos vasos con agua casi hirviendo por 15 minutos y encontró pequeñas cantidades de plomo. ZapWise compara el plomo con un punto de referencia, no con un límite seguro. Hacer la sopa en una olla o un tazón evita el vaso.", "BPA comes from hard clear plastics and can linings, not from the trays ZapWise checks. There is no agreed daily limit for microplastics yet, so ZapWise does not give them a percentage.": "El BPA viene de plásticos duros y transparentes y del interior de las latas, no de las bandejas que revisa ZapWise. Todavía no hay un límite diario acordado para los microplásticos, así que ZapWise no les da un porcentaje.", "This plastic softens near 65–69°C, below reheating heat.": "Este plástico se ablanda a unos 65–69°C, menos que el calor para recalentar.", "Foam trays and cups are not heat stable.": "Las bandejas y vasos de espuma no aguantan el calor.", "Prototype setting": "Ajuste del prototipo", "Value": "Valor", "Likely range": "Rango probable", "Base share, CPET tray, adult 70 kg, 3 min at 1100 W, fatty food": "Parte base, bandeja CPET, adulto de 70 kg, 3 min a 1100 W, comida grasosa", "Base share, PP cup or tub": "Parte base, vaso o envase de PP", "Glass, ceramic, steel": "Vidrio, cerámica, acero", "Food factor, higher, medium, lower fat": "Factor de comida: grasa alta, media, baja", "Square tray corner factor": "Factor de esquinas de bandeja cuadrada", "Time scaling (diffusion)": "Escala de tiempo (difusión)", "Body weight scaling": "Escala por peso", "The real app estimates the amount with the Piringer diffusion model and a learned partition coefficient for each plastic and food. This prototype uses simple placeholder numbers so the screens can run. They are not fitted to data yet.": "La app real calcula la cantidad con el modelo de difusión de Piringer y un coeficiente de partición para cada plástico y comida. Este prototipo usa números simples para que las pantallas funcionen. Todavía no están ajustados a datos.", "Loaded a sample week": "Semana de ejemplo cargada", "Microwave set to": "Microondas configurado a", "OK. I’ll show the box time and remind you to check that it’s hot.": "Está bien. Te muestro el tiempo de la caja y te recuerdo revisar que esté caliente.", "Saved to today’s log": "Guardado en el registro de hoy", "Hi, I’m Zappy. I help you check a meal before you heat it. Let me show you around the kitchen.": "Hola, soy Zappy. Te ayudo a revisar una comida antes de calentarla. Te enseño la cocina.", "Tap me any time to set your microwave’s watts. They’re printed inside the door.": "Tócame cuando quieras para poner los vatios de tu microondas. Están impresos dentro de la puerta.", "Who’s eating this?": "¿Quién va a comer esto?", "Yes, that’s it": "Sí, es ese", "My product isn’t here": "Mi producto no está aquí", "I don’t know": "No sé", "Use the box time and check that it’s hot": "Usa el tiempo de la caja y revisa que esté caliente", "For how many watts? Leave it at 1100 if the box doesn’t say.": "¿Para cuántos vatios? Déjalo en 1100 si la caja no dice.", "I don’t know your microwave’s power yet, so this is the time printed on the box. A weaker microwave needs longer. Check that the middle is steaming hot, 165°F (74°C). If not, stir and heat 30 seconds more.": "Todavía no sé la potencia de tu microondas, así que este es el tiempo de la caja. Un microondas más débil necesita más tiempo. Revisa que el centro esté humeante, 165°F (74°C). Si no, revuelve y calienta 30 segundos más.", "Don’t heat food in this": "No calientes comida en esto", "Photo match:": "Foto:"};
+var ZW_PAT = [["^Steps for your (\\d+) W microwave$", "Pasos para tu microondas de $1 W"], ["^Box time \\((\\d+) W\\)$", "Tiempo de la caja ($1 W)"], ["^Quest (\\d+)/(\\d+)$", "Misión $1/$2"], ["^1 dish$", "1 recipiente"], ["^(\\d+) dishes$", "$1 recipientes"], ["^Heating (.+) longer made this (\\S+)× higher\\. Stick to the box time\\.$", "Calentar $1 más lo hizo $2 veces más alto. Sigue el tiempo de la caja."], ["^Heating (.+) less cut this by (\\d+)%\\.$", "Calentar $1 menos lo bajó un $2%."], ["^Likely range: (.+) to (.+)$", "Rango probable: $1 a $2"], ["^Found #(\\d) on it\\.$", "Tiene el número $1."], ["^One day hit (.+) of the limit for (.+)\\. That's more than the 20% share EU rules set for packaging\\.$", "Un día llegó a $1 del límite para $2. Es más del 20% que las reglas de la UE dejan para los envases."], ["^This week, packaging averaged (.+) of the limit for (.+)\\.$", "Esta semana, los envases promediaron $1 del límite para $2."], ["^One meal hit (.+) of the limit\\. A plate or glass dish gets that close to zero\\.$", "Una comida llegó a $1 del límite. Un plato o un recipiente de vidrio lo baja a casi cero."], ["^Reward: (\\d+) stars\\.$", "Premio: $1 estrellas."], ["^(\\d+) stars$", "$1 estrellas"], ["^Box time at (\\d+) W$", "Tiempo de la caja a $1 W"], ["^On your (\\d+) W microwave\\ntotal heating time$", "En tu microondas de $1 W\\ntiempo total"], ["^(\\d+) on your shelf$", "$1 en tu repisa"], ["^Found (\\d+) W on the label\\.$", "Encontré $1 W en la etiqueta."], ["^Boiled in (.+): about (\\d+) W or more\\.$", "Hirvió en $1: unos $2 W o más."], ["^Microwave set to (\\d+) W$", "Microondas configurado a $1 W"], ["^From the label: (\\d+) W$", "De la etiqueta: $1 W"], ["^Save (\\d+) W$", "Guardar $1 W"], ["^Likely (.+) to (.+)$", "Probablemente entre $1 y $2"], ["^Heating longer gives (\\S+) times the estimate for the box time\\.$", "Calentar más tiempo da $1 veces el cálculo del tiempo de la caja."], ["^Heating less gives (\\S+) times the estimate for the box time\\.$", "Calentar menos tiempo da $1 veces el cálculo del tiempo de la caja."], ["^2 more minutes: about (\\S+)× more$", "2 minutos más: unas $1 veces más"], ["^For a (\\d+) kg kid, this same meal is (.+)\\.$", "Para un niño de $1 kg, esta misma comida es $2."], ["^Watts not set, using (\\d+) W$", "Sin vatios, uso $1 W"], ["^(\\d+) W, boil test done$", "$1 W, prueba de hervor hecha"], ["^(\\d+)% match$", "$1% parecido"], ["^Barcode: (.+)$", "Código de barras: $1"], ["^Text: (.+)$", "Texto: $1"], ["^Today for (.+)$", "Hoy para $1"], ["^(\\d+) heated meal$", "$1 comida calentada"], ["^(\\d+) heated meals$", "$1 comidas calentadas"], ["^(.+) added$", "$1 agregado"], ["^Edit (.+)$", "Editar $1"], ["^Remove (.+)$", "Quitar $1"], ["^(\\d+) stars$", "$1 estrellas"], ["^Found resin code (\\d) on it\\.$", "Tiene el código de plástico $1."], ["^(.+) is on your shelf$", "$1 está en tu repisa"], ["^My (.+)$", "Mi $1"], ["^One meal alone was (.+) of the limit\\. A plate or glass dish brings that close to zero\\.$", "Una sola comida fue $1 del límite. Un plato o un recipiente de vidrio lo baja a casi cero."], ["^(\\d+)% came from heating in the (.+)\\. $", "El $1% vino de calentar en $2. "], ["^(\\d+)% came from heating in the (.+)\\. Moving those meals to a plate is the biggest change you can make\\.$", "El $1% vino de calentar en $2. Pasar esas comidas a un plato es el cambio más grande que puedes hacer."], ["^Last 7 days, % of (.+)'s daily limit by day$", "Últimos 7 días, % del límite diario de $1 por día"], ["^Over the week, packaging averaged (.+) of the limit for (.+)\\.$", "En la semana, los envases promediaron $1 del límite para $2."], ["^One day reached (.+) of the limit for (.+)\\. EU rules keep packaging to 20% of the limit, so this is worth changing\\.$", "Un día llegó a $1 del límite para $2. Las reglas de la UE limitan los envases al 20% del límite, así que vale la pena cambiarlo."], ["^Reward: (\\d+) stars$", "Premio: $1 estrellas"], ["^DEHP, DBP and DIBP are phthalates: chemicals that make plastic soft\\. Europe's food safety agency \\(EFSA\\) set one shared daily limit for them: (\\d+) micrograms for each kg of body weight\\.$", "DEHP, DBP y DIBP son ftalatos: químicos que hacen suave el plástico. La agencia europea de alimentos (EFSA) puso un solo límite diario para todos: $1 microgramos por cada kg de peso."], ["^Black trays that can go in the oven are usually CPET plastic, which is made with a metal called antimony\\. The World Health Organization set a daily limit of (\\d+) micrograms for each kg of body weight\\.$", "Las bandejas negras que pueden ir al horno casi siempre son de plástico CPET, que se hace con un metal llamado antimonio. La Organización Mundial de la Salud puso un límite diario de $1 microgramos por cada kg de peso."], ["^of (.+)’s daily safe limit$", "del límite diario seguro de $1"], ["^\\+(\\d+) stars\\. You unlocked (.+) for your kitchen\\.$", "+$1 estrellas. Desbloqueaste $2 para tu cocina."], ["^Reward: (\\d+) stars and (.+)\\.$", "Premio: $1 estrellas y $2."], ["^Boiled in (.+): about (\\d+) W or more\\.$", "Hirvió en $1: unos $2 W o más."], ["^Save (\\d+) W$", "Guardar $1 W"], ["^(\\d+) W, boil test done$", "$1 W, prueba de hervor hecha"], ["^(\\d+) W for (\\d+:\\d\\d)$", "$1 W por $2"], ["^On your (\\d+) W microwave$", "En tu microondas de $1 W"], ["^Photo match: (\\d+)%$", "Foto: $1% parecido"], ["^Microwave set to (\\d+) W$", "Microondas configurado a $1 W"], ["^Today for (.+)$", "Hoy para $1"], ["^Text: (.+)$", "Texto: $1"]].map(function (p) { return [new RegExp(p[0]), p[1]]; });
+var ZW_AGE = { 'Adult': 'Adulto', 'Teen, 13 to 17': 'Adolescente, 13 a 17', 'Kid, 8 to 12': 'Niño, 8 a 12', 'Toddler, 1 to 3': 'Bebé, 1 a 3' };
+function zwTr(t) {
+  if (ZW_ES[t]) return ZW_ES[t];
+  var s = t.replace(/\u2019/g, "'");
+  if (ZW_ES[s]) return ZW_ES[s];
+  var m = /^(.+), about (\d+) kg$/.exec(s);
+  if (m && ZW_AGE[m[1]]) return ZW_AGE[m[1]] + ', unos ' + m[2] + ' kg';
+  m = /^(.+) \((\d+\/\d+)\)$/.exec(s); // zwQuestCount
+  if (m && (ZW_ES[m[1]] || ZW_ES[m[1].replace(/\u2019/g, "'")])) return zwTr(m[1]) + ' (' + m[2] + ')';
+  m = /^(\d+) heated meals?(.*)$/.exec(s);
+  if (m) return m[1] + (m[1] === '1' ? ' comida calentada' : ' comidas calentadas') + m[2];
+  for (var i = 0; i < ZW_PAT.length; i++) { if (ZW_PAT[i][0].test(s)) return s.replace(ZW_PAT[i][0], ZW_PAT[i][1]); }
+  return t;
+}
+var zwBusy = false;
+function translateAll() {
+  if (zwBusy) return; zwBusy = true;
+  var es = S.lang === 'es';
+  document.documentElement.lang = es ? 'es' : 'en';
+  [document.getElementById('phone'), document.querySelector('.side-note')].forEach(function (root) {
+    if (!root) return;
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), n;
+    while ((n = w.nextNode())) {
+      if (n.parentElement && n.parentElement.closest('[data-notr]')) continue;
+      if (n.zwEn === undefined || (n.nodeValue !== n.zwEs && n.nodeValue !== n.zwEn)) n.zwEn = n.nodeValue;
+      var en = n.zwEn, core = en.trim();
+      if (!core) continue;
+      var out = es ? en.replace(core, zwTr(core)) : en;
+      n.zwEs = out;
+      if (n.nodeValue !== out) n.nodeValue = out;
+    }
+    root.querySelectorAll('[placeholder]').forEach(function (el) {
+      if (!el.dataset.en) el.dataset.en = el.placeholder;
+      el.placeholder = es ? zwTr(el.dataset.en) : el.dataset.en;
+    });
+  });
+  zwObs.takeRecords();
+  zwBusy = false;
+}
+var zwObs = new MutationObserver(function () { translateAll(); });
+[document.getElementById('phone'), document.querySelector('.side-note')].forEach(function (r) { if (r) zwObs.observe(r, { childList: true, subtree: true, characterData: true }); });
+translateAll();
+})();
+</script>
+

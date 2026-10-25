@@ -1,0 +1,27 @@
+V2 | D antimony in CPET at 120 C | 3e-11 | 3.79105983709923e-11
+V1 | Sb released in 24 h at 120 C (fitted D) | 6.8 | 6.31
+V1 | Sb released in 24 h at 120 C (reported D) | 6.8 | 5.41
+V2 | D antimony in CPET at 135 C | 2.4e-10 | 3.13844943700294e-10
+V1 | Sb released in 24 h at 135 C (fitted D) | 18.6 | 23.5
+V1 | Sb released in 24 h at 135 C (reported D) | 18.6 | 20.55
+V2 | D antimony in CPET at 150 C | 3.3e-09 | 2.236606359192933e-09
+V1 | Sb released in 24 h at 150 C (fitted D) | 62.0 | 55.09
+V1 | Sb released in 24 h at 150 C (reported D) | 62.0 | 59.31
+V3 | D antimony at 100 C, Piringer PET upper bound vs Arrhenius fit | 1.7378833505905609e-12 | 3.121390699871336e-09
+V4 | DBP in water after 7 min at 700 W, wall 0.6 mm, content central | <0.2 to 2.0 | 0.849
+V4 | DBP in water after 7 min at 700 W, wall 0.6 mm, content high | <0.2 to 2.0 | 1.698
+V4 | DBP in water after 7 min at 700 W, wall 1.2 mm, content central | <0.2 to 2.0 | 0.849
+V4 | DBP in water after 7 min at 700 W, wall 1.2 mm, content high | <0.2 to 2.0 | 1.698
+V5 | Absorbed fraction of rated power implied by 61 complete label recipes (median) | 0.6 | 0.543
+V6 | Steam bag film temperature after 4 min (zw-023, 1100 W): generic wall model | 95 to 102 | 45.7
+V6 | Steam bag film temperature after 4 min (zw-023, 1100 W): steam contact mode | 95 to 102 | 100
+V7 | log Kpf RMSE, published regression, all 1,881 rows |  | 0.761
+V7 | log Kpf RMSE, refitted regression, whole studies held out |  | 1.108
+V7 | log Kpf RMSE, refitted regression, chemicals held out |  | 0.788
+V7 | log Kpf RMSE, published regression, PP rows |  | 0.752
+V7 | log Kpf of DEHP in PP, lean food (EtOH-eq 35 %), 100 C | 3.0 | 3.28
+V7 | log Kpf of DBP in PP, lean food (EtOH-eq 35 %), 100 C | 3.0 | 0.76
+V8 | D of DEHP in PP at 100 C: Huang 2017 (measured column) vs Piringer upper bound (predicted column) | 5.21e-08 | 1.15e-07
+V8 | D of DBP in PP at 100 C: Huang 2017 (measured column) vs Piringer upper bound (predicted column) | 1.21e-07 | 3.54e-07
+V8 | D of I168 in PP at 100 C: Huang 2017 (measured column) vs Piringer upper bound (predicted column) | 1.48e-08 | 1.38e-08
+etas [('zw-001', 0.54), ('zw-002', 0.49), ('zw-003', 0.51), ('zw-004', 0.51), ('zw-005', 0.54), ('zw-007', 0.59), ('zw-008', 0.56), ('zw-009', 0.47), ('zw-010', 0.44), ('zw-013', 0.44), ('zw-014', 0.4), ('zw-023', 0.46), ('zw-024', 0.6), ('zw-025', 0.53), ('zw-026', 0.49), ('zw-027', 0.49), ('zw-028', 0.44), ('zw-101', 0.53), ('zw-102', 0.62), ('zw-103', 0.57), ('zw-104', 0.45), ('zw-105', 0.48), ('zw-106', 0.54), ('zw-107', 0.52), ('zw-108', 0.55), ('zw-109', 0.62), ('zw-110', 0.41), ('zw-111', 0.51), ('zw-112', 0.56), ('zw-113', 0.55), ('zw-114', 0.54), ('zw-115', 0.44), ('zw-116', 0.81), ('zw-117', 0.78), ('zw-119', 0.61), ('zw-120', 0.59), ('zw-121', 0.51), ('zw-126', 0.44), ('zw-201', 0.63), ('zw-203', 0.63), ('zw-204', 0.47), ('zw-205', 0.57), ('zw-206', 0.38), ('zw-218', 0.59), ('zw-219', 0.5), ('zw-220', 0.81), ('zw-222', 0.54), ('zw-309', 0.52), ('zw-320', 0.56), ('zw-321', 0.47), ('zw-401', 0.83), ('zw-402', 0.78), ('zw-406', 0.45), ('zw-407', 0.72), ('zw-408', 0.83), ('zw-409', 0.75), ('zw-410', 0.61), ('zw-411', 1.05), ('zw-412', 0.82), ('zw-413', 0.46), ('zw-426', 0.9)]

@@ -1,0 +1,971 @@
+{
+  "schema_version": "1.0",
+  "compiled_on": "2026-10-14",
+  "field_conventions": {
+    "category": "frozen_tray | cup_bowl | steam_bag | pouch | oven_only",
+    "steps": "Each step is {action, time_s, time_s_max}. time_s is the single time or the low end of a range; time_s_max is the high end of a range or null. Non-timed actions (vent, stir) have time_s null.",
+    "reference_wattage_w": "Wattage the label says the directions were developed for. null when the label gives a wattage table instead of one reference, or when no wattage is stated.",
+    "wattage_variants": "Explicit per-wattage times printed on the label, as [{wattage_w, time_s, time_s_max, note}].",
+    "instructions_completeness": "complete = reference wattage or wattage table plus timed steps from a label transcription; partial = times present but wattage and/or steps missing; none = no microwave directions found; not_applicable = label says do not microwave or the product is oven only.",
+    "upc": "Only recorded when shown on a source page. Never computed. Retailer-specific item IDs are not UPCs and are kept in retailer_item_id."
+  },
+  "products": [
+    {
+      "id": "zw-001",
+      "brand": "Banquet",
+      "product_name": "Mega Bowls Mike's Hot Honey Chicken Mac 'N Cheese",
+      "net_weight": {"oz": 13.8, "g": 392},
+      "upc": "031000008550",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "cook on HIGH, no need to vent film", "time_s": 240, "time_s_max": null},
+          {"action": "stir and replace film", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 120, "time_s_max": 180},
+          {"action": "check food is cooked thoroughly (165°F)", "time_s": null, "time_s_max": null},
+          {"action": "stand", "time_s": 60, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not prepare in toaster oven", "Cook only one at a time", "Keep frozen, do not thaw"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "375°F, vent film, on baking sheet 45 min, stand 2 min, stir.",
+      "container": {"description": "Film-covered bowl tray; same tray is used in the 375°F oven per the directions. Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 bowl (392 g)", "servings_per_container": 1, "calories": 610, "total_fat_g": 25},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/18609278/other/instructions",
+        "https://smartlabel.labelinsight.com/product/18609278/nutrition"
+      ],
+      "data_flags": []
+    },
+    {
+      "id": "zw-002",
+      "brand": "Healthy Choice",
+      "product_name": "Lemon Parmesan Chicken",
+      "net_weight": {"oz": 11, "g": 311},
+      "upc": "072655003217",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "cook on HIGH", "time_s": 180, "time_s_max": null},
+          {"action": "rotate chicken, stir sauce into rice, replace film", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 150, "time_s_max": 180},
+          {"action": "check food is cooked thoroughly (165°F)", "time_s": null, "time_s_max": null},
+          {"action": "stand", "time_s": 120, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says to adjust times for your appliance.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Cook only one at a time", "Keep frozen, do not thaw"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Film-covered tray (film is lifted and replaced mid-cook). Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": null, "servings_per_container": null, "calories": null, "total_fat_g": null},
+      "source_urls": ["https://smartlabel.labelinsight.com/product/18859044/other/instructions"],
+      "data_flags": ["nutrition page returned a server error on two attempts"]
+    },
+    {
+      "id": "zw-003",
+      "brand": "Marie Callender's",
+      "product_name": "Cajun Style Chicken Alfredo Bowl",
+      "net_weight": {"oz": 11, "g": 312},
+      "upc": "021131000226",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "cook on HIGH, no need to vent film", "time_s": 240, "time_s_max": null},
+          {"action": "stir and re-cover", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 60, "time_s_max": 120},
+          {"action": "check food is cooked thoroughly (165°F), remove carefully", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not prepare in toaster oven", "Do not remove film before oven cooking", "Cook only one at a time", "Keep frozen, do not thaw"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "375°F, leave film on, on baking sheet 50 min, stand 2 min, stir.",
+      "container": {"description": "Film-covered bowl tray; oven-safe per directions (baked at 375°F with film on). Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 meal (312 g)", "servings_per_container": 1, "calories": 430, "total_fat_g": 16},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/15972825/other/instructions",
+        "https://smartlabel.labelinsight.com/product/15972825/nutrition"
+      ],
+      "data_flags": ["no microwave stand time listed on label"]
+    },
+    {
+      "id": "zw-004",
+      "brand": "Marie Callender's",
+      "product_name": "Fettuccini With Chicken & Broccoli Dinner",
+      "net_weight": {"oz": 13, "g": 369},
+      "upc": "021131504755",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "peel back one corner of film to vent", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 300, "time_s_max": null},
+          {"action": "stir and re-cover", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 60, "time_s_max": 120},
+          {"action": "check food is cooked thoroughly (165°F)", "time_s": null, "time_s_max": null},
+          {"action": "stand, then stir", "time_s": 120, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not prepare in toaster oven", "Cook only one at a time", "Keep frozen, do not thaw"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "350°F, vent film corner, on baking sheet 45-48 min, stand 2 min, stir.",
+      "container": {"description": "Film-sealed tray with vent corner marked 'Push here to open'. Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 meal (369 g)", "servings_per_container": 1, "calories": 440, "total_fat_g": 18},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6903342/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6903342/nutrition"
+      ],
+      "data_flags": []
+    },
+    {
+      "id": "zw-005",
+      "brand": "Stouffer's",
+      "product_name": "Classic Meatloaf",
+      "net_weight": {"oz": 16, "g": null},
+      "upc": null,
+      "retailer_item_id": {"safeway": "960010754"},
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "leave film on, do not vent", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 450, "time_s_max": null},
+          {"action": "stand", "time_s": 60, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not reheat tray", "Do not prepare in toaster oven"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Film-covered tray; label says not to reheat the tray. Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 loaf (226 g)", "servings_per_container": 2, "calories": 240, "total_fat_g": 9},
+      "source_urls": ["https://www.safeway.com/shop/pd/stouffers-classic-meatloaf-frozen-meal-16-oz/960010754"],
+      "data_flags": ["retailer copy of label; directions may be abridged (no mid-cook stir step shown)", "UPC not shown"]
+    },
+    {
+      "id": "zw-006",
+      "brand": "Stouffer's",
+      "product_name": "Macaroni & Cheese (single serve)",
+      "net_weight": {"oz": 12, "g": 340},
+      "upc": "00013800103406",
+      "upc_note": "Shown on ShopRite page in 14-digit GTIN form. Kroger/Ralphs item code 0001380010340 is the same item without check digit. Confirm against the package barcode.",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "cook frozen meal in microwave", "time_s": 330, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not prepare in toaster oven", "Do not reheat tray"],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Carton opened by 'push in, pull out'; tray must not be reheated. Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 package (340 g)", "servings_per_container": 1, "calories": 480, "total_fat_g": 21},
+      "source_urls": [
+        "https://www.heb.com/product-detail/stouffer-s-mac-cheese-frozen-meal/29054",
+        "https://www.shoprite.com/sm/delivery/rsid/256/product/stouffers-mac-&-cheese-12-oz-id-00013800103406"
+      ],
+      "data_flags": ["only total time (5.5 min) available; venting, stir and stand steps and wattage missing; stouffers.com page failed to load"]
+    },
+    {
+      "id": "zw-007",
+      "brand": "Lean Cuisine",
+      "product_name": "Protein Kick Spaghetti with Meat Sauce",
+      "net_weight": {"oz": 11.5, "g": null},
+      "upc": null,
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "cut film to vent", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 210, "time_s_max": null},
+          {"action": "stir and re-cover", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 90, "time_s_max": null},
+          {"action": "stand (165°F internal)", "time_s": 60, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says ovens vary.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not prepare in toaster oven", "Do not reheat tray"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Uncolored plastic tray, recyclable in communities that accept them (per page). Resin code not stated.", "material": "plastic (uncolored)", "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 package", "servings_per_container": 1, "calories": 310, "total_fat_g": 4},
+      "source_urls": ["https://preview.hannaford.com/groceries/frozen/frozen-dinners-meals/pasta-frozen-meals/lean-cuisine-protein-kick-spaghetti-with-meat-sauce-frozen-meal-115-oz-box.html"],
+      "data_flags": ["UPC not shown", "leancuisine.com product page failed to load"]
+    },
+    {
+      "id": "zw-008",
+      "brand": "Hungry-Man",
+      "product_name": "Selects Boneless Fried Chicken and Ham",
+      "net_weight": {"oz": 16, "g": 454},
+      "upc": "658276202941",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "remove film from dessert compartment", "time_s": null, "time_s_max": null},
+          {"action": "slit film over chicken and ham", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 270, "time_s_max": null},
+          {"action": "stir potatoes, rearrange ham, re-cover", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 150, "time_s_max": 180},
+          {"action": "check food is cooked thoroughly (165°F)", "time_s": null, "time_s_max": null},
+          {"action": "stand, then stir potatoes", "time_s": 60, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not prepare in toaster oven", "Cook only one at a time", "Keep frozen, do not thaw"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "350°F, remove dessert film, slit entree film, on baking sheet 40-45 min, stand 2 min.",
+      "container": {"description": "Multi-compartment tray with separate film areas over dessert and entree. Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 package (454 g)", "servings_per_container": 1, "calories": 590, "total_fat_g": 21},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/17238176/other/instructions",
+        "https://smartlabel.labelinsight.com/product/17238176/nutrition"
+      ],
+      "data_flags": []
+    },
+    {
+      "id": "zw-009",
+      "brand": "Healthy Choice",
+      "product_name": "Power Bowls Spicy Steak Burrito Bowl",
+      "net_weight": {"oz": 9.25, "g": 262},
+      "upc": "072655006782",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "cook on HIGH, no need to vent film", "time_s": 270, "time_s_max": 330},
+          {"action": "stand in microwave", "time_s": 60, "time_s_max": null},
+          {"action": "check food is hot throughout (165°F), stir", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given.",
+        "do_not_microwave": false,
+        "do_not_statements": ["DO NOT cook in conventional or toaster ovens (microwave-only product)", "Do not use if film seal is broken", "Cook only one at a time"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Film-sealed bowl; microwave only (label forbids conventional oven). Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 meal (262 g)", "servings_per_container": 1, "calories": 180, "total_fat_g": 4.5},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/14931912/other/instructions",
+        "https://smartlabel.labelinsight.com/product/14931912/nutrition"
+      ],
+      "data_flags": ["calorie value (180) looks low for a 262 g bowl; verify against package"]
+    },
+    {
+      "id": "zw-010",
+      "brand": "Frontera",
+      "product_name": "Cheese Enchiladas with Red Enchilada Sauce",
+      "net_weight": {"oz": 9, "g": 255},
+      "upc": "604183000194",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "cook on HIGH, no need to vent film", "time_s": 270, "time_s_max": 360},
+          {"action": "check food is cooked thoroughly (165°F)", "time_s": null, "time_s_max": null},
+          {"action": "stand", "time_s": 60, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not prepare in toaster oven", "Cook only one at a time", "Keep frozen, do not thaw"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "350°F, remove film, cover with foil, on baking sheet 40 min, uncover 5 min, stand 1 min.",
+      "container": {"description": "Tray in carton ('Push here to open'). Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 meal (255 g)", "servings_per_container": 1, "calories": 450, "total_fat_g": 15},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/17883027/other/instructions",
+        "https://smartlabel.labelinsight.com/product/17883027/nutrition"
+      ],
+      "data_flags": []
+    },
+    {
+      "id": "zw-011",
+      "brand": "Healthy Choice",
+      "product_name": "Cafe Steamers BBQ-Seasoned Steak & Potatoes",
+      "net_weight": {"oz": 9.5, "g": null},
+      "upc": null,
+      "retailer_item_id": {"heb": "1042876"},
+      "category": "frozen_tray",
+      "subtype": "two-part steamer bowl",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "microwave", "time_s": 240, "time_s_max": 270},
+          {"action": "stir steamed food into sauce bowl", "time_s": null, "time_s_max": null},
+          {"action": "check food is cooked thoroughly", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": [],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Two-compartment steamer bowl: steaming basket over a separate sauce bowl. Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 meal", "servings_per_container": 1, "calories": 300, "total_fat_g": 4},
+      "source_urls": ["https://www.heb.com/product-detail/healthy-choice-caf-steamers-bbq-seasoned-steak-potatoes-frozen-meal/1042876"],
+      "data_flags": ["taken from retailer description; wattage, venting and stand time missing", "UPC not shown"]
+    },
+    {
+      "id": "zw-012",
+      "brand": "Amy's",
+      "product_name": "Amy's Bowls Mexican Casserole",
+      "net_weight": {"oz": 9.5, "g": null},
+      "upc": null,
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": [],
+        "instructions_completeness": "none"
+      },
+      "oven_instructions": null,
+      "container": null,
+      "nutrition_per_serving": {"serving_size": "1 serving (269 g)", "servings_per_container": 1, "calories": 380, "total_fat_g": 16},
+      "source_urls": ["https://www.wegmans.com/shop/product/261725-Mexican-Casserole"],
+      "data_flags": ["amys.com product page failed to load; Wegmans and H-E-B pages show an empty Instructions section", "photograph box for directions and tray info"]
+    },
+    {
+      "id": "zw-013",
+      "brand": "Marie Callender's",
+      "product_name": "Turkey Pot Pie",
+      "net_weight": {"oz": 10, "g": 283},
+      "upc": "021131501143",
+      "category": "frozen_tray",
+      "subtype": "pot pie in paperboard tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "open carton at push tab, tear off top completely; cook in carton", "time_s": null, "time_s_max": null},
+          {"action": "optional: slit top crust for softer crust", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 300, "time_s_max": 390},
+          {"action": "stand to finish cooking", "time_s": 300, "time_s_max": null},
+          {"action": "check food is cooked thoroughly (165°F)", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "Microwaves below 1100 W are not recommended; the pie may not cook through. Use the conventional oven instead.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Not recommended in microwaves under 1100 W", "Do not prepare in toaster oven", "Cook only one at a time"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "400°F, remove from outer carton, keep in paper tray, foil strip around crust edge, on baking sheet 48-52 min, stand 5 min.",
+      "container": {"description": "Outer carton plus paper (paperboard) tray; microwave in opened carton, oven in paper tray.", "material": "paperboard", "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 pie (283 g)", "servings_per_container": 1, "calories": 580, "total_fat_g": 31},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/4662734/other/instructions",
+        "https://smartlabel.labelinsight.com/product/4662734/nutrition"
+      ],
+      "data_flags": []
+    },
+    {
+      "id": "zw-014",
+      "brand": "Marie Callender's",
+      "product_name": "Creamy Parmesan Chicken Pot Pie",
+      "net_weight": {"oz": 15, "g": 425},
+      "upc": "021131506964",
+      "category": "frozen_tray",
+      "subtype": "pot pie in paperboard tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "open carton at push tab, tear off top completely; cook in carton", "time_s": null, "time_s_max": null},
+          {"action": "slit top crust", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 540, "time_s_max": 600},
+          {"action": "stand", "time_s": 300, "time_s_max": null},
+          {"action": "check food is cooked thoroughly (165°F)", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "Do not microwave in ovens below 1100 W; use the conventional oven instead.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not microwave in ovens under 1100 W", "Do not prepare in toaster oven", "Cook only one at a time"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "400°F, keep in paper tray, foil strip around crust edge, on baking sheet 60-63 min, stand 5 min.",
+      "container": {"description": "Outer carton plus paper (paperboard) tray.", "material": "paperboard", "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 cup (200 g)", "servings_per_container": 2, "calories": 440, "total_fat_g": 27},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/4662724/other/instructions",
+        "https://smartlabel.labelinsight.com/product/4662724/nutrition"
+      ],
+      "data_flags": ["servings per container listed as 'about 2'"]
+    },
+    {
+      "id": "zw-015",
+      "brand": "Kraft",
+      "product_name": "Easy Mac Original Flavor Mac & Cheese Cups",
+      "net_weight": {"oz": 2.05, "g": null, "note": "per cup; sold as 4-cup pack"},
+      "upc": null,
+      "retailer_item_id": {"heb": "1070769"},
+      "category": "cup_bowl",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "add water to fill line in cup", "time_s": null, "time_s_max": null},
+          {"action": "microwave", "time_s": 210, "time_s_max": null},
+          {"action": "stir in cheese sauce mix", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": ["Cup and contents get very hot; keep children from burns"],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Single-serve microwavable cup with fill line. Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 cup (package)", "servings_per_container": 4, "calories": 220, "total_fat_g": 3.5},
+      "source_urls": ["https://www.heb.com/product-detail/kraft-easy-mac-original-flavor-mac-and-cheese-cups/1070769"],
+      "data_flags": ["wattage, stand time and power level not shown", "UPC not shown"]
+    },
+    {
+      "id": "zw-016",
+      "brand": "Maruchan",
+      "product_name": "Instant Lunch Ramen Noodle Soup, Chicken Flavor",
+      "net_weight": {"oz": 2.25, "g": null},
+      "upc": null,
+      "category": "cup_bowl",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": true,
+        "do_not_statements": ["Do not microwave"],
+        "non_microwave_prep": "Fold lid back halfway, fill to inside line with boiling water, close lid, stand 3 min, stir.",
+        "instructions_completeness": "not_applicable"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Single-serve cup with peel lid and inside fill line. Material not stated on source pages.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": null, "servings_per_container": null, "calories": null, "total_fat_g": null},
+      "source_urls": [
+        "https://www.ubereats.com/store/safeway-2980-e-capitol-expy/5-N2W3K9WEqK_hLD35hwVQ/c3297a1d-4fb9-53f4-a254-36d1fa306f6f/922e7cae-c81f-4bba-82fa-5e9f19cfaffd/eda8ec7f-dc34-5bd1-ab34-0b8aab8f923f",
+        "https://www.heb.com/product-detail/maruchan-instant-lunch-ramen-noodle-soup-cups-chicken-flavor/133669"
+      ],
+      "data_flags": ["nutrition not shown on readable pages", "good negative example: cup-shaped but labeled do not microwave"]
+    },
+    {
+      "id": "zw-017",
+      "brand": "Nissin",
+      "product_name": "Cup Noodles Chicken Flavor",
+      "net_weight": {"oz": 2.25, "g": null},
+      "upc": null,
+      "category": "cup_bowl",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "add water to fill line (details on lid)", "time_s": null, "time_s_max": null},
+          {"action": "microwave", "time_s": 135, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": [],
+        "non_microwave_prep": "Hot-water method listed as 3 min.",
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Paper cup that replaced the polystyrene cup in 2024 and made the product microwavable in the package.", "material": "paper", "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 package", "servings_per_container": 1, "calories": 290, "total_fat_g": 11},
+      "source_urls": [
+        "https://heb.com/product-detail/nissin-cup-noodles-chicken-flavor-noodle-soup/160083",
+        "https://www.orderroombox.com/product/nissin-cup-noodles-chicken-flavor-ramen-noodle-soup-2/",
+        "https://www.foxla.com/news/cup-noodles-unveils-game-changing-packaging-update-for-2024"
+      ],
+      "data_flags": ["2:15 microwave time comes from retailer listing and news report; wattage, fill line and stir/stand steps are on the lid and were not readable online", "older polystyrene cups may still be in some stores; check the cup"]
+    },
+    {
+      "id": "zw-018",
+      "brand": "Campbell's",
+      "product_name": "Chunky Beef with Country Vegetables Soup, Microwavable Bowl",
+      "net_weight": {"oz": 15.25, "g": null},
+      "upc": "51000148787",
+      "upc_note": "Listed as UPC on Campbell's Foodservice page in 11-digit form (case SCC-14 10051000148787). Confirm the 12-digit UPC from the bowl.",
+      "category": "cup_bowl",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "remove plastic cap, peel off and discard cover, replace plastic cap", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH", "time_s": 90, "time_s_max": null},
+          {"action": "leave in microwave to stand", "time_s": 60, "time_s_max": null},
+          {"action": "optional: heat longer for warmer soup", "time_s": 30, "time_s_max": null},
+          {"action": "hold bowl by sides, stir", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "Label notes microwave ovens vary and uneven heating may cause popping or splattering.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Plastic cap may be hot"],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Microwave-safe bowl with peel-off cover and plastic cap; eat directly from bowl.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 container", "servings_per_container": 1, "calories": 190, "total_fat_g": 3},
+      "source_urls": ["https://www.campbellsfoodservice.com/product/beef-with-country-vegetables-soup/"],
+      "data_flags": ["no reference wattage stated"]
+    },
+    {
+      "id": "zw-019",
+      "brand": "Campbell's",
+      "product_name": "Chunky Classic Chicken Noodle Soup, Microwavable Bowl",
+      "net_weight": {"oz": 15.25, "g": null},
+      "upc": null,
+      "retailer_item_id": {"heb": "569232"},
+      "category": "cup_bowl",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not reuse or reheat bowl", "Metal edges are sharp", "Do not buy if open or punctured"],
+        "instructions_completeness": "none"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Microwavable bowl; page warns of sharp metal edges (peel-off lid) and says not to reuse or reheat the bowl.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 container", "servings_per_container": 1, "calories": 200, "total_fat_g": 5},
+      "source_urls": ["https://www.heb.com/product-detail/campbell-s-chunky-classic-chicken-noodle-soup/569232"],
+      "data_flags": ["Instructions section empty on H-E-B page; photograph bowl label"]
+    },
+    {
+      "id": "zw-020",
+      "brand": "Hormel",
+      "product_name": "Compleats Meatloaf & Gravy with Mashed Potatoes",
+      "net_weight": {"oz": 9, "g": 255},
+      "upc": null,
+      "category": "cup_bowl",
+      "subtype": "shelf-stable film-sealed tray",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "puncture film in several places or peel back about 1/4 inch", "time_s": null, "time_s_max": null},
+          {"action": "heat on HIGH or until hot", "time_s": 60, "time_s_max": null},
+          {"action": "optional stand", "time_s": 60, "time_s_max": null},
+          {"action": "peel film back carefully", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "Times approximate because microwaves vary.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Not for conventional ovens"],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Shelf-stable microwavable tray sealed with plastic film. Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 tray", "servings_per_container": 1, "calories": 280, "total_fat_g": 13},
+      "source_urls": ["https://preview.hannaford.com/groceries/soups-canned-goods/canned-meat/hormel-compleats-meatloaf-gravy-with-mashed-potatoes-microwavable-9-oz-can.html"],
+      "data_flags": ["no reference wattage", "UPC not shown", "page header says '9 oz can' but description is a film-sealed tray"]
+    },
+    {
+      "id": "zw-021",
+      "brand": "Hormel",
+      "product_name": "Compleats Beef Tips & Gravy with Mashed Potatoes",
+      "net_weight": {"oz": 9, "g": null},
+      "upc": null,
+      "retailer_item_id": {"heb": "1058929"},
+      "category": "cup_bowl",
+      "subtype": "shelf-stable film-sealed tray",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": [],
+        "instructions_completeness": "none"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Single tray (serving size listed as 1 tray). Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 tray", "servings_per_container": 1, "calories": 230, "total_fat_g": 8},
+      "source_urls": ["https://www.heb.com/product-detail/hormel-compleats-beef-tips-gravy-with-mashed-potatoes/1058929"],
+      "data_flags": ["Instructions section empty; photograph tray label"]
+    },
+    {
+      "id": "zw-022",
+      "brand": "Chef Boyardee",
+      "product_name": "Beefaroni Microwavable Bowl",
+      "net_weight": {"oz": 7.5, "g": null},
+      "upc": null,
+      "category": "cup_bowl",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": [],
+        "instructions_completeness": "none"
+      },
+      "oven_instructions": null,
+      "container": null,
+      "nutrition_per_serving": {"serving_size": null, "servings_per_container": null, "calories": null, "total_fat_g": null},
+      "source_urls": ["https://smartlabel.labelinsight.com/product/13051379/other/claims"],
+      "data_flags": ["placeholder: net weight from retailer listing titles only; SmartLabel instructions page returned server errors twice; Ahold retailer sites were in maintenance", "photograph bowl label"]
+    },
+    {
+      "id": "zw-023",
+      "brand": "Birds Eye",
+      "product_name": "Steamfresh Seasoned Asian Medley",
+      "net_weight": {"oz": 10.8, "g": 306},
+      "upc": "014500021632",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "place frozen bag flat, 'this side up' facing up; do not puncture; remove metal rack", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH for wattage-specific time (see variants)", "time_s": null, "time_s_max": null},
+          {"action": "stand", "time_s": 60, "time_s_max": 120},
+          {"action": "hold by blue corner tabs, tear at notch, pour, stir", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [
+          {"wattage_w": 1200, "time_s": 330, "time_s_max": null, "note": null},
+          {"wattage_w": 1000, "time_s": 360, "time_s_max": null, "note": null},
+          {"wattage_w": 800, "time_s": 420, "time_s_max": null, "note": null}
+        ],
+        "low_wattage_note": "Below 800 W, use stovetop directions instead.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not puncture bag", "Do not thaw", "Cook only one at a time"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "stovetop_instructions": "2-qt nonstick saucepan, 1/4 cup water, covered, medium heat 10-11 min, stand 1-2 min.",
+      "container": {"description": "Microwave-safe steam bag with built-in vent; bag inflates and may whistle; tear notch and corner tabs.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": null, "servings_per_container": null, "calories": null, "total_fat_g": null},
+      "source_urls": ["https://smartlabel.labelinsight.com/product/6823283/other/instructions"],
+      "data_flags": ["nutrition page returned a server error"]
+    },
+    {
+      "id": "zw-024",
+      "brand": "Birds Eye",
+      "product_name": "Steamfresh Power Blend Hawaiian Style",
+      "net_weight": {"oz": 12.8, "g": 363},
+      "upc": "014500016676",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "place frozen bag flat, 'this side up' facing up; do not pierce; remove metal rack", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH for wattage-specific time (see variants)", "time_s": null, "time_s_max": null},
+          {"action": "stand", "time_s": 60, "time_s_max": 120},
+          {"action": "hold by blue corner tabs, tear at notch, pour, stir", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [
+          {"wattage_w": 1200, "time_s": 300, "time_s_max": null, "note": null},
+          {"wattage_w": 1000, "time_s": 330, "time_s_max": null, "note": null},
+          {"wattage_w": 800, "time_s": 360, "time_s_max": null, "note": null}
+        ],
+        "low_wattage_note": "Below 800 W, use stovetop directions instead.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not pierce bag", "Do not thaw", "Cook only one at a time"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "stovetop_instructions": "2-qt nonstick saucepan, 1/4 cup water, covered, medium heat 8-9 min, stand 1-2 min.",
+      "container": {"description": "Microwave-safe steam bag with vent; inflates while cooking, may whistle.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 bag (363 g)", "servings_per_container": 1, "calories": 380, "total_fat_g": 5},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6100979/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6100979/nutrition"
+      ],
+      "data_flags": []
+    },
+    {
+      "id": "zw-025",
+      "brand": "Birds Eye",
+      "product_name": "Steamfresh Power Blend Italian Style",
+      "net_weight": {"oz": 11.5, "g": 326},
+      "upc": "014500015822",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "place frozen bag flat, 'this side up' facing up; do not pierce; remove metal rack", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH (bag puffs, vent may whistle)", "time_s": 300, "time_s_max": 360},
+          {"action": "stand", "time_s": 60, "time_s_max": null},
+          {"action": "lift by marked corners, tear at notch, pour, stir", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given; adjust for appliance.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not pierce bag", "Do not thaw", "Cook only one bag at a time"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "stovetop_instructions": "2-qt nonstick saucepan, 2 Tbsp water, covered, medium heat 8-11 min, stand 1-2 min.",
+      "container": {"description": "Sealed microwave steam bag with vent; printed 'THIS SIDE UP', 'TEAR HERE', 'PICK UP HERE'.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 container (326 g)", "servings_per_container": 1, "calories": 310, "total_fat_g": 6},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/13770749/other/instructions",
+        "https://smartlabel.labelinsight.com/product/13770749/nutrition"
+      ],
+      "data_flags": ["same product line as zw-023/024 but uses a single 1100 W reference instead of a wattage table"]
+    },
+    {
+      "id": "zw-026",
+      "brand": "Green Giant",
+      "product_name": "Riced Veggies Cauliflower & Broccoli",
+      "net_weight": {"oz": 10, "g": 283},
+      "upc": "190569123118",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": 1000,
+        "steps": [
+          {"action": "place unopened bag standing up in center of microwave", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH until hot", "time_s": 330, "time_s_max": 360},
+          {"action": "stand in microwave", "time_s": 60, "time_s_max": null},
+          {"action": "remove bag carefully", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [
+          {"wattage_w": 700, "time_s": 420, "time_s_max": null, "note": null}
+        ],
+        "low_wattage_note": "700 W: 7 min on HIGH.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not thaw"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "stovetop_instructions": "Large nonstick skillet, medium heat about 5 min, stirring.",
+      "container": {"description": "Microwave-in bag cooked standing upright; vent not mentioned.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "85 g (3/4 cup frozen, 1/2 cup prepared)", "servings_per_container": 3, "calories": 20, "total_fat_g": 0},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6822702/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6822702/nutrition"
+      ],
+      "data_flags": ["servings per container listed as 'about 3'"]
+    },
+    {
+      "id": "zw-027",
+      "brand": "Green Giant",
+      "product_name": "Riced Veggies Cauliflower Risotto Medley",
+      "net_weight": {"oz": 10, "g": 283},
+      "upc": "190569123286",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": 1000,
+        "steps": [
+          {"action": "place unopened bag standing up in center of microwave", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH until hot", "time_s": 330, "time_s_max": 360},
+          {"action": "stand in microwave", "time_s": 60, "time_s_max": null},
+          {"action": "remove bag carefully", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [
+          {"wattage_w": 700, "time_s": 420, "time_s_max": null, "note": null}
+        ],
+        "low_wattage_note": "700 W: 7 min on HIGH.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not thaw"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "stovetop_instructions": "Large nonstick skillet, medium heat 5 min, stirring.",
+      "container": {"description": "Microwave-in bag cooked standing upright; vent not mentioned.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": null, "servings_per_container": null, "calories": null, "total_fat_g": null},
+      "source_urls": ["https://smartlabel.labelinsight.com/product/6822696/other/instructions"],
+      "data_flags": ["nutrition page not fetched (call budget)"]
+    },
+    {
+      "id": "zw-028",
+      "brand": "Green Giant",
+      "product_name": "Lightly Sauced Broccoli, Carrots, Cauliflower & Cheese Sauce",
+      "net_weight": {"oz": 10, "g": 283},
+      "upc": "020000199641",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "place unopened bag standing up on a microwavable dinner plate", "time_s": null, "time_s_max": null},
+          {"action": "cook on HIGH for wattage-specific time (see variants)", "time_s": null, "time_s_max": null},
+          {"action": "stand in microwave", "time_s": 60, "time_s_max": null},
+          {"action": "remove plate and bag, tear at notch, empty into dish, stir", "time_s": null, "time_s_max": null}
+        ],
+        "wattage_variants": [
+          {"wattage_w": 1200, "time_s": 300, "time_s_max": 330, "note": null},
+          {"wattage_w": 1000, "time_s": 420, "time_s_max": 450, "note": null},
+          {"wattage_w": 700, "time_s": 510, "time_s_max": 540, "note": null}
+        ],
+        "low_wattage_note": "Table covers 700 W.",
+        "do_not_microwave": false,
+        "do_not_statements": ["Do not leave microwave unattended"],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {"description": "Microwave-in bag cooked standing on a plate; tear notch. Vent not mentioned.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 cup (109 g) frozen, 1/2 cup prepared", "servings_per_container": 2.5, "calories": 45, "total_fat_g": 1},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6822674/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6822674/nutrition"
+      ],
+      "data_flags": ["servings per container listed as 'about 2.5'", "best example of a 3-level wattage table"]
+    },
+    {
+      "id": "zw-029",
+      "brand": "Ben's Original",
+      "product_name": "Ready Rice Jasmine",
+      "net_weight": {"oz": 8.5, "g": null},
+      "upc": null,
+      "retailer_item_id": {"heb": "1250123"},
+      "category": "pouch",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "microwave pouch", "time_s": 90, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": [],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "stovetop_instructions": "Heat thoroughly in a skillet (no time given).",
+      "container": {"description": "BPA-free microwaveable rice pouch.", "material": null, "recycling_code": null, "bpa_free": true},
+      "nutrition_per_serving": {"serving_size": "1 cup (dual-column label: per cup and per pouch)", "servings_per_container": null, "calories": 250, "total_fat_g": 3, "per_pouch": {"calories": 430, "total_fat_g": 5}},
+      "source_urls": ["https://heb.com/product-detail/ben-s-original-ready-rice-jasmine/1250123"],
+      "data_flags": ["squeeze/tear-vent steps and wattage not shown on US retailer page", "UPC not shown"]
+    },
+    {
+      "id": "zw-030",
+      "brand": "Ben's Original",
+      "product_name": "Ready Rice Spanish Style",
+      "net_weight": {"oz": 8.8, "g": null},
+      "upc": null,
+      "retailer_item_id": {"heb": "592802"},
+      "category": "pouch",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {"action": "microwave pouch", "time_s": 90, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": false,
+        "do_not_statements": [],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "stovetop_instructions": "Heat thoroughly in a skillet (no time given).",
+      "container": {"description": "BPA-free microwaveable pouch.", "material": null, "recycling_code": null, "bpa_free": true},
+      "nutrition_per_serving": {"serving_size": "1 cup (144 g)", "servings_per_container": null, "calories": 210, "total_fat_g": 3, "per_pouch": {"calories": 360, "total_fat_g": 5}},
+      "source_urls": ["https://heb.com/product-detail/ben-s-original-ready-rice-spanish-style/592802"],
+      "data_flags": ["squeeze/tear-vent steps and wattage not shown", "UPC not shown"]
+    },
+    {
+      "id": "zw-031",
+      "brand": "Tyson",
+      "product_name": "Breaded & Stuffed Chicken Breasts Cordon Bleu, 2 Count (raw)",
+      "net_weight": {"oz": 10, "g": null, "note": "10 oz from retailer listing titles; Tyson page lists 2 x 140 g servings"},
+      "upc": null,
+      "gtin_in_url": "00023700060273",
+      "category": "oven_only",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": true,
+        "do_not_statements": ["DO NOT MICROWAVE OR AIR FRY", "Oven bake only, raw chicken"],
+        "instructions_completeness": "not_applicable"
+      },
+      "oven_instructions": "375°F, frozen raw breasts on flat metal baking sheet 2 in apart; 31-33 min for 1-2 pieces, 36-39 min for 3-6 pieces; 165°F internal; cool about 3 min.",
+      "container": {"description": "Individually wrapped raw breaded pieces in a carton.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 piece (140 g)", "servings_per_container": 2, "calories": 270, "total_fat_g": 14},
+      "source_urls": [
+        "https://www.tyson.com/products/stuffed-chicken-breasts-cordon-bleu-2-count",
+        "https://www.tyson.com/products/stuffed-entrees/00023700060273"
+      ],
+      "data_flags": ["the 14-digit code appears only in a Tyson URL and is not labeled as a UPC; confirm from package"]
+    },
+    {
+      "id": "zw-032",
+      "brand": "DiGiorno",
+      "product_name": "Original Rising Crust Pepperoni Pizza",
+      "net_weight": {"oz": 24.7, "g": 702},
+      "upc": null,
+      "category": "oven_only",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": null,
+        "do_not_statements": [],
+        "instructions_completeness": "not_applicable"
+      },
+      "oven_instructions": "400°F, keep frozen while preheating, remove freshness wrap, place directly on center rack, 19 min, stand 5 min.",
+      "container": {"description": "Pizza in freshness wrap inside carton. No other packaging detail given.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1/5 pizza (140 g)", "servings_per_container": 5, "calories": 330, "total_fat_g": 13},
+      "source_urls": ["https://www.goodnes.com/digiorno/products/rising-crust-pepperoni-pizza-24-oz/"],
+      "data_flags": ["page gives oven directions only; no explicit 'do not microwave' wording found online, so do_not_microwave is null (check box)", "page body calls it 'Ultimate Pepperoni'; title says 'Original Rising Crust Pepperoni Pizza 24.7oz'", "servings listed as 'about 5'"]
+    },
+    {
+      "id": "zw-033",
+      "brand": "Marie Callender's",
+      "product_name": "Family Size Chicken Parmesan",
+      "net_weight": {"oz": 38, "g": 1070},
+      "upc": "021131034344",
+      "category": "oven_only",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {"action": "Quick-Bake only: preheat oven to 375°F", "time_s": null, "time_s_max": null},
+          {"action": "microwave on HIGH (partial cook)", "time_s": 480, "time_s_max": null},
+          {"action": "peel back film corner, transfer to baking sheet, finish in oven", "time_s": 1500, "time_s_max": 1800},
+          {"action": "check food is cooked thoroughly (165°F), stand", "time_s": 300, "time_s_max": null}
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given.",
+        "do_not_microwave": false,
+        "do_not_statements": ["No microwave-only method; oven finish required", "Do not prepare in toaster oven", "Cook only one at a time"],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": "375°F, vent film corner, on baking sheet 60-70 min, stand 5 min.",
+      "container": {"description": "Family-size film-covered tray; oven-safe per directions. Material not stated.", "material": null, "recycling_code": null, "bpa_free": null},
+      "nutrition_per_serving": {"serving_size": "1 patty, pasta, sauce & topping (269 g)", "servings_per_container": 4, "calories": 450, "total_fat_g": 20},
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/18719462/other/instructions",
+        "https://smartlabel.labelinsight.com/product/18719462/nutrition"
+      ],
+      "data_flags": ["oven required: microwave is only the first stage of a microwave-plus-oven method", "net weight 38 oz = 2 lb 6 oz (1.07 kg) per label"]
+    }
+  ],
+  "notes": [
+    "33 products: frozen_tray 14, cup_bowl 8, steam_bag 6, pouch 2, oven_only 3. Brands chosen are national brands sold at Safeway, Vons, Ralphs, Albertsons, Target and Walmart in California, but shelf presence was not checked store by store.",
+    "Main source was SmartLabel (smartlabel.labelinsight.com), which carries label transcriptions for Conagra brands (Banquet, Healthy Choice, Marie Callender's, Hungry-Man, Birds Eye, Frontera) and B&G Foods (Green Giant). These pages give UPC, net weight and full step-by-step directions. The /nutrition subpage gives serving data but returned server errors for some products.",
+    "Retailer pages that were readable: H-E-B (heb.com, nutrition plus short directions, no UPC), Safeway /shop/pd/ URLs (full directions, no UPC), preview.hannaford.com (full directions plus tray material), Wegmans and ShopRite (nutrition, UPC on ShopRite). Blocked or empty: Walmart, Target, Kroger/Ralphs (JS shell), Safeway/Albertsons product-details URLs (Incapsula), Publix, Lowes Foods, the main Hannaford/Stop & Shop/Food Lion/Giant sites (all in maintenance), Open Food Facts (robots disallowed, curl blocked by proxy), and the leancuisine.com, stouffers.com and amys.com product pages.",
+    "Nestle brands (Lean Cuisine, Stouffer's, DiGiorno) and Amy's, Kraft Heinz, Hormel, Campbell's, Nissin, Maruchan and Mars (Ben's Original) are not on the labelinsight SmartLabel host, so their records rely on retailer copies and are more often partial and missing UPC.",
+    "No source stated a resin identification code (recycling number) for any tray, cup or bowl. Only the Lean Cuisine page described material (uncolored plastic tray, recyclable where accepted), Nissin's cup is paper per news coverage, Marie Callender's pot pies use paperboard trays, and Ben's Original pouches are described as BPA-free. Container material will have to come from photographs of the packages.",
+    "Explicit wattage tables appear mainly on steam bags (Birds Eye: 1200/1000/800 W with stovetop below 800 W; Green Giant: 1200/1000/700 W or 1000 W plus 700 W). Conagra frozen trays use a single 1100 W reference with no low-wattage times. Marie Callender's single-serve pot pies say microwaves below 1100 W are not recommended, which is a useful rule for the app's wattage logic.",
+    "Do-not-microwave cases found: Maruchan Instant Lunch cup ('Do not microwave', hot water only) and Tyson raw stuffed chicken cordon bleu ('DO NOT MICROWAVE OR AIR FRY', 'Oven bake only, raw chicken'). The reverse case also exists: Healthy Choice Power Bowls say DO NOT cook in conventional or toaster ovens. DiGiorno only has oven directions, but no explicit do-not-microwave wording was found online.",
+    "A UK Sainsbury's listing for Ben's Original Jasmine microwave rice (220 g) gives 2 min at 700 W or 90 s at 900 W with squeeze and tear-corner steps. It is a different market and package, so it was not merged into the US records. The US pouch directions should be photographed.",
+    "Retailer-transcribed directions (Safeway, H-E-B) can be abridged. H-E-B often gives only a total time in the description while its Instructions field is empty. Records built from these are marked partial or flagged.",
+    "UPC formats differ by source: SmartLabel gives 12-digit UPC-A; ShopRite shows a 14-digit GTIN with leading zeros; Campbell's Foodservice shows an 11-digit form. Values are stored exactly as shown and flagged for confirmation against the package barcode.",
+    "Healthy Choice Power Bowl Spicy Steak Burrito reports 180 kcal for 262 g on SmartLabel. This was recorded as found but should be checked on the package.",
+    "Packaging and recipes change. Cup Noodles moved from polystyrene to a microwavable paper cup in 2024, and older stock may differ. Treat every record as a seed to be confirmed against the photographed package."
+  ]
+}

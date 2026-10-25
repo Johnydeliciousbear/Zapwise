@@ -1,0 +1,21 @@
+// ZapWise core: data, engine, recognition, tracking and quests.
+export 'data/asset_repository.dart';
+export 'data/local_db.dart';
+export 'data/models.dart';
+export 'data/records.dart';
+export 'engine/engine.dart';
+export 'engine/math.dart';
+export 'engine/recipe.dart';
+export 'engine/thermal.dart';
+export 'quests/quest_engine.dart';
+export 'recognition/container_cues.dart';
+export 'recognition/container_identifier.dart';
+export 'recognition/image_prep.dart';
+export 'recognition/instruction_parser.dart';
+export 'recognition/product_matcher.dart';
+export 'recognition/watt_label.dart';
+export 'recognition/text_reader.dart';
+export 'recognition/vision_model.dart';
+export 'services/off_client.dart';
+export 'services/zapwise_service.dart';
+export 'tracking/exposure_log.dart';

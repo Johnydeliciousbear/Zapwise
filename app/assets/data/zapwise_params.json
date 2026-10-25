@@ -1,0 +1,1124 @@
+{
+ "meta": {
+  "version": "0.3.2",
+  "generated": "2026-10-18",
+  "source": "ZapWise_DB.xlsx"
+ },
+ "polymers": {
+  "LDPE": {
+   "name": "Low-density polyethylene",
+   "ap_prime": 11.5,
+   "tau": 0.0,
+   "t_max_valid_c": 80.0,
+   "density": 0.92,
+   "huang_material": "Polyethylene (PE, LDPE, LLDPE)",
+   "huang_b": -1.65,
+   "huang_tau": 0.0,
+   "kpf_material": "Low-density polyethylene (LDPE)"
+  },
+  "LLDPE": {
+   "name": "Linear low-density polyethylene",
+   "ap_prime": 11.5,
+   "tau": 0.0,
+   "t_max_valid_c": 100.0,
+   "density": 0.92,
+   "huang_material": "Polyethylene (PE, LDPE, LLDPE)",
+   "huang_b": -1.65,
+   "huang_tau": 0.0,
+   "kpf_material": "Linear low-density polyethylene (LLDPE)"
+  },
+  "HDPE": {
+   "name": "High-density polyethylene",
+   "ap_prime": 14.5,
+   "tau": 1577.0,
+   "t_max_valid_c": 90.0,
+   "density": 0.95,
+   "huang_material": "High density polyethylene (HDPE)",
+   "huang_b": 5.11,
+   "huang_tau": -2391.0,
+   "kpf_material": "High-density polyethylene (HDPE)"
+  },
+  "PP": {
+   "name": "Polypropylene (homo and random)",
+   "ap_prime": 13.1,
+   "tau": 1577.0,
+   "t_max_valid_c": 120.0,
+   "density": 0.9,
+   "huang_material": "PP homopolymer",
+   "huang_b": 4.53,
+   "huang_tau": -2391.0,
+   "kpf_material": "Polypropylene (PP) homopolymer"
+  },
+  "PP_RUBBER": {
+   "name": "Polypropylene (rubber-modified)",
+   "ap_prime": 11.5,
+   "tau": 0.0,
+   "t_max_valid_c": 100.0,
+   "density": 0.9,
+   "huang_material": "PP copolymer",
+   "huang_b": 4.79,
+   "huang_tau": -2391.0,
+   "kpf_material": "Ethylene-propylene copolymer"
+  },
+  "PS": {
+   "name": "Polystyrene (GPPS)",
+   "ap_prime": -1.0,
+   "tau": 0.0,
+   "t_max_valid_c": 70.0,
+   "density": 1.05,
+   "huang_material": "General polystyrene (PS)",
+   "huang_b": 2.04,
+   "huang_tau": -2391.0,
+   "kpf_material": "Polystyrene (PS)"
+  },
+  "HIPS": {
+   "name": "High-impact polystyrene",
+   "ap_prime": 1.0,
+   "tau": 0.0,
+   "t_max_valid_c": 70.0,
+   "density": 1.05,
+   "huang_material": "High-impact polystyrene (HIPS)",
+   "huang_b": -7.11,
+   "huang_tau": 0.0,
+   "kpf_material": "Polystyrene (PS)"
+  },
+  "PET_HI": {
+   "name": "PET above Tg (about 70 C)",
+   "ap_prime": 6.4,
+   "tau": 1577.0,
+   "t_max_valid_c": 175.0,
+   "density": 1.35,
+   "huang_material": "Polyethylene terephthalate (PET)",
+   "huang_b": 0.0,
+   "huang_tau": -2391.0,
+   "kpf_material": "Polyethylene terephthalate (PET)"
+  },
+  "PET_LO": {
+   "name": "PET below Tg",
+   "ap_prime": 3.1,
+   "tau": 1577.0,
+   "t_max_valid_c": 70.0,
+   "density": 1.35,
+   "huang_material": "Polyethylene terephthalate (PET)",
+   "huang_b": 0.0,
+   "huang_tau": -2391.0,
+   "kpf_material": "Polyethylene terephthalate (PET)"
+  },
+  "PEN": {
+   "name": "Polyethylene naphthalate",
+   "ap_prime": 5.0,
+   "tau": 1577.0,
+   "t_max_valid_c": 175.0,
+   "density": null,
+   "huang_material": "Polyethylene naphthalate (PEN)",
+   "huang_b": -1.16,
+   "huang_tau": -2391.0,
+   "kpf_material": "Polyethylene terephthalate (PET)"
+  },
+  "PA6": {
+   "name": "Polyamide 6",
+   "ap_prime": 0.0,
+   "tau": 0.0,
+   "t_max_valid_c": 100.0,
+   "density": null,
+   "huang_material": "Polyamide (PA)",
+   "huang_b": -5.4,
+   "huang_tau": 0.0,
+   "kpf_material": "Nylon 6"
+  },
+  "PA66": {
+   "name": "Polyamide 6,6",
+   "ap_prime": 2.0,
+   "tau": 0.0,
+   "t_max_valid_c": 100.0,
+   "density": null,
+   "huang_material": "Polyamide (PA)",
+   "huang_b": -5.4,
+   "huang_tau": 0.0,
+   "kpf_material": "Nylon 6"
+  },
+  "PVC_RIGID": {
+   "name": "Rigid PVC",
+   "ap_prime": -1.0,
+   "tau": 0.0,
+   "t_max_valid_c": 70.0,
+   "density": null,
+   "huang_material": "Rigid polymers",
+   "huang_b": -11.9,
+   "huang_tau": 1676.0,
+   "kpf_material": "Polyvinyl chloride (PVC)"
+  }
+ },
+ "substances": {
+  "DEHP": {
+   "name": "Di(2-ethylhexyl) phthalate",
+   "cas": "117-81-7",
+   "mw": 390.57,
+   "log_kow": 7.5,
+   "group": "phthalate_dehp_eq",
+   "rpf": 1.0,
+   "model": "piringer",
+   "d0": null,
+   "ea_kj": null,
+   "diffusible": 1.0,
+   "sources": "S13;S08"
+  },
+  "DBP": {
+   "name": "Dibutyl phthalate",
+   "cas": "84-74-2",
+   "mw": 278.3,
+   "log_kow": 4.46,
+   "group": "phthalate_dehp_eq",
+   "rpf": 5.0,
+   "model": "piringer",
+   "d0": null,
+   "ea_kj": null,
+   "diffusible": 1.0,
+   "sources": "S14;S08"
+  },
+  "DIBP": {
+   "name": "Diisobutyl phthalate",
+   "cas": "84-69-5",
+   "mw": 278.3,
+   "log_kow": 4.11,
+   "group": "phthalate_dehp_eq",
+   "rpf": 4.0,
+   "model": "piringer",
+   "d0": null,
+   "ea_kj": null,
+   "diffusible": 1.0,
+   "sources": "S08"
+  },
+  "BBP": {
+   "name": "Benzyl butyl phthalate",
+   "cas": "85-68-7",
+   "mw": 312.3,
+   "log_kow": 4.91,
+   "group": "phthalate_dehp_eq",
+   "rpf": 0.1,
+   "model": "piringer",
+   "d0": null,
+   "ea_kj": null,
+   "diffusible": 1.0,
+   "sources": "S14;S08"
+  },
+  "SB": {
+   "name": "Antimony (catalyst residue in PET)",
+   "cas": "7440-36-0",
+   "mw": 121.76,
+   "log_kow": null,
+   "group": "antimony",
+   "rpf": 1.0,
+   "model": "arrhenius",
+   "d0": 360000000000000.0,
+   "ea_kj": 188.0,
+   "diffusible": 0.62,
+   "sources": "S02"
+  },
+  "I168": {
+   "name": "Irgafos 168 (phosphite antioxidant in PP)",
+   "cas": "31570-04-4",
+   "mw": 646.94,
+   "log_kow": 15.5,
+   "group": "antioxidant_i168",
+   "rpf": 1.0,
+   "model": "piringer",
+   "d0": null,
+   "ea_kj": null,
+   "diffusible": 1.0,
+   "sources": "S53;S54;S80"
+  }
+ },
+ "groups": {
+  "phthalate_dehp_eq": {
+   "label_en": "Phthalates",
+   "tdi": 50.0,
+   "unit": "ug/kg bw/day",
+   "agency": "EFSA",
+   "year": 2019,
+   "sources": "S07;S08",
+   "basis": "Group TDI, reduction in fetal testosterone; DEHP-eq = 1 DEHP + 5 DBP + 4 DIBP + 0.1 BBP (Reg. 2023/1442 group 36). Temporary TDI."
+  },
+  "antimony": {
+   "label_en": "Antimony",
+   "tdi": 6.0,
+   "unit": "ug/kg bw/day",
+   "agency": "WHO",
+   "year": 2003,
+   "sources": "S09",
+   "basis": "NOAEL 6.0 mg/kg bw/day (90-day rat study) / UF 1000."
+  },
+  "antioxidant_i168": {
+   "label_en": "Irgafos 168 (antioxidant)",
+   "tdi": 1000.0,
+   "unit": "ug/kg bw/day (ADI)",
+   "agency": "US FDA",
+   "year": 2021,
+   "sources": "S53",
+   "basis": "NOEL 2000 ppm in a 2-year rat study, safety factor 100; covers Irgafos 168 and its phosphate."
+  },
+  "lead": {
+   "label_en": "Lead",
+   "tdi": 0.5,
+   "unit": "ug/kg bw/day (BMDL01)",
+   "agency": "EFSA",
+   "year": 2010,
+   "sources": "S52",
+   "basis": "No safe intake exists for lead, so EFSA withdrew the tolerable weekly intake and uses a benchmark dose (developmental neurotoxicity in children, BMDL01). The % shown is of this reference point, not of a safe limit."
+  }
+ },
+ "alt_references": [
+  {
+   "substance": "DEHP",
+   "agency": "US EPA IRIS",
+   "value": 20.0,
+   "unit": "ug/kg bw/day (oral RfD)",
+   "year": 1987,
+   "sources": "S10"
+  },
+  {
+   "substance": "DBP",
+   "agency": "EFSA",
+   "value": 10.0,
+   "unit": "ug/kg bw/day (individual t-TDI)",
+   "year": 2019,
+   "sources": "S07"
+  },
+  {
+   "substance": "BBP",
+   "agency": "EFSA",
+   "value": 500.0,
+   "unit": "ug/kg bw/day (individual t-TDI)",
+   "year": 2019,
+   "sources": "S07"
+  },
+  {
+   "substance": "DINP",
+   "agency": "EFSA",
+   "value": 150.0,
+   "unit": "ug/kg bw/day (individual t-TDI)",
+   "year": 2019,
+   "sources": "S07"
+  },
+  {
+   "substance": "BPA",
+   "agency": "EFSA",
+   "value": 0.0002,
+   "unit": "ug/kg bw/day (0.2 ng/kg bw/day)",
+   "year": 2023,
+   "sources": "S12"
+  }
+ ],
+ "contents": {
+  "PP": {
+   "DBP": {
+    "low": 0.0,
+    "high": 2.83,
+    "sources": "S03;S04"
+   },
+   "DIBP": {
+    "low": 0.237,
+    "high": 1.84,
+    "sources": "S03;S04"
+   },
+   "DEHP": {
+    "low": 0.0,
+    "high": 2.302,
+    "sources": "S04"
+   },
+   "I168": {
+    "low": 166.47,
+    "high": 845.27,
+    "sources": "S54"
+   }
+  },
+  "CPET": {
+   "SB": {
+    "low": 100.0,
+    "high": 400.0,
+    "sources": "S06;S02"
+   }
+  },
+  "PET_COAT": {
+   "SB": {
+    "low": 100.0,
+    "high": 400.0,
+    "sources": "S06"
+   }
+  },
+  "PP_FILM": {
+   "I168": {
+    "low": 166.47,
+    "high": 845.27,
+    "sources": "S54"
+   }
+  }
+ },
+ "containers": {
+  "cpet_tray": {
+   "label_en": "Black oven tray (#1)",
+   "status": "ok",
+   "content_key": "CPET",
+   "polymer": "PET_HI",
+   "density": 1.35,
+   "thickness_cm": 0.031,
+   "thickness_low": 0.025,
+   "thickness_high": 0.06,
+   "area_ref_cm2": 290.0,
+   "form": "tray",
+   "max_use_c": 204.0,
+   "reason_en": "",
+   "sources": "S02;S16;S17",
+   "contact_mode": "wall"
+  },
+  "pp_container": {
+   "label_en": "Microwave-safe plastic (#5)",
+   "status": "ok",
+   "content_key": "PP",
+   "polymer": "PP",
+   "density": 0.9,
+   "thickness_cm": 0.05,
+   "thickness_low": 0.03,
+   "thickness_high": 0.06,
+   "area_ref_cm2": 250.0,
+   "form": "bowl",
+   "max_use_c": 104.0,
+   "reason_en": "",
+   "sources": "S18;S19",
+   "contact_mode": "wall"
+  },
+  "pet_board_tray": {
+   "label_en": "Coated paper tray",
+   "status": "ok",
+   "content_key": "PET_COAT",
+   "polymer": "PET_HI",
+   "density": 1.35,
+   "thickness_cm": 0.0029,
+   "thickness_low": 0.002,
+   "thickness_high": 0.004,
+   "area_ref_cm2": 290.0,
+   "form": "tray",
+   "max_use_c": 220.0,
+   "reason_en": "",
+   "sources": "S60;S06",
+   "contact_mode": "wall"
+  },
+  "paperboard_tray": {
+   "label_en": "Paper plate or fiber tray",
+   "status": "info",
+   "content_key": null,
+   "polymer": null,
+   "density": null,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": 290.0,
+   "form": "tray",
+   "max_use_c": 204.0,
+   "reason_en": "The old worry was PFAS coatings, which US food packaging dropped in 2024.",
+   "sources": "S63;S75;S62",
+   "contact_mode": "wall"
+  },
+  "paper_cup": {
+   "label_en": "Paper cup or bowl",
+   "status": "measured",
+   "content_key": null,
+   "polymer": "LDPE",
+   "density": 0.92,
+   "thickness_cm": 0.00163,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": 210.0,
+   "form": "cup",
+   "max_use_c": 70.0,
+   "reason_en": "It's lined with a thin plastic film. Lab tests found traces of lead in hot water from these cups.",
+   "sources": "S51;S52;S59",
+   "contact_mode": "wall"
+  },
+  "steam_bag": {
+   "label_en": "Steam bag",
+   "status": "ok",
+   "content_key": "PP_FILM",
+   "polymer": "PP",
+   "density": 0.9,
+   "thickness_cm": 0.0064,
+   "thickness_low": 0.0032,
+   "thickness_high": 0.0095,
+   "area_ref_cm2": 400.0,
+   "form": "bag",
+   "max_use_c": 120.0,
+   "reason_en": "",
+   "sources": "S55;S54",
+   "contact_mode": "steam"
+  },
+  "pouch": {
+   "label_en": "Microwave pouch",
+   "status": "ok",
+   "content_key": "PP_FILM",
+   "polymer": "PP",
+   "density": 0.9,
+   "thickness_cm": 0.0075,
+   "thickness_low": 0.006,
+   "thickness_high": 0.00875,
+   "area_ref_cm2": 300.0,
+   "form": "bag",
+   "max_use_c": 120.0,
+   "reason_en": "",
+   "sources": "S56;S57;S54;S58",
+   "contact_mode": "wall"
+  },
+  "takeout_tub": {
+   "label_en": "Take-out tub",
+   "status": "block",
+   "content_key": "PP",
+   "polymer": "PP",
+   "density": 0.9,
+   "thickness_cm": 0.05,
+   "thickness_low": 0.03,
+   "thickness_high": 0.06,
+   "area_ref_cm2": 250.0,
+   "form": "bowl",
+   "max_use_c": 104.0,
+   "reason_en": "Not made for heat. It can warp or melt.",
+   "sources": "S22",
+   "contact_mode": "wall"
+  },
+  "pet_clamshell": {
+   "label_en": "Clear clamshell (#1)",
+   "status": "block",
+   "content_key": null,
+   "polymer": "PET_LO",
+   "density": 1.33,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": 250.0,
+   "form": "tray",
+   "max_use_c": 60.0,
+   "reason_en": "It softens around 150°F, cooler than reheated food.",
+   "sources": "S20;S19",
+   "contact_mode": "wall"
+  },
+  "eps_foam": {
+   "label_en": "Foam tray or cup",
+   "status": "block",
+   "content_key": null,
+   "polymer": "PS",
+   "density": null,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": 250.0,
+   "form": "tray",
+   "max_use_c": 70.0,
+   "reason_en": "Not made for heat. It can warp or melt.",
+   "sources": "S22;S01",
+   "contact_mode": "wall"
+  },
+  "ps_rigid": {
+   "label_en": "Clear hard plastic (#6)",
+   "status": "block",
+   "content_key": null,
+   "polymer": "PS",
+   "density": 1.05,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": 250.0,
+   "form": "tray",
+   "max_use_c": 77.0,
+   "reason_en": "It's only made for up to 170°F. Reheated food gets hotter.",
+   "sources": "S19",
+   "contact_mode": "wall"
+  },
+  "metal": {
+   "label_en": "Metal or foil",
+   "status": "block",
+   "content_key": null,
+   "polymer": null,
+   "density": null,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": null,
+   "form": "tray",
+   "max_use_c": null,
+   "reason_en": "Metal can spark in the microwave.",
+   "sources": "S44;S45",
+   "contact_mode": "wall"
+  },
+  "melamine": {
+   "label_en": "Melamine or bamboo dish",
+   "status": "block",
+   "content_key": null,
+   "polymer": null,
+   "density": null,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": null,
+   "form": "bowl",
+   "max_use_c": null,
+   "reason_en": "Not for hot food or the microwave. Heat can make it release chemicals.",
+   "sources": "S82",
+   "contact_mode": "wall"
+  },
+  "glass": {
+   "label_en": "Glass dish",
+   "status": "inert",
+   "content_key": null,
+   "polymer": null,
+   "density": null,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": null,
+   "form": "bowl",
+   "max_use_c": null,
+   "reason_en": "No plastic touches your food.",
+   "sources": "S22",
+   "contact_mode": "wall"
+  },
+  "ceramic": {
+   "label_en": "Plate or bowl",
+   "status": "inert",
+   "content_key": null,
+   "polymer": null,
+   "density": null,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": null,
+   "form": "plate",
+   "max_use_c": null,
+   "reason_en": "No plastic touches your food. Skip plates with gold or silver trim.",
+   "sources": "S22;S44",
+   "contact_mode": "wall"
+  },
+  "stove_pot": {
+   "label_en": "Pot on the stove",
+   "status": "inert",
+   "content_key": null,
+   "polymer": null,
+   "density": null,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": null,
+   "form": "pot",
+   "max_use_c": null,
+   "reason_en": "The food comes out of the package, so no plastic gets heated.",
+   "sources": "",
+   "contact_mode": "wall"
+  },
+  "popcorn_bag": {
+   "label_en": "Popcorn bag",
+   "status": "info",
+   "content_key": null,
+   "polymer": null,
+   "density": null,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": null,
+   "form": "bag",
+   "max_use_c": null,
+   "reason_en": "US popcorn bags no longer use PFAS coatings.",
+   "sources": "S64;S65;S63",
+   "contact_mode": "wall"
+  },
+  "susceptor_sleeve": {
+   "label_en": "Crisping sleeve",
+   "status": "info",
+   "content_key": null,
+   "polymer": null,
+   "density": null,
+   "thickness_cm": null,
+   "thickness_low": null,
+   "thickness_high": null,
+   "area_ref_cm2": null,
+   "form": "sleeve",
+   "max_use_c": null,
+   "reason_en": "These get much hotter than boiling, so I can't estimate them.",
+   "sources": "S66;S67",
+   "contact_mode": "wall"
+  }
+ },
+ "measured": {
+  "paper_cup": [
+   {
+    "substance": "Lead (Pb)",
+    "group": "lead",
+    "low": 0.583,
+    "mid": 1.38,
+    "high": 22.9,
+    "unit": "ug/kg",
+    "basis": "per_kg_food",
+    "conditions": "20 PE-lined paper cups, 200 mL ultrapure water at 95-100 C, 15 min. Value per litre of water applied per kg of soup or noodles.",
+    "sources": "S51"
+   }
+  ]
+ },
+ "food_classes": [
+  {
+   "key": "lean",
+   "fat_min": 0.0,
+   "fat_max": 0.03,
+   "etoh_low": 10.0,
+   "etoh_high": 60.0,
+   "cap_low": 100.0,
+   "cap_high": 100.0
+  },
+  {
+   "key": "medium",
+   "fat_min": 0.03,
+   "fat_max": 0.1,
+   "etoh_low": 50.0,
+   "etoh_high": 80.0,
+   "cap_low": 100.0,
+   "cap_high": 110.0
+  },
+  {
+   "key": "fatty",
+   "fat_min": 0.1,
+   "fat_max": 1.0,
+   "etoh_low": 80.0,
+   "etoh_high": 100.0,
+   "cap_low": 105.0,
+   "cap_high": 125.0
+  }
+ ],
+ "params": {
+  "T0_frozen_C": -18,
+  "T0_chilled_C": 4,
+  "T0_shelf_C": 20,
+  "water_fraction": 0.75,
+  "c_water": 4.187,
+  "c_solids": 1.8,
+  "c_frozen": 2.05,
+  "latent_heat_water": 333.57,
+  "T_target_avg_C": 85,
+  "T_boil_C": 100,
+  "edge_excess_C": 15,
+  "edge_excess_low_C": 10,
+  "edge_excess_high_C": 20,
+  "power_factor_low": 0.85,
+  "power_factor_high": 1.15,
+  "area_factor_low": 0.8,
+  "area_factor_high": 1.2,
+  "area_ref_mass_g": 300,
+  "food_density": 1,
+  "default_ref_watt": 1100,
+  "eat_minutes": 10,
+  "eat_end_C": 50,
+  "dt_s": 1,
+  "short_time_Fo": 0.05,
+  "mc_samples": 300,
+  "mc_seed": 20261026,
+  "band_low_pct": 2,
+  "band_high_pct": 10,
+  "daily_alert_pct": 20,
+  "steam_onset_fraction": 0.6,
+  "energy_short_ratio": 0.95,
+  "R_gas": 8.314462618,
+  "d_weight_central": 0.5,
+  "d_weight_low": 0,
+  "d_weight_high": 1,
+  "kpf_resid_sd": 0.79,
+  "kpf_t_ref_K": 298.15
+ },
+ "body_weights": {
+  "adult": 70.0,
+  "adult_eu_fcm": 60.0,
+  "teen": 55.0,
+  "child": 30.0,
+  "toddler": 12.0
+ },
+ "sources": {
+  "S01": {
+   "citation": "Simoneau C. (ed.) et al. (2010). Applicability of generally recognised diffusion models for the estimation of specific migration in support of EU Directive 2002/72/EC. JRC59476, EUR 24514 EN.",
+   "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC59476/reqno_jrc59476_mathmod_v10_cs_2010_09_24_final.pdf%5B1%5D.pdf"
+  },
+  "S02": {
+   "citation": "Haldimann M. et al. (2013). Exposure to antimony from polyethylene terephthalate (PET) trays used in ready-to-eat meals. Food Addit Contam A 30(3):587-598. doi:10.1080/19440049.2012.751631",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3613973/"
+  },
+  "S03": {
+   "citation": "Liu J-M. et al. (2020). Phthalate esters in commercial disposable lunch boxes (title to confirm). Food Sci Nutr. doi:10.1002/fsn3.1863",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7590312"
+  },
+  "S04": {
+   "citation": "Lan M., Li H., Ying G. (2022). Phthalate esters in PP food containers and their migration (title to confirm). J South China Normal Univ (Nat Sci) 54(2):52-62. doi:10.6054/j.jscnun.2022026",
+   "url": "https://doi.org/10.6054/j.jscnun.2022026"
+  },
+  "S05": {
+   "citation": "Moreira M.A., Andre L.C., Cardeal Z.L. (2014). Analysis of phthalate migration to food simulants in plastic containers during microwave operations. IJERPH 11(1):507-526. doi:10.3390/ijerph110100507",
+   "url": "https://www.mdpi.com/1660-4601/11/1/507/html"
+  },
+  "S06": {
+   "citation": "Review of antimony in PET bottles (2023, title to confirm). Molecules 28(20):7166.",
+   "url": "https://www.mdpi.com/1420-3049/28/20/7166"
+  },
+  "S07": {
+   "citation": "EFSA CEP Panel (2019). Update of the risk assessment of DBP, BBP, DEHP, DINP and DIDP for use in food contact materials. EFSA Journal 17(12):5838.",
+   "url": "https://doaj.org/article/cad5a51311ba4452b9b5807ddfb881a9"
+  },
+  "S08": {
+   "citation": "Commission Regulation (EU) 2023/1442 amending Annex I to Regulation (EU) No 10/2011 (phthalates, group restriction 36).",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32023R1442"
+  },
+  "S09": {
+   "citation": "WHO (2022). Antimony in drinking-water, chemical fact sheet (TDI 6 ug/kg bw/day, 2003 assessment).",
+   "url": "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/chemical-fact-sheets-2022/antimony-fact-sheet-2022.pdf"
+  },
+  "S10": {
+   "citation": "US EPA IRIS. Di(2-ethylhexyl)phthalate (DEHP), oral RfD 0.02 mg/kg-day (1987).",
+   "url": "https://iris.epa.gov/ChemicalLanding/&substance_nmbr=14"
+  },
+  "S11": {
+   "citation": "EFSA Scientific Committee (2012). Default values for body weight (adult 70 kg, toddler 12 kg, infant 5 kg).",
+   "url": "https://www.efsa.europa.eu/en/press/news/120307a"
+  },
+  "S12": {
+   "citation": "EFSA CEP Panel (2023). Re-evaluation of bisphenol A, TDI 0.2 ng/kg bw/day. EFSA Journal 21(4):6857.",
+   "url": "https://doaj.org/article/baf196cb09d54c4db530f4b44f9d37b5"
+  },
+  "S13": {
+   "citation": "ATSDR. Toxicological Profile for DEHP, chapter 4 (MW, log Kow).",
+   "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp9-c4.pdf"
+  },
+  "S14": {
+   "citation": "Health Canada. Draft screening assessment, phthalate substance grouping, Appendix A (log Kow).",
+   "url": "https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/draft-screening-assessment-phthalate-substance-grouping-appendices.html"
+  },
+  "S15": {
+   "citation": "ATSDR. Toxicological Profile for Styrene, chapter 4.",
+   "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp53-c4.pdf"
+  },
+  "S16": {
+   "citation": "Sabert. Black 13 in round CPET tray product page (400 F up to 30 min, microwave 3-5 min).",
+   "url": "https://sabert.com/products/black-13-round-cpet-tray"
+  },
+  "S17": {
+   "citation": "Pactiv Evergreen P8008Z CPET tray, distributor listing (-20 F to 400 F).",
+   "url": "https://championproducts.com/products/pactiv-evergreen-17-oz-rectangular-cpet-tray-black-630-count-p8008z"
+  },
+  "S18": {
+   "citation": "A&C Plastics. Polypropylene properties datasheet (density, melting point, service temperature).",
+   "url": "https://www.acplasticsinc.com/media/Polypropylene%20Properties.pdf"
+  },
+  "S19": {
+   "citation": "Inline Plastics. Material specifications (2023 catalog; PP 0-220 F, OPS 20-170 F, PET 0-140 F).",
+   "url": "https://www.inlineplastics.com/material-specs/ip_productcatalog2023_materialspecs/"
+  },
+  "S20": {
+   "citation": "Spartech. APET technical datasheet (HDT 68.9 C at 66 psi, SG 1.33).",
+   "url": "https://www.spartech.com/media/documents/SPA221013-APET-Tech-Data-Sheet.pdf"
+  },
+  "S21": {
+   "citation": "designerdata.nl. LDPE and polystyrene material pages (service temperatures).",
+   "url": "https://designerdata.nl/materials/plastics/thermo-plastics/low-density-polyethylene"
+  },
+  "S22": {
+   "citation": "USDA FSIS (rev. 2011). Cooking Safely in the Microwave Oven (GPO archived copy).",
+   "url": "https://www.govinfo.gov/content/pkg/GOVPUB-A110-PURL-gpo127402/pdf/GOVPUB-A110-PURL-gpo127402.pdf"
+  },
+  "S23": {
+   "citation": "USDA FSIS (2024). Salmonella in not-ready-to-eat breaded stuffed chicken products. Federal Register 89(85), docket FSIS-2022-0013.",
+   "url": "https://www.govinfo.gov/content/pkg/FR-2024-05-01/html/2024-09393.htm"
+  },
+  "S24": {
+   "citation": "Marshall K.E. et al. (2022). Salmonella outbreak linked to frozen raw breaded stuffed chicken. MMWR 71:1511-1516.",
+   "url": "https://www.cdc.gov/mmwr/volumes/71/wr/mm7148a2.htm"
+  },
+  "S25": {
+   "citation": "Conagra Brands. Microwave safety (wattage, time-to-boil test, ovens of 700 W or less only heat).",
+   "url": "https://www.conagrabrands.com/our-company/corporate-social-responsibility/food-safety/microwave-safety"
+  },
+  "S26": {
+   "citation": "IMPI (2017). The Wave, Jan/Feb 2017, President's message (oven output dispersion about +/-15%).",
+   "url": "https://impi.org/wp-content/uploads/2019/09/WAVE-Jan-Feb-2017_Final.pdf"
+  },
+  "S27": {
+   "citation": "Schwartzberg H., Singh R.P., Sarkar A. (2007). Freezing and thawing of foods, computation methods and thermal properties correlation. WIT Press.",
+   "url": "https://www.witpress.com/Secure/elibrary/papers/9781853129322/9781853129322003FU1.pdf"
+  },
+  "S28": {
+   "citation": "Jung H., Lee M.G., Yoon W.B. (2022). Microwave heating of pork patties in a plastic container. Processes 10(11):2382.",
+   "url": "https://www.mdpi.com/2227-9717/10/11/2382"
+  },
+  "S29": {
+   "citation": "Mahmoud E.A.E.-M. et al. (2009). Czech J Food Sci 27 (Spec. Issue):S173-S177 (oil temperatures during heating).",
+   "url": "https://www.agriculturejournals.cz/pdfs/cjf/2009/10/27.pdf"
+  },
+  "S30": {
+   "citation": "Centre for Food Safety Hong Kong (2005). Disposable plastic containers for take-away meals.",
+   "url": "https://www.cfs.gov.hk/english/programme/programme_rafs/programme_rafs_fc_01_03_dp.html"
+  },
+  "S31": {
+   "citation": "Commission Regulation (EU) No 10/2011 on plastic materials intended to come into contact with food (consolidated).",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02011R0010-20200923"
+  },
+  "S32": {
+   "citation": "Faerch 1267-1A CPET tray 985 ml, distributor listing (29 g, 267 x 178 x 40 mm).",
+   "url": "https://www.tingstad.com/se-en/foodservice/food-containers/supermarket-trays/tray-faerch-1267-1a-c-pet-black-985ml-267x178x40mm-33312671301"
+  },
+  "S33": {
+   "citation": "Huang L., Jolliet O. (2019). A combined QPPR for packaging-food and solid material-water partition coefficients. Sci Total Environ 658:493-500.",
+   "url": "https://doi.org/10.1016/j.scitotenv.2018.12.062"
+  },
+  "S34": {
+   "citation": "Vaferi B. et al. (2025). Sci Rep 15:7806, Supplementary Table S1 (1,847 log K records).",
+   "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-025-92459-x/MediaObjects/41598_2025_92459_MOESM1_ESM.pdf"
+  },
+  "S35": {
+   "citation": "Geueke B. et al. (2022). Systematic evidence on migrating and extractable food contact chemicals (FCCmigex). Crit Rev Food Sci Nutr.",
+   "url": "https://bura.brunel.ac.uk/bitstream/2438/25123/1/FullText.pdf"
+  },
+  "S36": {
+   "citation": "Hussain K.A. et al. (2023). Assessing the release of microplastics and nanoplastics from plastic containers and reusable food pouches. Environ Sci Technol 57:9782-9792.",
+   "url": "https://digitalcommons.unl.edu/civilengfacpub/298"
+  },
+  "S37": {
+   "citation": "Fasano E. et al. (2012). Migration of phthalates, alkylphenols, bisphenol A and DEHA from food packaging. Food Control 27:132-138.",
+   "url": "https://www.iris.unina.it/retrieve/handle/11588/469035/52932/Migration%20of%20phthalates%2C.pdf"
+  },
+  "S38": {
+   "citation": "Kawamura Y. et al. (2000). Antioxidants in PP food contact products. J Food Hyg Soc Japan 41:154-161.",
+   "url": "https://hero.epa.gov/hero/index.cfm/reference/details/reference_id/1325732"
+  },
+  "S39": {
+   "citation": "BfR (2025). New EFSA assessment, no evidence of genomic damage from styrene in food packaging.",
+   "url": "https://www.bfr.bund.de/en/notification/new-efsa-assessment-no-evidence-of-genomic-damage-from-styrene-in-food-packaging/"
+  },
+  "S40": {
+   "citation": "Brandsch R. et al. (2022). Molecules 27:121 (EU default partition coefficients 1 and 1000).",
+   "url": "https://doi.org/10.3390/molecules27010121"
+  },
+  "S41": {
+   "citation": "Fraunhofer IVV. Prediction of diffusion coefficients (PET A_P' 3.1 / 6.4, tau 1577).",
+   "url": "https://www.ivv.fraunhofer.de/content/dam/ivv/en/documents/Forschungsfelder/Produktsicherheit-und-analytik/Prediction_of_diffusion_coefficients.pdf"
+  },
+  "S42": {
+   "citation": "Housova J., Hoke K. (2002). Microwave heating, the influence of oven and load parameters. Czech J Food Sci 20(3):117-124.",
+   "url": "https://cjfs.agriculturejournals.cz/pdfs/cjf/2002/03/06.pdf"
+  },
+  "S43": {
+   "citation": "Cai R., Mokwena Nthoiwa K.K., Ge C. Migration from microwaveable containers. J Applied Packaging Research (container thickness PS 1.7, PP 1.2, PET 0.5 mm).",
+   "url": "https://repository.rit.edu/cgi/viewcontent.cgi?article=1004&context=japr"
+  },
+  "S44": {
+   "citation": "JennAir product help. Can metal or aluminum foil be used in the microwave.",
+   "url": "https://producthelp.jennair.com/Cooking/Microwaves/Product_Info_new/Product_Information/Can_Metal_or_Aluminum_Foil_be_Used_in_the_Microwave"
+  },
+  "S45": {
+   "citation": "UC Berkeley EHS. Microwave oven safety guidelines.",
+   "url": "https://ehs.berkeley.edu/node/1128"
+  },
+  "S46": {
+   "citation": "SmartLabel (Label Insight) product label transcriptions (Conagra, B&G Foods brands).",
+   "url": "https://smartlabel.labelinsight.com/"
+  },
+  "S47": {
+   "citation": "Thung G., Yang M. (2017). TrashNet dataset (MIT License).",
+   "url": "https://github.com/garythung/trashnet"
+  },
+  "S48": {
+   "citation": "Sandler M. et al. (2018). MobileNetV2: inverted residuals and linear bottlenecks. CVPR. ImageNet weights via keras-applications mirror.",
+   "url": "https://github.com/JonathanCMitchell/mobilenet_v2_keras"
+  },
+  "S49": {
+   "citation": "Wikipedia. Polyethylene terephthalate (Tg 67-81 C, density) and Polystyrene (Tg about 100 C).",
+   "url": "https://en.wikipedia.org/wiki/Polyethylene_terephthalate"
+  },
+  "S50": {
+   "citation": "Panasonic NN-S554MF service manual, output power check (1 L water, 1 min).",
+   "url": "https://www.e-service.css.panasonic.co.jp/Panasonic_ServiceManual(Global%202011)/OT/NN-S554MF/SIMP/s0302000000.html"
+  },
+  "S51": {
+   "citation": "Mohery M. et al. (2025). Metals released from paper cups into hot water (title to confirm). Toxics 13(8):626.",
+   "url": "https://www.mdpi.com/2305-6304/13/8/626"
+  },
+  "S52": {
+   "citation": "EFSA CONTAM Panel (2010). Scientific Opinion on lead in food. EFSA Journal 8(4):1570 (BMDL01 0.50 ug/kg bw/day, PTWI withdrawn).",
+   "url": "https://www.efsa.europa.eu/en/efsajournal/pub/1570"
+  },
+  "S53": {
+   "citation": "Markley L. et al. (2021). Updated safety assessment of Irgafos 168 used in food contact (ADI 1 mg/kg bw/day). FDA Science Forum.",
+   "url": "https://www.fda.gov/science-research/fda-science-forum/updated-safety-assessment-tris24-di-tert-butylphenyl-phosphite-irgafos-168-used-food-contact"
+  },
+  "S54": {
+   "citation": "Antioxidants and UV stabilisers in polypropylene food packaging films by HPLC (Jinan University group; Irgafos 168 166-845 mg/kg in 6 films).",
+   "url": "https://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-05eacdae-bfc4-4dd7-8309-e22306ec7fc5"
+  },
+  "S55": {
+   "citation": "Su J.M., Wolak P.Z. (Pliant LLC). US 7,812,293 B2, Freezable/microwavable packaging films and venting packages (steam bag layers).",
+   "url": "https://patents.google.com/patent/US7812293B2/en"
+  },
+  "S56": {
+   "citation": "Idemitsu Unitech (2022). Retortable PP film exhibition sheet (PET 12 / NY 15 / PP 60 um, 135 C retort).",
+   "url": "https://www.idemitsu.com/en/iut/exhibition/2022_2_6.pdf"
+  },
+  "S57": {
+   "citation": "Ali A.A. et al. (2002). Properties of indigenous and imported retort pouches (CPP sealant 75-87.5 um). CIFT.",
+   "url": "https://drs.cift.res.in/items/0c9c2718-82d8-40e5-a25f-7244b096cc94/full"
+  },
+  "S58": {
+   "citation": "Guan L. et al. (2021). Primary aromatic amines from PA/CPP retort pouches. Food Science 42(20):292-298.",
+   "url": "https://www.spkx.net.cn/EN/10.7506/spkx1002-6630-20200917-227"
+  },
+  "S59": {
+   "citation": "Metsa Board. Pro FSB Cup 1PE cupstock datasheet (PE coating 15 g/m2).",
+   "url": "https://www.metsagroup.com/contentassets/dc3b692dd03f4d5f876caf78d2b3fa41/metsaboard-pro-fsb-cup-1pe-0_15-en-iso.pdf"
+  },
+  "S60": {
+   "citation": "Holmen. PET barrier coating for ovenable paperboard (40 g/m2, about 29 um, up to 220 C).",
+   "url": "https://www.holmen.com/en/board-and-paper/products/paperboard/barriers-coatings/pet/"
+  },
+  "S61": {
+   "citation": "EFSA CONTAM Panel (2020). Risk to human health related to the presence of PFAS in food (TWI 4.4 ng/kg bw/week). EFSA Journal 18(9):6223.",
+   "url": "https://doaj.org/article/884cab73a5874609932bfcb70da0b713"
+  },
+  "S62": {
+   "citation": "Pedersen G.A., Granby K. et al. Danish project on PFAS in paper and board, migration from microwaved paper plates (Lerch et al. 2022 data).",
+   "url": "https://efsa.europa.eu/sites/default/files/2023-01/20%20%E2%80%93%20DK%2C%20Project%20on%20PFAS%20in%20paper%20and%20board%2C%20G.%20A.%20Pedersen.pdf"
+  },
+  "S63": {
+   "citation": "US FDA (2024). PFAS used in grease-proofing agents for food packaging no longer being sold in the US.",
+   "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-announces-pfas-used-grease-proofing-agents-food-packaging-no-longer-being-sold-us"
+  },
+  "S64": {
+   "citation": "Begley T.H. et al. (2005). Perfluorochemicals in food contact paper, microwave popcorn bag migration (FDA study).",
+   "url": "https://static.ewg.org/reports/2022/pfas-fda-timeline/2005-FDA-study.pdf"
+  },
+  "S65": {
+   "citation": "Salon (2023). Conagra statement on removing PFAS from Act II popcorn bags in 2022.",
+   "url": "https://salon.com/2023/03/31/your-microwave-popcorn-bags-are-full-of-harmful-forever-chemicals"
+  },
+  "S66": {
+   "citation": "Packaging Dive (2024). Hot Pockets removes microwave crisping sleeves.",
+   "url": "https://www.packagingdive.com/news/packaging-innovations-hot-pockets-overtone-henkel/728876/"
+  },
+  "S67": {
+   "citation": "UEA research portal (1992). Residues of the epoxy adhesive component BADGE in microwave susceptor foods.",
+   "url": "https://research-portal.uea.ac.uk/en/publications/detection-of-residues-of-the-epoxy-adhesive-component-bisphenol-a/"
+  },
+  "S68": {
+   "citation": "Stouffer's FAQ (Nestle USA): trays without black pigment, single-serve trays changed to paper, pressed paper trays.",
+   "url": "https://www.goodnes.com/stouffers/faq"
+  },
+  "S69": {
+   "citation": "Lean Cuisine FAQ (Nestle USA): plastic trays, times based on 1100 W.",
+   "url": "https://www.goodnes.com/lean-cuisine/faq"
+  },
+  "S70": {
+   "citation": "Minute Rice FAQ: cups and bowls are plastic #5 and BPA free.",
+   "url": "https://minuterice.com/faqs/other/"
+  },
+  "S71": {
+   "citation": "Anchor Packaging. Heat containers (black PP, microwave safe to 230 F, no oven rating).",
+   "url": "https://www.anchorpackaging.com/wp-content/uploads/2014/04/Ad_HeatContainers_Spread2.pdf"
+  },
+  "S72": {
+   "citation": "ASTM D7611 resin identification code (number in a solid triangle; 1 PETE, 5 PP, 6 PS).",
+   "url": "https://sn.astm.org/node/1227/printable/print"
+  },
+  "S73": {
+   "citation": "Genpak. Are containers microwave safe (PP generally yes, APET and foam no).",
+   "url": "https://www.genpak.com/environment/are-containers-microwave-safe/"
+  },
+  "S74": {
+   "citation": "Sonoco. Trays and bowls (CPET, PP, APET; natural CPET tray for Stouffer's).",
+   "url": "https://sonoco.com/products/consumer-packaging/rigid-plastic-packaging/trays-bowls"
+  },
+  "S75": {
+   "citation": "SGS (2021). California AB 1200 regulates PFAS in plant-fibre food packaging (100 ppm total organic fluorine).",
+   "url": "https://www.sgs.com/en/news/2021/10/safeguards-14021-california-usa-regulates-pfas-in-certain-food-packaging"
+  },
+  "S76": {
+   "citation": "Huang L., Jolliet O. (2019). A combined quantitative property-property relationship (QPPR) for estimating packaging-food and solid material-water partition coefficients of organic compounds. Sci Total Environ 658:493-500. doi:10.1016/j.scitotenv.2018.12.062",
+   "url": "https://doi.org/10.1016/j.scitotenv.2018.12.062"
+  },
+  "S77": {
+   "citation": "Ernstoff A.S., Fantke P., Huang L., Jolliet O. (2017). High-throughput migration modelling for estimating exposure to chemicals in food packaging in screening and prioritization tools. Food Chem Toxicol 109(1):428-438. doi:10.1016/j.fct.2017.09.024",
+   "url": "https://doi.org/10.1016/j.fct.2017.09.024"
+  },
+  "S78": {
+   "citation": "Huang L., Fantke P., Ernstoff A., Jolliet O. (2017). A quantitative property-property relationship for the internal diffusion coefficients of organic compounds in solid materials. Indoor Air 27(6):1128-1140. doi:10.1111/ina.12395",
+   "url": "https://doi.org/10.1111/ina.12395"
+  },
+  "S79": {
+   "citation": "Vaferi B. et al. (2025). Machine learning prediction of polymer-food partition coefficients (title to confirm). Sci Rep 15. Supplementary Table S1 (1,847 rows with GBR predictions). doi:10.1038/s41598-025-92459-x",
+   "url": "https://doi.org/10.1038/s41598-025-92459-x"
+  },
+  "S80": {
+   "citation": "The Good Scents Company. Tris(2,4-di-tert-butylphenyl) phosphite, XlogP3-AA 15.50 (estimated).",
+   "url": "https://www.thegoodscentscompany.com/data/rw1313591.html"
+  },
+  "S81": {
+   "citation": "Commission Regulation (EU) No 10/2011 on plastic materials and articles intended to come into contact with food, Annex III (food simulants A 10 % ethanol, D1 50 % ethanol, D2 vegetable oil) and Annex V (95 % ethanol as substitute test for D2).",
+   "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32011R0010"
+  },
+  "S82": {
+   "citation": "BfR (2019). Do not use 'bamboo ware' tableware for hot drinks and meals. Press release, 25 November 2019 (melamine-formaldehyde resin with bamboo fibre filler; not for heating food in the microwave).",
+   "url": "https://www.bfr.bund.de/en/press-release/do-not-use-bamboo-ware-tableware-for-hot-drinks-and-meals/"
+  }
+ },
+ "kpf": {
+  "coefficients": {
+   "b0": -1.36,
+   "b_kow": 1.06,
+   "b_etoh": -0.014,
+   "b_kow_etoh": -0.0066,
+   "b_invt": 866.0
+  },
+  "material_offsets": {
+   "Average HDPE/LDPE": 0.15,
+   "Carbohydrates": -0.55,
+   "Ethylene-propylene copolymer": -0.11,
+   "Ethylene-vinyl acetate copolymer (EVA)": 0.58,
+   "High-density polyethylene (HDPE)": 0.035,
+   "Ionomer (Surlyn 1652, 1702)": -0.027,
+   "Linear low-density polyethylene (LLDPE)": -1.21,
+   "Low-density polyethylene (LDPE)": 0.0,
+   "Nylon 6": -0.92,
+   "Poly 2-hydroxyethylmethacrylate": 0.39,
+   "Polycaprolactone related polymers": 0.85,
+   "Polydimethylsiloxane (PDMS)": 0.01,
+   "Polyethylene terephthalate (PET)": -0.892,
+   "Polyoxymethylene (POM)": -0.14,
+   "Polypropylene (PP) homopolymer": -0.5,
+   "Polystyrene (PS)": 0.84,
+   "Polyvinyl chloride (PVC)": 0.49,
+   "Silicone rubber": 0.39,
+   "Starch, Cellulose": -1.83
+  },
+  "domain": [
+   {
+    "etoh_low": 0.0,
+    "etoh_high": 20.0,
+    "logkow_max": 8.91
+   },
+   {
+    "etoh_low": 20.0,
+    "etoh_high": 60.0,
+    "logkow_max": 10.16
+   },
+   {
+    "etoh_low": 60.0,
+    "etoh_high": 90.0,
+    "logkow_max": 11.15
+   },
+   {
+    "etoh_low": 90.0,
+    "etoh_high": 100.0,
+    "logkow_max": 18.10494085
+   }
+  ]
+ },
+ "huang2017": {
+  "intercept": 6.39,
+  "b_logmw": -2.49,
+  "beta_invt": -3486.0
+ }
+}

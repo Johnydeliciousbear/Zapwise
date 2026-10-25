@@ -1,0 +1,659 @@
+{
+ "single": {
+  "text": "MICROWAVE DIRECTIONS\nCooking times based on a 1100 watt microwave oven. Ovens vary; adjust time as needed.\n1. Cut film to vent.\n2. Cook on HIGH 3 1/2 minutes.\n3. Stir sauce and re-cover.\n4. Cook on HIGH 1 1/2 to 2 1/2 minutes.\n5. Let stand 1 minute. Product will be hot!\nCONVENTIONAL OVEN 375°F\nRemove film. Bake 40-45 minutes.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 210,
+     "time_s_max": null
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 90,
+     "time_s_max": 150
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null,
+   "oven_text": "CONVENTIONAL OVEN 375°F. Remove film. Bake 40-45 minutes.",
+   "notes": []
+  }
+ },
+ "table_lines": {
+  "text": "Microwave: Place bag flat in microwave, this side up. Cook on HIGH:\n1200 watts 5 1/2 min.\n1000 watts 6 min.\n800 watts 7 min.\nBelow 800 watts, use stovetop directions.\nLet stand 1 to 2 minutes. Carefully hold corners and tear open.",
+  "expected": {
+   "ref_watt": 1200,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "cook_table"
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": 120
+    },
+    {
+     "kind": "action"
+    }
+   ],
+   "watt_table": [
+    {
+     "watt": 1200,
+     "lo": 330,
+     "hi": null
+    },
+    {
+     "watt": 1000,
+     "lo": 360,
+     "hi": null
+    },
+    {
+     "watt": 800,
+     "lo": 420,
+     "hi": null
+    }
+   ],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": 800,
+   "oven_text": "",
+   "notes": []
+  }
+ },
+ "table_inline": {
+  "text": "Microwave on HIGH: 1200W 5-5 1/2 MIN | 1000W 7-7 1/2 MIN | 700W 8 1/2-9 MIN. Let stand 1 minute in microwave.",
+  "expected": {
+   "ref_watt": 1200,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "cook_table"
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [
+    {
+     "watt": 1200,
+     "lo": 300,
+     "hi": 330
+    },
+    {
+     "watt": 1000,
+     "lo": 420,
+     "hi": 450
+    },
+    {
+     "watt": 700,
+     "lo": 510,
+     "hi": 540
+    }
+   ],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null,
+   "oven_text": "",
+   "notes": []
+  }
+ },
+ "alt_line": {
+  "text": "Microwave (1000 watts): Stand bag upright. Cook on HIGH 5 1/2 to 6 minutes. 700 W: 7 min. Let stand 1 minute.",
+  "expected": {
+   "ref_watt": 1000,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "cook_table"
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [
+    {
+     "watt": 1000,
+     "lo": 330,
+     "hi": 360
+    },
+    {
+     "watt": 700,
+     "lo": 420,
+     "hi": null
+    }
+   ],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null,
+   "oven_text": "",
+   "notes": []
+  }
+ },
+ "clock": {
+  "text": "Fill to line with water. Microwave on HIGH for 2:15. Stir and let sit 1 minute.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 135,
+     "time_s_max": null
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null,
+   "oven_text": "",
+   "notes": [
+    "no wattage found; using 1100 W"
+   ]
+  }
+ },
+ "seconds": {
+  "text": "Squeeze pouch to separate rice. Tear 2 inch vent. Heat on HIGH 90 seconds.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 90,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null,
+   "oven_text": "",
+   "notes": [
+    "no wattage found; using 1100 W"
+   ]
+  }
+ },
+ "min_sec": {
+  "text": "Microwave 1 minute 30 seconds. Stir well.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "cook",
+     "time_s": 90,
+     "time_s_max": null
+    },
+    {
+     "kind": "action"
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null,
+   "oven_text": "",
+   "notes": [
+    "no wattage found; using 1100 W"
+   ]
+  }
+ },
+ "do_not": {
+  "text": "DO NOT MICROWAVE. Oven bake only, raw chicken. Preheat oven to 375°F. Bake 30-35 minutes to 165°F.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [],
+   "watt_table": [],
+   "completeness": "none",
+   "do_not_microwave": true,
+   "min_watt": null,
+   "oven_text": "Preheat oven to 375°F. Bake 30-35 minutes to 165°F.",
+   "notes": [
+    "label says not to microwave"
+   ]
+  }
+ },
+ "do_not_alt_row": {
+  "text": "Not for microwave ovens above 1200 watts. Cook 5 minutes. 700 W: 7 min.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "cook",
+     "time_s": 300,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": true,
+   "min_watt": null,
+   "oven_text": "",
+   "notes": [
+    "label says not to microwave",
+    "no wattage found; using 1100 W"
+   ]
+  }
+ },
+ "internal_temp": {
+  "text": "Cook on HIGH 4 minutes. Stir. Cook on HIGH 2 to 3 minutes or until hot (165°F). Let stand 2 minutes.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "cook",
+     "time_s": 240,
+     "time_s_max": null
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 120,
+     "time_s_max": 180
+    },
+    {
+     "kind": "stand",
+     "time_s": 120,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null,
+   "oven_text": "",
+   "notes": [
+    "no wattage found; using 1100 W"
+   ]
+  }
+ },
+ "ocr_noise": {
+  "text": "MICROWAVE: 1100W\nCOOK 4 MIN. STIR\nCOOK 1 1/2 MIN.\nSTAND 1 MIN",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "cook",
+     "time_s": 240,
+     "time_s_max": null
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 90,
+     "time_s_max": null
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null,
+   "oven_text": "",
+   "notes": []
+  }
+ },
+ "real_tj_birria": {
+  "text": "HEATING INSTRUCTIONS: HEAT FROM FROZEN\nMICROWAVE (1200 watt): Microwave heat times may vary depending on oven wattage. Heat from frozen. Remove outer packaging and carefully puncture film. Heat on high for 2 1/2 minutes. Carefully remove film and stir. Heat for an additional 2 1/2 minutes or until product reaches 165°F.\nSTOVETOP: Thaw product in the refrigerator overnight. Pour contents of tray into a pot. Bring to a boil over medium heat.",
+  "expected": {
+   "ref_watt": 1200,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 150,
+     "time_s_max": null
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 150,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_tj_bulgogi": {
+  "text": "MICROWAVE (1200 watt) Microwave cook times may vary depending on oven wattage. Do not remove the seal film before cooking. Cook on high for 4 to 5 minutes or until an internal temperature of 165°F is reached with a food thermometer. The film may balloon slightly. Let stand for 1 to 2 minutes. Carefully remove the film, stir gently and enjoy.",
+  "expected": {
+   "ref_watt": 1200,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 240,
+     "time_s_max": 300
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": 120
+    },
+    {
+     "kind": "action"
+    }
+   ],
+   "watt_table": [],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_tj_just_chicken": {
+  "text": "HEATING INSTRUCTIONS: MICROWAVE (1200 WATT): Microwave heat times may vary depending on oven wattage. Puncture film and microwave on high for 1 1/2 to 2 minutes or until heated through.",
+  "expected": {
+   "ref_watt": 1200,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "cook",
+     "time_s": 90,
+     "time_s_max": 120
+    }
+   ],
+   "watt_table": [],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_tj_rosemary": {
+  "text": "HEATING INSTRUCTIONS: CONVENTIONAL OVEN (Preferred method): Preheat oven to 350°F. Lift one corner of film. Place tray on a baking sheet on center rack of oven. Heat 20 to 25 minutes or to an internal temperature of 160°F.\nMICROWAVE (1200 watt): Microwave cook times may vary depending on oven wattage. Place tray in microwave and heat 2 to 3 minutes on HIGH; let sit 1 minute before removing film.",
+  "expected": {
+   "ref_watt": 1200,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "cook",
+     "time_s": 120,
+     "time_s_max": 180
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_tj_nuggets_seconds": {
+  "text": "HEATING INSTRUCTIONS: CONVENTIONAL OVEN Preheat oven to 425°F. Heat for 10 to 12 minutes, flipping halfway through.\nMICROWAVE (1200 watt): Place a single layer of nuggets on a microwave-safe plate. Microwave on high for 50 seconds. Let stand for 2 to 3 minutes before serving.\nAIR FRYER: Heat for 6 to 8 minutes.",
+  "expected": {
+   "ref_watt": 1200,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "cook",
+     "time_s": 50,
+     "time_s_max": null
+    },
+    {
+     "kind": "stand",
+     "time_s": 120,
+     "time_s_max": 180
+    }
+   ],
+   "watt_table": [],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_gg_mashed": {
+  "text": "Heat & Serve\n1. Puncture film and microwave on HIGH for 3 minutes.\n2. Carefully remove film and stir.\n3. Microwave uncovered 1 minute longer or until hot.\n4. Let stand 1 minute before serving.\nMicrowave ovens may vary; adjust heating times accordingly.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "cook",
+     "time_s": 180,
+     "time_s_max": null
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 60,
+     "time_s_max": null
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_gg_cavatappi": {
+  "text": "Microwave\n1. Remove film. Cover with paper towel.\n2. Microwave on HIGH for 2 minutes; stir and replace paper towel.\n3. Microwave 1½ to 2½ minutes longer or until hot.\nCaution: Package and contents will be hot.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 120,
+     "time_s_max": null
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 90,
+     "time_s_max": 150
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_factor_intervals": {
+  "text": "MICROWAVE COOKING INSTRUCTION: 1. Remove outer sleeve and pierce film with a fork. 2. Microwave on HIGH for 2 minutes. If needed, continue cooking in 30 second intervals until the internal temperature reaches 165°F. 3. Let stand for 2 minutes. Carefully remove film.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 120,
+     "time_s_max": null
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "stand",
+     "time_s": 120,
+     "time_s_max": null
+    },
+    {
+     "kind": "action"
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_readymeals_teriyaki": {
+  "text": "HEATING INSTRUCTIONS: MICROWAVE: Remove lid. Cover tray and place in the center of microwave. Heat on High for 3–3.5 minutes or to 165°F. Let rest for 1 minute before serving. Note: The power of microwave ovens varies. You may have to adjust cooking time.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 180,
+     "time_s_max": 210
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_readymeals_ziti": {
+  "text": "MICROWAVE: Remove lid. Cover tray and place in the center of microwave. Heat on High for 3.5–4 minutes or to 165°F. Let rest for 1 minute before serving.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 210,
+     "time_s_max": 240
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_deli_pork_bun": {
+  "text": "READY TO HEAT: MICROWAVE TIMES MAY VARY. REMOVE LID AND MICROWAVE ON HIGH 30 SEC-1 MINUTES OR UNTIL THE MEAL REACHES AN INTERNAL TEMP OF 165F.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": true,
+   "steps": [
+    {
+     "kind": "cook",
+     "time_s": 30,
+     "time_s_max": 60
+    }
+   ],
+   "watt_table": [],
+   "completeness": "partial",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ },
+ "real_pfchangs_egg_rolls": {
+  "text": "MICROWAVE OVEN\n1 Place 4 egg rolls on a small microwave-safe plate; cover with damp paper towel.\n2 Microwave on HIGH 1 to 1 ½ minutes. HANDLE CAREFULLY; THEY'RE HOT! Remove paper towel and let stand 1 minute; serve and enjoy!\nSIGNATURE SAUCE PACKET: DO NOT MICROWAVE. Place sauce packet in warm water to thaw.\nMicrowave directions developed with 1100-watt microwave ovens. Appliances vary.",
+  "expected": {
+   "ref_watt": 1100,
+   "ref_watt_assumed": false,
+   "steps": [
+    {
+     "kind": "action"
+    },
+    {
+     "kind": "cook",
+     "time_s": 60,
+     "time_s_max": 90
+    },
+    {
+     "kind": "stand",
+     "time_s": 60,
+     "time_s_max": null
+    }
+   ],
+   "watt_table": [],
+   "completeness": "complete",
+   "do_not_microwave": false,
+   "min_watt": null
+  }
+ }
+}

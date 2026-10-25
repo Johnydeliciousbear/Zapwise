@@ -1,0 +1,7 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "ZapWise (full app)", "request": "launch", "type": "dart", "program": "lib/main.dart" },
+    { "name": "ZapWise engine check (no UI)", "request": "launch", "type": "dart", "program": "lib/main_backend_check.dart" }
+  ]
+}

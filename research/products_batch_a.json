@@ -1,0 +1,1853 @@
+{
+  "products": [
+    {
+      "id": "zw-101",
+      "brand": "Banquet",
+      "product_name": "Mega Bowls Chicken Fried Beef Steak",
+      "net_weight": {
+        "oz": 14,
+        "g": 396
+      },
+      "upc": "031000126117",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cook on HIGH, no need to vent film",
+            "time_s": 240,
+            "time_s_max": null
+          },
+          {
+            "action": "stir and replace film",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 150,
+            "time_s_max": 180
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand",
+            "time_s": 120,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "375°F, do not remove film, on baking sheet 50-55 min, stand 2 min.",
+      "container": {
+        "description": "Film-covered bowl; same bowl goes in the 375°F oven with film left on. Material not stated on label. Brand-level only: Conagra said c. 2009 that nearly all frozen meal trays for Healthy Choice, Banquet, Kid Cuisine and Marie Callender's used 30 to 40 percent post-consumer recycled plastic (https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design), described as a dual-ovenable monolayer rPET tray (https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html). Not confirmed for this current SKU.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "one bowl (396g)",
+        "servings_per_container": 1,
+        "calories": 540,
+        "total_fat_g": 30
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/10998562/other/instructions",
+        "https://smartlabel.labelinsight.com/product/10998562/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)"
+      ]
+    },
+    {
+      "id": "zw-102",
+      "brand": "Banquet",
+      "product_name": "Mega Bowls Chicken Fajita Bowl",
+      "net_weight": {
+        "oz": 14,
+        "g": 396
+      },
+      "upc": "031000126131",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cook on HIGH, no need to vent film",
+            "time_s": 240,
+            "time_s_max": null
+          },
+          {
+            "action": "stir and replace film",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 90,
+            "time_s_max": 120
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F), stir",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "375°F, do not remove film, on baking sheet 52-55 min, stand 2 min, stir.",
+      "container": {
+        "description": "Film-covered bowl; same bowl goes in the 375°F oven with film left on. Material not stated on label. Brand-level only: Conagra said c. 2009 that nearly all frozen meal trays for Healthy Choice, Banquet, Kid Cuisine and Marie Callender's used 30 to 40 percent post-consumer recycled plastic (https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design), described as a dual-ovenable monolayer rPET tray (https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html). Not confirmed for this current SKU.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "one bowl (396g)",
+        "servings_per_container": 1,
+        "calories": 390,
+        "total_fat_g": 10
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/9615098/other/instructions",
+        "https://smartlabel.labelinsight.com/product/9615098/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)",
+        "no microwave stand time listed (oven directions give 2 min)"
+      ]
+    },
+    {
+      "id": "zw-103",
+      "brand": "Banquet",
+      "product_name": "Mega Bowls Chicken Bacon Alfredo",
+      "net_weight": {
+        "oz": 13,
+        "g": 368
+      },
+      "upc": "031000009236",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cook on HIGH, no need to vent film",
+            "time_s": 180,
+            "time_s_max": null
+          },
+          {
+            "action": "stir and replace film",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 120,
+            "time_s_max": 210
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand, then stir",
+            "time_s": 120,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "375°F, do not remove film, on baking sheet 40-45 min, stand 2 min, stir.",
+      "container": {
+        "description": "Film-covered bowl; same bowl goes in the 375°F oven with film left on. Material not stated on label. Brand-level only: Conagra said c. 2009 that nearly all frozen meal trays for Healthy Choice, Banquet, Kid Cuisine and Marie Callender's used 30 to 40 percent post-consumer recycled plastic (https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design), described as a dual-ovenable monolayer rPET tray (https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html). Not confirmed for this current SKU.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 bowl (368g)",
+        "servings_per_container": 1,
+        "calories": 490,
+        "total_fat_g": 18
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/15120999/other/instructions",
+        "https://smartlabel.labelinsight.com/product/15120999/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)"
+      ]
+    },
+    {
+      "id": "zw-104",
+      "brand": "Banquet",
+      "product_name": "Classic Dinner Salisbury Steak Meal",
+      "net_weight": {
+        "oz": 11.88,
+        "g": 337
+      },
+      "upc": "031000007300",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cut and remove film from dessert compartment",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 360,
+            "time_s_max": 450
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand, then stir potatoes",
+            "time_s": 120,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "350°F, cut and remove film from dessert, on baking sheet 33-35 min, stand 2 min, stir potatoes.",
+      "container": {
+        "description": "Multi-compartment film-covered tray with a dessert compartment; same tray goes in the 350°F oven. Material not stated on label. Brand-level only: Conagra said c. 2009 that nearly all frozen meal trays for Healthy Choice, Banquet, Kid Cuisine and Marie Callender's used 30 to 40 percent post-consumer recycled plastic (https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design), described as a dual-ovenable monolayer rPET tray (https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html). Not confirmed for this current SKU.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 meal (337g)",
+        "servings_per_container": 1,
+        "calories": 350,
+        "total_fat_g": 16
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6361412/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6361412/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)",
+        "single cook period with no mid-cook stir; label does not mention venting the entree film"
+      ]
+    },
+    {
+      "id": "zw-105",
+      "brand": "Banquet",
+      "product_name": "Salisbury Steak Meal (8 oz)",
+      "net_weight": {
+        "oz": 8,
+        "g": 227
+      },
+      "upc": "031000007454",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "slit film to vent",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 120,
+            "time_s_max": null
+          },
+          {
+            "action": "stir macaroni and cheese, replace film",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 120,
+            "time_s_max": 150
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand",
+            "time_s": 120,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "350°F, slit film, on baking sheet 26-28 min, stand 2 min.",
+      "container": {
+        "description": "Film-covered compartment tray; same tray goes in the 350°F oven. Material not stated on label. Brand-level only: Conagra said c. 2009 that nearly all frozen meal trays for Healthy Choice, Banquet, Kid Cuisine and Marie Callender's used 30 to 40 percent post-consumer recycled plastic (https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design), described as a dual-ovenable monolayer rPET tray (https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html). Not confirmed for this current SKU.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 meal (227g)",
+        "servings_per_container": 1,
+        "calories": 310,
+        "total_fat_g": 17
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/13969372/other/instructions",
+        "https://smartlabel.labelinsight.com/product/13969372/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)",
+        "fetch tool returned this page paraphrased, not verbatim; re-check step wording",
+        "side dish appears to be macaroni and cheese (from the stir step); full product name not confirmed"
+      ]
+    },
+    {
+      "id": "zw-106",
+      "brand": "Healthy Choice",
+      "product_name": "Power Bowls Buddha Bowl",
+      "net_weight": {
+        "oz": 9.65,
+        "g": 273
+      },
+      "upc": "072655011120",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cook on HIGH, no need to vent film",
+            "time_s": 240,
+            "time_s_max": 300
+          },
+          {
+            "action": "stand in microwave",
+            "time_s": 60,
+            "time_s_max": null
+          },
+          {
+            "action": "check food is cooked thoroughly, stir",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not cook in conventional or toaster ovens",
+          "Do not use if film seal is broken",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Film-sealed bowl. Label says do not cook in conventional or toaster ovens, so this container is microwave-only. Material not stated. Brand-level 2009 statement on Healthy Choice trays (30 to 40 percent PCR plastic): https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design (older tray formats; not confirmed for this SKU).",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 meal (273g)",
+        "servings_per_container": 1,
+        "calories": 320,
+        "total_fat_g": 11
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/11502888/other/instructions",
+        "https://smartlabel.labelinsight.com/product/11502888/nutrition"
+      ],
+      "data_flags": []
+    },
+    {
+      "id": "zw-107",
+      "brand": "Healthy Choice",
+      "product_name": "Simply Steamers Grilled Chicken Pesto & Vegetables",
+      "net_weight": {
+        "oz": 9.15,
+        "g": 259
+      },
+      "upc": "072655001275",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cook on HIGH, no need to vent film",
+            "time_s": 240,
+            "time_s_max": 300
+          },
+          {
+            "action": "stir steamed food into sauce bowl",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "check food is cooked thoroughly",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not cook in conventional or toaster ovens",
+          "Do not use if film seal is broken",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Two-part steamer: steamed food sits above a separate sauce bowl and is stirred into it after cooking. Label says do not cook in conventional or toaster ovens, so this container is microwave-only. Material not stated. Brand-level 2009 statement on Healthy Choice trays (30 to 40 percent PCR plastic): https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design (older tray formats; not confirmed for this SKU).",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 meal (259g)",
+        "servings_per_container": 1,
+        "calories": 200,
+        "total_fat_g": 5
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6453644/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6453644/nutrition"
+      ],
+      "data_flags": [
+        "no stand time listed"
+      ]
+    },
+    {
+      "id": "zw-108",
+      "brand": "Healthy Choice",
+      "product_name": "Simply Steamers Chicken & Vegetable Stir Fry, 3 Pack",
+      "net_weight": {
+        "oz": 27.75,
+        "g": 787
+      },
+      "upc": "072655000780",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cook one meal on HIGH, no need to vent film",
+            "time_s": 240,
+            "time_s_max": 270
+          },
+          {
+            "action": "stir steamed food into sauce bowl",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "check food is cooked thoroughly",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not cook in conventional or toaster ovens",
+          "Do not use if film seal is broken",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Two-part steamer (steamed food over a sauce bowl), 3 per carton. Label says do not cook in conventional or toaster ovens, so this container is microwave-only. Material not stated. Brand-level 2009 statement on Healthy Choice trays (30 to 40 percent PCR plastic): https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design (older tray formats; not confirmed for this SKU).",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 Meal (262g)",
+        "servings_per_container": 3,
+        "calories": 190,
+        "total_fat_g": 4
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/4580876/other/instructions",
+        "https://smartlabel.labelinsight.com/product/4580876/nutrition"
+      ],
+      "data_flags": [
+        "multipack: net weight is for 3 meals of 9.25 oz each; directions are per meal",
+        "no stand time listed",
+        "UPC is for the 3-pack; single-meal UPC not collected"
+      ]
+    },
+    {
+      "id": "zw-109",
+      "brand": "Healthy Choice",
+      "product_name": "Cafe Steamers General Tso's Spicy Chicken, 3 Pack",
+      "net_weight": {
+        "oz": 30.9,
+        "g": 876
+      },
+      "upc": "072655001909",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cook one meal on HIGH, no need to vent film",
+            "time_s": 240,
+            "time_s_max": 270
+          },
+          {
+            "action": "stir steamed food into sauce bowl",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "check food is cooked thoroughly",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not cook in conventional or toaster ovens",
+          "Do not use if film seal is broken",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Two-part steamer (steamed food over a sauce bowl), 3 per carton. Label says do not cook in conventional or toaster ovens, so this container is microwave-only. Material not stated. Brand-level 2009 statement on Healthy Choice trays (30 to 40 percent PCR plastic): https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design (older tray formats; not confirmed for this SKU).",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 meal (292g)",
+        "servings_per_container": 3,
+        "calories": 290,
+        "total_fat_g": 3.5
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6497763/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6497763/nutrition"
+      ],
+      "data_flags": [
+        "multipack: net weight is for 3 meals; per-meal weight not printed in fetched text (serving 292 g)",
+        "no stand time listed",
+        "UPC is for the 3-pack; single-meal UPC not collected"
+      ]
+    },
+    {
+      "id": "zw-110",
+      "brand": "Marie Callender's",
+      "product_name": "Cheesy Bacon Chicken Dinner",
+      "net_weight": {
+        "oz": 12,
+        "g": 340
+      },
+      "upc": "021131009991",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "slit film to vent",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 240,
+            "time_s_max": null
+          },
+          {
+            "action": "rotate chicken clockwise one half turn, re-cover",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 180,
+            "time_s_max": 240
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand",
+            "time_s": 120,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "350°F, slit film, on baking sheet 40-45 min, stand 2 min.",
+      "container": {
+        "description": "Film-covered dinner tray; same tray goes in the 350°F oven. Material not stated on label. Brand-level only: Conagra said c. 2009 that nearly all frozen meal trays for Healthy Choice, Banquet, Kid Cuisine and Marie Callender's used 30 to 40 percent post-consumer recycled plastic (https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design), described as a dual-ovenable monolayer rPET tray (https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html). Not confirmed for this current SKU.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": null,
+        "servings_per_container": null,
+        "calories": null,
+        "total_fat_g": null
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/12573547/other/instructions",
+        "https://smartlabel.labelinsight.com/product/12573547/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)",
+        "nutrition page returned a server error on two attempts",
+        "unusual step: rotate the chicken (not the tray) half a turn"
+      ]
+    },
+    {
+      "id": "zw-111",
+      "brand": "Marie Callender's",
+      "product_name": "Country Fried Chicken & Gravy Dinner",
+      "net_weight": {
+        "oz": 13.1,
+        "g": 371
+      },
+      "upc": "021131905330",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cut film to vent",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 270,
+            "time_s_max": null
+          },
+          {
+            "action": "stir potatoes and re-cover",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 90,
+            "time_s_max": 150
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand, then stir potatoes and corn",
+            "time_s": 120,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "350°F, cut film to vent, on baking sheet 40-45 min, stand 2 min, stir potatoes and corn.",
+      "container": {
+        "description": "Film-covered compartment tray; same tray goes in the 350°F oven. Material not stated on label. Brand-level only: Conagra said c. 2009 that nearly all frozen meal trays for Healthy Choice, Banquet, Kid Cuisine and Marie Callender's used 30 to 40 percent post-consumer recycled plastic (https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design), described as a dual-ovenable monolayer rPET tray (https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html). Not confirmed for this current SKU.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": null,
+        "servings_per_container": null,
+        "calories": null,
+        "total_fat_g": null
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/12155417/other/instructions",
+        "https://smartlabel.labelinsight.com/product/12155417/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)",
+        "nutrition page returned a server error on two attempts"
+      ]
+    },
+    {
+      "id": "zw-112",
+      "brand": "Marie Callender's",
+      "product_name": "Kansas City Style Pulled Pork Mac & Cheese Bowl",
+      "net_weight": {
+        "oz": 11,
+        "g": 312
+      },
+      "upc": "021131000219",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cook on HIGH, no need to vent film",
+            "time_s": 240,
+            "time_s_max": null
+          },
+          {
+            "action": "stir and re-cover",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 30,
+            "time_s_max": 90
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand",
+            "time_s": 120,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "375°F, do not remove film, on baking sheet 45-50 min, stand 2 min.",
+      "container": {
+        "description": "Film-covered bowl; same bowl goes in the 375°F oven with film left on. Material not stated on label. Brand-level only: Conagra said c. 2009 that nearly all frozen meal trays for Healthy Choice, Banquet, Kid Cuisine and Marie Callender's used 30 to 40 percent post-consumer recycled plastic (https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design), described as a dual-ovenable monolayer rPET tray (https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html). Not confirmed for this current SKU.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 meal (312g)",
+        "servings_per_container": 1,
+        "calories": 420,
+        "total_fat_g": 14
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/18110872/other/instructions",
+        "https://smartlabel.labelinsight.com/product/18110872/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)"
+      ]
+    },
+    {
+      "id": "zw-113",
+      "brand": "Marie Callender's",
+      "product_name": "Creamy Chicken & Dumplings Bowl",
+      "net_weight": {
+        "oz": 12,
+        "g": 340
+      },
+      "upc": "021131500856",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "cook on HIGH, no need to vent film",
+            "time_s": 210,
+            "time_s_max": null
+          },
+          {
+            "action": "stir and re-cover",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 90,
+            "time_s_max": 150
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F), stir",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "375°F, do not remove film, on baking sheet 50-55 min, stand 2 min, stir.",
+      "container": {
+        "description": "Film-covered bowl; same bowl goes in the 375°F oven with film left on. Material not stated on label. Brand-level only: Conagra said c. 2009 that nearly all frozen meal trays for Healthy Choice, Banquet, Kid Cuisine and Marie Callender's used 30 to 40 percent post-consumer recycled plastic (https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design), described as a dual-ovenable monolayer rPET tray (https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html). Not confirmed for this current SKU.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 meal (340g)",
+        "servings_per_container": 1,
+        "calories": 360,
+        "total_fat_g": 14
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/17457319/other/instructions",
+        "https://smartlabel.labelinsight.com/product/17457319/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)",
+        "no microwave stand time listed (oven directions give 2 min)"
+      ]
+    },
+    {
+      "id": "zw-114",
+      "brand": "Hungry-Man",
+      "product_name": "Country Fried Chicken Dinner",
+      "net_weight": {
+        "oz": 16,
+        "g": 454
+      },
+      "upc": "051000118608",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "remove film from dessert, slit film over chicken",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 270,
+            "time_s_max": null
+          },
+          {
+            "action": "stir potatoes and re-cover",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 150,
+            "time_s_max": 210
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand, then stir potatoes",
+            "time_s": 60,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "350°F, remove dessert film, slit film over chicken, on baking sheet 40-45 min, stand 2 min, stir potatoes.",
+      "container": {
+        "description": "Film-covered compartment tray with a dessert compartment; same tray goes in the 350°F oven. Material not stated on label. Hungry-Man came to Conagra with Pinnacle Foods (2018), so the 2009 Conagra tray statements do not cover it.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 package (454g)",
+        "servings_per_container": 1,
+        "calories": 530,
+        "total_fat_g": 27
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6319477/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6319477/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)",
+        "fetch tool returned the steps paraphrased, not verbatim; re-check wording",
+        "UPC prefix 051000 differs from the other Hungry-Man item (658276); recorded as shown"
+      ]
+    },
+    {
+      "id": "zw-115",
+      "brand": "Hungry-Man",
+      "product_name": "Combos Meatloaf & BBQ Sauced Chicken",
+      "net_weight": {
+        "oz": 15,
+        "g": 425
+      },
+      "upc": "658276202484",
+      "category": "frozen_tray",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "slit film to vent",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 240,
+            "time_s_max": null
+          },
+          {
+            "action": "flip meatloaf patty, stir mashed potatoes, re-cover",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 270,
+            "time_s_max": 300
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand",
+            "time_s": 120,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not prepare in toaster oven",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": "350°F, slit film, on baking sheet 43-46 min, stand 2 min.",
+      "container": {
+        "description": "Film-covered compartment tray; same tray goes in the 350°F oven. Material not stated on label. Hungry-Man came to Conagra with Pinnacle Foods (2018), so the 2009 Conagra tray statements do not cover it.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 package (425g)",
+        "servings_per_container": 1,
+        "calories": 540,
+        "total_fat_g": 26
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/17450027/other/instructions",
+        "https://smartlabel.labelinsight.com/product/17450027/nutrition"
+      ],
+      "data_flags": [
+        "inferred CPET (oven-safe tray)"
+      ]
+    },
+    {
+      "id": "zw-116",
+      "brand": "P.F. Chang's",
+      "product_name": "Whole Grain Brown Rice (frozen microwave pouches)",
+      "net_weight": {
+        "oz": 16,
+        "g": 454
+      },
+      "upc": "031000700065",
+      "category": "pouch",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "place one rice pouch in microwave seam side up; do not puncture (self-venting)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH; bag inflates",
+            "time_s": 150,
+            "time_s_max": null
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand, then serve",
+            "time_s": 60,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not puncture (bag self-vents)",
+          "Keep frozen. Do not thaw.",
+          "Cook only one at a time"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Self-venting microwave pouch; carton appears to hold 2 pouches. Material not stated.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 Microwaveable Bag (227g)",
+        "servings_per_container": 2,
+        "calories": 340,
+        "total_fat_g": 2.5
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/5005127/other/instructions",
+        "https://smartlabel.labelinsight.com/product/5005127/nutrition"
+      ],
+      "data_flags": [
+        "carton likely holds 2 pouches (serving = 1 microwaveable bag, 227 g, 2 servings); check package",
+        "'Home Menu' line name not shown on the SmartLabel page",
+        "stovetop directions on label: 2 tbsp water in saucepan, covered on medium 6-7 min, stand 1 min."
+      ]
+    },
+    {
+      "id": "zw-117",
+      "brand": "P.F. Chang's",
+      "product_name": "Signature Fried Rice (frozen steam bag)",
+      "net_weight": {
+        "oz": 16,
+        "g": 454
+      },
+      "upc": "031000198763",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "place bag THIS SIDE UP, lay flat; do not puncture (self-venting)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH; bag inflates",
+            "time_s": 300,
+            "time_s_max": 330
+          },
+          {
+            "action": "check food is cooked thoroughly (165°F)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand, then serve",
+            "time_s": 60,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not puncture (bag self-vents)",
+          "Cook only one bag at a time",
+          "Keep frozen. Do not thaw."
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Self-venting microwave bag printed 'This Side Up, Lay Flat When Microwaving', 'Tear Here', 'Pick Up Here'. Material not stated.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 cup (196g)",
+        "servings_per_container": 2.5,
+        "calories": 260,
+        "total_fat_g": 3
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/18164632/other/instructions",
+        "https://smartlabel.labelinsight.com/product/18164632/nutrition"
+      ],
+      "data_flags": [
+        "servings per container listed as 'about 2.5'",
+        "stovetop directions on label: nonstick skillet, 2 tsp oil, 5-8 min stirring."
+      ]
+    },
+    {
+      "id": "zw-118",
+      "brand": "P.F. Chang's",
+      "product_name": "Chicken Fried Rice skillet meal (22 oz)",
+      "net_weight": {
+        "oz": 22,
+        "g": 624
+      },
+      "upc": "031000700003",
+      "category": "oven_only",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": null,
+        "do_not_statements": [
+          "Cook only one bag at a time",
+          "Keep frozen. Do not thaw."
+        ],
+        "instructions_completeness": "not_applicable"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Skillet-meal bag (contents are emptied into a pan). Material not stated.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 cup (211g)",
+        "servings_per_container": 3,
+        "calories": 290,
+        "total_fat_g": 6
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/18466359/other/instructions",
+        "https://smartlabel.labelinsight.com/product/18466359/nutrition"
+      ],
+      "data_flags": [
+        "stovetop-only product: label gives no microwave directions but also no explicit 'do not microwave', so do_not_microwave is null",
+        "category oven_only used for 'no microwave method'; schema has no stovetop category",
+        "servings per container listed as 'about 3'",
+        "'Home Menu' line name not shown on the SmartLabel page",
+        "stovetop directions on label: hot nonstick skillet, 1 tbsp oil, covered 4 min, then uncovered 4-6 min stirring, to 165°F."
+      ]
+    },
+    {
+      "id": "zw-119",
+      "brand": "Birds Eye",
+      "product_name": "Steamfresh Power Blend California Style",
+      "net_weight": {
+        "oz": 10.8,
+        "g": 306
+      },
+      "upc": "014500015792",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "place frozen unopened bag flat, this side up; do not pierce; remove metal rack",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 240,
+            "time_s_max": 300
+          },
+          {
+            "action": "stand",
+            "time_s": 60,
+            "time_s_max": null
+          },
+          {
+            "action": "lift by marked corners with two hands, tear at notch over dish, pour and stir",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not pierce bag",
+          "Cook only one bag at a time",
+          "Keep frozen. Do not thaw."
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Steam bag cooked flat 'this side up'; inflates and vents steam (may whistle); lift by marked corners, tear at notch. Material not stated.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 container (306g)",
+        "servings_per_container": 1,
+        "calories": 330,
+        "total_fat_g": 6
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/10671730/other/instructions",
+        "https://smartlabel.labelinsight.com/product/10671730/nutrition"
+      ],
+      "data_flags": [
+        "fetch tool returned the steps paraphrased, not verbatim; re-check wording",
+        "stovetop directions on label: 2-qt nonstick saucepan, 1/4 cup water, covered on medium 8-12 min, stand 1-2 min."
+      ]
+    },
+    {
+      "id": "zw-120",
+      "brand": "Birds Eye",
+      "product_name": "Steamfresh Power Blend Southwest Style, 4 Pack",
+      "net_weight": {
+        "oz": 50.8,
+        "g": 1440
+      },
+      "upc": "014500016898",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": 1100,
+        "steps": [
+          {
+            "action": "place one frozen unopened bag flat, this side up; do not pierce; remove metal rack",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH",
+            "time_s": 300,
+            "time_s_max": 360
+          },
+          {
+            "action": "stand (label: stand time is important for food safety)",
+            "time_s": 60,
+            "time_s_max": null
+          },
+          {
+            "action": "lift by blue-tab corners with two hands, tear at notch over dish, pour and stir",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "None given. Label says appliances vary and to adjust times.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not pierce bag",
+          "Cook only one bag at a time",
+          "Keep frozen. Do not thaw."
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Steam bag cooked flat 'this side up'; inflates and vents steam (may whistle); lift by marked corners, tear at notch. Material not stated. 4 bags per carton.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 bag (360g)",
+        "servings_per_container": 4,
+        "calories": 380,
+        "total_fat_g": 2.5
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6362189/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6362189/nutrition"
+      ],
+      "data_flags": [
+        "multipack: 4 bags of 12.7 oz (360 g); directions are per bag",
+        "label gives 1.44 kg; stored as 1440 g",
+        "stovetop directions on label: 2-qt nonstick saucepan, 2 tbsp water, covered on medium 9-14 min, stand 1-2 min."
+      ]
+    },
+    {
+      "id": "zw-121",
+      "brand": "Birds Eye",
+      "product_name": "Steamfresh Broccoli, Cauliflower & Carrots, 4 Pack",
+      "net_weight": {
+        "oz": 48,
+        "g": 1360
+      },
+      "upc": "014500015662",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {
+            "action": "remove one bag; place frozen unopened bag flat, this side up; do not pierce; remove metal rack",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH for wattage-specific time (see variants)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand (label: stand time is important for food safety)",
+            "time_s": 60,
+            "time_s_max": 120
+          },
+          {
+            "action": "lift by blue-tab corners with two hands, tear at notch over dish, pour and stir",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [
+          {
+            "wattage_w": 1200,
+            "time_s": 330,
+            "time_s_max": null,
+            "note": null
+          },
+          {
+            "wattage_w": 1000,
+            "time_s": 360,
+            "time_s_max": null,
+            "note": null
+          },
+          {
+            "wattage_w": 800,
+            "time_s": 450,
+            "time_s_max": null,
+            "note": null
+          }
+        ],
+        "low_wattage_note": "Below 800 W the label says to use stovetop directions.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not pierce bag",
+          "Microwave only one bag at a time",
+          "Keep frozen. Do not thaw."
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Steam bag cooked flat 'this side up'; inflates and vents steam (may whistle); lift by marked corners, tear at notch. Material not stated. 4 bags per carton.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "3/4 cup (84g) frozen",
+        "servings_per_container": 16,
+        "calories": 30,
+        "total_fat_g": 0
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6190170/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6190170/nutrition"
+      ],
+      "data_flags": [
+        "multipack: 4 bags of 12 oz (340 g); directions are per bag",
+        "label gives 1.36 kg; stored as 1360 g",
+        "servings per container listed as 'about 16'",
+        "stovetop stand time text is garbled on SmartLabel",
+        "fetch tool returned the steps paraphrased, not verbatim; re-check wording",
+        "same product line as zw-119/120 but uses a wattage table instead of a single 1100 W reference",
+        "stovetop directions on label: 2-qt nonstick saucepan, 1/2 cup water, covered on medium 7-8 min, drain."
+      ]
+    },
+    {
+      "id": "zw-122",
+      "brand": "Orville Redenbacher's",
+      "product_name": "Microwave Popcorn Sea Salt Made With 100% Avocado Oil, 12 Mini Bags",
+      "net_weight": {
+        "oz": 14.39,
+        "g": 408
+      },
+      "upc": "027000072875",
+      "category": "popcorn_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {
+            "action": "cook one bag on HIGH (do not use popcorn button)",
+            "time_s": 60,
+            "time_s_max": 90
+          },
+          {
+            "action": "stop when popping slows",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "open bag carefully by top corners, away from face",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "No wattage stated. Label gives a time range on HIGH and says to stop when popping slows.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not use popcorn button",
+          "Children should not prepare without adult supervision"
+        ],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Microwave popcorn bag. Bag paper and grease-resistant coating are not stated on the label, and no Orville Redenbacher's packaging or PFAS statement was found. 12 bags of 1.2 oz (34 g).",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 bag (34g) unpopped (makes about 4.5 cups popped)",
+        "servings_per_container": 12,
+        "calories": 130,
+        "total_fat_g": 5
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/11000646/other/instructions",
+        "https://smartlabel.labelinsight.com/product/11000646/nutrition"
+      ],
+      "data_flags": [
+        "label states no wattage; popcorn directions rely on listening for popping to slow, so 'partial' follows the schema rule rather than missing data",
+        "fetch tool returned the steps paraphrased, not verbatim; re-check wording"
+      ]
+    },
+    {
+      "id": "zw-123",
+      "brand": "Orville Redenbacher's",
+      "product_name": "Microwave Popcorn Pour Over Movie Theater Butter, 2 Bags & Pouches",
+      "net_weight": {
+        "oz": 9.9,
+        "g": 280.8
+      },
+      "upc": "027000485392",
+      "category": "popcorn_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {
+            "action": "cook one bag on HIGH (do not use popcorn button)",
+            "time_s": 90,
+            "time_s_max": 150
+          },
+          {
+            "action": "stop when popping slows",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "open bag carefully by top corners, away from face",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "pour into bowl; knead topping pouch, tear at perforation, drizzle and mix",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "No wattage stated. Label gives a time range on HIGH and says to stop when popping slows.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not use popcorn button",
+          "Children should not prepare without adult supervision"
+        ],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Microwave popcorn bag. Bag paper and grease-resistant coating are not stated on the label, and no Orville Redenbacher's packaging or PFAS statement was found. 2 bags of 107.3 g plus 2 separate topping pouches of 33.1 g (topping is not in the bag).",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "2 tbsp (33g) unpopped (makes about 3.5 cups popped)",
+        "servings_per_container": 8,
+        "calories": 180,
+        "total_fat_g": 14
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/10779734/other/instructions",
+        "https://smartlabel.labelinsight.com/product/10779734/nutrition"
+      ],
+      "data_flags": [
+        "label states no wattage; popcorn directions rely on listening for popping to slow, so 'partial' follows the schema rule rather than missing data",
+        "servings listed as 'about 8' (about 4 per bag)",
+        "14 g fat per 33 g serving recorded as found; check whether the figure includes the topping"
+      ]
+    },
+    {
+      "id": "zw-124",
+      "brand": "Orville Redenbacher's",
+      "product_name": "Microwave Popcorn Butter & Sea Salt, 10 Mini Bags",
+      "net_weight": {
+        "oz": 15,
+        "g": 425
+      },
+      "upc": "027000623244",
+      "category": "popcorn_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {
+            "action": "cook one bag on HIGH (do not use popcorn button)",
+            "time_s": 60,
+            "time_s_max": 90
+          },
+          {
+            "action": "stop when popping slows",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "open bag carefully by top corners, away from face",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "No wattage stated. Label gives a time range on HIGH and says to stop when popping slows.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not use popcorn button",
+          "Children should not prepare without adult supervision"
+        ],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Microwave popcorn bag. Bag paper and grease-resistant coating are not stated on the label, and no Orville Redenbacher's packaging or PFAS statement was found. 10 bags of 1.5 oz (42.5 g).",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 bag (42.5g) unpopped (makes about 6 cups popped)",
+        "servings_per_container": 10,
+        "calories": 160,
+        "total_fat_g": 6
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/10901633/other/instructions",
+        "https://smartlabel.labelinsight.com/product/10901633/nutrition"
+      ],
+      "data_flags": [
+        "label states no wattage; popcorn directions rely on listening for popping to slow, so 'partial' follows the schema rule rather than missing data"
+      ]
+    },
+    {
+      "id": "zw-125",
+      "brand": "Act II",
+      "product_name": "Light Butter Microwave Popcorn (foodservice case, 4 boxes x 18 packs)",
+      "net_weight": {
+        "oz": 2.75,
+        "g": null
+      },
+      "upc": null,
+      "category": "popcorn_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {
+            "action": "cook one bag on HIGH (do not use popcorn button)",
+            "time_s": 90,
+            "time_s_max": 150
+          },
+          {
+            "action": "listen; stop microwave when popping slows",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "open bag carefully by top corners, away from face",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [],
+        "low_wattage_note": "No wattage stated. Label gives a time range on HIGH and says to stop when popping slows.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not use popcorn button",
+          "Children should not prepare without adult supervision"
+        ],
+        "instructions_completeness": "partial"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Microwave popcorn bag. Conagra wrote in a 10 Feb 2023 email quoted by IPEN that it removed PFAS in 2022 from the packaging used for Act II microwave popcorn in the U.S. (https://ipen.org/wp-content/uploads/2023/03/2023_03_r_en_pfas_popcorn_web.pdf). The replacement grease barrier is not described.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "42g",
+        "servings_per_container": null,
+        "calories": 150,
+        "total_fat_g": 3
+      },
+      "source_urls": [
+        "https://www.conagrafoodservice.com/products/act-ii-light-butter-popcorn-4-boxes-18-packs",
+        "https://ipen.org/wp-content/uploads/2023/03/2023_03_r_en_pfas_popcorn_web.pdf"
+      ],
+      "data_flags": [
+        "label states no wattage; popcorn directions rely on listening for popping to slow, so 'partial' follows the schema rule rather than missing data",
+        "source is a Conagra Foodservice listing, not a retail label transcription; Act II was not found on SmartLabel",
+        "UPC not shown; page gives foodservice SKU 7615023244, which is not a UPC",
+        "per-bag size read as '2.75 OZ' from a garbled field ('Net Weight 12.38' with no unit also shown); grams not given",
+        "servings per bag not listed"
+      ]
+    },
+    {
+      "id": "zw-126",
+      "brand": "Green Giant",
+      "product_name": "Seasoned Backyard Grilled Potatoes (roasted potatoes, peppers and onions)",
+      "net_weight": {
+        "oz": 9,
+        "g": 255
+      },
+      "upc": "020000449975",
+      "category": "steam_bag",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [
+          {
+            "action": "place unopened bag standing up on a microwavable dinner plate",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "cook on HIGH for wattage-specific time (see variants)",
+            "time_s": null,
+            "time_s_max": null
+          },
+          {
+            "action": "stand in microwave",
+            "time_s": 60,
+            "time_s_max": null
+          },
+          {
+            "action": "remove plate and bag carefully, tear at notch, empty into dish, stir",
+            "time_s": null,
+            "time_s_max": null
+          }
+        ],
+        "wattage_variants": [
+          {
+            "wattage_w": 1200,
+            "time_s": 270,
+            "time_s_max": 300,
+            "note": null
+          },
+          {
+            "wattage_w": 1000,
+            "time_s": 360,
+            "time_s_max": 390,
+            "note": null
+          },
+          {
+            "wattage_w": 700,
+            "time_s": 420,
+            "time_s_max": 450,
+            "note": null
+          }
+        ],
+        "low_wattage_note": "Table covers 700 W.",
+        "do_not_microwave": false,
+        "do_not_statements": [
+          "Do not leave microwave unattended"
+        ],
+        "instructions_completeness": "complete"
+      },
+      "oven_instructions": null,
+      "container": {
+        "description": "Microwave-in bag cooked standing on a plate; tear notch. Vent not mentioned. Material not stated.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "1 cup (110 g) frozen",
+        "servings_per_container": 2.5,
+        "calories": 120,
+        "total_fat_g": 3
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/6822662/other/instructions",
+        "https://smartlabel.labelinsight.com/product/6822662/nutrition"
+      ],
+      "data_flags": [
+        "servings per container listed as 'about 2.5' (second column is 1/2 cup prepared)"
+      ]
+    },
+    {
+      "id": "zw-127",
+      "brand": "Green Giant",
+      "product_name": "Garlic Parmesan Crispy Smashed Potatoes",
+      "net_weight": {
+        "oz": 12,
+        "g": 340
+      },
+      "upc": "190569679790",
+      "category": "oven_only",
+      "microwave_instructions": {
+        "reference_wattage_w": null,
+        "steps": [],
+        "wattage_variants": [],
+        "low_wattage_note": null,
+        "do_not_microwave": true,
+        "do_not_statements": [
+          "Microwave oven not recommended"
+        ],
+        "instructions_completeness": "not_applicable"
+      },
+      "oven_instructions": "425°F, oiled baking sheet, single layer, bottom rack 18-20 min.",
+      "container": {
+        "description": "Box; potatoes are baked on the consumer's own baking sheet. Material not stated.",
+        "material": null,
+        "recycling_code": null,
+        "bpa_free": null
+      },
+      "nutrition_per_serving": {
+        "serving_size": "3 pieces (79 g)",
+        "servings_per_container": 4,
+        "calories": 100,
+        "total_fat_g": 2
+      },
+      "source_urls": [
+        "https://smartlabel.labelinsight.com/product/19949172/other/instructions",
+        "https://smartlabel.labelinsight.com/product/19949172/nutrition"
+      ],
+      "data_flags": [
+        "label wording is 'Microwave oven not recommended' rather than 'do not microwave'",
+        "oven directions sit under a SmartLabel heading named 'Microwave Manual Claim'",
+        "servings per container listed as 'about 4'"
+      ]
+    }
+  ],
+  "notes": [
+    "27 products: Banquet 5, Healthy Choice 4, Marie Callender's 4, Hungry-Man 2, P.F. Chang's 3, Birds Eye 3, Orville Redenbacher's 3, Act II 1, Green Giant 2. Categories: frozen_tray 15, steam_bag 5, pouch 1, popcorn_bag 4, oven_only 2.",
+    "Source was SmartLabel (smartlabel.labelinsight.com) via WebFetch for 26 of 27 records; direct curl to that host is blocked by the agent proxy. WebFetch gave intermittent SERVER_ERROR on some IDs (18859101, 5041968, 9423889, 6444367, 6729662 instructions; 12573547 and 12155417 nutrition on two tries). Those Marie Callender's records have null nutrition.",
+    "For a few pages (zw-105, zw-114, zw-119, zw-121, zw-122) the fetch tool paraphrased the label text instead of quoting it. Times and temperatures were kept, but step wording should be re-checked.",
+    "No SmartLabel page states tray, bowl or bag material or a resin code, so container.material and recycling_code are null for all records. Every Banquet, Marie Callender's and Hungry-Man tray in this batch has microwave and conventional oven directions for the same tray (350 or 375°F, often with the film left on), so they are flagged 'inferred CPET (oven-safe tray)'. Healthy Choice Power Bowls and Steamers say do not cook in conventional or toaster ovens, so their containers are microwave-only and get no CPET inference.",
+    "The only Conagra tray-material statements found are from 2009 (30 to 40 percent post-consumer recycled plastic in nearly all Healthy Choice, Banquet, Kid Cuisine and Marie Callender's trays, a dual-ovenable monolayer rPET design). The March 2022 Citizenship release gives a company-wide figure (about 93 percent of packaging by volume renewable, recyclable or compostable) with no per-tray detail. Current tray resin still needs package photos.",
+    "Popcorn: labels give no wattage, only a time range on HIGH plus 'stop when popping slows' and 'Do NOT use popcorn button'. These are marked partial under the schema rule. The app needs a separate rule for popcorn (listen-based stop, no popcorn button). Conagra told IPEN it removed PFAS from US Act II packaging in 2022; no statement for Orville Redenbacher's bags was found.",
+    "Act II is not on SmartLabel; its record comes from a Conagra Foodservice case listing, so it has no UPC and a garbled net-weight field.",
+    "P.F. Chang's Home Menu single-serve rice and noodle bowls, Bertolli, Evol and Gardein were not found on SmartLabel, and the Ahold retailer sites (Hannaford, Stop & Shop, Giant, Food Lion) that list them were in maintenance. The P.F. Chang's items on SmartLabel were a brown rice pouch, a fried rice steam bag and a stovetop-only skillet meal, and those three were used.",
+    "New negative examples: Green Giant Garlic Parmesan Crispy Smashed Potatoes ('Microwave oven not recommended', oven only) and P.F. Chang's Chicken Fried Rice skillet meal (stovetop only, no microwave directions and no explicit prohibition, so do_not_microwave is null).",
+    "Wattage patterns hold from batch 1. Conagra trays, bowls, Power Blend bags and P.F. Chang's bags use a single 1100 W reference. Birds Eye plain vegetable Steamfresh uses a 1200/1000/800 W table with stovetop below 800 W. Green Giant uses a 1200/1000/700 W table.",
+    "Multipacks (Healthy Choice 3-packs, Birds Eye 4-packs) carry their own UPCs. Net weight is the carton total and directions are per meal or bag. Single-unit UPCs were not collected.",
+    "Spare candidates read but not included: Orville Redenbacher's Kettle Corn Value Size 12 Classic Bags (SmartLabel 8890061, UPC 027000523827, 1.5-2.5 min HIGH, 3.28 oz bags), and Marie Callender's Fettuccini With Chicken & Broccoli 4 Meals (5047710, UPC 021131504724), left out because zw-004 is the same product. SmartLabel IDs 6095538 and 6890764 are Orville kettle and stovetop popping kits with no microwave directions."
+  ],
+  "packaging_statements": [
+    {
+      "brand": "Conagra (Healthy Choice, Banquet, Kid Cuisine, Marie Callender's)",
+      "statement": "Conagra put 'between 30 percent and 40 percent post-consumer recycled plastic in nearly all of the frozen meal trays' for these brands. The article adds that 'most frozen meals trays used by other companies are made of crystallized PET plastic'. The page is undated; the transition began 'in June' (2009 per related coverage).",
+      "url": "https://progressivegrocer.com/conagra-unveils-new-eco-friendly-frozen-tray-design"
+    },
+    {
+      "brand": "Conagra (frozen entrees and meals, brands not named)",
+      "statement": "Tray described as the 'first application of monolayer rPET for a dual-ovenable package in North America', with rPET 'qualified at 40% of the food tray's total content'. Stated goal was to build infrastructure to 'collect and reprocess CPET trays'. Dated 3 Oct 2009.",
+      "url": "https://www.foodingredientsfirst.com/news/a-first-in-monolayer-rpet-trays-used-by-conagra-foods-for-its-frozen-entrees-and-meals.html"
+    },
+    {
+      "brand": "Conagra Brands (company-wide)",
+      "statement": "About 93% of packaging materials by volume were renewable, recyclable or compostable (estimate partly based on industry average weights). Goal: 100% of current plastic packaging renewable, recyclable or compostable by 2025. Release dated 17 Mar 2022. No tray, bag or popcorn detail.",
+      "url": "https://www.conagrabrands.com/news-room/news-conagra-brands-issues-fiscal-2021-citizenship-report-prn-122803"
+    },
+    {
+      "brand": "Act II (Conagra)",
+      "statement": "Conagra email of 10 Feb 2023, quoted in the IPEN report (March 2023): 'We removed PFAS last year from the packaging used for our ACT II microwave popcorn products in the U.S.' An Act II bag bought in Indonesia (sample IDN-PA-23, Mar 2022) tested positive for PFBA, PFHxA, PFHpA, FHET and 6:2 diPAP. The report says PFAS are used because they form a grease-repelling chemical barrier on the bag paper.",
+      "url": "https://ipen.org/wp-content/uploads/2023/03/2023_03_r_en_pfas_popcorn_web.pdf"
+    }
+  ]
+}

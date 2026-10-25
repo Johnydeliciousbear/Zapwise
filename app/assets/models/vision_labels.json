@@ -1,0 +1,47 @@
+{
+ "classes": [
+  "cardboard",
+  "glass",
+  "metal",
+  "paper",
+  "plastic",
+  "trash"
+ ],
+ "app_keys": [
+  "paper_family",
+  "glass",
+  "metal",
+  "paper_family",
+  "plastic_family",
+  "unknown"
+ ],
+ "input": {
+  "shape": [
+   1,
+   224,
+   224,
+   3
+  ],
+  "range": "0..255 RGB float32"
+ },
+ "outputs": [
+  {
+   "index": 179,
+   "name": "StatefulPartitionedCall_1:1",
+   "shape": [
+    1,
+    6
+   ]
+  },
+  {
+   "index": 176,
+   "name": "StatefulPartitionedCall_1:0",
+   "shape": [
+    1,
+    1280
+   ]
+  }
+ ],
+ "embedding_dim": 1280,
+ "trained_on": "TrashNet (MIT licence), baseline material families. Replace with the student container model."
+}

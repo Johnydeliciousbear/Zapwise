@@ -1,0 +1,107 @@
+{
+ "dataset": "trashnet_data/dataset-resized",
+ "classes": [
+  "cardboard",
+  "glass",
+  "metal",
+  "paper",
+  "plastic",
+  "trash"
+ ],
+ "n_train_photos": 1769,
+ "n_val": 379,
+ "n_test": 379,
+ "train_feature_rows": 5307,
+ "head": "mlp",
+ "val_acc": {
+  "linear": 0.8601583242416382,
+  "mlp": 0.8891820311546326
+ },
+ "test_acc": 0.820580474934037,
+ "test_macro_f1": 0.7946764367236554,
+ "per_class_f1": {
+  "cardboard": 0.839,
+  "glass": 0.81,
+  "metal": 0.79,
+  "paper": 0.883,
+  "plastic": 0.824,
+  "trash": 0.622
+ },
+ "confusion": [
+  [
+   47,
+   0,
+   1,
+   10,
+   0,
+   2
+  ],
+  [
+   0,
+   64,
+   4,
+   1,
+   5,
+   1
+  ],
+  [
+   1,
+   9,
+   47,
+   1,
+   1,
+   3
+  ],
+  [
+   4,
+   0,
+   0,
+   83,
+   0,
+   2
+  ],
+  [
+   0,
+   10,
+   4,
+   0,
+   56,
+   2
+  ],
+  [
+   0,
+   0,
+   1,
+   4,
+   2,
+   14
+  ]
+ ],
+ "tflite_mb": 2.86,
+ "tflite_cosine_min": 0.9777146577835083,
+ "tflite_top1_agreement": "58/60",
+ "tflite_acc_on_sample": 0.8,
+ "reference": {
+  "file": "cardboard166.jpg",
+  "true_class": "cardboard",
+  "embedding_head": [
+   0.006259677931666374,
+   0.0,
+   2.515322208404541,
+   0.20061227679252625,
+   0.0,
+   0.05707339197397232,
+   0.0,
+   0.06115109473466873
+  ],
+  "probs": [
+   0.10284177958965302,
+   1.542071004223544e-05,
+   2.502889583411161e-05,
+   0.6640064120292664,
+   0.0012775046052411199,
+   0.23183384537696838
+  ]
+ },
+ "split": "by object id (file prefix before _), seed 7, 70/15/15"
+}

@@ -1,0 +1,1931 @@
+{
+ "products": [
+  {
+   "id": "zw-301",
+   "brand": "Ben's Original",
+   "product_name": "Ready Rice Original Long Grain White",
+   "net_weight": {
+    "oz": 8.8,
+    "g": null
+   },
+   "upc": "054800423330",
+   "category": "pouch",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "squeeze pouch to separate rice",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "tear 2 inches to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave 1 pouch (2 pouches: 2 1/2 min)",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "remove using cool-touch area on untorn side",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label says microwave times may vary.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "quantity_variants": [
+     {
+      "units": 2,
+      "time_s": 150,
+      "time_s_max": null
+     }
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Squeeze pouch, pour into skillet, add 2 tbsp water, heat and stir occasionally until heated thoroughly.",
+   "container": {
+    "description": "BPA-free microwavable rice pouch, heated in the pouch after tearing a 2-inch vent; has a cool-touch area. Layers not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": true
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup",
+    "servings_per_container": null,
+    "calories": 200,
+    "total_fat_g": 3,
+    "per_pouch": {
+     "serving_size": "1 pouch (250 g)",
+     "calories": 350,
+     "total_fat_g": 5
+    }
+   },
+   "source_urls": [
+    "https://preview.hannaford.com/groceries/rice-pasta-beans/rice/white-rice/bens-original-90-second-microwave-ready-rice-long-grain-white-original-88-oz-pkg.html",
+    "https://shoprite.com/product/bens-original-ready-rice-original-long-grain-white-rice-easy-dinner-side-88-ounce-pouch-id-00054800423330"
+   ],
+   "data_flags": [
+    "steps are a retailer label transcription (Hannaford) but no wattage is printed, so marked partial",
+    "per-cup values from Hannaford, per-pouch values (250 g) from ShopRite; servings per container not shown",
+    "UPC from ShopRite item ID 00054800423330"
+   ]
+  },
+  {
+   "id": "zw-302",
+   "brand": "Ben's Original",
+   "product_name": "Ready Rice Whole Grain Brown",
+   "net_weight": {
+    "oz": 8.8,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "heb": "592800"
+   },
+   "category": "pouch",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "squeeze pouch to separate rice",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "tear 2 inches to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave 1 pouch (2 pouches: 2 1/2 min)",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "remove using cool-touch area on untorn side",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label says microwave times may vary.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "quantity_variants": [
+     {
+      "units": 2,
+      "time_s": 150,
+      "time_s_max": null
+     }
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Pour into skillet, add 2 tbsp water, heat and stir occasionally until heated thoroughly.",
+   "container": {
+    "description": "BPA-free microwave rice pouch (H-E-B copy: 'Ready Rice comes in a BPA-free microwave rice pouch'). Caution: steam from pouch will be hot. Layers not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": true
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup (140 g)",
+    "servings_per_container": null,
+    "calories": 200,
+    "total_fat_g": 3,
+    "per_pouch": {
+     "serving_size": "1 pouch",
+     "calories": 360,
+     "total_fat_g": 5
+    }
+   },
+   "source_urls": [
+    "https://preview.hannaford.com/groceries/rice-pasta-beans/rice/brown-rice/bens-original-90-second-microwave-ready-rice-whole-grain-brown-88-oz-pkg.html",
+    "https://heb.com/product-detail/uncle-ben-s-ready-rice-whole-grain-brown-rice/592800"
+   ],
+   "data_flags": [
+    "no wattage printed per transcription",
+    "UPC not shown on readable pages",
+    "H-E-B shows '0 servings per container' (display error), left null"
+   ]
+  },
+  {
+   "id": "zw-303",
+   "brand": "Ben's Original",
+   "product_name": "Ready Rice Garden Vegetable Flavored Rice",
+   "net_weight": {
+    "oz": 8.8,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "heb": "902860"
+   },
+   "category": "pouch",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "microwave pouch",
+      "time_s": 90,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Empty pouch into skillet and heat thoroughly (no time given).",
+   "container": {
+    "description": "BPA-free microwavable rice pouch. Layers not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": true
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup (145 g)",
+    "servings_per_container": null,
+    "calories": 200,
+    "total_fat_g": 3,
+    "per_pouch": {
+     "serving_size": "1 pouch",
+     "calories": 350,
+     "total_fat_g": 5
+    }
+   },
+   "source_urls": [
+    "https://heb.com/product-detail/ben-s-original-ready-rice-garden-vegetable/902860"
+   ],
+   "data_flags": [
+    "squeeze and tear-to-vent steps not shown on H-E-B page; other Ready Rice labels (zw-301, zw-302) have them",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-304",
+   "brand": "Minute",
+   "product_name": "Ready to Serve White Rice Cups, 2 Count",
+   "net_weight": {
+    "oz": 8.8,
+    "g": null,
+    "per_unit_oz": 4.4,
+    "units": 2
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "heb": "1025500",
+    "safeway": "960113411"
+   },
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove film completely from cup",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat 1 cup on HIGH (2 cups: 1 1/2 min)",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "stir and serve immediately; cup and steam extremely hot",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label says microwave ovens and cooking times may vary.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "quantity_variants": [
+     {
+      "units": 2,
+      "time_s": 90,
+      "time_s_max": null
+     }
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Single-serve plastic cup with peel-off film lid, in a paper sleeve. Minute FAQ: cups are recyclable (plastic #5) and BPA free. H-E-B copy: '100% recyclable BPA-free cups'.",
+    "material": "polypropylene (resin code 5, per brand FAQ)",
+    "recycling_code": "5",
+    "bpa_free": true
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup",
+    "servings_per_container": 2,
+    "calories": 200,
+    "total_fat_g": 2.5
+   },
+   "source_urls": [
+    "https://www.safeway.com/shop/pd/minute-ready-to-serve-white-rice-2-count-8-8-oz/960113411",
+    "https://www.heb.com/product-detail/minute-ready-to-serve-white-rice-2-ct/1025500",
+    "https://minuterice.com/faqs/other/",
+    "https://www.orderroombox.com/product/minute-rice-white-rice/"
+   ],
+   "data_flags": [
+    "no wattage stated",
+    "UPC not shown on readable pages",
+    "film is removed completely before heating (not vented)"
+   ]
+  },
+  {
+   "id": "zw-305",
+   "brand": "Minute",
+   "product_name": "Ready to Serve Chicken & Herb Seasoned Rice Cups, 2 Count",
+   "net_weight": {
+    "oz": null,
+    "g": null,
+    "per_unit_oz": 4.4,
+    "units": 2
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "heb": "1137491"
+   },
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "microwave cup",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "BPA-free plastic cups recyclable via store drop-off (per H-E-B copy); paper sleeves made from 100% recycled material, curbside recyclable. Brand FAQ says Minute cups are plastic #5.",
+    "material": "polypropylene (resin code 5, per brand FAQ for Minute Rice Cups)",
+    "recycling_code": "5",
+    "bpa_free": true
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup",
+    "servings_per_container": 2,
+    "calories": 230,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "https://www.heb.com/product-detail/1137491",
+    "https://minuterice.com/faqs/other/"
+   ],
+   "data_flags": [
+    "only 'heats up in 1 minute' found; film handling and 2-cup time not shown (White Rice cup: remove film completely, 2 cups 1 1/2 min)",
+    "total fat not listed on H-E-B page",
+    "net weight shown only as 2 x 4.4 oz cups"
+   ]
+  },
+  {
+   "id": "zw-306",
+   "brand": "Seeds of Change",
+   "product_name": "Organic Quinoa & Brown Rice with Garlic",
+   "net_weight": {
+    "oz": 8.5,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "heb": "1180230",
+    "instacart": "24380"
+   },
+   "category": "pouch",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "squeeze pouch to separate rice",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "tear 2 inches to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on HIGH",
+      "time_s": 90,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Retailer copy only: heat butter or olive oil over medium heat, add rice, add water and stir (no times).",
+   "container": {
+    "description": "Ready-to-heat microwave pouch, torn 2 inches to vent before heating. Material not stated on this product's pages.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "150 g",
+    "servings_per_container": 2,
+    "calories": 240,
+    "total_fat_g": 4.5
+   },
+   "source_urls": [
+    "https://milams.instacart.com/store/milams/products/24380-seeds-of-change-organic-quinoa-brown-rice-8-5-oz",
+    "https://heb.com/product-detail/seeds-of-change-quinoa-brown-rice-with-garlic/1180230"
+   ],
+   "data_flags": [
+    "nutrition conflict: Instacart 240 kcal / 4.5 g per 150 g, about 2 servings; H-E-B 280 kcal / 4.5 g per 1 cup (150 g) and 440 kcal / 8 g per pouch; check package",
+    "no wattage stated",
+    "BPA-free claim appears on sister product zw-307 but not on this product's pages"
+   ]
+  },
+  {
+   "id": "zw-307",
+   "brand": "Seeds of Change",
+   "product_name": "Organic Brown Basmati Rice",
+   "net_weight": {
+    "oz": 8.5,
+    "g": null
+   },
+   "upc": "748404287930",
+   "category": "pouch",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "squeeze pouch to separate rice",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave pouch",
+      "time_s": 90,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Retailer copy: pour rice into skillet and stir until heated (no time or water amount).",
+   "container": {
+    "description": "BPA-free microwave pouch (ShopRite copy: 'BPA free pouch'). Layers not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": true
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 pouch (240 g)",
+    "servings_per_container": null,
+    "calories": 400,
+    "total_fat_g": 7
+   },
+   "source_urls": [
+    "https://www.shoprite.com/product/seeds-of-change-organic-brown-basmati-rice-85-oz-00748404287930"
+   ],
+   "data_flags": [
+    "tear/vent step not shown on ShopRite copy; sister product zw-306 says tear 2 inches to vent",
+    "no wattage stated"
+   ]
+  },
+  {
+   "id": "zw-308",
+   "brand": "Success",
+   "product_name": "Boil-in-Bag White Rice, 4 Bags",
+   "net_weight": {
+    "oz": 14,
+    "g": null,
+    "units": 4
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "heb": "33265"
+   },
+   "category": "pouch",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "submerge 1 bag in about 4 cups (about 1 quart) water in a 2-quart microwave-safe bowl",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 600,
+      "time_s_max": null
+     },
+     {
+      "action": "remove bag with fork or tongs and drain",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cut bag open, empty rice into dish, fluff",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Brand says microwave ovens vary and times are approximate.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "We do not recommend using the microwave to cook multiple bags"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Submerge 1 bag in about 4 cups water (3 quarts for 2-4 bags), boil uncovered 8-10 min, remove with fork, drain, cut open. Can sit in hot water with heat off up to 30 min.",
+   "container": {
+    "description": "Perforated boil-in-bag inside a carton; cooked submerged in water in a separate bowl, not heated dry. Brand FAQ: 'BPA-Free and FDA-approved for food contact'. Retailer copy: 'Recycle both the box and the bag'. Bag polymer not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": true
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1/2 bag (dry)",
+    "servings_per_container": 8,
+    "calories": 180,
+    "total_fat_g": 0,
+    "per_bag": {
+     "calories": 360,
+     "total_fat_g": 0.5
+    }
+   },
+   "source_urls": [
+    "https://successrice.com/faqs/cooking/",
+    "https://delivery.publix.com/store/publix/products/22027-success-ten-minute-boil-in-bag-white-rice-3-5-oz",
+    "https://www.orderroombox.com/product/success-ten-minute-boil-in-bag-white-rice/",
+    "https://heb.com/product-detail/success-boil-in-bag-white-rice/33265"
+   ],
+   "data_flags": [
+    "category 'pouch' used for a boil-in-bag that is microwaved under water in a bowl; the app should not treat it like a dry-heat pouch",
+    "brand FAQ gives 15 min instead of 10 for Basmati, Jasmine and Quinoa bags",
+    "nutrition conflict: H-E-B 180 kcal per 1/2 bag (8 servings); Instacart 210 kcal per 0.5 cup (7 servings); check package",
+    "no wattage stated",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-309",
+   "brand": "Idahoan",
+   "product_name": "Buttery Homestyle Mashed Potatoes Cups, 4 Count",
+   "net_weight": {
+    "oz": 6,
+    "g": null,
+    "per_unit_oz": 1.5,
+    "units": 4
+   },
+   "upc": null,
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "remove lid completely",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "add cold water to fill line (3/4 cup water)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stir thoroughly to moisten all potatoes",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave uncovered on HIGH",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "stir well",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not reuse cup"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Single-serve cup with removable lid and inside fill line; label warns 'Cup & contents will be very hot!' and 'Do not reuse cup'. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup",
+    "servings_per_container": 4,
+    "calories": 170,
+    "total_fat_g": 4
+   },
+   "source_urls": [
+    "https://preview.hannaford.com/groceries/rice-pasta-beans/packaged-meals-sides/instant-potatoes/idahoan-buttery-homestyle-mashed-potatoes-cups-microwave-4-ct-6-oz-pkg.html",
+    "https://idahoan.com/products/buttery-homestyle-cup",
+    "https://idahoan.com/collections/cups"
+   ],
+   "data_flags": [
+    "serving size '1 cup' appears to mean one prepared cup container; check package",
+    "UPC not shown (brand page store-locator link contains 10029700341411, not labeled as a UPC)"
+   ]
+  },
+  {
+   "id": "zw-310",
+   "brand": "Idahoan",
+   "product_name": "Four Cheese Mashed Potatoes Cup",
+   "net_weight": {
+    "oz": 1.5,
+    "g": null
+   },
+   "upc": null,
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid completely",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "add cold water to fill line (volume not given on this page)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stir thoroughly to moisten all potatoes",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave uncovered on HIGH",
+      "time_s": 90,
+      "time_s_max": null
+     },
+     {
+      "action": "stir well",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Single-serve cup with removable lid and inside fill line; 'Cup and contents will be very hot!'. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "https://idahoan.com/products/four-cheese-cup",
+    "https://idahoan.com/collections/cups"
+   ],
+   "data_flags": [
+    "wattage not on brand page; the Buttery Homestyle cup label (zw-309) states 1100 W",
+    "nutrition panel not in page text",
+    "UPC not shown (store-locator link contains 029700341459, not labeled as a UPC)"
+   ]
+  },
+  {
+   "id": "zw-311",
+   "brand": "Bob Evans",
+   "product_name": "Original Mashed Potatoes (refrigerated)",
+   "net_weight": {
+    "oz": 24,
+    "g": null
+   },
+   "upc": "075900005264",
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove board overwrap",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "peel back corner or cut small slit in film to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 180,
+      "time_s_max": null
+     },
+     {
+      "action": "remove carefully, pull back film, stir",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat additional time, then stir",
+      "time_s": 120,
+      "time_s_max": 180
+     },
+     {
+      "action": "stand",
+      "time_s": 120,
+      "time_s_max": null
+     },
+     {
+      "action": "cook to 160°F before serving",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label says settings vary by microwave.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Remove overwrap and film, empty tray into saucepan, heat over medium and stir until hot.",
+   "container": {
+    "description": "Refrigerated film-sealed tray inside a paperboard ('board') overwrap; film is vented and then pulled back to stir. Tray material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1/2 cup (140 g)",
+    "servings_per_container": null,
+    "calories": 150,
+    "total_fat_g": 7
+   },
+   "source_urls": [
+    "https://www.ubereats.com/store/albertsons-3145-s-alma-school-rd/UeGX8RQvWWW0sUqfrFBSKA/33ee60f3-409f-541f-901b-5257775ad45d/7831870f-bd8a-4a2d-8db9-d1c7942d26c0/5a3a55c4-a471-54a6-9d0b-b74104e71a76",
+    "https://www.shoprite.com/product/bob-evans-original-mashed-potatoes-24-oz-id-00075900005264",
+    "https://www.wegmans.com/shop/product/970214-Original-Mashed-Potatoes"
+   ],
+   "data_flags": [
+    "refrigerated (keep refrigerated), not frozen; 'frozen_tray' used because it is a film-sealed tray",
+    "label target temperature is 160°F, not the 165°F used on frozen meals",
+    "no wattage stated",
+    "servings per container given only as 'Serves 4-5'"
+   ]
+  },
+  {
+   "id": "zw-312",
+   "brand": "Quaker",
+   "product_name": "Instant Oatmeal Cups Maple & Brown Sugar",
+   "net_weight": {
+    "oz": null,
+    "g": null
+   },
+   "upc": null,
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid completely",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "add water to line inside cup",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stir well",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 45,
+      "time_s_max": 50
+     },
+     {
+      "action": "stir, then stand",
+      "time_s": 120,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Brand says microwave ovens vary in power and time may need adjusting.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "non_microwave_prep": "Add boiling water to slightly below inside line, stir, stand 2 min.",
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Single-serve cup with removable lid and inside fill line; brand says extra space is built into the cup to prevent boil-over. Caution: cup and contents may be hot. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "https://quakeroats.com/products/hot-cereals/instant-oatmeal-cups/maple-and-brown-sugar"
+   ],
+   "data_flags": [
+    "net weight, UPC and nutrition not in page text",
+    "the SmartLabel link on the brand page resolved to a different product (Quaker Fiber Maple & Brown Sugar packets, UPC 030000261903), so it was not used",
+    "no wattage stated"
+   ]
+  },
+  {
+   "id": "zw-313",
+   "brand": "Nissin",
+   "product_name": "Cup Noodles Beef Flavor",
+   "net_weight": {
+    "oz": 2.25,
+    "g": null
+   },
+   "upc": null,
+   "retailer_item_id": {
+    "heb_6pack": "2224358"
+   },
+   "category": "paper_cup",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "add water to fill line (details on lid)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave",
+      "time_s": 135,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Double-wall fiber-based paper cup (Graphic Packaging) introduced in early 2024 for all 16-oz-size Cup Noodles flavors; 40% recycled fiber; sleeve of 100% recycled paper; no plastic overwrap; polystyrene-free. Inner coating not stated.",
+    "material": "paper (double-wall fiber cup; lining not stated)",
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 package",
+    "servings_per_container": 1,
+    "calories": 290,
+    "total_fat_g": 11
+   },
+   "source_urls": [
+    "https://heb.com/product-detail/nissin-beef-cup-noodles-value-pack/2224358",
+    "https://www.packworld.com/design/materials-containers/article/22877972/nissin-foods-cup-noodles-moves-to-paper-cup",
+    "https://www.nissinfoods.com/?p=1939",
+    "https://giantfoodstores.com/groceries/product/nissin-cup-noodles-beef-flavor-ramen-soup-2-25-oz-cup/30574"
+   ],
+   "data_flags": [
+    "2:15 microwave time is the brand's general statement for the paper cup; Beef lid directions (water volume, stand, stir, wattage) not readable online",
+    "net weight from retailer listing title (2.25 oz)",
+    "a 2015 Nissin launch also called Cup Noodles 'microwavable' (2 1/2 min); cups in stores may differ by vintage, so check the cup",
+    "category paper_cup; zw-017 (Chicken) uses cup_bowl for the same cup and could be recategorized"
+   ]
+  },
+  {
+   "id": "zw-314",
+   "brand": "Maruchan",
+   "product_name": "Bowl Hot & Spicy Chicken Flavor Ramen Noodle Soup",
+   "net_weight": {
+    "oz": 3.32,
+    "g": null
+   },
+   "upc": null,
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "add seasoning; fill to line with room-temperature water",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave",
+      "time_s": 180,
+      "time_s_max": null
+     },
+     {
+      "action": "stir",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Microwavable bowl with peel lid and inside fill line. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "https://www.theramenrater.com/2022/10/16/4285-maruchan-ramen-bowl-hot-spicy-chicken-flavor-ramen-noodle-soup-united-states/",
+    "https://foodlion.com/groceries/product/maruchan-hot-spicy-chicken-flavor-ramen-noodle-soup-bowl-3-32-oz-pkg/199315"
+   ],
+   "data_flags": [
+    "directions come from a 2022 product review that transcribed the package, not a retailer or brand page",
+    "net weight from retailer listing title (3.32 oz)",
+    "contrast: Maruchan Instant Lunch cup (zw-016) says do not microwave; the Bowl line is microwaved",
+    "Maruchan Bowl Chicken Flavor (3.31 oz) directions were not readable online"
+   ]
+  },
+  {
+   "id": "zw-315",
+   "brand": "Campbell's",
+   "product_name": "Soup on the Go Tomato Sipping Soup, Microwavable Cup",
+   "net_weight": {
+    "oz": 11.1,
+    "g": null
+   },
+   "upc": null,
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "shake well",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "pull up red cap to remove, set aside",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "lift tab and slowly peel toward you",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave uncovered on HIGH or until hot",
+      "time_s": 75,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "carefully remove, stir, replace cap and sip",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Label says microwaves vary and time is approximate.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "label_cautions": [
+     "Caution: Metal edges are sharp."
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Sipping cup with red cap and peel-off tab under the cap; label warns 'Metal edges are sharp' after peeling. Cup body material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": 0.5
+   },
+   "source_urls": [
+    "https://www.ubereats.com/store/meijer-15-caberfae-hwys/_0IgFIy0VAS7aJ6ZCnin6w/7db7887d-ebe8-530f-b42e-cb36f9ea07bd/2a728ca5-308a-55c1-977e-6ead17604b74/543cd83e-ca79-5251-92ec-2a6c9e96df06"
+   ],
+   "data_flags": [
+    "the 'metal edges' caution suggests a metal component at the opening; the label still says to microwave after the tab is removed, so photograph the cup before the app gives any metal warning",
+    "serving size and calories not in page text",
+    "no wattage stated",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-316",
+   "brand": "Campbell's",
+   "product_name": "Soup on the Go Chicken & Mini Round Noodles, Microwavable Cup",
+   "net_weight": {
+    "oz": 10.75,
+    "g": null
+   },
+   "upc": "051000149824",
+   "category": "cup_bowl",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "pop off cap, remove tab",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave uncovered (about)",
+      "time_s": 75,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "replace cap",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Sipping cup with cap and removable tab; listing references how2recycle.info. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 container (front-of-pack claim)",
+    "servings_per_container": 1,
+    "calories": 60,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "https://www.ontimesupplies.com/grr35100007-soup-on-the-go-chicken-with-mini-noodles-1075-oz-cup-8-carton-ships-in-1-3-business-days.html",
+    "https://lborderacme.rmrdevelopment.com/product/00051000149824/campbells-soup-chicken-mini-round-noodles"
+   ],
+   "data_flags": [
+    "directions from a reseller description, not a label transcription; the Tomato cup label (zw-315) adds shake, peel-toward-you and stir steps and a sharp-metal-edge caution",
+    "calories from '60 calories per container' claim; total fat not in page text",
+    "ACME lists 10.8 oz, reseller lists 10.75 oz"
+   ]
+  },
+  {
+   "id": "zw-317",
+   "brand": "Pop Secret",
+   "product_name": "Butter Microwave Popcorn",
+   "net_weight": {
+    "oz": null,
+    "g": null
+   },
+   "upc": null,
+   "category": "popcorn_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "place bag in microwave 'THIS SIDE UP'",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "set timer (do not use popcorn button); stop when pops are 1-2 s apart, 2-3 s apart will burn",
+      "time_s": 150,
+      "time_s_max": null
+     },
+     {
+      "action": "stay at the microwave",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "pull open from top corners, away from face",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Brand says microwave power varies.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Never use the popcorn button",
+     "Don't wander off"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Microwave popcorn bag with 'THIS SIDE UP' marking. Bag material, susceptor and PFAS status not stated on brand pages or FAQ.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "https://popsecret.com/products/butter",
+    "https://popsecret.com/pages/faq"
+   ],
+   "data_flags": [
+    "2 1/2 min is a timer setting with an audio stop cue, not a fixed cook time",
+    "net weight not in page text (image file names suggest 3.2 oz bags in 6-count boxes, not confirmed)",
+    "nutrition values not in page text",
+    "no wattage stated",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-318",
+   "brand": "Pop Secret",
+   "product_name": "Movie Theater Butter Microwave Popcorn",
+   "net_weight": {
+    "oz": null,
+    "g": null
+   },
+   "upc": null,
+   "category": "popcorn_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "place bag in microwave 'THIS SIDE UP'",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "set timer (do not use popcorn button); stop when pops are 1-2 s apart, 2-3 s apart will burn",
+      "time_s": 150,
+      "time_s_max": null
+     },
+     {
+      "action": "stay at the microwave",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "pull open from top corners, away from face",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Brand says microwave power varies.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Never use the popcorn button",
+     "Don't wander off"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Microwave popcorn bag with 'THIS SIDE UP' marking. Bag material, susceptor and PFAS status not stated on brand pages or FAQ.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "https://popsecret.com/products/movie-theater-butter",
+    "https://popsecret.com/pages/faq"
+   ],
+   "data_flags": [
+    "2 1/2 min is a timer setting with an audio stop cue, not a fixed cook time",
+    "net weight not in page text (image file names suggest 3.2 oz bags in 6-count boxes, not confirmed)",
+    "nutrition values not in page text",
+    "no wattage stated",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-319",
+   "brand": "Pop Secret",
+   "product_name": "Homestyle Butter Microwave Popcorn",
+   "net_weight": {
+    "oz": null,
+    "g": null
+   },
+   "upc": null,
+   "category": "popcorn_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "place bag in microwave 'THIS SIDE UP'",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "set timer (do not use popcorn button); stop when pops are 1-2 s apart, 2-3 s apart will burn",
+      "time_s": 150,
+      "time_s_max": null
+     },
+     {
+      "action": "stay at the microwave",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "pull open from top corners, away from face",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "None given. Brand says microwave power varies.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Never use the popcorn button",
+     "Don't wander off"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Microwave popcorn bag with 'THIS SIDE UP' marking. Bag material, susceptor and PFAS status not stated on brand pages or FAQ.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "https://popsecret.com/products/homestyle-butter",
+    "https://popsecret.com/pages/faq"
+   ],
+   "data_flags": [
+    "2 1/2 min is a timer setting with an audio stop cue, not a fixed cook time",
+    "net weight not in page text (image file names suggest 3.2 oz bags in 6-count boxes, not confirmed)",
+    "nutrition values not in page text",
+    "no wattage stated",
+    "UPC not shown"
+   ]
+  },
+  {
+   "id": "zw-320",
+   "brand": "Birds Eye",
+   "product_name": "Steamfresh Broccoli Florets",
+   "net_weight": {
+    "oz": 10.8,
+    "g": 306
+   },
+   "upc": "014500021830",
+   "category": "steam_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "place frozen unopened bag 'THIS SIDE UP'; do not pierce; remove metal rack",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH for wattage-specific time (see variants)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "check 165°F in several spots",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "hold light blue corner tabs, tear at notch, pour",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": 1200,
+      "time_s": 270,
+      "time_s_max": null,
+      "note": null
+     },
+     {
+      "wattage_w": 1000,
+      "time_s": 300,
+      "time_s_max": null,
+      "note": null
+     },
+     {
+      "wattage_w": 800,
+      "time_s": 360,
+      "time_s_max": null,
+      "note": null
+     }
+    ],
+    "low_wattage_note": "Below 800 W, use stovetop directions instead.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not pierce bag",
+     "Keep frozen, do not thaw",
+     "Cook only one product at a time"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "2-qt nonstick saucepan, 1/4 cup water, covered, medium heat 10-11 min stirring, stand 1-2 min, drain.",
+   "container": {
+    "description": "Microwave steam bag with built-in vent (may whistle), light blue corner tabs and tear notch. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 1/3 cups (83 g) frozen",
+    "servings_per_container": 4,
+    "calories": 30,
+    "total_fat_g": 0
+   },
+   "source_urls": [
+    "https://smartlabel.labelinsight.com/product/6446590/other/instructions",
+    "https://www.shoprite.com/product/birds-eye-steamfresh-broccoli-florets-108-oz-id-00014500021830"
+   ],
+   "data_flags": [
+    "SmartLabel nutrition page returned a server error; nutrition from ShopRite (servings read as 4 from panel layout)",
+    "ShopRite marketing copy says 4 min; label table is 4 1/2 / 5 / 6 min by wattage"
+   ]
+  },
+  {
+   "id": "zw-321",
+   "brand": "Birds Eye",
+   "product_name": "Steamfresh Mixed Vegetables",
+   "net_weight": {
+    "oz": 10,
+    "g": null
+   },
+   "upc": "014500021281",
+   "category": "steam_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "place frozen unopened bag flat 'this side up'; do not pierce; remove metal rack",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on HIGH for wattage-specific time (see variants)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": 120
+     },
+     {
+      "action": "open at notch over serving dish",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "check 165°F in several spots",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": 1200,
+      "time_s": 300,
+      "time_s_max": null,
+      "note": null
+     },
+     {
+      "wattage_w": 1000,
+      "time_s": 330,
+      "time_s_max": null,
+      "note": null
+     },
+     {
+      "wattage_w": 800,
+      "time_s": 360,
+      "time_s_max": null,
+      "note": null
+     }
+    ],
+    "low_wattage_note": "Below 800 W, use stovetop directions instead.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not pierce bag",
+     "Keep frozen until cooking",
+     "Cook one product at a time"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "2-qt nonstick saucepan, 2 tbsp water, covered, medium heat 7-8 min stirring, stand 1-2 min, drain.",
+   "container": {
+    "description": "Microwave steam bag with steam vent and light blue corner tabs; cooks in the bag. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "2/3 cup (88 g) frozen",
+    "servings_per_container": 3,
+    "calories": 60,
+    "total_fat_g": 1
+   },
+   "source_urls": [
+    "https://preview.hannaford.com/groceries/frozen/frozen-vegetables/frozen-mixed-vegetables/birds-eye-steamfresh-mixed-vegetables-frozen-10-oz-bag.html",
+    "https://www.shoprite.com/product/birds-eye-steamfresh-mixed-vegetables-10-oz-id-00014500021281"
+   ],
+   "data_flags": [
+    "ShopRite marketing copy says 4-4 1/2 min microwave and 11-13 min stovetop, which differs from the Hannaford label transcription used here; check package",
+    "UPC from ShopRite item ID"
+   ]
+  },
+  {
+   "id": "zw-322",
+   "brand": "Birds Eye",
+   "product_name": "Steamfresh Mixed Vegetables Family Size",
+   "net_weight": {
+    "oz": 19,
+    "g": null
+   },
+   "upc": null,
+   "category": "steam_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "microwave bag on HIGH for wattage-specific time (see variants)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": 120
+     },
+     {
+      "action": "remove bag carefully",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": 1200,
+      "time_s": 480,
+      "time_s_max": null,
+      "note": null
+     },
+     {
+      "wattage_w": 1000,
+      "time_s": 540,
+      "time_s_max": null,
+      "note": null
+     },
+     {
+      "wattage_w": 800,
+      "time_s": 600,
+      "time_s_max": null,
+      "note": null
+     }
+    ],
+    "low_wattage_note": "Below 800 W, stovetop cooking is recommended.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "container": {
+    "description": "Family-size microwave steam bag. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "https://www.birdseye.com/faq",
+    "https://giantfoodstores.com/groceries/product/birds-eye-steamfresh-mixed-vegetables-family-size-frozen-19-oz-bag/165532"
+   ],
+   "data_flags": [
+    "times come from the Birds Eye FAQ example, not a label transcription, so marked partial even though a wattage table exists",
+    "do-not statements, UPC and nutrition not collected"
+   ]
+  },
+  {
+   "id": "zw-323",
+   "brand": "Green Giant",
+   "product_name": "Sweet Peas (boxed, microwavable pouch)",
+   "net_weight": {
+    "oz": 8,
+    "g": 226
+   },
+   "upc": "190569522294",
+   "category": "steam_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove pouch from carton; place printed side up on microwavable plate; do not cut slit",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH per wattage chart (see variants)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "pull or cut open, empty into dish, stir",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": 1200,
+      "time_s": 180,
+      "time_s_max": 240,
+      "note": null
+     },
+     {
+      "wattage_w": 1000,
+      "time_s": 240,
+      "time_s_max": 270,
+      "note": null
+     },
+     {
+      "wattage_w": 700,
+      "time_s": 300,
+      "time_s_max": null,
+      "note": null
+     }
+    ],
+    "low_wattage_note": "Chart goes down to 700 W; label says wattages vary, adjust time.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not cut slit in pouch",
+     "Do not leave microwave unattended",
+     "Do not thaw",
+     "Do not heat pouch in boiling water (stovetop)"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Boil 1/3 cup water in 1-qt saucepan, add contents, return to boil, reduce to medium, cover 2-4 min, drain.",
+   "container": {
+    "description": "Freezer box with a microwavable pouch inside; pouch is heated sealed (no slit). Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "2/3 cup (91 g) frozen",
+    "servings_per_container": 2.5,
+    "calories": 70,
+    "total_fat_g": 0
+   },
+   "source_urls": [
+    "https://smartlabel.labelinsight.com/id/12230840/other/instructions",
+    "https://smartlabel.labelinsight.com/id/12230840/nutrition"
+   ],
+   "data_flags": [
+    "servings per container is 'about 2.5'",
+    "SmartLabel does not show a line name; this boxed-pouch format matches the Green Giant Simply Steam line but the page does not say Simply Steam"
+   ]
+  },
+  {
+   "id": "zw-324",
+   "brand": "Green Giant",
+   "product_name": "Green Bean Casserole (boxed, microwavable pouch)",
+   "net_weight": {
+    "oz": 8,
+    "g": 226
+   },
+   "upc": "190569522317",
+   "category": "steam_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove pouch from carton; place printed side up on microwavable plate; do not cut slit",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH per wattage chart (see variants)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "pull or cut open, empty into dish, stir",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": 1200,
+      "time_s": 270,
+      "time_s_max": 330,
+      "note": null
+     },
+     {
+      "wattage_w": 1000,
+      "time_s": 300,
+      "time_s_max": 360,
+      "note": null
+     },
+     {
+      "wattage_w": 700,
+      "time_s": 360,
+      "time_s_max": 420,
+      "note": null
+     }
+    ],
+    "low_wattage_note": "Chart goes down to 700 W; label says adjust for your microwave.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not cut slit in pouch",
+     "Do not leave microwave unattended",
+     "Do not thaw"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Empty pouch into 2-qt nonstick saucepan, add 2 tbsp water, cover, medium heat 10-15 min, breaking up and stirring.",
+   "container": {
+    "description": "Stackable freezer box with a microwavable pouch inside. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "2/3 cup (109 g) frozen",
+    "servings_per_container": 2,
+    "calories": 110,
+    "total_fat_g": 6
+   },
+   "source_urls": [
+    "https://smartlabel.labelinsight.com/id/12230841/other/instructions",
+    "https://smartlabel.labelinsight.com/id/12230841/nutrition"
+   ],
+   "data_flags": [
+    "servings per container is 'about 2'",
+    "line name not shown on SmartLabel"
+   ]
+  },
+  {
+   "id": "zw-325",
+   "brand": "Green Giant",
+   "product_name": "Simply Steam Antioxidant Blend Lightly Sauced (Broccoli, Carrots & Sweet Peppers)",
+   "net_weight": {
+    "oz": 7,
+    "g": null
+   },
+   "upc": "190569537793",
+   "category": "steam_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove pouch from carton; place printed side up on microwavable plate; do not cut slit",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH per wattage chart (see variants)",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "pull or cut open, empty into dish, stir",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [
+     {
+      "wattage_w": 1200,
+      "time_s": 180,
+      "time_s_max": 210,
+      "note": null
+     },
+     {
+      "wattage_w": 1000,
+      "time_s": 240,
+      "time_s_max": null,
+      "note": "source text garbled ('4 to 5 7 min'); upper bound unknown"
+     },
+     {
+      "wattage_w": 700,
+      "time_s": 300,
+      "time_s_max": 330,
+      "note": null
+     }
+    ],
+    "low_wattage_note": "Chart goes down to 700 W.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not cut slit in pouch",
+     "Do not thaw",
+     "Do not heat pouch in boiling water (stovetop)"
+    ],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": null,
+   "stovetop_instructions": "Empty pouch into 1-qt nonstick saucepan, add 2 tbsp water, cover, medium heat 7-15 min, breaking up and stirring.",
+   "container": {
+    "description": "Easy-to-stack box with a microwavable pouch inside. Material not stated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup (110 g) frozen",
+    "servings_per_container": 2,
+    "calories": 50,
+    "total_fat_g": 3
+   },
+   "source_urls": [
+    "https://delivery.publix.com/store/publix/products/27827063-green-giant-simply-steam-antioxidant-blend-lightly-sauced-frozen-vegetables-7-oz",
+    "https://www.shoprite.com/sm/pickup/rsid/286/product/green-giant-simply-steam-sauced-veggies-antioxidant-blend-7-oz-id-00190569537793",
+    "https://www.wegmans.com/shop/product/888910"
+   ],
+   "data_flags": [
+    "marked partial because the 1000 W row is garbled in the only transcription found; photograph the box",
+    "servings 'about 2' from Instacart; ShopRite and Wegmans do not list servings",
+    "Wegmans copy says 3-5 min on high with no wattage"
+   ]
+  }
+ ],
+ "notes": [
+  "25 products (zw-301 to zw-325). Categories: pouch 6, cup_bowl 8, paper_cup 1, frozen_tray 1, popcorn_bag 3, steam_bag 6 (Birds Eye 3, Green Giant 3). Brands: Ben's Original 3, Minute 2, Seeds of Change 2, Success 1, Idahoan 2, Bob Evans 1, Quaker 1, Nissin 1, Maruchan 1, Campbell's Soup on the Go 2, Pop Secret 3, Birds Eye 3, Green Giant 3.",
+  "Completeness: complete 5 (Idahoan Buttery Homestyle at 1100 W, Birds Eye Broccoli Florets and Mixed Vegetables, Green Giant Sweet Peas and Green Bean Casserole), partial 20, none 0, not_applicable 0. Most partials have full step lists but no wattage printed (rice pouches and cups, Bob Evans tray, Campbell's cups, Pop Secret), which the field convention counts as partial.",
+  "New optional fields used: microwave_instructions.quantity_variants [{units, time_s, time_s_max}] for labels that give a second time for 2 pouches or 2 cups (Ben's Original 2 pouches 2 1/2 min; Minute 2 cups 1 1/2 min); microwave_instructions.label_cautions; net_weight.per_unit_oz and units for multipacks; nutrition per_pouch / per_bag for dual-column labels; retailer_item_id as in products.json.",
+  "Container material found: Minute Ready to Serve cups are plastic #5 (polypropylene) and BPA free per the Minute FAQ, in recycled-paper sleeves. Nissin Cup Noodles is a double-wall fiber-based paper cup, 40% recycled fiber, PS-free, no plastic overwrap (inner coating not stated). BPA-free claims: Ben's Original pouches, Seeds of Change Brown Basmati pouch, Success boil-in-bag (also 'FDA-approved for food contact'). No pouch layer structure, bag polymer or popcorn-bag susceptor/PFAS statement was found for any product. Campbell's Soup on the Go label warns 'Metal edges are sharp' after the tab is peeled.",
+  "Do-not and handling rules useful for the app: Green Giant boxed pouches say do not cut a slit (heated sealed) while Ben's Original and Seeds of Change say tear 2 inches to vent and Minute says remove the film completely; Birds Eye says do not pierce and use stovetop below 800 W; Idahoan says do not reuse cup; Success says do not microwave multiple bags and the bag is cooked submerged in about 4 cups water; Pop Secret says never use the popcorn button and stop at 1-2 s between pops; Bob Evans targets 160°F.",
+  "Sources that worked this run: SmartLabel labelinsight (Birds Eye, Green Giant), preview.hannaford.com .html category URLs (worked for 5 fetches, then every request including robots.txt returned ROBOTS_DISALLOWED), Instacart storefronts (delivery.publix.com, milams.instacart.com) which carried full label directions, UberEats store listings (Albertsons, Meijer), Safeway /shop/pd/ (only with the correct numeric ID; a guessed ID returned an unrelated wine), H-E-B, ShopRite (UPC in URL), Wegmans, and brand pages popsecret.com, idahoan.com, quakeroats.com, minuterice.com/faqs/other, successrice.com/faqs/cooking, birdseye.com/faq. Failed: bensoriginal.com, campbells.com, greengiant.com, bobevansgrocery.com, oreida.com (robots), heb.com search, Hannaford/Stop & Shop/Food Lion/Giant/Martin's main sites (maintenance).",
+  "Not covered: Progresso microwavable soup bowls (search found only canned Progresso, no current microwavable bowl listing), Velveeta or Kraft Mac & Cheese cups in non-Original flavors and Ore-Ida Steam n' Mash (Kraft Heinz pages not reachable, oreida.com blocked, UPCs unknown), Bob Evans macaroni & cheese, Maruchan Bowl Chicken Flavor and Nissin Big Cup (no readable directions; no evidence found that Big Cup moved to the microwavable paper cup). The shared WebSearch quota ran out late in the run, so these were not searched further.",
+  "Nissin history: a 2015 trade article already called the then-new Cup Noodles 'microwavable' (2 1/2 min); the 2024 change replaced polystyrene with the paper cup (2 min 15 s). Older stock may differ. zw-017 (Chicken, already in products.json) uses cup_bowl for the same paper cup; zw-313 uses the new paper_cup category, so one of them should be aligned.",
+  "Conflicts flagged rather than resolved: Birds Eye Mixed Vegetables (ShopRite marketing 4-4 1/2 min vs label 5/5 1/2/6 min), Birds Eye Broccoli Florets (ShopRite 4 min vs label 4 1/2/5/6 min), Seeds of Change Quinoa & Brown Rice with Garlic nutrition (Instacart vs H-E-B), Success nutrition (H-E-B vs Instacart), Green Giant Antioxidant Blend 1000 W row garbled.",
+  "No UPC was computed. UPCs come from SmartLabel (Birds Eye Broccoli Florets, Green Giant Sweet Peas, Green Bean Casserole) or ShopRite/ACME item IDs with the two leading zeros dropped (Ben's Original Original, Seeds of Change Brown Basmati, Bob Evans, Birds Eye Mixed Vegetables, Green Giant Antioxidant Blend, Campbell's Chicken & Mini Round Noodles)."
+ ],
+ "packaging_statements": [
+  {
+   "brand": "Minute (Riviana)",
+   "statement": "\"Both the cups and bowls used for Minute® Rice Cups are recyclable (plastic #5 ).\" and \"Both the cups and bowls used for Minute® Rice Cups are BPA free.\"",
+   "url": "https://minuterice.com/faqs/other/"
+  },
+  {
+   "brand": "Minute (Riviana)",
+   "statement": "Ready to Serve Chicken & Herb listing: \"BPA-free cups\"; cups recyclable via store drop-off in most communities; paper sleeves made from 100% recycled materials and curbside recyclable.",
+   "url": "https://www.heb.com/product-detail/1137491"
+  },
+  {
+   "brand": "Minute (Riviana)",
+   "statement": "Ready to Serve White Rice: \"two perfectly portioned 100% recyclable BPA-free cups\". Directions: \"Remove film completely from cup.\" Cup and steam will be extremely hot.",
+   "url": "https://www.safeway.com/shop/pd/minute-ready-to-serve-white-rice-2-count-8-8-oz/960113411"
+  },
+  {
+   "brand": "Ben's Original (Mars)",
+   "statement": "\"Available in a BPA-free microwave rice pouch\"; listed feature \"BPA free pouch\". No pouch layer material given.",
+   "url": "https://shoprite.com/product/bens-original-ready-rice-original-long-grain-white-rice-easy-dinner-side-88-ounce-pouch-id-00054800423330"
+  },
+  {
+   "brand": "Ben's Original (Mars)",
+   "statement": "\"Ready Rice comes in a BPA-free microwave rice pouch that eliminates prep and cleanup.\" Caution: \"Steam from pouch will be hot.\"",
+   "url": "https://heb.com/product-detail/uncle-ben-s-ready-rice-whole-grain-brown-rice/592800"
+  },
+  {
+   "brand": "Ben's Original (Mars)",
+   "statement": "Label transcription: \"Squeeze pouch to separate rice.\" \"Tear two inches to vent.\" \"Remove from microwave using cool touch area on untorn side.\"",
+   "url": "https://preview.hannaford.com/groceries/rice-pasta-beans/rice/white-rice/bens-original-90-second-microwave-ready-rice-long-grain-white-original-88-oz-pkg.html"
+  },
+  {
+   "brand": "Seeds of Change (Mars)",
+   "statement": "Brown Basmati listing describes a \"BPA free pouch\". Material not stated.",
+   "url": "https://www.shoprite.com/product/seeds-of-change-organic-brown-basmati-rice-85-oz-00748404287930"
+  },
+  {
+   "brand": "Success Rice (Riviana)",
+   "statement": "FAQ: \"Is it safe to cook Success® products in the microwave given concerns about plastics?\" Answer: \"Yes. The Success® boil-in-bag is BPA-Free and FDA-approved for food contact.\" Also: \"We do not recommend using the microwave to cook multiple bags.\"",
+   "url": "https://successrice.com/faqs/cooking/"
+  },
+  {
+   "brand": "Success Rice (Riviana)",
+   "statement": "\"BPA-Free Boil-in-Bag\"; \"Recycle both the box and the bag\".",
+   "url": "https://www.orderroombox.com/product/success-ten-minute-boil-in-bag-white-rice/"
+  },
+  {
+   "brand": "Nissin (Cup Noodles)",
+   "statement": "New cup is a \"proprietary retail double-wall fiber-based cup\" developed with Graphic Packaging International, \"made with 40% recycled fiber\", with a \"sleeve made with 100% recycled paper\", no plastic wrap, PS-free; Graphic Packaging CEO called it \"safe for microwave use\"; heated in 2 min 15 s; debut early 2024 across all 16-size flavors. No lining or coating stated.",
+   "url": "https://www.packworld.com/design/materials-containers/article/22877972/nissin-foods-cup-noodles-moves-to-paper-cup"
+  },
+  {
+   "brand": "Nissin (Cup Noodles)",
+   "statement": "\"the cup will be made with 40% recycled fiber\"; \"The new packaging is polystyrene-free\"; \"Easily heated in 2 minutes and 15 seconds\". No recyclability claim.",
+   "url": "https://www.nissinfoods.com/?p=1939"
+  },
+  {
+   "brand": "Nissin (Cup Noodles)",
+   "statement": "2015 launch article calls the then-new Cup Noodles the \"first microwavable Cup Noodles\" (2 1/2 min), before the 2024 paper cup. Cup material not stated.",
+   "url": "https://www.packagingstrategies.com/articles/88193-nissin-introduces-first-microwavable-cup-noodles-with-extra-room-to-customize-your-cup?v=preview"
+  },
+  {
+   "brand": "Idahoan",
+   "statement": "Cup label: \"Note: Do not reuse cup.\" \"Cup & contents will be very hot!\" Directions developed \"Using a 1100W microwave.\" Material not stated.",
+   "url": "https://preview.hannaford.com/groceries/rice-pasta-beans/packaged-meals-sides/instant-potatoes/idahoan-buttery-homestyle-mashed-potatoes-cups-microwave-4-ct-6-oz-pkg.html"
+  },
+  {
+   "brand": "Quaker (PepsiCo)",
+   "statement": "Oatmeal cup: \"Additional space included in cup to prevent product from boiling over.\" \"Caution: Cup and contents may be hot.\" Material not stated.",
+   "url": "https://quakeroats.com/products/hot-cereals/instant-oatmeal-cups/maple-and-brown-sugar"
+  },
+  {
+   "brand": "Campbell's (Soup on the Go)",
+   "statement": "Label: \"Pull up red cap to remove. Set aside. Lift tab to slowly peel towards you.\" \"Microwave uncovered on high for 1 min. 15 sec.\" \"Caution: Metal edges are sharp.\"",
+   "url": "https://www.ubereats.com/store/meijer-15-caberfae-hwys/_0IgFIy0VAS7aJ6ZCnin6w/7db7887d-ebe8-530f-b42e-cb36f9ea07bd/2a728ca5-308a-55c1-977e-6ead17604b74/543cd83e-ca79-5251-92ec-2a6c9e96df06"
+  },
+  {
+   "brand": "Campbell's (Soup on the Go)",
+   "statement": "Chicken & Mini Round Noodles listing marked \"Microwavable\" and references how2recycle.info. No material stated.",
+   "url": "https://lborderacme.rmrdevelopment.com/product/00051000149824/campbells-soup-chicken-mini-round-noodles"
+  },
+  {
+   "brand": "Bob Evans (Post Holdings)",
+   "statement": "Label: \"Remove board overwrap.\" \"Peel back corner or cut a small slit in film to vent.\" \"Always cook this product to 160 degrees F prior to serving.\" Tray material not stated.",
+   "url": "https://www.ubereats.com/store/albertsons-3145-s-alma-school-rd/UeGX8RQvWWW0sUqfrFBSKA/33ee60f3-409f-541f-901b-5257775ad45d/7831870f-bd8a-4a2d-8db9-d1c7942d26c0/5a3a55c4-a471-54a6-9d0b-b74104e71a76"
+  },
+  {
+   "brand": "Green Giant (B&G Foods)",
+   "statement": "Boxed vegetables \"come in freezer-friendly, easy-to-stack boxes, with a microwavable pouch inside.\" Label: \"Do not cut slit in pouch.\" Stovetop: \"Do not heat pouch in boiling water.\"",
+   "url": "https://smartlabel.labelinsight.com/id/12230840/other/instructions"
+  },
+  {
+   "brand": "Birds Eye (Conagra)",
+   "statement": "Steamfresh bag vents steam and may whistle while cooking; label says do not pierce the bag and use stovetop below 800 W. No bag material stated.",
+   "url": "https://smartlabel.labelinsight.com/product/6446590/other/instructions"
+  },
+  {
+   "brand": "Birds Eye (Conagra)",
+   "statement": "FAQ: cooking time varies with microwave wattage; \"for microwaves under 800 watts, stovetop cooking is recommended.\" No bag material, BPA or recyclability answer on the FAQ.",
+   "url": "https://www.birdseye.com/faq"
+  },
+  {
+   "brand": "Pop Secret",
+   "statement": "\"Set time for 2 ½ minutes—never use the popcorn button.\" FAQ: \"Do not rely on the popcorn button on your microwave.\" No bag material, susceptor or PFAS statement on product pages or FAQ.",
+   "url": "https://popsecret.com/pages/faq"
+  }
+ ]
+}

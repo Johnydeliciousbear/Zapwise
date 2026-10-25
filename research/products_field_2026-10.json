@@ -1,0 +1,1526 @@
+{
+ "products": [
+  {
+   "id": "zw-401",
+   "brand": "Trader Joe's",
+   "product_name": "Beef Bulgogi",
+   "net_weight": {
+    "oz": 16,
+    "g": 454
+   },
+   "upc": "00752831",
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "do not remove the seal film before cooking",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cook on high",
+      "time_s": 240,
+      "time_s_max": 300
+     },
+     {
+      "action": "check internal temperature 165°F with a food thermometer",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "let stand",
+      "time_s": 60,
+      "time_s_max": 120
+     },
+     {
+      "action": "carefully remove the film and stir gently",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.'",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Stovetop: pan with 2 Tbsp oil over medium-low, cook and stir until 165°F.",
+   "container": {
+    "description": "Black plastic tray with sealed film, cooked in the tray. No resin code visible in the photos.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "5 oz (140g)",
+    "servings_per_container": 3,
+    "calories": 280,
+    "total_fat_g": 16
+   },
+   "source_urls": [
+    "photo:photos/products/zw-401/front.jpg",
+    "photo:photos/products/zw-401/back.jpg",
+    "photo:photos/products/zw-401/side.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-402",
+   "brand": "Trader Joe's",
+   "product_name": "Spicy Chicken Nuggets",
+   "net_weight": {
+    "oz": 12,
+    "g": 340
+   },
+   "upc": "00782227",
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "place a single layer of nuggets on a microwave-safe plate",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on high",
+      "time_s": 50,
+      "time_s_max": null
+     },
+     {
+      "action": "let stand",
+      "time_s": 120,
+      "time_s_max": 180
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.'",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Oven 425°F on an oiled baking sheet 10-12 min, flip halfway, stand 2-3 min. Air fryer 6-8 min.",
+   "container": {
+    "description": "Nuggets are moved to a plate; the black tray is not heated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "4 pieces (79g)",
+    "servings_per_container": 4.5,
+    "calories": 170,
+    "total_fat_g": 11
+   },
+   "source_urls": [
+    "photo:photos/products/zw-402/front.jpg",
+    "photo:photos/products/zw-402/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-403",
+   "brand": "Factor",
+   "product_name": "Smoky Gouda Chicken with Potatoes & Parmesan Green Beans",
+   "net_weight": {
+    "oz": 13.1,
+    "g": 369
+   },
+   "upc": "810158942295",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove outer sleeve and pierce film with a fork",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 120,
+      "time_s_max": null
+     },
+     {
+      "action": "if needed, continue in 30 second intervals until 165°F",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "let stand",
+      "time_s": 120,
+      "time_s_max": null
+     },
+     {
+      "action": "carefully remove film",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Cooking times may vary.' No wattage given.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Black plastic tray with film in a paper sleeve; resin triangle moulded on the bottom, digit not legible in the photo. Sleeve says BPA free, PFAS free.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 Tray (369g)",
+    "servings_per_container": 1,
+    "calories": 520,
+    "total_fat_g": 24
+   },
+   "source_urls": [
+    "photo:photos/products/zw-403/front.jpg",
+    "photo:photos/products/zw-403/side.jpg",
+    "photo:photos/products/zw-403/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Target)"
+   ],
+   "store": "Target"
+  },
+  {
+   "id": "zw-404",
+   "brand": "Market Pantry",
+   "product_name": "Extra Butter Microwave Popcorn, 6 bags",
+   "net_weight": {
+    "oz": 17.4,
+    "g": 493
+   },
+   "upc": "085239113509",
+   "category": "popcorn_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [],
+    "wattage_variants": [],
+    "low_wattage_note": "Directions are printed on the bag; not photographed.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "none"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Microwave popcorn bags (6 x 2.9 oz) in a carton.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "2 tbsp unpopped (30g)",
+    "servings_per_container": 16,
+    "calories": 150,
+    "total_fat_g": 9
+   },
+   "source_urls": [
+    "photo:photos/products/zw-404/front.jpg",
+    "photo:photos/products/zw-404/side.jpg",
+    "photo:photos/products/zw-404/front2.jpg",
+    "photo:photos/products/zw-404/nutrition.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Target)"
+   ],
+   "store": "Target"
+  },
+  {
+   "id": "zw-405",
+   "brand": "SkinnyPop",
+   "product_name": "Butter Microwave Popcorn, 6 bags",
+   "net_weight": {
+    "oz": 16.8,
+    "g": 476
+   },
+   "upc": "816925023587",
+   "category": "popcorn_bag",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [],
+    "wattage_variants": [],
+    "low_wattage_note": "Directions are printed on the bag; not photographed.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Do not cook in a traditional oven"
+    ],
+    "instructions_completeness": "none"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Microwave popcorn bags (6 x 2.8 oz) in a carton.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "2 TBSP (32g) unpopped",
+    "servings_per_container": 15,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "photo:photos/products/zw-405/front.jpg",
+    "photo:photos/products/zw-405/side.jpg",
+    "photo:photos/products/zw-405/nutrition.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Target)"
+   ],
+   "store": "Target"
+  },
+  {
+   "id": "zw-406",
+   "brand": "Trader Joe's",
+   "product_name": "Tortilla Española (Spanish omelet with potatoes and onions)",
+   "net_weight": {
+    "oz": 21.16,
+    "g": 600
+   },
+   "upc": "00757560",
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "pierce film",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on high",
+      "time_s": 600,
+      "time_s_max": 720
+     },
+     {
+      "action": "let stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "carefully remove film and serve",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.'",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Stovetop: 1 Tbsp oil in a non-stick pan over medium heat, covered, 8-9 min per side.",
+   "container": {
+    "description": "White round plastic tray with film and a paper band; moulded text on the rim not legible.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1/6 omelet (100g)",
+    "servings_per_container": 6,
+    "calories": 150,
+    "total_fat_g": 7
+   },
+   "source_urls": [
+    "photo:photos/products/zw-406/front.jpg",
+    "photo:photos/products/zw-406/lid.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)",
+    "product of Spain"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-407",
+   "brand": "Trader Joe's",
+   "product_name": "Carne Asada Burritos",
+   "net_weight": {
+    "oz": 14,
+    "g": 397
+   },
+   "upc": "00699983",
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "remove burrito from packaging, place on a microwave-safe plate and cover with a moistened paper towel",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on high (one burrito)",
+      "time_s": 120,
+      "time_s_max": 150
+     },
+     {
+      "action": "until internal temperature reaches 165°F",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.' Two burritos: 4-5 min.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Oven 450°F wrapped in foil on a baking sheet, about 20 min, to 165°F.",
+   "container": {
+    "description": "Burritos are unwrapped and heated on a plate; the clear tray is not heated.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 burrito (198g)",
+    "servings_per_container": 2,
+    "calories": 490,
+    "total_fat_g": 19
+   },
+   "source_urls": [
+    "photo:photos/products/zw-407/front.jpg",
+    "photo:photos/products/zw-407/tray.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-408",
+   "brand": "Trader Joe's",
+   "product_name": "Chicken Mole (dark meat chicken in a smoky and savory chile blend sauce)",
+   "net_weight": {
+    "oz": 16,
+    "g": 454
+   },
+   "upc": "00798631",
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "remove tray from sleeve and pierce film 2 to 3 times with a fork",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on high",
+      "time_s": 120,
+      "time_s_max": null
+     },
+     {
+      "action": "carefully remove film and stir",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on high",
+      "time_s": 120,
+      "time_s_max": 180
+     },
+     {
+      "action": "let stand",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.'",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Stovetop: nonstick skillet over medium heat, covered, 3 min, stir, 2-4 min more.",
+   "container": {
+    "description": "Dark plastic tray with film in a sleeve; microwave and stovetop directions only.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "5 oz (140g)",
+    "servings_per_container": 3,
+    "calories": 190,
+    "total_fat_g": 7
+   },
+   "source_urls": [
+    "photo:photos/products/zw-408/front.jpg",
+    "photo:photos/products/zw-408/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-409",
+   "brand": "Trader Joe's",
+   "product_name": "Beef Birria (slow cooked beef in a savory tomato & chile sauce)",
+   "net_weight": {
+    "oz": 16,
+    "g": 454
+   },
+   "upc": "00726207",
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "remove outer packaging and carefully puncture film",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on high",
+      "time_s": 150,
+      "time_s_max": null
+     },
+     {
+      "action": "carefully remove film and stir",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on high",
+      "time_s": 150,
+      "time_s_max": null
+     },
+     {
+      "action": "until product reaches 165°F",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.'",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Stovetop: thaw overnight, pour contents into a pot and bring to a boil over medium heat.",
+   "container": {
+    "description": "Black plastic tray with film in a sleeve; microwave and stovetop directions only.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup (227g)",
+    "servings_per_container": 2,
+    "calories": 280,
+    "total_fat_g": 15
+   },
+   "source_urls": [
+    "photo:photos/products/zw-409/front.jpg",
+    "photo:photos/products/zw-409/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-410",
+   "brand": "Trader Joe's",
+   "product_name": "Grilled Chicken Rice & Veggies Meal",
+   "net_weight": {
+    "oz": 12,
+    "g": 340
+   },
+   "upc": "00684699",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "remove film",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "with lid on, heat on high power",
+      "time_s": 120,
+      "time_s_max": 150
+     },
+     {
+      "action": "let stand",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "remove lid carefully and serve",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.'",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Black plastic base with a clear plastic lid; the label says to heat with the lid on.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 container (340g)",
+    "servings_per_container": 1,
+    "calories": 360,
+    "total_fat_g": 7
+   },
+   "source_urls": [
+    "photo:photos/products/zw-410/front.jpg",
+    "photo:photos/products/zw-410/side.jpg",
+    "photo:photos/products/zw-410/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)",
+    "heated with a clear plastic lid on (lid not modelled)"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-411",
+   "brand": "Trader Joe's",
+   "product_name": "Just Chicken (cooked chicken breast, extra virgin olive oil, salt & pepper)",
+   "net_weight": {
+    "oz": 16,
+    "g": 454
+   },
+   "upc": "00430203",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "puncture film",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on high",
+      "time_s": 90,
+      "time_s_max": 120
+     },
+     {
+      "action": "until heated through",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.'",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Black plastic tray with film; mould number 222001-11 on the rim, no resin code visible.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "3 oz (84g)",
+    "servings_per_container": 5,
+    "calories": 120,
+    "total_fat_g": 4
+   },
+   "source_urls": [
+    "photo:photos/products/zw-411/front.jpg",
+    "photo:photos/products/zw-411/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-412",
+   "brand": "Trader Joe's",
+   "product_name": "Roasted Rosemary Boneless Chicken Breast with a Brown & Wild Rice Blend",
+   "net_weight": {
+    "oz": 18,
+    "g": 510
+   },
+   "upc": "00161886",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "place tray in microwave",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on HIGH",
+      "time_s": 120,
+      "time_s_max": 180
+     },
+     {
+      "action": "let sit before removing film",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.'",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Conventional oven (preferred): 350°F, lift one corner of film, tray on a baking sheet, 20-25 min to 160°F.",
+   "container": {
+    "description": "Black tray with film; moulded resin code 1 PET on the bottom, and the same tray goes into a 350°F oven.",
+    "material": "PET",
+    "recycling_code": 1,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1/3 package (170g)",
+    "servings_per_container": 3,
+    "calories": 250,
+    "total_fat_g": 5
+   },
+   "source_urls": [
+    "photo:photos/products/zw-412/front.jpg",
+    "photo:photos/products/zw-412/bottom.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-413",
+   "brand": "Trader Joe's",
+   "product_name": "Meat Lasagna",
+   "net_weight": {
+    "oz": 20,
+    "g": 567
+   },
+   "upc": "00429818",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1200,
+    "steps": [
+     {
+      "action": "pierce film several times to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on high",
+      "time_s": 300,
+      "time_s_max": null
+     },
+     {
+      "action": "until internal temperature reaches 160°F",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "let stand",
+      "time_s": 120,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave heat times may vary depending on oven wattage.'",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Oven: remove film, cover tray with foil, on a baking sheet, 25-30 min to 160°F, stand 2 min.",
+   "container": {
+    "description": "Black tray with film; the oven directions use the same tray under foil.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": 2.5,
+    "calories": 390,
+    "total_fat_g": 19
+   },
+   "source_urls": [
+    "photo:photos/products/zw-413/front.jpg",
+    "photo:photos/products/zw-413/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Trader Joe's)",
+    "servings from calories per container (1000) / per serving (390)"
+   ],
+   "store": "Trader Joe's"
+  },
+  {
+   "id": "zw-414",
+   "brand": "Good & Gather",
+   "product_name": "Yukon Gold Mashed Potatoes",
+   "net_weight": {
+    "oz": 24,
+    "g": 680
+   },
+   "upc": "085239047712",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "puncture film",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 180,
+      "time_s_max": null
+     },
+     {
+      "action": "carefully remove film and stir",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave uncovered",
+      "time_s": 60,
+      "time_s_max": null
+     },
+     {
+      "action": "let stand",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave ovens may vary; adjust heating times accordingly.' No wattage given.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Black plastic tray with film in a paper sleeve; microwave directions only.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1/2 cup (140g)",
+    "servings_per_container": 5,
+    "calories": 180,
+    "total_fat_g": 11
+   },
+   "source_urls": [
+    "photo:photos/products/zw-414/front.jpg",
+    "photo:photos/products/zw-414/side.jpg",
+    "photo:photos/products/zw-414/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Target)"
+   ],
+   "store": "Target"
+  },
+  {
+   "id": "zw-415",
+   "brand": "Good & Gather",
+   "product_name": "Cavatappi Pesto Pasta with Diced Grilled Chicken Breast",
+   "net_weight": {
+    "oz": 15.8,
+    "g": 448
+   },
+   "upc": null,
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove film and cover with a paper towel",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 120,
+      "time_s_max": null
+     },
+     {
+      "action": "stir and replace paper towel",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave",
+      "time_s": 90,
+      "time_s_max": 150
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Appliances may vary; adjust accordingly.' No wattage given.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Clear plastic tray in a paper sleeve; heated in the tray under a paper towel. Resin code not photographed.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup (210g)",
+    "servings_per_container": 2,
+    "calories": 470,
+    "total_fat_g": 27
+   },
+   "source_urls": [
+    "photo:photos/products/zw-415/front.jpg",
+    "photo:photos/products/zw-415/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Target)",
+    "barcode not captured in the photos"
+   ],
+   "store": "Target"
+  },
+  {
+   "id": "zw-416",
+   "brand": "Good & Gather",
+   "product_name": "Three Cheese Chicken Meatballs",
+   "net_weight": {
+    "oz": 12,
+    "g": 340
+   },
+   "upc": "085239189412",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "pierce hole in film to vent",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 90,
+      "time_s_max": 120
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Appliances may vary; adjust accordingly.' No wattage given.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Clear plastic tray in a paper carton; resin code not photographed.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "3 pieces (87g)",
+    "servings_per_container": 4,
+    "calories": 160,
+    "total_fat_g": 7
+   },
+   "source_urls": [
+    "photo:photos/products/zw-416/front.jpg",
+    "photo:photos/products/zw-416/nutrition.jpg",
+    "photo:photos/products/zw-416/side.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Target)"
+   ],
+   "store": "Target"
+  },
+  {
+   "id": "zw-417",
+   "brand": "Sea Cuisine",
+   "product_name": "Garlic & Herb Tilapia",
+   "net_weight": {
+    "oz": 9,
+    "g": 255
+   },
+   "upc": "035493014685",
+   "category": "oven_only",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [],
+    "wattage_variants": [],
+    "low_wattage_note": null,
+    "do_not_microwave": null,
+    "do_not_statements": [
+     "No microwave directions on the label"
+    ],
+    "instructions_completeness": "not_applicable"
+   },
+   "oven_instructions": "Oven 400°F, frozen fillets in a single layer on a shallow pan, 18-20 min. Skillet: medium-high, 10-11 min, turn halfway.",
+   "container": {
+    "description": "Black tray with film in a paper band; the fillets are cooked out of the tray.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": 2,
+    "calories": 230,
+    "total_fat_g": 9
+   },
+   "source_urls": [
+    "photo:photos/products/zw-417/front.jpg",
+    "photo:photos/products/zw-417/back.jpg",
+    "photo:photos/products/zw-417/directions.jpg",
+    "photo:photos/products/zw-417/nutrition.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)"
+   ],
+   "store": "Safeway/Albertsons"
+  },
+  {
+   "id": "zw-418",
+   "brand": "Cafe Spice",
+   "product_name": "Chicken Tikka Masala with Basmati Saffron Rice",
+   "net_weight": {
+    "oz": 16,
+    "g": 454
+   },
+   "upc": "825120004017",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove sleeve and puncture film on the curry sauce side",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on high",
+      "time_s": 180,
+      "time_s_max": 300
+     },
+     {
+      "action": "let stand",
+      "time_s": 120,
+      "time_s_max": null
+     },
+     {
+      "action": "reheat to at least 165°F",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Cook times vary depending on equipment.' No wattage given.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Translucent two-compartment plastic tray with film; heated in the tray. Resin code not photographed.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1/2 package (227g)",
+    "servings_per_container": 2,
+    "calories": 370,
+    "total_fat_g": 16
+   },
+   "source_urls": [
+    "photo:photos/products/zw-418/front.jpg",
+    "photo:photos/products/zw-418/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)"
+   ],
+   "store": "Safeway/Albertsons"
+  },
+  {
+   "id": "zw-419",
+   "brand": "Ready Pearls",
+   "product_name": "BBQ Steamed Pork Bun, 4 count (store-packed)",
+   "net_weight": {
+    "oz": 11,
+    "g": 312
+   },
+   "upc": "210703509995",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on high",
+      "time_s": 30,
+      "time_s_max": 60
+     },
+     {
+      "action": "until the meal reaches an internal temperature of 165°F",
+      "time_s": null,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'Microwave times may vary.' No wattage given.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Anchor Packaging base moulded MICROWAVE SAFE with resin code 5 PP; clear lid removed before heating.",
+    "material": "PP",
+    "recycling_code": 5,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "photo:photos/products/zw-419/front.jpg",
+    "photo:photos/products/zw-419/label1.jpg",
+    "photo:photos/products/zw-419/label2.jpg",
+    "photo:photos/products/zw-419/label3.jpg",
+    "photo:photos/products/zw-419/base.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)",
+    "random-weight store barcode (price embedded)"
+   ],
+   "store": "Safeway/Albertsons"
+  },
+  {
+   "id": "zw-420",
+   "brand": "Yummi Sushi",
+   "product_name": "Mongolian Chicken Hot Bowl with White Rice (store-packed)",
+   "net_weight": {
+    "oz": 11.6,
+    "g": 329
+   },
+   "upc": "850075064502",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [],
+    "wattage_variants": [],
+    "low_wattage_note": "No heating directions on the label (sold hot).",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "none"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Red plastic bowl with clear lid; resin code not photographed.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "329g",
+    "servings_per_container": 1,
+    "calories": 165,
+    "total_fat_g": 0
+   },
+   "source_urls": [
+    "photo:photos/products/zw-420/label.jpg",
+    "photo:photos/products/zw-420/front.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)",
+    "label nutrition (165 kcal, 0 g fat for 329 g) looks incomplete; recheck"
+   ],
+   "store": "Safeway/Albertsons"
+  },
+  {
+   "id": "zw-421",
+   "brand": "Albertsons",
+   "product_name": "Signature Cafe Half Rack Sweet Savory Sauce Ribs (hot case)",
+   "net_weight": {
+    "oz": 10,
+    "g": 283
+   },
+   "upc": "218842010990",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [],
+    "wattage_variants": [],
+    "low_wattage_note": "No heating directions on the label (sold hot).",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "none"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Anchor Packaging base (moulded MICROWAVE SAFE) with clear lid; resin code not photographed.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "photo:photos/products/zw-421/front.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)",
+    "random-weight store barcode (price embedded)"
+   ],
+   "store": "Safeway/Albertsons"
+  },
+  {
+   "id": "zw-422",
+   "brand": "Albertsons",
+   "product_name": "Signature Homestyle Meatloaf (hot case)",
+   "net_weight": {
+    "oz": 18,
+    "g": 510
+   },
+   "upc": "218190010994",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [],
+    "wattage_variants": [],
+    "low_wattage_note": "No heating directions on the label (sold hot).",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "none"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "Clear-lid hot-case container; base material not photographed.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": null,
+    "servings_per_container": null,
+    "calories": null,
+    "total_fat_g": null
+   },
+   "source_urls": [
+    "photo:photos/products/zw-422/front.jpg",
+    "photo:photos/products/zw-422/label.jpg",
+    "photo:photos/products/zw-422/side.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)",
+    "random-weight store barcode (price embedded)"
+   ],
+   "store": "Safeway/Albertsons"
+  },
+  {
+   "id": "zw-423",
+   "brand": "ReadyMeals",
+   "product_name": "Chicken Piccata with Capellini Pasta",
+   "net_weight": {
+    "oz": 12.9,
+    "g": 366
+   },
+   "upc": "030223037941",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cover tray and place in the center of the microwave",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on High",
+      "time_s": 180,
+      "time_s_max": 210
+     },
+     {
+      "action": "or to 165°F",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "let rest",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'The power of microwave ovens varies. You may have to adjust cooking time.' No wattage given.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "White tray moulded with resin code 5 PP; clear lid moulded REMOVE LID BEFORE MICROWAVING.",
+    "material": "PP",
+    "recycling_code": 5,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup (127g)",
+    "servings_per_container": 3,
+    "calories": 160,
+    "total_fat_g": 4
+   },
+   "source_urls": [
+    "photo:photos/products/zw-423/front.jpg",
+    "photo:photos/products/zw-423/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)"
+   ],
+   "store": "Safeway/Albertsons"
+  },
+  {
+   "id": "zw-424",
+   "brand": "ReadyMeals",
+   "product_name": "Chicken & Teriyaki Sauce with Rice",
+   "net_weight": {
+    "oz": 12.75,
+    "g": 361
+   },
+   "upc": "021130100927",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cover tray and place in the center of the microwave",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on High",
+      "time_s": 180,
+      "time_s_max": 210
+     },
+     {
+      "action": "or to 165°F",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "let rest",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'The power of microwave ovens varies. You may have to adjust cooking time.' No wattage given.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "White tray moulded with resin code 5 PP; clear lid moulded REMOVE LID BEFORE MICROWAVING.",
+    "material": "PP",
+    "recycling_code": 5,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup (145g)",
+    "servings_per_container": 2.5,
+    "calories": 210,
+    "total_fat_g": 2
+   },
+   "source_urls": [
+    "photo:photos/products/zw-424/front.jpg",
+    "photo:photos/products/zw-424/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)"
+   ],
+   "store": "Safeway/Albertsons"
+  },
+  {
+   "id": "zw-425",
+   "brand": "ReadyMeals",
+   "product_name": "Ziti with Italian Style Pork Sausage",
+   "net_weight": {
+    "oz": 13.8,
+    "g": 391
+   },
+   "upc": "030223076865",
+   "category": "chilled_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": null,
+    "steps": [
+     {
+      "action": "remove lid",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "cover tray and place in the center of the microwave",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "heat on High",
+      "time_s": 210,
+      "time_s_max": 240
+     },
+     {
+      "action": "or to 165°F",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "let rest",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: 'The power of microwave ovens varies. You may have to adjust cooking time.' No wattage given.",
+    "do_not_microwave": false,
+    "do_not_statements": [],
+    "instructions_completeness": "partial"
+   },
+   "oven_instructions": "",
+   "container": {
+    "description": "White tray moulded with resin code 5 PP; clear lid moulded REMOVE LID BEFORE MICROWAVING.",
+    "material": "PP",
+    "recycling_code": 5,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "1 cup (138g)",
+    "servings_per_container": 3,
+    "calories": 180,
+    "total_fat_g": 7
+   },
+   "source_urls": [
+    "photo:photos/products/zw-425/front.jpg",
+    "photo:photos/products/zw-425/side.jpg",
+    "photo:photos/products/zw-425/back.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)"
+   ],
+   "store": "Safeway/Albertsons"
+  },
+  {
+   "id": "zw-426",
+   "brand": "P.F. Chang's",
+   "product_name": "Home Menu Mini Chicken Egg Rolls",
+   "net_weight": {
+    "oz": 8.8,
+    "g": 249
+   },
+   "upc": "031000700041",
+   "category": "frozen_tray",
+   "microwave_instructions": {
+    "reference_wattage_w": 1100,
+    "steps": [
+     {
+      "action": "place 4 egg rolls on a small microwave-safe plate and cover with a damp paper towel",
+      "time_s": null,
+      "time_s_max": null
+     },
+     {
+      "action": "microwave on HIGH",
+      "time_s": 60,
+      "time_s_max": 90
+     },
+     {
+      "action": "let stand",
+      "time_s": 60,
+      "time_s_max": null
+     }
+    ],
+    "wattage_variants": [],
+    "low_wattage_note": "Label: directions developed with 1100-watt microwave ovens; appliances vary.",
+    "do_not_microwave": false,
+    "do_not_statements": [
+     "Signature sauce packet: do not microwave"
+    ],
+    "instructions_completeness": "complete"
+   },
+   "oven_instructions": "Air fryer 400°F 7-9 min; oven 425°F 12-14 min on a baking sheet.",
+   "container": {
+    "description": "Egg rolls are moved to a plate; carton with an inner wrap.",
+    "material": null,
+    "recycling_code": null,
+    "bpa_free": null
+   },
+   "nutrition_per_serving": {
+    "serving_size": "4 egg rolls plus 1 2/3 tbsp sauce (125g)",
+    "servings_per_container": 2,
+    "calories": 190,
+    "total_fat_g": 4
+   },
+   "source_urls": [
+    "photo:photos/products/zw-426/front.jpg",
+    "photo:photos/products/zw-426/side.jpg",
+    "photo:photos/products/zw-426/back.jpg",
+    "photo:photos/products/zw-426/side2.jpg"
+   ],
+   "data_flags": [
+    "label photographed 2026-10-14 (Safeway/Albertsons)"
+   ],
+   "store": "Safeway/Albertsons"
+  }
+ ],
+ "notes": [
+  "Transcribed from 132 store photos taken 2026-10-14 (Target, Trader Joe's, Safeway/Albertsons). Times in seconds; ranges as time_s..time_s_max.",
+  "Not added: Kibun oden set (stovetop only), shrimp cocktail (not heated).",
+  "Trader Joe's labels state 1200 W; Conagra (P.F. Chang's) states 1100 W; Target, Factor, Cafe Spice and store-packed meals state no wattage."
+ ],
+ "packaging_statements": []
+}

@@ -1,0 +1,238 @@
+{
+  "_meta": {
+    "compiled": "2026-10-14",
+    "purpose": "ZapWise (Congressional App Challenge) parameter sheet: Piringer/Crank migration model + partition coefficients for microwave reheating of food in plastic containers",
+    "verification_legend": "VERIFIED = number read from the cited URL in this session. TRANSCRIBED = read from cited URL but the PDF text extraction was garbled, so the formula was reconstructed from the variable list plus standard literature; check against the PDF. UNVERIFIED = not confirmed from a fetched source in this session."
+  },
+
+  "piringer": {
+    "primary_source": {
+      "citation": "Simoneau C. (ed.), Brandsch R., Mercea P., Piringer O., Begley T., Hoekstra E., et al. (2010). Applicability of generally recognised diffusion models for the estimation of specific migration in support of EU Directive 2002/72/EC. JRC59476, EUR 24514 EN, Publications Office of the EU.",
+      "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC59476/reqno_jrc59476_mathmod_v10_cs_2010_09_24_final.pdf%5B1%5D.pdf",
+      "sections": "Sec. 2.2.1 Eqs. (7)-(8); polymer Tables 1-10 in Sec. 3"
+    },
+    "secondary_sources": [
+      {
+        "citation": "Hoekstra E.J., Brandsch R., Dequatre C., Mercea P., Milana M.R., Stoermer A., Trier X., Vitrac O., Schaefer A., Simoneau C. (2015). Practical guidelines on the application of migration modelling for the estimation of specific migration. JRC98028, EUR 27529 EN.",
+        "url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC98028",
+        "download_url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC98028/lbna27529ene.epub",
+        "status": "Bibliographic record VERIFIED. Contents NOT READ: the only bitstream is an EPUB (binary, unreadable by WebFetch) and the sandbox proxy blocks publications.jrc.ec.europa.eu. Whether the 2015 edition changed any A_P'/tau value is UNVERIFIED."
+      },
+      {
+        "citation": "Begley T., Castle L., Feigenbaum A., Franz R., Hinrichs K., Lickly T., Mercea P., Milana M., O'Brien A., Rebre S., Rijk R., Piringer O. (2005). Evaluation of migration models that might be used in support of regulations for food-contact plastics. Food Additives and Contaminants 22(1):73-90.",
+        "url": "https://hal.inrae.fr/hal-02682223v1/file/8977_20110511110325482_1.pdf",
+        "status": "Open-access copy exists on HAL but was blocked by an Anubis bot wall; NOT READ."
+      }
+    ],
+    "equation": {
+      "D_P": "D_P = 1e4 * exp( A_P - 0.1351 * Mr^(2/3) + 0.003 * Mr - 10454 / T )",
+      "A_P": "A_P = A_P' - tau / T",
+      "units": "D_P in cm^2/s; Mr = relative molecular mass of migrant (g/mol); T = absolute temperature (K); tau in K; A_P' dimensionless",
+      "constants": {"D0_prefactor_cm2_per_s": 10000, "c_Mr_2_3": 0.1351, "c_Mr": 0.003, "c_T_K": 10454},
+      "interpretation": "Gives an upper-bound (overestimating) diffusion coefficient D_P*; JRC text states D_P <= D_P*. tau = 1577 K corresponds to an extra activation energy term (Welle/Fraunhofer: tau 1577 K for PET ~ E_A 100 kJ/mol).",
+      "status": "TRANSCRIBED. Constants 0.1351, 0.003, 10454 and A_P = A_P' - tau/T VERIFIED from JRC59476 Sec. 2.2.1 Eqs. (7)-(8); the 1e4 prefactor was lost in the garbled PDF extraction and is taken from the standard published form (consistent with Begley 2005). Sanity check: DBP (Mr 278) in LDPE at 40 C gives D ~ 2e-8 cm2/s, the expected order of magnitude.",
+      "source": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC59476/reqno_jrc59476_mathmod_v10_cs_2010_09_24_final.pdf%5B1%5D.pdf"
+    },
+    "polymer_table": [
+      {"polymer": "LDPE", "AP_prime": 11.5, "tau": 0, "T_max_C": 80, "Mr_range": "30-2000", "notes": "Listed as LDPE/LLDPE in Table 2. T_max as transcribed from Table 1; double-check against the PDF.", "source": "JRC59476 Table 1-2, Sec. 3.2"},
+      {"polymer": "LLDPE", "AP_prime": 11.5, "tau": 0, "T_max_C": 100, "Mr_range": "30-2000", "notes": "Same parameters as LDPE.", "source": "JRC59476 Table 1-2, Sec. 3.2"},
+      {"polymer": "HDPE", "AP_prime": 14.5, "tau": 1577, "T_max_C": 90, "Mr_range": "30-2000", "notes": "", "source": "JRC59476 Table 1-2, Sec. 3.2"},
+      {"polymer": "PP (homo and random)", "AP_prime": 13.1, "tau": 1577, "T_max_C": 120, "Mr_range": "30-2000", "notes": "The usual 'microwave-safe' container polymer; validity covers microwave reheating temperatures.", "source": "JRC59476 Table 1-2, Sec. 3.2"},
+      {"polymer": "PP (rubber-modified / heterophasic)", "AP_prime": 11.5, "tau": 0, "T_max_C": 100, "Mr_range": "30-2000", "notes": "", "source": "JRC59476 Table 1-2, Sec. 3.2"},
+      {"polymer": "PS (GPPS)", "AP_prime": -1.0, "tau": 0, "T_max_C": 70, "Mr_range": "104-647", "notes": "Above 70 C (all microwave reheating) the model is outside its validated range.", "source": "JRC59476 Tables 3-4, Sec. 3.3"},
+      {"polymer": "HIPS", "AP_prime": 1.0, "tau": 0, "T_max_C": 70, "Mr_range": "104-430", "notes": "", "source": "JRC59476 Tables 3-4, Sec. 3.3"},
+      {"polymer": "SBS", "AP_prime": 10.5, "tau": 0, "T_max_C": 70, "Mr_range": "84-689", "notes": "", "source": "JRC59476 Tables 3-4, Sec. 3.3"},
+      {"polymer": "PET (T > Tg ~70 C)", "AP_prime": 6.4, "tau": 1577, "T_max_C": 175, "Mr_range": ">32", "notes": "Use above the glass transition temperature (about 70 C), which covers microwave heating.", "source": "JRC59476 Tables 5-6, Sec. 3.4; A_P' 3.1/6.4 and tau 1577 also VERIFIED in Fraunhofer IVV note https://www.ivv.fraunhofer.de/content/dam/ivv/en/documents/Forschungsfelder/Produktsicherheit-und-analytik/Prediction_of_diffusion_coefficients.pdf"},
+      {"polymer": "PET (T < Tg ~70 C)", "AP_prime": 3.1, "tau": 1577, "T_max_C": 70, "Mr_range": ">32", "notes": "", "source": "JRC59476 Table 6; Fraunhofer IVV note (same URL as above)"},
+      {"polymer": "PEN", "AP_prime": 5.0, "tau": 1577, "T_max_C": 175, "Mr_range": ">32", "notes": "", "source": "JRC59476 Tables 5-6, Sec. 3.4"},
+      {"polymer": "PA6", "AP_prime": 0.0, "tau": 0, "T_max_C": 100, "Mr_range": "113 (single migrant tested)", "notes": "JRC: PA parameters 'not considered fully validated'.", "source": "JRC59476 Tables 7-8, Sec. 3.5"},
+      {"polymer": "PA6,6", "AP_prime": 2.0, "tau": 0, "T_max_C": 100, "Mr_range": "32-587", "notes": "Not fully validated.", "source": "JRC59476 Tables 7-8, Sec. 3.5"},
+      {"polymer": "PA12", "AP_prime": 2.6, "tau": 0, "T_max_C": 100, "Mr_range": "197 (single migrant tested)", "notes": "Not fully validated.", "source": "JRC59476 Tables 7-8, Sec. 3.5"},
+      {"polymer": "PVC (rigid/unplasticised)", "AP_prime": -1.0, "tau": 0, "T_max_C": 70, "Mr_range": ">225", "notes": "", "source": "JRC59476 Tables 9-10, Sec. 3.6.1"},
+      {"polymer": "PVC (plasticised)", "AP_prime_formula": "A_P' = -1 + 0.52 * (% plasticiser)", "AP_prime_at_30pct": 14.6, "tau": null, "T_max_C": null, "Mr_range": null, "notes": "Not fully validated; tau not given in the extraction (UNVERIFIED, probably 0).", "source": "JRC59476 Sec. 3.6.2"},
+      {"polymer": "PC", "AP_prime": null, "tau": null, "notes": "JRC experts considered data insufficient; no parameters.", "source": "JRC59476 Sec. 3.1"},
+      {"polymer": "PBT", "AP_prime": null, "tau": null, "notes": "Not in JRC59476. UNVERIFIED whether JRC98028 (2015) adds it.", "source": "JRC59476"}
+    ],
+    "url_JRC59476": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC59476/reqno_jrc59476_mathmod_v10_cs_2010_09_24_final.pdf%5B1%5D.pdf"
+  },
+
+  "crank": {
+    "source": "JRC59476 Sec. 2.1.3, Eqs. (3)-(6), citing Crank J. (1975) The Mathematics of Diffusion, 2nd ed., Oxford.",
+    "url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC59476/reqno_jrc59476_mathmod_v10_cs_2010_09_24_final.pdf%5B1%5D.pdf",
+    "geometry": "Polymer film/sheet of thickness d_P, one side in contact with a finite, well-mixed food volume V_F, other side impermeable; uniform initial concentration c_P,0; no food-side mass-transfer resistance.",
+    "series_solution": "m_F,t / A = c_P,0 * rho_P * d_P * (alpha / (1 + alpha)) * [ 1 - SUM_{n=1..inf} ( 2*alpha*(1 + alpha) / (1 + alpha + alpha^2 * q_n^2) ) * exp( - D_P * t * q_n^2 / d_P^2 ) ]",
+    "alpha": "alpha = (1 / K_P,F) * (V_F / V_P)",
+    "roots": "tan(q_n) = - alpha * q_n, q_n = non-zero positive roots",
+    "equilibrium": "m_F,inf / A = c_P,0 * rho_P * d_P * alpha / (1 + alpha)",
+    "units_tip": "With c_P,0 in mg/kg, rho_P in g/cm3 and d_P in cm, the product c_P,0*rho_P*d_P is in ug/cm2. Divide by (food mass per contact area) to get mg/kg food. EU convention 6 dm2 per kg food (Reg. 10/2011 Art. 17(2)).",
+    "root_finding_tip": "For alpha > 0 each root q_n lies in ((n - 1/2)*pi, n*pi); bisect f(q) = tan(q) + alpha*q in that interval. About 20-50 terms suffice except at very short times.",
+    "MIC_inverse": "JRC Eq. (6) rearranges the series to find the maximum initial concentration c_P,0 that keeps migration below the SML.",
+    "short_time_approximation": {
+      "general": "M_t / M_inf ~= (1 + alpha) * [ 1 - exp(T_F / alpha^2) * erfc( sqrt(T_F) / alpha ) ], with T_F = D_P * t / d_P^2",
+      "infinite_food_limit": "m_F,t / A ~= 2 * c_P,0 * rho_P * sqrt( D_P * t / pi ), valid while m_F,t / m_F,inf < ~0.5 and alpha >> 1",
+      "status": "UNVERIFIED in this session. Standard Crank (1975) short-time result; JRC59476 Sec. 2.1.4 explicitly does not include alternative approaches."
+    },
+    "status": "TRANSCRIBED. The variable list, the alpha definition with 1/K_P,F and the tan(q_n) = -alpha*q_n root equation were read from JRC59476; the equations themselves were garbled in the PDF extraction, so the series is written in the standard Crank form that the JRC text cites. Check against the PDF."
+  },
+
+  "kpf_defaults": {
+    "rule": "Without specific data: K_P,F = 1 if the migrant is highly soluble in the food/simulant (worst case, complete transfer at equilibrium); K_P,F = 1000 if the migrant is poorly soluble in the food (e.g., lipophilic substance in aqueous food).",
+    "source_url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC59476/reqno_jrc59476_mathmod_v10_cs_2010_09_24_final.pdf%5B1%5D.pdf",
+    "source_section": "JRC59476 Sec. 2.2.2; same wording in Tables 1, 3, 5, 7, 9 ('1 for high solubility of migrant in food, 1000 for low solubility'). Confirmed as the only two JRC values by Brandsch et al. 2022, Molecules 27:121, https://doi.org/10.3390/molecules27010121",
+    "status": "VERIFIED",
+    "simulant_mapping": {
+      "EU_simulants_Reg_10_2011_AnnexIII": {
+        "A": "ethanol 10% (v/v), aqueous foods",
+        "B": "acetic acid 3% (w/v), acidic foods (pH < 4.5)",
+        "C": "ethanol 20% (v/v), alcoholic foods <= 20% and foods with organic ingredients that make them more lipophilic",
+        "D1": "ethanol 50% (v/v), alcoholic foods > 20% and oil-in-water emulsions (e.g., milk/dairy)",
+        "D2": "vegetable oil, foods with free fats at the surface",
+        "E": "Tenax (poly(2,6-diphenyl-p-phenylene oxide)), dry foods",
+        "status": "UNVERIFIED in this session (EUR-Lex consolidated HTML was truncated before Annex III). Verify at https://eur-lex.europa.eu/eli/reg/2011/10/2020-09-23/eng"
+      },
+      "suggested_app_rule": "Use K = 1 for food classes represented by D1/D2/95% ethanol (fatty, oily, dairy foods) and K = 1000 for lipophilic migrants (log Kow > ~3) in aqueous/acidic foods (A, B). For hydrophilic migrants use K = 1 for all foods. This mapping is common practice but the JRC text does not give a simulant-by-simulant list (Brandsch 2022 says the same).",
+      "supporting_fact": "Brandsch et al. 2022 note 50% ethanol as the simulant for dairy and 95% ethanol as an alternative for vegetable oil. VERIFIED from https://mdpi-res.com/d_attachment/molecules/molecules-27-00121/article_deploy/molecules-27-00121.pdf"
+    }
+  },
+
+  "kpf_models": [
+    {
+      "name": "Huang & Jolliet 2019 combined QPPR (packaging-food Kpf and material-water Kmw)",
+      "citation": "Huang L., Jolliet O. (2019). A combined quantitative property-property relationship (QPPR) for estimating packaging-food and solid material-water partition coefficients of organic compounds. Science of the Total Environment 658:493-500. https://doi.org/10.1016/j.scitotenv.2018.12.062",
+      "equation": "log K_pf = f(log Kow, EtOH-eq, T, material type) as a multiple linear regression; generic variant uses log Kow, EtOH-eq and T only (no material).",
+      "coefficients": "UNVERIFIED. Paper is paywalled (ScienceDirect robots-blocked, ResearchGate fetch failed). Not retrieved.",
+      "performance": "Material-specific model adj. R2 = 0.93; generic model adj. R2 = 0.90; external R2 > 0.80. Data: 1846 measured Kpf or Kmw for 232 chemicals in 19 consolidated material types.",
+      "applicability": "Temperature range of the data 275-313 K; EtOH-eq 0-100% (per Vaferi et al. 2025 description of the same dataset).",
+      "source": "https://agris.fao.org/search/ar/records/65df15f9b766d82b180027e1"
+    },
+    {
+      "name": "Huang et al. 2017 preliminary Kpf QPPR (ISES abstract)",
+      "citation": "Huang L., Ernstoff A., Xu H., Lu S., Fantke P., Jolliet O. (2017). A Quantitative Property-Property Relationship for Estimating Packaging-Food Partition Coefficients of Organic Compounds. ISES 27th Annual Meeting abstract MO-PL-E2-115, p. 69.",
+      "equation": "MLR: log Kpf ~ log Kow + EtOH-eq + packaging type + (log Kow x EtOH-eq) interaction. Coefficients not given in the abstract.",
+      "coefficients": "UNVERIFIED / not published in abstract",
+      "performance": "302 Kpf values, 152 chemicals, LDPE and HDPE at 25 C, EtOH-eq 0% (water) to 95%; adj. R2 = 0.92.",
+      "applicability": "LDPE/HDPE, 25 C only",
+      "source": "https://orbit.dtu.dk/en/publications/a-quantitative-property-property-relationship-for-estimating-pack/ (PDF: https://orbit.dtu.dk/files/140880050/Huang_2017d.pdf)"
+    },
+    {
+      "name": "Ernstoff et al. 2017 high-throughput migration model",
+      "citation": "Ernstoff A.S., Fantke P., Huang L., Jolliet O. (2017). High-throughput migration modelling for estimating exposure to chemicals in food packaging in screening and prioritization tools. Food and Chemical Toxicology 109:428-438. https://doi.org/10.1016/j.fct.2017.09.024",
+      "equation": "Spreadsheet model fitted to several hundred Crank-type simulations to give fraction migrated; Kpf regression and food EtOH-eq table are inside the paper.",
+      "coefficients": "UNVERIFIED. Open proof PDF exists (https://orbit.dtu.dk/files/138481807/Ernstoff_2017a.pdf) but WebFetch failed twice and the sandbox proxy blocks orbit.dtu.dk.",
+      "performance": "With measured D: R2 = 0.9, Se = 0.5 (log units). With modelled D: R2 = 0.4, Se = 1. Modelled D is the largest uncertainty.",
+      "applicability": "Screening/LCA",
+      "source": "https://orbit.dtu.dk/en/publications/high-throughput-migration-modelling-for-estimating-exposure-to-ch/"
+    },
+    {
+      "name": "Wang et al. 2023 ensemble ML for migration (Kpf)",
+      "citation": "Wang S.-S., Lin P., Wang C.-C., Lin Y.C., Tung C.W. (2023). Machine learning for predicting chemical migration from food packaging materials to foods. Food and Chemical Toxicology 178:113942. https://doi.org/10.1016/j.fct.2023.113942",
+      "equation": "Nonlinear ensemble of 9 algorithms; inputs chemical descriptors/fingerprints, material type, food type, temperature.",
+      "coefficients": "n/a (ML)",
+      "performance": "Reported to beat earlier linear regressions; 1,847 records (Food Packaging Forum summary).",
+      "applicability": "",
+      "source": "https://scholars.lib.ntu.edu.tw/handle/123456789/634461?locale=en ; https://www.foodpackagingforum.org/?p=338939"
+    },
+    {
+      "name": "Vaferi et al. 2025 gradient boosting regressor",
+      "citation": "Vaferi B., Dehbashi M., Yousefzadeh R., ..., Alibak A.H. (2025). Prediction of the packaging chemical migration into food and water by cutting-edge machine learning techniques. Scientific Reports 15:7806. https://doi.org/10.1038/s41598-025-92459-x",
+      "equation": "GBR (also MLP, CNN, LSTM, RF tested); inputs: material type, T, log Kow at 298 K, EtOH-eq.",
+      "coefficients": "n/a (ML). Reported trends: log Kpf rises as EtOH-eq falls and as log Kow rises.",
+      "performance": "Best = GBR (see paper for metrics).",
+      "applicability": "T 275-313 K; EtOH-eq 0-100%; log Kpf range -3.509 to 7.724; 19 materials (LDPE 804 records, HDPE 307, silicone rubber 285).",
+      "source": "https://www.nature.com/articles/s41598-025-92459-x"
+    },
+    {
+      "name": "Wei et al. 2025 XGBoost",
+      "citation": "Wei C., Altalbawy F.M.A., Sur D., et al., Mottaghi M. (2025). Robust forecasting of packaging chemical migration into water and food. International Journal of Food Properties 28(1). https://doi.org/10.1080/10942912.2025.2558009",
+      "equation": "XGBoost best of 15 models; inputs material type, T (275-313 K), EtOH-eq (0-100%), log Kow at 298 K.",
+      "coefficients": "n/a (ML)",
+      "performance": "Test R2 = 0.9957, MSE = 0.0067, MRD = 17.29%.",
+      "applicability": "Same 1,847-record dataset.",
+      "source": "https://agris.fao.org/search/en/records/68cac7ccf61e5b80b5e91b73"
+    }
+  ],
+
+  "food_ethanol_equivalency": {
+    "status": "Per-food EtOH-eq values (e.g., fatty foods ~50-95%) were NOT retrieved: they are in Ernstoff 2017 and Huang & Jolliet 2019, neither of which could be read. UNVERIFIED.",
+    "values_seen_in_dataset": "EtOH-eq values appearing in the Vaferi 2025 SI table: 0.0, 2.5, 20.0, 24.1, 25.0, 45.8, 55.9, 60.0, 65.5, 79.2, 83.5, 100.0 (%) (VERIFIED from the SI PDF).",
+    "related_reference": "Seiler A., Bach A., Driffield M., Paseiro Losada P., Mercea P., Tosa V., Franz R. (2014). Correlation of foodstuffs with ethanol-water mixtures with regard to solubility of migrants from food contact materials. Food Addit Contam A 31(3):498-511. https://www.researchgate.net/publication/259875861 (not read; author list from memory, UNVERIFIED)"
+  },
+
+  "kpf_datasets": [
+    {
+      "description": "Experimental log Kpf / log Kmw databank compiled by Huang & Jolliet 2019 and re-published as Table S1 of Vaferi et al. 2025 (columns: EtOH-eq (v/v %), Material, Material code, logKow @ 298 K, Temp (K), logKpf or logKmw, GBR prediction). The table mixes Kpf (packaging-food) and Kmw (material-water) records. First rows: '0.0 Carbohydrates 1 3.30 298 1.53 1.61'.",
+      "n": "1,847 records (Huang & Jolliet abstract says 1,846); 232 chemicals x 19 material types. Note: earlier notes said '232 materials and 19 compounds' - that is reversed (the Wei 2025 abstract has the same inversion). Correct: 232 compounds, 19 materials.",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41598-025-92459-x/MediaObjects/41598_2025_92459_MOESM1_ESM.pdf",
+      "format": "PDF table (no CSV/XLSX). Convert with pdfplumber/camelot. Some rows have merged spaces in the PDF text.",
+      "downloaded_path_or_null": null,
+      "download_note": "Sandbox shell proxy returns 403 for media.springernature.com and static-content.springer.com; the file was read with WebFetch only (not saved). Download it from a normal browser.",
+      "license": "Scientific Reports articles are open access, normally CC BY 4.0; the SI license was not checked (UNVERIFIED)."
+    },
+    {
+      "description": "Original Huang & Jolliet 2019 supplementary data (Elsevier mmc files) - likely XLSX",
+      "n": "1846",
+      "url": "https://doi.org/10.1016/j.scitotenv.2018.12.062",
+      "downloaded_path_or_null": null,
+      "download_note": "UNVERIFIED that an XLSX SI exists; ScienceDirect blocked by robots for WebFetch.",
+      "license": "UNVERIFIED (Elsevier, likely subscription)"
+    }
+  ],
+
+  "diffusion_models": [
+    {
+      "name": "Piringer upper-bound model (EU-accepted)",
+      "equation": "D_P = 1e4 * exp(A_P' - tau/T - 0.1351*Mr^(2/3) + 0.003*Mr - 10454/T) cm2/s",
+      "coefficients": "see piringer.polymer_table",
+      "data_availability": "n/a",
+      "source": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC59476/reqno_jrc59476_mathmod_v10_cs_2010_09_24_final.pdf%5B1%5D.pdf"
+    },
+    {
+      "name": "Huang, Fantke, Ernstoff, Jolliet 2017 QPPR for internal diffusion coefficients in solid materials",
+      "citation": "Huang L., Fantke P., Ernstoff A., Jolliet O. (2017). A quantitative property-property relationship for the internal diffusion coefficients of organic compounds in solid materials. Indoor Air 27(6):1128-1140. https://doi.org/10.1111/ina.12395",
+      "equation": "Multiple linear regression: log D = f(MW, T, material type). Coefficients UNVERIFIED (accepted-manuscript PDF fetch failed).",
+      "performance": "1,103 measured D for 158 chemicals in 32 material types; adj. R2 = 0.93; external R2 > 0.8.",
+      "applicability": "MW ~30-1,178 g/mol; T ~4-180 C.",
+      "data_availability": "Accepted manuscript (open): https://deepblue.lib.umich.edu/bitstream/2027.42/138898/1/ina12395_am.pdf ; published PDF: https://deepblue.lib.umich.edu/bitstream/2027.42/138898/2/ina12395.pdf ; no SI listed in the repository record.",
+      "source": "https://deepblue.lib.umich.edu/items/babadd85-3519-4495-9638-5688434e2683/full"
+    },
+    {
+      "name": "Welle model for PET (Fraunhofer IVV)",
+      "equation": "Uses molecular volume instead of Mr; functional form garbled in extraction (UNVERIFIED).",
+      "coefficients": {"a_per_K": 1.93e-3, "b_cm2_per_s": 2.37e-6, "c_A3": 11.1, "d_per_K": 1.50e-4},
+      "notes": "Same note confirms Piringer A_P' = 3.1 below Tg and 6.4 above Tg for PET, tau = 1577 K (E_A ~100 kJ/mol). Welle's conversion factor molecular volume to MW = 1.13 cited in Brandsch 2022.",
+      "source": "https://www.ivv.fraunhofer.de/content/dam/ivv/en/documents/Forschungsfelder/Produktsicherheit-und-analytik/Prediction_of_diffusion_coefficients.pdf"
+    }
+  ],
+
+  "substances": [
+    {"name": "DEHP (di(2-ethylhexyl) phthalate)", "cas": "117-81-7", "mw": 390.57, "logkow": 7.50, "logkow_alt": [{"value": 7.14, "basis": "experimental, ECHA (via Health Canada)"}], "source": "ATSDR Toxicological Profile for DEHP, Ch. 4, Table 4-2 (MW: Howard & Meylan 1997; log Kow: Staples et al. 1997) https://www.atsdr.cdc.gov/ToxProfiles/tp9-c4.pdf ; alt: https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/draft-screening-assessment-phthalate-substance-grouping-appendices.html"},
+    {"name": "DBP (dibutyl phthalate)", "cas": "84-74-2", "mw": 278.3, "logkow": 4.46, "logkow_alt": [{"value": 4.57, "basis": "GreenFacts summary of EU RAR"}], "source": "Health Canada phthalate grouping, Appendix A Table A-1 (exp., ECHA) https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/draft-screening-assessment-phthalate-substance-grouping-appendices.html ; alt https://www.greenfacts.org/en/phthalates-comparison/figtableboxes/table-6.htm"},
+    {"name": "BBP (benzyl butyl phthalate)", "cas": "85-68-7", "mw": 312.3, "logkow": 4.91, "source": "Health Canada Appendix A Table A-1 (exp., ECHA) https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/draft-screening-assessment-phthalate-substance-grouping-appendices.html"},
+    {"name": "DINP (diisononyl phthalate)", "cas": "28553-12-0 / 68515-48-0", "mw": "419-447 (isomer mixture; use ~418.6 for C26H42O4)", "logkow": "8.8-9.7", "logkow_suggested": 8.8, "source": "Health Canada Appendix A Table A-1 (exp., ECHA) https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/draft-screening-assessment-phthalate-substance-grouping-appendices.html. The 418.6 single value is from the formula, UNVERIFIED here."},
+    {"name": "DIDP (diisodecyl phthalate)", "cas": "26761-40-0 / 68515-49-1", "mw": 446, "logkow": "no experimental value; estimates 10.06-10.36 (KOWWIN), 8.31-8.62 (WSKOWWIN), 9.72-9.84 (ACD/Percepta)", "logkow_suggested": 10.0, "source": "Health Canada Appendix A Table A-1 https://www.canada.ca/en/environment-climate-change/services/evaluating-existing-substances/draft-screening-assessment-phthalate-substance-grouping-appendices.html (suggested 10.0 is a midpoint chosen for the app, not a source value)"},
+    {"name": "BPA (bisphenol A)", "cas": "80-05-7", "mw": 228.29, "logkow": 3.32, "source": "UNVERIFIED in this session (PubChem blocked to WebFetch by robots.txt). Widely reported value (Hansch et al. 1995); a search result pairing 80-05-7 / 228.29 / log Kow 3.32: https://www.drugfuture.com/chemdata/Bisphenol-A.html . Verify at https://pubchem.ncbi.nlm.nih.gov/compound/6623"},
+    {"name": "Styrene", "cas": "100-42-5", "mw": 104.15, "logkow": 2.95, "source": "ATSDR Toxicological Profile for Styrene, Ch. 4 (log Kow: Hansch et al. 1995; EPA 1984a) https://www.atsdr.cdc.gov/ToxProfiles/tp53-c4.pdf"},
+    {"name": "Antimony (as Sb; PET polycondensation catalyst residue, mainly Sb2O3/Sb glycolate)", "cas": "7440-36-0", "mw": 121.760, "logkow": null, "source": "Atomic weight is the IUPAC standard value, not fetched this session (UNVERIFIED). log Kow not applicable. Piringer Mr-based D is not designed for metal species; treat with care."},
+    {"name": "Irgafos 168 (tris(2,4-di-tert-butylphenyl) phosphite)", "cas": "31570-04-4", "mw": 646.94, "logkow": null, "logkow_note": "UNVERIFIED. Very hydrophobic; ECHA registration dossier value not retrieved (often cited as an estimated value well above 10). For the app, treat as log Kow > 10, i.e. K_P,F = 1000 in aqueous foods.", "source": "MW: https://en.wikipedia.org/wiki/Tris(2,4-di-tert-butylphenyl)phosphite (646.937 g/mol); use as secondary antioxidant in polymers also stated there."}
+  ],
+
+  "microwave_temperatures": [
+    {"finding": "Pork patties (90 g) in a microwaveable plastic container, 700 W domestic oven: edge temperature rose linearly to 100 C while other parts stayed below 80 C; minimum temperatures 52-88 C depending on patty type; simulated after 60 s: edge hot spot ~80 C vs centre cold spot ~50 C.", "value_C": 100, "source": "Jung H., Lee M.G., Yoon W.B. (2022) Processes 10(11):2382, https://doi.org/10.3390/pr10112382 ; https://www.mdpi.com/2227-9717/10/11/2382"},
+    {"finding": "Olive oil heated for fast-food preparation reached about 140 C at ~9 min (figure covers both microwave and conventional heating; microwave oil temperature was lower than conventional).", "value_C": 140, "source": "Mahmoud E.A.E.-M. et al. (2009) Czech J Food Sci 27 (Spec. Issue): S173-S177, https://www.agriculturejournals.cz/pdfs/cjf/2009/10/27.pdf"},
+    {"finding": "In a microwave the fat phase heats about twice as fast as water or water-containing foods under comparable conditions (cited Dostalova et al. 2005).", "value_C": null, "source": "https://www.agriculturejournals.cz/pdfs/cjf/2009/10/27.pdf"},
+    {"finding": "Hong Kong take-away container study: a PS container exceeded the overall migration limit with fatty food at 120 C but passed at 100 C; EPS/PS/PET judged unsuitable for food above 100 C.", "value_C": 120, "source": "Centre for Food Safety Hong Kong (2005) Disposable Plastic Containers for Take-away Meals, https://www.cfs.gov.hk/english/programme/programme_rafs/programme_rafs_fc_01_03_dp.html"},
+    {"finding": "EU hot-fill definition: food filled at not more than 100 C, then cooled to <=50 C within 60 min or <=30 C within 150 min.", "value_C": 100, "source": "Regulation (EU) No 10/2011 Art. 3(19), https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02011R0010-20200923"},
+    {"finding": "Aqueous foods/water cannot exceed ~100 C at atmospheric pressure, so the aqueous-food scenario is bounded at 100 C; fat-rich foods and food-container interfaces can exceed it. Castle et al. 1990 (Food Addit Contam 7(6):779-796) and Jickells et al. 1993 (Food Addit Contam 10(6)) measured microwave temperatures for plastics and olive oil, but their numbers were NOT retrieved.", "value_C": null, "source": "UNVERIFIED numbers; records: https://www.tandfonline.com/doi/abs/10.1080/02652039009373940 and https://www.tandfonline.com/doi/abs/10.1080/02652039309374190"},
+    {"finding": "Microwave migration experiment conditions in practice: 540 W oven, 30 s exposures followed by ice-water cooling; olive oil simulant referred to at 100 C; container thickness PS 1.7 mm, PP 1.2 mm, PET 0.5 mm (useful d_P defaults).", "value_C": 100, "source": "Cai R., Mokwena Nthoiwa K.K., Ge C., J. Applied Packaging Research, https://repository.rit.edu/cgi/viewcontent.cgi?article=1004&context=japr"}
+  ],
+
+  "notes": [
+    "Validity warning for the app: JRC validity T_max is 70 C for PS, HIPS, SBS and rigid PVC, 80 C for LDPE (as transcribed), 90 C for HDPE. Microwave reheating (~100 C, edges/fat >100 C) is outside the validated range for these polymers; PP (<=120 C) and PET/PEN (<=175 C) remain in range. The app should flag out-of-range cases.",
+    "Piringer gives an upper-bound (overestimate) D; with K_P,F = 1 the result is a conservative worst case, which is the intended EU use.",
+    "Parameter table is from JRC59476 (2010). The 2015 JRC98028 guideline could not be read (EPUB only; host blocked to the sandbox). UNVERIFIED whether any A_P'/tau value changed in 2015.",
+    "The '1,847 log Kpf values for 232 materials and 19 compounds' in earlier notes is the Huang & Jolliet 2019 dataset, re-used by Wang 2023, Vaferi 2025 and Wei 2025. Correct reading: 232 chemicals in 19 material types; part of the records are material-water Kmw, not Kpf.",
+    "The dataset's temperature range is only 275-313 K (2-40 C). Any Kpf ML model trained on it extrapolates when applied at microwave temperatures (~373 K).",
+    "Could not read (and why): PMC/PubMed pages (Google reCAPTCHA wall); Europe PMC REST full text https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8746823/fullTextXML (WebFetch proxy HTTP 429 rate-limit, told not to retry); HAL (Anubis bot wall); ScienceDirect (robots disallowed); PubChem PUG REST (robots disallowed); tandfonline and ResearchGate (fetch errors); orbit.dtu.dk PDFs (fetch errors).",
+    "Sandbox shell (curl) can reach GitHub but the proxy returns 403 for publications.jrc.ec.europa.eu, pubs.acs.org, orbit.dtu.dk, media.springernature.com, static-content.springer.com, pubchem, zenodo and figshare, so no data file was downloaded."
+  ]
+}

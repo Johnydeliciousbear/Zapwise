@@ -1,0 +1,649 @@
+{
+ "cpet_tray": {
+  "text": "DUAL OVENABLE\n-40°F TO 400°F\nPETE 1",
+  "cues": {
+   "resin_code": 1,
+   "polymers": [
+    "PET"
+   ],
+   "oven": true,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "cpet_tray"
+  ],
+  "decisive": true
+ },
+ "cpet_word": {
+  "text": "CPET tray. Microwave and conventional oven safe",
+  "cues": {
+   "resin_code": null,
+   "polymers": [
+    "CPET"
+   ],
+   "oven": true,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "cpet_tray"
+  ],
+  "decisive": true
+ },
+ "pp_cup": {
+  "text": "5 PP\nMICROWAVE SAFE\nBPA FREE",
+  "cues": {
+   "resin_code": 5,
+   "polymers": [
+    "PP"
+   ],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pp_container"
+  ],
+  "decisive": true
+ },
+ "pp_symbol": {
+  "text": "♷ microwave safe",
+  "cues": {
+   "resin_code": 5,
+   "polymers": [
+    "PP"
+   ],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pp_container"
+  ],
+  "decisive": true
+ },
+ "clamshell": {
+  "text": "#1 PET  Recyclable",
+  "cues": {
+   "resin_code": 1,
+   "polymers": [
+    "PET"
+   ],
+   "oven": false,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pet_clamshell",
+   "cpet_tray"
+  ],
+  "decisive": false
+ },
+ "ps_not_safe": {
+  "text": "Not microwave safe 6 PS",
+  "cues": {
+   "resin_code": 6,
+   "polymers": [
+    "PS"
+   ],
+   "oven": false,
+   "microwave": false,
+   "do_not": true,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "ps_rigid"
+  ],
+  "decisive": true
+ },
+ "foam_cup": {
+  "text": "Foam cup. Do not microwave",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": false,
+   "do_not": true,
+   "paper": false,
+   "foam": true,
+   "cup": true,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "eps_foam"
+  ],
+  "decisive": true
+ },
+ "ovenable_board": {
+  "text": "OVENABLE PAPERBOARD TRAY. Do not use under broiler",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": true,
+   "microwave": false,
+   "do_not": false,
+   "paper": true,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pet_board_tray",
+   "paperboard_tray"
+  ],
+  "decisive": false
+ },
+ "paper_cup": {
+  "text": "Paper cup. Microwavable. Fill to line",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": true,
+   "foam": false,
+   "cup": true,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "paper_cup",
+   "paperboard_tray"
+  ],
+  "decisive": false
+ },
+ "nothing": {
+  "text": "Keep frozen. Cook thoroughly.",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [],
+  "decisive": false
+ },
+ "microwavable_only": {
+  "text": "Microwavable",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pp_container"
+  ],
+  "decisive": false
+ },
+ "oven_limit_c": {
+  "text": "Safe to 220 C, -40 C to 220 C",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": true,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "cpet_tray"
+  ],
+  "decisive": false
+ },
+ "pet_not_oven": {
+  "text": "1 PETE Not oven safe",
+  "cues": {
+   "resin_code": 1,
+   "polymers": [
+    "PET"
+   ],
+   "oven": false,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pet_clamshell",
+   "cpet_tray"
+  ],
+  "decisive": false
+ },
+ "pp_no_oven": {
+  "text": "Do not use in conventional oven. Microwave safe 5 PP",
+  "cues": {
+   "resin_code": 5,
+   "polymers": [
+    "PP"
+   ],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pp_container"
+  ],
+  "decisive": true
+ },
+ "other_code": {
+  "text": "7 OTHER microwave safe",
+  "cues": {
+   "resin_code": 7,
+   "polymers": [
+    "OTHER"
+   ],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pp_container"
+  ],
+  "decisive": false
+ },
+ "microwave_only": {
+  "text": "Microwave only. Dual ovenable tray not included",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [],
+  "decisive": false
+ },
+ "real_signature_7cup": {
+  "text": "SHARE LIDS SAFE FOR MICROWAVE (WITHOUT LID) REFRIGERATOR & DISHWASHER 7 CUPS SQUARE FOOD STORAGE",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": true,
+   "lid_off": true,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pp_container"
+  ],
+  "decisive": false
+ },
+ "real_signature_lid": {
+  "text": "WASH BEFORE USE | DO NOT MICROWAVE LID | PRODUCT OF USA",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": true,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [],
+  "decisive": false
+ },
+ "real_rubbermaid_easystore": {
+  "text": "WASH BEFORE USE | MICROWAVE REHEATABLE | MADE IN USA",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pp_container"
+  ],
+  "decisive": false
+ },
+ "real_goodcook_meal_prep": {
+  "text": "DISHWASHER SAFE - TOP RACK ONLY. MICROWAVE & FREEZER SAFE. FOR MICROWAVE REHEATING AND DEFROSTING, REMOVE LID BEFORE PLACING IN MICROWAVE.",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": true,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pp_container"
+  ],
+  "decisive": false
+ },
+ "real_signature_snack": {
+  "text": "CAUTION: DO NOT USE IN CONVENTIONAL OVENS, UNDER BROWNING ELEMENTS/BROILERS, FOR BOILING OR ON STOVETOPS. BEFORE MICROWAVING, REMOVE LID AND PLACE LOOSELY ON TOP TO VENT.",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": true,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [],
+  "decisive": false
+ },
+ "real_threshold_stoneware": {
+  "text": "STONEWARE DINNER PLATE Dishwasher Safe Microwave Safe May Get Hot in Microwave",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": true,
+   "melamine": false
+  },
+  "candidates": [
+   "ceramic"
+  ],
+  "decisive": true
+ },
+ "real_figmint_glass": {
+  "text": "Glass Measuring Cup with Lid. Microwave safe with lid removed. Oven safe up to 350°F (176.7°C)",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": true,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": true,
+   "lid_off": true,
+   "glass": true,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "glass"
+  ],
+  "decisive": true
+ },
+ "real_brilliance_glass": {
+  "text": "BRILLIANCE GLASS OVEN-SAFE (450°F)* 100% LEAKPROOF MICROWAVE-SAFE VENTS *only glass bases are oven-safe",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": true,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": true,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "glass"
+  ],
+  "decisive": true
+ },
+ "real_open_nature_plates": {
+  "text": "open nature free from BPA COMPOSTABLE 20 PLATES CUT RESISTANT MICROWAVE OVEN SAFE",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": true,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "paperboard_tray"
+  ],
+  "decisive": false
+ },
+ "real_paper_plates": {
+  "text": "Heavy Duty Paper Plates. Microwavable. Commercially compostable only",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": true,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "paperboard_tray"
+  ],
+  "decisive": false
+ },
+ "real_readymeals_lid": {
+  "text": "REMOVE LID BEFORE MICROWAVING",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": true,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [],
+  "decisive": false
+ },
+ "real_anchor_base": {
+  "text": "5 PP MICROWAVE SAFE PATENT PENDING ANCHORPAC.COM",
+  "cues": {
+   "resin_code": 5,
+   "polymers": [
+    "PP"
+   ],
+   "oven": false,
+   "microwave": true,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pp_container"
+  ],
+  "decisive": true
+ },
+ "real_tj_tray": {
+  "text": "1 PET",
+  "cues": {
+   "resin_code": 1,
+   "polymers": [
+    "PET"
+   ],
+   "oven": false,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": false,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": false
+  },
+  "candidates": [
+   "pet_clamshell",
+   "cpet_tray"
+  ],
+  "decisive": false
+ },
+ "real_bamboo_bowl": {
+  "text": "HARVEST BAMBOO FIBER SERVING BOWL MADE IN CHINA",
+  "cues": {
+   "resin_code": null,
+   "polymers": [],
+   "oven": false,
+   "microwave": false,
+   "do_not": false,
+   "paper": false,
+   "foam": false,
+   "cup": true,
+   "lid_off": false,
+   "glass": false,
+   "ceramic": false,
+   "melamine": true
+  },
+  "candidates": [
+   "melamine"
+  ],
+  "decisive": true
+ }
+}

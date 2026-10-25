@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ZapWise estimate</title>
+<link rel="stylesheet" href="zapwise.css">
+<style>
+  .wrap { padding: 0 16px; }
+  .gauge-card { margin-top: 10px; padding: 18px 16px 16px; display: grid; grid-template-columns: 170px 1fr; gap: 10px; align-items: center; }
+  .ring { width: 170px; height: 170px; border-radius: 50%; box-shadow: var(--inset); position: relative; display: grid; place-items: center; }
+  .ring svg { position: absolute; inset: 0; }
+  .ring .v { text-align: center; }
+  .ring .v b { display: block; font: 600 40px/1 'Pixelify Sans'; }
+  .ring .v span { font: 800 12px/1.2 'Nunito'; color: var(--cocoa-2); }
+  .side { display: grid; gap: 10px; justify-items: start; }
+  .side p { font: 700 13px/1.35 'Nunito'; color: var(--cocoa-2); }
+  .who { margin-top: 16px; padding: 6px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .who div { border-radius: 14px; padding: 10px 12px; font: 800 14px/1.2 'Nunito'; display: flex; justify-content: space-between; align-items: center; }
+  .who .on { box-shadow: var(--raised-sm); }
+  .who b { font: 600 20px/1 'Pixelify Sans'; }
+  h3 { font: 600 17px/1 'Pixelify Sans'; margin: 22px 4px 12px; }
+  .opts { display: grid; gap: 12px; }
+  .soft-btn .sub b { color: #2E6E58; }
+  .foot { font: 700 12px/1.4 'Nunito'; color: var(--cocoa-2); margin: 16px 4px 0; }
+  .foot u { color: var(--rose-deep); text-decoration: none; border-bottom: 1.5px solid var(--rose-deep); }
+</style></head>
+<body>
+<div class="phone" id="shot">
+  <div class="status"><span>9:41</span><span>5G 100%</span></div>
+  <div class="topbar">
+    <div class="round"><span style="font:800 20px/1 Nunito">&lsaquo;</span></div>
+    <div class="title">Your estimate</div>
+    <div style="width:44px"></div>
+  </div>
+  <div class="wrap">
+    <div class="raised gauge-card">
+      <div class="ring">
+        <svg viewBox="0 0 170 170">
+          <circle cx="85" cy="85" r="72" fill="none" stroke="#4B2E39" stroke-width="18" stroke-dasharray="57.3 452.4" stroke-dashoffset="1.5" transform="rotate(-90 85 85)"/>
+          <circle cx="85" cy="85" r="72" fill="none" stroke="#FFE3A3" stroke-width="12" stroke-dasharray="54.3 452.4" transform="rotate(-90 85 85)"/></svg>
+        <div class="v"><b>12%</b><span>of Mia's daily limit<br>from this tray</span></div>
+      </div>
+      <div class="side">
+        <img class="px" src="img/zappy_neutral.png" style="width:68px;height:68px">
+        <div class="chip middle"><img class="px" src="img/icon_info.png" style="width:24px;height:24px">Middle</div>
+        <p>Likely 4% to 31%</p>
+      </div>
+    </div>
+    <div class="well who">
+      <div>You <b>4%</b></div>
+      <div class="on">Mia, 6 <b>12%</b></div>
+    </div>
+    <h3>Ways to lower it</h3>
+    <div class="opts">
+      <div class="soft-btn"><img class="px" src="img/icon_plate.png" style="width:32px;height:32px">Move it to a plate<span class="sub">near <b>0%</b></span></div>
+      <div class="soft-btn"><img class="px" src="img/icon_container.png" style="width:32px;height:32px">My glass container<span class="sub">near <b>0%</b></span></div>
+      <div class="cta" style="height:56px;font-size:17px;margin-top:8px">Save how I heated it</div>
+    </div>
+    <p class="foot">Counts what moves from the container during heating only. This is an estimate, not a diagnosis. <u>How we calculate</u></p>
+  </div>
+</div>
+</body></html>

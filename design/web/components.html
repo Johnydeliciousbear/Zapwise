@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ZapWise components</title>
+<link rel="stylesheet" href="zapwise.css">
+<style>
+  body { padding: 30px; }
+  .box { display: inline-block; padding: 28px; background: var(--milk); vertical-align: top; }
+  .row { display: flex; gap: 22px; align-items: center; }
+  .col { display: flex; flex-direction: column; gap: 22px; }
+</style></head>
+<body>
+<div class="box" id="surfaces"><div class="row">
+  <div class="raised" style="width:200px;height:130px;display:grid;place-items:center;font:800 15px Nunito">Raised card</div>
+  <div class="well" style="width:200px;height:130px;display:grid;place-items:center;font:800 15px Nunito">Inset well</div>
+  <div style="position:relative;width:210px;height:130px"><div class="bubble" style="left:6px;top:20px;width:190px">Tap Zappy to set your microwave's watts</div><style>#surfaces .bubble::after{left:40px;bottom:-8px}</style></div>
+</div></div>
+
+<div class="box" id="ctas"><div class="row">
+  <div class="cta" style="width:220px"><img class="px" src="img/icon_camera.png" style="width:32px;height:32px">Scan</div>
+  <div class="cta pressed" style="width:220px"><img class="px" src="img/icon_camera.png" style="width:32px;height:32px">Scan</div>
+  <div class="cta disabled" style="width:220px">Scan</div>
+</div></div>
+
+<div class="box" id="controls"><div class="row">
+  <div class="soft-btn" style="width:250px"><img class="px" src="img/icon_plate.png" style="width:32px;height:32px">Move it to a plate</div>
+  <div class="soft-btn pressed" style="width:250px"><img class="px" src="img/icon_plate.png" style="width:32px;height:32px">Move it to a plate</div>
+  <div class="toggle"></div><div class="toggle on"></div>
+  <div class="track" style="width:180px"><i style="width:66%"></i></div>
+</div></div>
+
+<div class="box" id="chips"><div class="row">
+  <div class="chip lower"><img class="px" src="img/icon_check.png" style="width:24px;height:24px">Lower</div>
+  <div class="chip middle"><img class="px" src="img/icon_info.png" style="width:24px;height:24px">Middle</div>
+  <div class="chip higher"><img class="px" src="img/icon_alert.png" style="width:24px;height:24px">Higher</div>
+  <img class="px" src="img/zappy_happy.png" style="width:68px;height:68px">
+  <img class="px" src="img/zappy_neutral.png" style="width:68px;height:68px">
+  <img class="px" src="img/zappy_worried.png" style="width:78px;height:68px">
+</div></div>
+
+<div class="box" id="tabs" style="width:420px">
+  <div class="tabbar">
+    <div class="tab on"><img class="px" src="img/icon_kitchen.png" style="width:32px;height:32px">Kitchen</div>
+    <div class="tab"><img class="px" src="img/icon_log.png" style="width:32px;height:32px">Log</div>
+    <div class="tab"><img class="px" src="img/icon_learn.png" style="width:32px;height:32px">Learn</div>
+    <div class="tab"><img class="px" src="img/icon_me.png" style="width:32px;height:32px">Me</div>
+  </div>
+</div>
+
+<div class="box" id="type" style="width:620px">
+  <div style="font:600 40px/1.1 'Pixelify Sans'">12% of a day's limit</div>
+  <div style="font:600 24px/1.25 'Pixelify Sans';margin-top:14px">Heating guide</div>
+  <div style="font:800 18px/1.35 Nunito;margin-top:14px">Heat it like the box says, or change something?</div>
+  <div style="font:600 15px/1.45 Nunito;margin-top:8px">Peel back the film at one corner. Stir, then heat 1 more minute.</div>
+  <div style="font:600 15px/1.45 Nunito;margin-top:4px">Antes de calentar, pásalo a un plato de cerámica.</div>
+  <div style="font:700 12.5px/1.4 Nunito;color:var(--cocoa-2);margin-top:8px">This is an estimate, not a diagnosis.</div>
+</div>
+</body></html>
